@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+div {
+    margin-bottom: 3em;
+    padding: 1.5em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Background Image Section */
+#background {
+    background-image: url('../images/aurora-borealis.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+#background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    border-radius: 8px;
+}
+
+#background h2 {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 2.5em;
+}
+
+/* Image Map Section */
+#img-map {
+    text-align: center;
+}
+
+#img-map img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+    border: 2px solid #ddd;
+}
+
+/* Float Left Section */
+#float-left img {
+    float: left;
+    margin: 0 20px 10px 0;
+    max-width: 300px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Float Right Section */
+#float-right img {
+    float: right;
+    margin: 0 0 10px 20px;
+    max-width: 300px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Picture Tag Section */
+#picture-tag {
+    text-align: center;
+}
+
+picture {
+    display: block;
+    margin: 1em 0;
+}
+
+picture img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Linked Image Section */
+#linked-image {
+    text-align: center;
+}
+
+#linked-image img {
+    max-width: 600px;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+}
+
+#linked-image img:hover {
+    transform: scale(1.02);
+    border-color: #0066cc;
+}
+
+/* Image As Link Section */
+#img-as-link {
+    text-align: center;
+}
+
+#img-as-link img {
+    max-width: 400px;
+    transition: all 0.3s ease;
+}
+
+#img-as-link a {
+    text-decoration: none;
+    color: #333;
+}
+
+#img-as-link img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Clear floats */
+#float-left::after,
+#float-right::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #float-left img,
+    #float-right img {
+        float: none;
+        display: block;
+        margin: 1em auto;
+        max-width: 100%;
+    }
+    
+    #background {
+        height: 300px;
+    }
+}

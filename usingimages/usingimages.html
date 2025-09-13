@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Images</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Using Images</h1>
+    </header>
+
+    <div id="background">
+        <h2>Background Image</h2>
+        <!-- aurora-borealis.jpg will be added as background in CSS -->
+    </div>
+
+    <div id="img-map">
+        <h2>Image Map</h2>
+        <img src="images/workplace.jpg" alt="Modern workplace with computer and accessories" usemap="#workplace-map">
+        <map name="workplace-map">
+            <area shape="rect" coords="50,50,200,150" href="#computer" alt="Computer section">
+            <area shape="circle" coords="300,100,50" href="#accessories" alt="Accessories section">
+            <area shape="poly" coords="400,50,500,50,450,150" href="#decor" alt="Decor section">
+        </map>
+    </div>
+
+    <div id="float-left">
+        <h2>Float Left</h2>
+        <img src="images/dogs.jpg" alt="Happy dogs playing together">
+        <p>Dogs are incredible companions that bring joy and happiness to our lives. Their playful nature and unconditional love make them perfect pets for families and individuals alike. Whether they're running in the park, cuddling on the couch, or just being their silly selves, dogs have a special way of brightening our days.</p>
+        <p>The bond between humans and dogs goes back thousands of years, making them one of our oldest and most trusted animal friends. Their loyalty, intelligence, and ability to understand human emotions make them not just pets, but true family members.</p>
+    </div>
+
+    <div id="float-right">
+        <h2>Float Right</h2>
+        <img src="images/cat.jpg" alt="Elegant cat lounging in sunlight">
+        <p>Cats are masters of grace and elegance, bringing a sense of calm and sophistication to any home. Their independent nature and curious personalities make them fascinating companions. Whether they're gracefully perched on a windowsill or playfully chasing a toy, cats have a unique way of captivating our attention.</p>
+    </div>
+
+    <div id="picture-tag">
+        <h2>Picture Tag</h2>
+        <picture>
+            <source media="(min-width: 800px)" srcset="images/tree.jpg">
+            <source media="(min-width: 400px)" srcset="images/tree-medium.jpg">
+            <img src="images/tree.jpg" alt="Majestic tree in full bloom">
+        </picture>
+        <p>Nature's beauty changes with the seasons, and trees are perfect examples of this natural transformation.</p>
+    </div>
+
+    <div id="linked-image">
+        <h2>Linked Image</h2>
+        <a href="https://www.nationalgeographic.com/photography/article/aurora-pictures">
+            <img src="images/aurora-borealis.jpg" alt="Stunning aurora borealis in the night sky">
+        </a>
+        <p>Click the image to learn more about aurora borealis.</p>
+    </div>
+
+    <div id="img-as-link">
+        <h2>Image As Link</h2>
+        <a href="pages/gallery.html">
+            <img src="images/bicycle.jpg" alt="Classic bicycle against a colorful wall">
+            <p>Click to view our full photo gallery</p>
+        </a>
+    </div>
+</body>
+</html>
