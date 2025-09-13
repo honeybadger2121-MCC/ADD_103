@@ -127,6 +127,36 @@ picture img {
     border-color: #0066cc;
 }
 
+/* Gallery Page Styles */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    padding: 2em;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    margin-top: 1em;
+    font-size: 1.1em;
+    color: #333;
+}
+
 /* Image As Link Section */
 #img-as-link {
     text-align: center;
