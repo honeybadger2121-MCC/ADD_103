@@ -3,7 +3,7 @@
 ## Student Information
 - **Name**: bsherman170
 - **cPanel URL**: https://bsherman170.mccwebstudent.com/creatingnusingfavicons/
-- **Full Path**: https://bsherman170.mccwebstudent.com/creatingnusingfavicons/index.html
+- **Full Path**: https://bsherman170.mccwebstudent.com/creatingnusingfavicons/creatingfavicons.html
 
 ## Deployment Steps
 
