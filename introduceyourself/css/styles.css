@@ -51,29 +51,30 @@ nav ul {
     object-fit: cover;
     object-position: center;
     margin: 0 auto;
+    max-width: 100% !important;
 }
 
-/* Profile image - smaller, circular */
+/* Profile image - very small, circular */
 .profile-img {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-/* Featured images - contained with max dimensions */
+/* Featured images - much smaller */
 .featured-img {
     width: 100%;
-    max-width: 800px;
-    height: 300px;
+    max-width: 500px !important;
+    height: 200px;
 }
 
-/* Grid images - smaller, uniform size */
+/* Grid images - very compact */
 .game-img,
 .trail-img {
     width: 100%;
-    max-width: 400px;
-    height: 225px; /* 16:9 ratio */
+    max-width: 250px !important;
+    height: 140px; /* 16:9 ratio */
     transition: transform 0.3s ease;
 }
 
@@ -82,11 +83,11 @@ nav ul {
     transform: scale(1.05);
 }
 
-/* Gear image - medium size, centered */
+/* Gear image - smaller size, centered */
 .gear-img {
     width: 100%;
-    max-width: 500px;
-    height: 280px;
+    max-width: 300px !important;
+    height: 170px;
 }
 
 /* Sections */
