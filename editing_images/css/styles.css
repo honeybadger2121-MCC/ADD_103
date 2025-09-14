@@ -2,8 +2,8 @@
 :root{
   --bg: #f8f9fa;
   --text: #222;
-  --brand: #4b3190;
-  --accent: #fdbb30;
+  --brand: #2c3e50;  /* Changed to a darker, more readable blue */
+  --accent: #e74c3c;  /* Changed to a complementary red */
   --ok: #1b5e20;
   --muted: #6c757d;
   --card: #ffffff;
