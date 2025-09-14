@@ -28,7 +28,32 @@ body{
 }
 
 .site-header h1{ margin: 0 0 6px; font-size: 1.8rem; }
-.site-header .tagline{ margin: 0; opacity: 0.95; }
+.site-header .subtitle{ margin: 0 0 20px; opacity: 0.95; }
+
+.site-nav {
+  margin-top: 20px;
+}
+
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.site-nav a:hover {
+  background-color: var(--accent);
+  color: var(--brand);
+}
 
 .container{
   max-width: var(--maxw);
