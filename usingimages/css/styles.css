@@ -77,6 +77,30 @@ img {
     display: block;
     margin: 1em auto;
     border: 2px solid #ddd;
+    cursor: pointer;
+}
+
+#img-map p {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+/* Target sections styling */
+#computer-info, #accessories-info, #decor-info {
+    background-color: #e8f4fd;
+    border-left: 4px solid #0066cc;
+    margin-top: 2em;
+}
+
+#computer-info a, #accessories-info a, #decor-info a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#computer-info a:hover, #accessories-info a:hover, #decor-info a:hover {
+    text-decoration: underline;
 }
 
 /* Float Left Section */

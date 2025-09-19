@@ -18,12 +18,32 @@
 
     <div id="img-map">
         <h2>Image Map</h2>
-        <img src="images/workplace.jpg" alt="Modern workplace with computer and accessories" usemap="#workplace-map">
+        <p>Click on different areas of the workplace image below:</p>
+        <img src="images/workplace.jpg" alt="Modern workplace with computer and accessories" usemap="#workplace-map" id="workplace-img">
         <map name="workplace-map">
-            <area shape="rect" coords="50,50,200,150" href="#computer" alt="Computer section">
-            <area shape="circle" coords="300,100,50" href="#accessories" alt="Accessories section">
-            <area shape="poly" coords="400,50,500,50,450,150" href="#decor" alt="Decor section">
+            <area shape="rect" coords="50,50,300,250" href="#computer-info" alt="Computer section" title="Click to learn about computers">
+            <area shape="circle" coords="400,150,80" href="#accessories-info" alt="Accessories section" title="Click to see accessories">
+            <area shape="poly" coords="500,50,600,50,550,200" href="#decor-info" alt="Decor section" title="Click for decoration tips">
         </map>
+    </div>
+
+    <!-- Target sections for image map -->
+    <div id="computer-info">
+        <h2>Computer Section</h2>
+        <p>Modern computers are essential tools for productivity in today's workplace. They enable us to create, communicate, and collaborate effectively.</p>
+        <a href="#img-map">← Back to Image Map</a>
+    </div>
+
+    <div id="accessories-info">
+        <h2>Accessories Section</h2>
+        <p>Workplace accessories like keyboards, mice, and monitors enhance our computing experience and improve ergonomics.</p>
+        <a href="#img-map">← Back to Image Map</a>
+    </div>
+
+    <div id="decor-info">
+        <h2>Decor Section</h2>
+        <p>A well-decorated workspace can boost creativity and productivity. Personal touches make the environment more comfortable and inspiring.</p>
+        <a href="#img-map">← Back to Image Map</a>
     </div>
 
     <div id="float-left">
