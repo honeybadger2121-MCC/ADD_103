@@ -1,0 +1,314 @@
+/* Web Content Project - CSS Styles
+   Following Steve Krug and Usability.gov Best Practices */
+
+/* Base Styles for Readability */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Container for content width */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography Hierarchy */
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-top: 2em;
+    margin-bottom: 0.75em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.25em;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #34495e;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Paragraph Optimization for Scanning */
+p {
+    margin-bottom: 1em;
+    max-width: 65ch; /* Optimal reading length */
+}
+
+/* Emphasis and Keywords */
+strong {
+    color: #1976D2;
+    font-weight: bold;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+    padding: 2em 1em;
+    text-align: center;
+    margin-bottom: 2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    color: #1976D2;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #666;
+    margin: 0.5em 0;
+    font-style: italic;
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1976D2;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border: 2px solid #1976D2;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #1976D2;
+    color: white;
+}
+
+/* Section Spacing */
+section {
+    margin-bottom: 3em;
+    padding: 1.5em 0;
+}
+
+/* List Styles for Scanning */
+ul, ol {
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
+li {
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+}
+
+/* Interests Grid */
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.interest-card {
+    background: #f8f9fa;
+    padding: 2em;
+    border-radius: 8px;
+    border-left: 4px solid #1976D2;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.interest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.interest-card h3 {
+    margin-top: 0;
+    color: #1976D2;
+}
+
+.interest-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.interest-card a:hover {
+    text-decoration: underline;
+}
+
+/* Call to Action Section */
+.cta {
+    background: linear-gradient(135deg, #E8F5E8, #C8E6C9);
+    padding: 2em;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.cta h2 {
+    margin-top: 0;
+    color: #2E7D32;
+    border: none;
+}
+
+.cta p {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+/* Navigation Links Between Pages */
+.navigation {
+    text-align: center;
+    margin-top: 3em;
+    padding-top: 2em;
+    border-top: 1px solid #eee;
+}
+
+.back-link,
+.next-link {
+    text-decoration: none;
+    color: #1976D2;
+    font-weight: bold;
+    margin: 0 1em;
+}
+
+.back-link:hover,
+.next-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2em 1em;
+    margin-top: 3em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        margin: 0;
+        padding: 15px;
+        box-shadow: none;
+    }
+    
+    header {
+        padding: 1.5em 1em;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    .interests-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
+    
+    .navigation {
+        text-align: left;
+    }
+    
+    .back-link,
+    .next-link {
+        display: block;
+        margin: 0.5em 0;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+        font-size: 12pt;
+    }
+    
+    header,
+    nav,
+    footer,
+    .navigation {
+        display: none;
+    }
+    
+    main {
+        box-shadow: none;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1, h2, h3 {
+        color: black;
+    }
+    
+    strong {
+        color: black;
+    }
+}
+
+/* Focus Styles for Accessibility */
+a:focus,
+nav a:focus {
+    outline: 3px solid #FFD700;
+    outline-offset: 2px;
+}
+
+/* High Contrast Support */
+@media (prefers-contrast: high) {
+    body {
+        background: white;
+        color: black;
+    }
+    
+    header {
+        background: #f0f0f0;
+        border-bottom: 2px solid black;
+    }
+    
+    strong {
+        color: black;
+        text-decoration: underline;
+    }
+}
