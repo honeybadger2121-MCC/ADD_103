@@ -179,7 +179,29 @@ li {
 
 .cta p {
     font-size: 1.1em;
-    margin: 0;
+    margin: 1em 0;
+}
+
+/* Business Website Link */
+.business-link {
+    display: inline-block;
+    background: #2E7D32;
+    color: white;
+    text-decoration: none;
+    padding: 0.75em 1.5em;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.business-link:hover,
+.business-link:focus {
+    background: #1B5E20;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
 }
 
 /* Navigation Links Between Pages */
