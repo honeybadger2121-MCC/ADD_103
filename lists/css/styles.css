@@ -1,0 +1,190 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Main heading */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 2.5em;
+}
+
+/* Section headings */
+h3 {
+    color: #34495e;
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 8px;
+}
+
+/* Style all unordered lists */
+ul {
+    list-style-type: square; /* Changes bullets to squares */
+    margin: 1em 0;
+    padding-left: 2em;
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style all ordered lists */
+ol {
+    list-style-type: upper-roman; /* Changes numbers to Roman numerals */
+    margin: 1em 0;
+    padding-left: 2em;
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style nested unordered lists */
+ul ul {
+    list-style-type: circle; /* Nested UL bullets become circles */
+    background-color: #f8f9fa;
+    margin: 0.5em 0;
+    border-left: 3px solid #3498db;
+}
+
+/* Style deeply nested unordered lists */
+ul ul ul {
+    list-style-type: disc; /* Third level uses discs */
+    background-color: #e9ecef;
+    border-left: 3px solid #e74c3c;
+}
+
+/* Style nested ordered lists */
+ol ol {
+    list-style-type: lower-alpha; /* Nested OL uses lowercase letters */
+    background-color: #f8f9fa;
+    margin: 0.5em 0;
+    border-left: 3px solid #2ecc71;
+}
+
+/* Style ordered lists inside unordered lists */
+ul ol {
+    list-style-type: decimal; /* Regular numbers inside UL */
+    background-color: #fff3cd;
+    border-left: 3px solid #ffc107;
+}
+
+/* Style unordered lists inside ordered lists */
+ol ul {
+    list-style-type: square; /* Square bullets inside OL */
+    background-color: #d1ecf1;
+    border-left: 3px solid #17a2b8;
+}
+
+/* List items styling */
+li {
+    margin-bottom: 0.5em;
+    padding: 0.25em 0;
+}
+
+/* Style description lists */
+dl {
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1em 0;
+}
+
+/* Style description terms */
+dt {
+    font-weight: bold;
+    color: #4b3190;
+    font-size: 1.1em;
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+}
+
+/* Style description definitions */
+dd {
+    font-style: italic;
+    color: #333;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    background-color: #f8f9fa;
+    border-left: 4px solid #4b3190;
+    border-radius: 0 4px 4px 0;
+}
+
+/* First description term has no top margin */
+dt:first-child {
+    margin-top: 0;
+}
+
+/* Hover effects for interactivity */
+li:hover {
+    color: #2c3e50;
+    background-color: rgba(52, 152, 219, 0.1);
+    border-radius: 4px;
+    padding: 0.25em 0.5em;
+    transition: all 0.3s ease;
+}
+
+dt:hover {
+    color: #8e44ad;
+    cursor: pointer;
+}
+
+dd:hover {
+    background-color: #e9ecef;
+    border-left-color: #8e44ad;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h3 {
+        font-size: 1.3em;
+    }
+    
+    ul, ol, dl {
+        padding: 1em;
+    }
+    
+    dd {
+        margin-left: 1em;
+    }
+}
+
+/* Print styles */
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+    
+    ul, ol, dl {
+        background-color: white;
+        box-shadow: none;
+    }
+    
+    h3 {
+        background: none;
+        color: black;
+        border-bottom: 2px solid black;
+    }
+}
