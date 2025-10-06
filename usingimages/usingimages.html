@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <div class="page-wrapper">
     <header>
         <h1>Using Images</h1>
     </header>
-
-    <div id="background">
-        <h2>Background Image</h2>
-        <!-- aurora-borealis.jpg will be added as background in CSS -->
-    </div>
+    <section id="background-demo" class="bg-cover">
+        <div class="panel">
+            <h2>Background Image (Cover)</h2>
+            <p>Experiment with <code>background-size</code>: try classes <strong>.bg-cover</strong>, <strong>.bg-contain</strong>, or <strong>.bg-auto</strong>.</p>
+        </div>
+    </section>
 
     <div id="img-map">
         <h2>Image Map</h2>
@@ -67,26 +69,79 @@
 
     <div id="float-left">
         <h2>Float Left</h2>
+        <p>Dogs are incredible companions that bring joy and happiness to our lives. Their playful nature and unconditional love make them perfect pets. The image floats left so this paragraph wraps alongside it on wider screens.</p>
         <img src="images/dogs.jpg" alt="Happy dogs playing together">
-        <p>Dogs are incredible companions that bring joy and happiness to our lives. Their playful nature and unconditional love make them perfect pets for families and individuals alike. Whether they're running in the park, cuddling on the couch, or just being their silly selves, dogs have a special way of brightening our days.</p>
-        <p>The bond between humans and dogs goes back thousands of years, making them one of our oldest and most trusted animal friends. Their loyalty, intelligence, and ability to understand human emotions make them not just pets, but true family members.</p>
+        <p>The bond between humans and dogs goes back thousands of years, making them one of our oldest and most trusted animal friends.</p>
     </div>
 
     <div id="float-right">
         <h2>Float Right</h2>
+        <p>Cats bring calm and curiosity. Here the first paragraph precedes the image so text can wrap on the other side when space allows.</p>
         <img src="images/cat.jpg" alt="Elegant cat lounging in sunlight">
-        <p>Cats are masters of grace and elegance, bringing a sense of calm and sophistication to any home. Their independent nature and curious personalities make them fascinating companions. Whether they're gracefully perched on a windowsill or playfully chasing a toy, cats have a unique way of captivating our attention.</p>
+        <p>Their independent nature and graceful movement make them fascinating companions.</p>
     </div>
 
-    <div id="picture-tag">
+    <div id="picture-tag" class="responsive-picture">
         <h2>Picture Tag</h2>
         <picture>
-            <source media="(min-width: 800px)" srcset="images/tree.jpg">
-            <source media="(min-width: 400px)" srcset="images/tree-medium.jpg">
-            <img src="images/tree.jpg" alt="Majestic tree in full bloom">
+            <source type="image/webp" media="(min-width: 950px)" srcset="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg">
+            <source media="(min-width: 950px)" srcset="images/tree.jpg">
+            <source type="image/webp" media="(min-width: 650px)" srcset="https://cdn.pixabay.com/photo/2016/11/29/05/08/avenue-1868213_960_720.jpg">
+            <source media="(min-width: 650px)" srcset="images/tree-medium.jpg">
+            <img src="images/tree.jpg" alt="Majestic tree in full bloom in a seasonal landscape">
         </picture>
         <p>Nature's beauty changes with the seasons, and trees are perfect examples of this natural transformation.</p>
     </div>
+
+    <section id="gear-map-section">
+        <h2>Workplace Gear Image Map</h2>
+        <p>Use the hotspots to jump to each gear description. All areas are keyboard accessible; press Tab to move through them.</p>
+        <figure>
+            <img src="https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593327_1280.jpg" alt="Top view of desk with laptop, headphones, keyboard, mouse and external drive" usemap="#gear-map" width="750" height="500">
+            <map name="gear-map" id="gear-map">
+                <area shape="rect" coords="40,120,300,380" href="#laptop" alt="Laptop" aria-label="Laptop on desk">
+                <area shape="circle" coords="560,170,75" href="#headphones" alt="Headphones" aria-label="Headphones">
+                <area shape="rect" coords="350,360,620,415" href="#keyboard" alt="Keyboard" aria-label="Keyboard">
+                <!-- Students finish these two: approximate placeholders -->
+                <area shape="rect" coords="630,360,710,420" href="#mouse" alt="Mouse" aria-label="Mouse">
+                <area shape="rect" coords="310,110,370,160" href="#harddrive" alt="External hard drive" aria-label="External hard drive">
+            </map>
+        </figure>
+        <h3>Fallback Links</h3>
+        <ul class="fallback-links">
+            <li><a href="#laptop">Laptop</a></li>
+            <li><a href="#headphones">Headphones</a></li>
+            <li><a href="#keyboard">Keyboard</a></li>
+            <li><a href="#mouse">Mouse</a></li>
+            <li><a href="#harddrive">External Hard Drive</a></li>
+        </ul>
+    </section>
+
+    <section id="laptop">
+        <h2>Laptop</h2>
+        <p>The central workstation for productivity—managing code, documents, design, and collaboration tools in one portable machine.</p>
+        <a href="#gear-map-section">Back to Gear Map</a>
+    </section>
+    <section id="headphones">
+        <h2>Headphones</h2>
+        <p>Noise-isolating headphones help maintain focus in busy or shared environments while improving audio clarity for calls.</p>
+        <a href="#gear-map-section">Back to Gear Map</a>
+    </section>
+    <section id="keyboard">
+        <h2>Keyboard</h2>
+        <p>A responsive keyboard enables faster typing and ergonomic comfort during long work sessions.</p>
+        <a href="#gear-map-section">Back to Gear Map</a>
+    </section>
+    <section id="mouse">
+        <h2>Mouse</h2>
+        <p>A precise pointing device allows smoother navigation and reduces strain versus trackpads for design or data work.</p>
+        <a href="#gear-map-section">Back to Gear Map</a>
+    </section>
+    <section id="harddrive">
+        <h2>External Hard Drive</h2>
+        <p>External storage provides reliable backups and extra capacity for large media, project archives, or version snapshots.</p>
+        <a href="#gear-map-section">Back to Gear Map</a>
+    </section>
 
     <div id="linked-image">
         <h2>Linked Image</h2>
@@ -98,10 +153,11 @@
 
     <div id="img-as-link">
         <h2>Image As Link</h2>
-        <a href="pages/gallery.html">
-            <img src="images/workplace.jpg" alt="Modern workplace setup">
-            <p>Click to view our full photo gallery</p>
+        <a href="https://en.wikipedia.org/wiki/Computer" target="_blank" rel="noopener" aria-label="Visit encyclopedia article about computers in a new tab">
+            <img src="images/workplace.jpg" alt="Modern workplace setup with accessories" >
         </a>
+        <p>This workplace image links to an external educational resource (opens in a new tab).</p>
     </div>
+    </div><!-- /.page-wrapper -->
 </body>
 </html>

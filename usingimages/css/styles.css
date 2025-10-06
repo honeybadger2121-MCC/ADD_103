@@ -3,11 +3,30 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    background: url('../images/aurora-borealis.jpg') center/cover fixed no-repeat;
+    color: #222;
+}
+
+/* Shared layout container */
+.page-wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #f5f5f5;
+    padding: 20px clamp(1rem,2vw,2.5rem);
 }
+
+header, div, section {
+    width: 100%;
+    background: rgba(255,255,255,0.92);
+    border: 1px solid #ddd;
+    margin: 2.5rem auto;
+    padding: 1.5rem 2rem;
+    border-radius: 14px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+header { margin-top: 0; }
 
 header {
     text-align: center;
@@ -34,37 +53,29 @@ img {
 }
 
 /* Background Image Section */
-#background {
-    background-image: url('../images/aurora-borealis.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+/* Section background demo */
+#background-demo {
+    background: url('../images/aurora-borealis.jpg') center/cover no-repeat;
+    min-height: 320px;
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 2em;
+    align-items: flex-end;
+    border: none;
+    padding: 0;
+}
+/* Semi-transparent overlay content panel */
+#background-demo .panel {
+    background: rgba(0,0,0,0.55);
+    color: #fff;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    border-radius: 0 0 14px 14px;
 }
 
-#background::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.4);
-    border-radius: 8px;
-}
-
-#background h2 {
-    position: relative;
-    z-index: 1;
-    color: white;
-    font-size: 2.5em;
-}
+/* Image scaling experiment utility classes */
+.bg-cover { background-size: cover; }
+.bg-contain { background-size: contain; }
+.bg-auto { background-size: auto; }
 
 /* Image Map Section */
 #img-map {
@@ -130,19 +141,26 @@ area:focus {
 }
 
 /* Float Left Section */
+/* Float demo - left */
+#float-left { overflow: auto; padding: 1.25rem; }
+#float-left p:first-of-type { margin-top: 0; }
 #float-left img {
     float: left;
-    margin: 0 20px 10px 0;
-    max-width: 300px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    width: 40%;
+    max-width: 360px;
+    margin: 0 1.25rem 1rem 0;
+    box-shadow: 3px 3px 12px rgba(0,0,0,0.25);
 }
 
 /* Float Right Section */
+/* Float demo - right */
+#float-right { overflow: auto; padding: 1.25rem; }
 #float-right img {
     float: right;
-    margin: 0 0 10px 20px;
-    max-width: 300px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    width: 40%;
+    max-width: 360px;
+    margin: 0 0 1rem 1.25rem;
+    box-shadow: 3px 3px 12px rgba(0,0,0,0.25);
 }
 
 /* Picture Tag Section */
@@ -228,11 +246,45 @@ picture img {
 }
 
 /* Clear floats */
-#float-left::after,
-#float-right::after {
-    content: "";
-    display: table;
-    clear: both;
+/* No longer need clearfix due to overflow:auto containers */
+/* Gear map dedicated section */
+#gear-map-section figure {
+    margin: 0;
+    text-align: center;
+}
+
+#gear-map-section img {
+    max-width: 750px;
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+#gear-map-section ul.fallback-links {
+    list-style: square;
+    columns: 2;
+    gap: 2rem;
+    padding-left: 1.25rem;
+}
+
+#gear-map-section ul.fallback-links a { text-decoration: none; color: #0d47a1; }
+#gear-map-section ul.fallback-links a:focus, #gear-map-section ul.fallback-links a:hover { text-decoration: underline; }
+
+/* Picture responsive demo */
+.responsive-picture { text-align: center; }
+.responsive-picture picture { display: block; }
+.responsive-picture img { width: 100%; height: auto; }
+
+/* Breakpoints */
+@media (max-width: 950px) {
+    header, div, section { padding: 1.25rem 1.25rem; }
+    #float-left img, #float-right img { width: 48%; }
+}
+
+@media (max-width: 650px) {
+    #float-left img, #float-right img { float: none; width: 100%; margin: 0 0 1rem 0; }
+    #gear-map-section ul.fallback-links { columns: 1; }
 }
 
 /* Responsive Design */
