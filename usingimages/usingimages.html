@@ -21,14 +21,14 @@
     <div id="img-map">
         <h2>Super Simple Image Map</h2>
         <p>Click on the LEFT half or RIGHT half of the image below:</p>
-        <img src="https://picsum.photos/400/200" alt="Simple placeholder image divided into two sections" usemap="#simplemap" id="simple-img" width="400" height="200">
+        <img src="https://picsum.photos/id/1/400/200" alt="Static landscape image divided into two sections" usemap="#simplemap" id="simple-img" width="400" height="200">
         <map name="simplemap" id="simplemap" aria-label="Two clickable sections of the image">
-            <!-- True left half (0-199) -->
-            <area shape="rect" coords="0,0,199,200" href="#section-1" alt="Left half" title="Left half" tabindex="0">
-            <!-- True right half (201-400) -->
-            <area shape="rect" coords="201,0,400,200" href="#section-2" alt="Right half" title="Right half" tabindex="0">
+            <!-- Left half (0-200) -->
+            <area shape="rect" coords="0,0,200,200" href="#section-1" alt="Left half" title="Left half" tabindex="0">
+            <!-- Right half (200-400) -->
+            <area shape="rect" coords="200,0,400,200" href="#section-2" alt="Right half" title="Right half" tabindex="0">
         </map>
-        <p><strong>Coverage:</strong> Left half: pixels 0-199 | Right half: pixels 201-400 | 1px gap at x=200</p>
+        <p><strong>Coverage:</strong> Left half: pixels 0-200 | Right half: pixels 200-400 | NO gap - perfect split!</p>
         <p><strong>Test:</strong> <a href="#section-1">Direct link to Section 1</a> | <a href="#section-2">Direct link to Section 2</a></p>
     </div>
 
@@ -73,11 +73,11 @@
 
     <section id="simple-demo">
         <h2>True Left/Right Half Coverage</h2>
-        <p>Now the image map covers almost the entire image with just a 1-pixel gap:</p>
+        <p>The image map now covers the entire image with a perfect 50/50 split:</p>
         <ul>
-            <li><strong>Left half:</strong> coords="0,0,199,200" - covers pixels 0-199 (true left half)</li>
-            <li><strong>Right half:</strong> coords="201,0,400,200" - covers pixels 201-400 (true right half)</li>
-            <li><strong>Minimal gap:</strong> Only 1 pixel at x=200 to prevent coordinate conflicts</li>
+            <li><strong>Left half:</strong> coords="0,0,200,200" - covers pixels 0-200 (exact left half)</li>
+            <li><strong>Right half:</strong> coords="200,0,400,200" - covers pixels 200-400 (exact right half)</li>
+            <li><strong>Perfect split:</strong> No gap, complete coverage at the 200-pixel midpoint</li>
         </ul>
         <p>Click anywhere on the actual left or right side of the image - it should work now!</p>
     </section>
