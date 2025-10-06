@@ -23,12 +23,13 @@
         <p>Click on the LEFT half or RIGHT half of the image below:</p>
         <img src="https://picsum.photos/400/200" alt="Simple placeholder image divided into two sections" usemap="#simplemap" id="simple-img" width="400" height="200">
         <map name="simplemap" id="simplemap" aria-label="Two clickable sections of the image">
-            <!-- Left half -->
-            <area shape="rect" coords="0,0,200,200" href="#section-1" alt="Left section" title="Left section" tabindex="0">
-            <!-- Right half -->
-            <area shape="rect" coords="200,0,400,200" href="#section-2" alt="Right section" title="Right section" tabindex="0">
+            <!-- Left section (0-180) -->
+            <area shape="rect" coords="0,0,180,200" href="#section-1" alt="Left section" title="Left section" tabindex="0">
+            <!-- Right section (220-400) -->
+            <area shape="rect" coords="220,0,400,200" href="#section-2" alt="Right section" title="Right section" tabindex="0">
         </map>
-        <p><strong>Debug info:</strong> Left side: (0,0) to (200,200) | Right side: (200,0) to (400,200)</p>
+        <p><strong>Debug info:</strong> Left: (0,0) to (180,200) | Right: (220,0) to (400,200) | Big gap: 180-220</p>
+        <p><strong>Test:</strong> <a href="#section-1">Direct link to Section 1</a> | <a href="#section-2">Direct link to Section 2</a></p>
     </div>
 
     <!-- Target sections for simple image map -->
@@ -72,12 +73,13 @@
 
     <section id="simple-demo">
         <h2>How This Super Simple Image Map Works</h2>
-        <p>The image map above uses the most basic possible rectangular coordinates:</p>
+        <p>The image map uses separated rectangular coordinates with gaps to avoid conflicts:</p>
         <ul>
-            <li><strong>Left half:</strong> coords="0,0,200,200" - starts at top-left (0,0) and goes to middle-bottom (200,200)</li>
-            <li><strong>Right half:</strong> coords="200,0,400,200" - starts at top-middle (200,0) and goes to bottom-right (400,200)</li>
+            <li><strong>Left section:</strong> coords="0,0,180,200" - covers left side with right edge at x=180</li>
+            <li><strong>Right section:</strong> coords="220,0,400,200" - covers right side starting at x=220</li>
+            <li><strong>Gap:</strong> x=180 to x=220 (40px gap) prevents coordinate overlap</li>
         </ul>
-        <p>With just 2 sections, there's no way to have coordinate confusion. Each half should work perfectly!</p>
+        <p>The direct links above will test if the target sections exist and work properly!</p>
     </section>
 
 
