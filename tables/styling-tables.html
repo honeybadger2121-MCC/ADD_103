@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Tables - HTML Tables Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Table Basics</a></li>
+            <li><a href="styling-tables.html" class="active">Styling Tables</a></li>
+            <li><a href="calendar.html">Creating a Calendar</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Styling Tables</h1>
+        <p>Advanced table styling with CSS for professional appearance and better user experience.</p>
+    </header>
+
+    <main>
+        <section class="table-section">
+            <h2>Weekly Class Schedule</h2>
+            <p>This table shows a weekly class schedule with hover effects and professional styling.</p>
+            
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-slot">8:00 AM</td>
+                        <td class="class-web">Web Development</td>
+                        <td>-</td>
+                        <td class="class-web">Web Development</td>
+                        <td>-</td>
+                        <td class="class-lab">Lab Time</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">9:00 AM</td>
+                        <td class="class-db">Database Design</td>
+                        <td class="class-prog">Programming Logic</td>
+                        <td class="class-db">Database Design</td>
+                        <td class="class-prog">Programming Logic</td>
+                        <td class="class-lab">Lab Time</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">10:00 AM</td>
+                        <td>Break</td>
+                        <td>Break</td>
+                        <td>Break</td>
+                        <td>Break</td>
+                        <td>Break</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">11:00 AM</td>
+                        <td class="class-net">Network Security</td>
+                        <td class="class-math">Mathematics</td>
+                        <td class="class-net">Network Security</td>
+                        <td class="class-math">Mathematics</td>
+                        <td class="class-study">Study Hall</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">12:00 PM</td>
+                        <td colspan="5" class="lunch-break">Lunch Break</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">1:00 PM</td>
+                        <td class="class-english">English Comp</td>
+                        <td class="class-proj">Project Work</td>
+                        <td class="class-english">English Comp</td>
+                        <td class="class-proj">Project Work</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">2:00 PM</td>
+                        <td class="class-sys">Systems Analysis</td>
+                        <td class="class-proj">Project Work</td>
+                        <td class="class-sys">Systems Analysis</td>
+                        <td class="class-proj">Project Work</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="table-section">
+            <h2>Student Grades Table</h2>
+            <p>A professional-looking grades table with alternating row colors and hover effects.</p>
+            
+            <table class="grades-table">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Assignment 1</th>
+                        <th>Assignment 2</th>
+                        <th>Midterm</th>
+                        <th>Final</th>
+                        <th>Average</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S001</td>
+                        <td>Jennifer Adams</td>
+                        <td>95</td>
+                        <td>87</td>
+                        <td>92</td>
+                        <td>89</td>
+                        <td>90.8</td>
+                        <td class="grade-a">A</td>
+                    </tr>
+                    <tr>
+                        <td>S002</td>
+                        <td>Michael Brown</td>
+                        <td>78</td>
+                        <td>85</td>
+                        <td>81</td>
+                        <td>84</td>
+                        <td>82.0</td>
+                        <td class="grade-b">B</td>
+                    </tr>
+                    <tr>
+                        <td>S003</td>
+                        <td>Sarah Williams</td>
+                        <td>92</td>
+                        <td>94</td>
+                        <td>96</td>
+                        <td>93</td>
+                        <td>93.8</td>
+                        <td class="grade-a">A</td>
+                    </tr>
+                    <tr>
+                        <td>S004</td>
+                        <td>Robert Davis</td>
+                        <td>71</td>
+                        <td>76</td>
+                        <td>74</td>
+                        <td>78</td>
+                        <td>74.8</td>
+                        <td class="grade-c">C</td>
+                    </tr>
+                    <tr>
+                        <td>S005</td>
+                        <td>Lisa Martinez</td>
+                        <td>88</td>
+                        <td>91</td>
+                        <td>85</td>
+                        <td>87</td>
+                        <td>87.8</td>
+                        <td class="grade-b">B+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="info-section">
+            <h2>Styling Techniques Used</h2>
+            <ul>
+                <li><strong>Border Collapse:</strong> Merges adjacent borders for cleaner appearance</li>
+                <li><strong>Hover Effects:</strong> Highlights rows on mouse hover for better readability</li>
+                <li><strong>Alternating Colors:</strong> Uses :nth-child selectors for zebra striping</li>
+                <li><strong>Color Coding:</strong> Different colors for different types of content</li>
+                <li><strong>Text Alignment:</strong> Centers data and aligns text appropriately</li>
+                <li><strong>Responsive Design:</strong> Tables adapt to different screen sizes</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

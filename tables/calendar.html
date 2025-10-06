@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Calendar - HTML Tables Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Table Basics</a></li>
+            <li><a href="styling-tables.html">Styling Tables</a></li>
+            <li><a href="calendar.html" class="active">Creating a Calendar</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Creating a Calendar</h1>
+        <p>Build a functional calendar layout using HTML tables with proper styling.</p>
+    </header>
+
+    <main>
+        <section class="calendar-section">
+            <h2>October 2025 Calendar</h2>
+            <p>This calendar demonstrates how tables can be used to create structured layouts for dates and schedules.</p>
+            
+            <table class="calendar-table">
+                <thead>
+                    <tr class="calendar-header">
+                        <th colspan="7">October 2025</th>
+                    </tr>
+                    <tr class="days-header">
+                        <th>Sunday</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="other-month">28</td>
+                        <td class="other-month">29</td>
+                        <td class="other-month">30</td>
+                        <td class="current-day">1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td class="weekend">4</td>
+                    </tr>
+                    <tr>
+                        <td class="weekend">5</td>
+                        <td class="today">6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td class="weekend">11</td>
+                    </tr>
+                    <tr>
+                        <td class="weekend">12</td>
+                        <td class="holiday">13<span class="event">Columbus Day</span></td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td class="weekend">18</td>
+                    </tr>
+                    <tr>
+                        <td class="weekend">19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td class="weekend">25</td>
+                    </tr>
+                    <tr>
+                        <td class="weekend">26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td class="special-day">31<span class="event">Halloween</span></td>
+                        <td class="other-month weekend">1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="calendar-section">
+            <h2>December 2025 - My Birth Month</h2>
+            <p>A personalized calendar for December 2025 with special dates highlighted.</p>
+            
+            <table class="calendar-table birth-month">
+                <thead>
+                    <tr class="calendar-header">
+                        <th colspan="7">December 2025</th>
+                    </tr>
+                    <tr class="days-header">
+                        <th>Sunday</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="other-month">30</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td class="weekend">6</td>
+                    </tr>
+                    <tr>
+                        <td class="weekend">7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td class="weekend">13</td>
+                    </tr>
+                    <tr>
+                        <td class="weekend">14</td>
+                        <td class="birthday">15<span class="event">My Birthday! 🎉</span></td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td class="weekend">20</td>
+                    </tr>
+                    <tr>
+                        <td class="weekend">21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td class="holiday">25<span class="event">Christmas</span></td>
+                        <td>26</td>
+                        <td class="weekend">27</td>
+                    </tr>
+                    <tr>
+                        <td class="weekend">28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td class="special-day">31<span class="event">New Year's Eve</span></td>
+                        <td class="other-month">1</td>
+                        <td class="other-month">2</td>
+                        <td class="other-month weekend">3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="legend-section">
+            <h2>Calendar Legend</h2>
+            <div class="legend">
+                <div class="legend-item">
+                    <span class="legend-color today-color"></span>
+                    <span>Today</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color weekend-color"></span>
+                    <span>Weekend</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color holiday-color"></span>
+                    <span>Holiday</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color birthday-color"></span>
+                    <span>Birthday</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color special-color"></span>
+                    <span>Special Event</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color other-month-color"></span>
+                    <span>Other Month</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>Calendar Features</h2>
+            <ul>
+                <li><strong>Semantic Structure:</strong> Uses thead and tbody for proper table organization</li>
+                <li><strong>Visual Hierarchy:</strong> Clear month header and day labels</li>
+                <li><strong>Color Coding:</strong> Different colors for weekends, holidays, and special events</li>
+                <li><strong>Event Display:</strong> Special events shown with descriptive text</li>
+                <li><strong>Current Date:</strong> Today's date is highlighted for easy identification</li>
+                <li><strong>Cross-Month Dates:</strong> Previous/next month dates shown in muted colors</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

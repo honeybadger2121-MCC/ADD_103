@@ -1,0 +1,458 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+/* Navigation Styles */
+nav {
+    background: linear-gradient(135deg, #4b3190 0%, #6a4c93 100%);
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    color: #4b3190;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.table-section,
+.calendar-section {
+    background: white;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.table-section h2,
+.calendar-section h2 {
+    color: #4b3190;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #4b3190;
+    padding-bottom: 0.5rem;
+}
+
+/* Basic Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4b3190;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Basic Table Specific Styles */
+.basic-table {
+    width: 80%;
+}
+
+.basic-table th {
+    background: linear-gradient(135deg, #4b3190 0%, #6a4c93 100%);
+}
+
+.basic-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.basic-table tr:hover {
+    background-color: #e8f4fd;
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+}
+
+/* Merged Table Styles */
+.merged-table th {
+    text-align: center;
+    background: linear-gradient(45deg, #4b3190, #8e44ad);
+}
+
+.merged-table td {
+    text-align: center;
+}
+
+.merged-table tr:hover {
+    background-color: #f0f8ff;
+}
+
+/* Schedule Table Styles */
+.schedule-table {
+    font-size: 0.9rem;
+}
+
+.schedule-table .time-slot {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    color: #4b3190;
+}
+
+.schedule-table td {
+    text-align: center;
+    vertical-align: middle;
+    height: 50px;
+    position: relative;
+}
+
+.schedule-table tr:hover {
+    background-color: #f0f0ff;
+}
+
+/* Class Color Coding */
+.class-web { background-color: #e3f2fd; color: #1976d2; font-weight: bold; }
+.class-db { background-color: #e8f5e8; color: #388e3c; font-weight: bold; }
+.class-prog { background-color: #fff3e0; color: #f57c00; font-weight: bold; }
+.class-net { background-color: #fce4ec; color: #c2185b; font-weight: bold; }
+.class-math { background-color: #f3e5f5; color: #7b1fa2; font-weight: bold; }
+.class-english { background-color: #e0f2f1; color: #00695c; font-weight: bold; }
+.class-sys { background-color: #fff8e1; color: #ff8f00; font-weight: bold; }
+.class-proj { background-color: #e1f5fe; color: #0277bd; font-weight: bold; }
+.class-lab { background-color: #f1f8e9; color: #558b2f; font-weight: bold; }
+.class-study { background-color: #fafafa; color: #616161; font-weight: bold; }
+
+.lunch-break {
+    background: linear-gradient(90deg, #ffeb3b, #ffc107);
+    color: #bf360c;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Grades Table Styles */
+.grades-table {
+    width: 100%;
+    font-size: 0.95rem;
+}
+
+.grades-table th {
+    background: linear-gradient(135deg, #4b3190 0%, #6a4c93 100%);
+    text-align: center;
+}
+
+.grades-table td {
+    text-align: center;
+}
+
+.grades-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.grades-table tr:hover {
+    background-color: #e3f2fd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Grade Color Coding */
+.grade-a { background-color: #4caf50; color: white; font-weight: bold; border-radius: 4px; }
+.grade-b { background-color: #2196f3; color: white; font-weight: bold; border-radius: 4px; }
+.grade-c { background-color: #ff9800; color: white; font-weight: bold; border-radius: 4px; }
+
+/* Calendar Styles */
+.calendar-table {
+    width: 90%;
+    margin: 20px auto;
+    border: 3px solid #4b3190;
+    font-size: 1rem;
+}
+
+.calendar-header th {
+    background: linear-gradient(135deg, #4b3190 0%, #6a4c93 100%);
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.days-header th {
+    background: linear-gradient(135deg, #6a4c93 0%, #8e44ad 100%);
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.calendar-table td {
+    height: 80px;
+    width: 14.28%;
+    text-align: left;
+    vertical-align: top;
+    padding: 8px;
+    border: 1px solid #ddd;
+    position: relative;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Calendar Date Styles */
+.today {
+    background: linear-gradient(135deg, #2196f3 0%, #21cbf3 100%);
+    color: white;
+    box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
+}
+
+.weekend {
+    background-color: #f5f5f5;
+    color: #666;
+}
+
+.holiday {
+    background: linear-gradient(135deg, #f44336 0%, #ff6b6b 100%);
+    color: white;
+}
+
+.birthday {
+    background: linear-gradient(135deg, #ff9800 0%, #ffc107 100%);
+    color: white;
+    animation: pulse 2s infinite;
+}
+
+.special-day {
+    background: linear-gradient(135deg, #9c27b0 0%, #e91e63 100%);
+    color: white;
+}
+
+.other-month {
+    color: #ccc;
+    background-color: #fafafa;
+}
+
+.current-day {
+    background: linear-gradient(135deg, #4caf50 0%, #8bc34a 100%);
+    color: white;
+}
+
+/* Event Labels */
+.event {
+    display: block;
+    font-size: 0.7rem;
+    margin-top: 2px;
+    padding: 2px 4px;
+    background: rgba(255,255,255,0.9);
+    color: #333;
+    border-radius: 3px;
+    font-weight: normal;
+}
+
+/* Birth Month Special Styling */
+.birth-month .calendar-header th {
+    background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+}
+
+.birth-month .days-header th {
+    background: linear-gradient(135deg, #ffa726 0%, #ff9800 100%);
+}
+
+/* Legend Styles */
+.legend-section {
+    background: white;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.legend-section h2 {
+    color: #4b3190;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #4b3190;
+    padding-bottom: 0.5rem;
+}
+
+.legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 500;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.today-color { background: linear-gradient(135deg, #2196f3 0%, #21cbf3 100%); }
+.weekend-color { background-color: #f5f5f5; }
+.holiday-color { background: linear-gradient(135deg, #f44336 0%, #ff6b6b 100%); }
+.birthday-color { background: linear-gradient(135deg, #ff9800 0%, #ffc107 100%); }
+.special-color { background: linear-gradient(135deg, #9c27b0 0%, #e91e63 100%); }
+.other-month-color { background-color: #fafafa; }
+
+/* Info Section Styles */
+.info-section {
+    background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 5px solid #4b3190;
+}
+
+.info-section h2 {
+    color: #4b3190;
+    margin-bottom: 1rem;
+}
+
+.info-section ul {
+    padding-left: 1.5rem;
+}
+
+.info-section li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.info-section code {
+    background: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    color: #e91e63;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { box-shadow: 0 4px 8px rgba(255, 152, 0, 0.3); }
+    50% { box-shadow: 0 6px 15px rgba(255, 152, 0, 0.6); }
+    100% { box-shadow: 0 4px 8px rgba(255, 152, 0, 0.3); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0 1rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .table-section,
+    .calendar-section {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    
+    table {
+        font-size: 0.8rem;
+    }
+    
+    .calendar-table td {
+        height: 60px;
+        font-size: 0.9rem;
+        padding: 4px;
+    }
+    
+    .event {
+        font-size: 0.6rem;
+    }
+    
+    .legend {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 0 10px;
+    }
+    
+    .schedule-table,
+    .grades-table {
+        font-size: 0.7rem;
+    }
+    
+    .calendar-table td {
+        height: 50px;
+        font-size: 0.8rem;
+    }
+    
+    th, td {
+        padding: 8px 5px;
+    }
+}

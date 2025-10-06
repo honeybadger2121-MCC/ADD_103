@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Basics - HTML Tables Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Table Basics</a></li>
+            <li><a href="styling-tables.html">Styling Tables</a></li>
+            <li><a href="calendar.html">Creating a Calendar</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Table Basics</h1>
+        <p>Learn the fundamentals of HTML table structure and semantic markup.</p>
+    </header>
+
+    <main>
+        <section class="table-section">
+            <h2>Basic Table Structure</h2>
+            <p>This table demonstrates the basic HTML table elements: &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt;.</p>
+            
+            <table class="basic-table">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Course</th>
+                        <th>Grade</th>
+                        <th>Credits</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Smith</td>
+                        <td>Web Development</td>
+                        <td>A</td>
+                        <td>3</td>
+                        <td>Enrolled</td>
+                    </tr>
+                    <tr>
+                        <td>Sarah Johnson</td>
+                        <td>Database Design</td>
+                        <td>B+</td>
+                        <td>4</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>Mike Brown</td>
+                        <td>Programming Logic</td>
+                        <td>A-</td>
+                        <td>3</td>
+                        <td>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>Lisa Davis</td>
+                        <td>Network Security</td>
+                        <td>B</td>
+                        <td>4</td>
+                        <td>Enrolled</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="table-section">
+            <h2>Table with Merged Cells</h2>
+            <p>This example shows how to use <code>colspan</code> and <code>rowspan</code> to merge cells.</p>
+            
+            <table class="merged-table">
+                <thead>
+                    <tr>
+                        <th colspan="3">Student Information</th>
+                        <th colspan="2">Academic Details</th>
+                    </tr>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Major</th>
+                        <th>GPA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Alex Rodriguez</td>
+                        <td>alex@student.mcc.edu</td>
+                        <td rowspan="2">Computer Science</td>
+                        <td>3.8</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Emma Wilson</td>
+                        <td>emma@student.mcc.edu</td>
+                        <td>3.9</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>David Chen</td>
+                        <td>david@student.mcc.edu</td>
+                        <td>Information Systems</td>
+                        <td>3.7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="info-section">
+            <h2>Table Elements Explained</h2>
+            <ul>
+                <li><strong>&lt;table&gt;</strong> - The container for the entire table</li>
+                <li><strong>&lt;thead&gt;</strong> - Groups header content</li>
+                <li><strong>&lt;tbody&gt;</strong> - Groups body content</li>
+                <li><strong>&lt;tr&gt;</strong> - Table row</li>
+                <li><strong>&lt;th&gt;</strong> - Table header cell</li>
+                <li><strong>&lt;td&gt;</strong> - Table data cell</li>
+                <li><strong>colspan</strong> - Spans multiple columns</li>
+                <li><strong>rowspan</strong> - Spans multiple rows</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
