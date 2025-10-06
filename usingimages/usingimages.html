@@ -29,10 +29,6 @@
             <area shape="circle" coords="400,150,80" href="#accessories-info" alt="Accessories section" title="Accessories section" tabindex="0">
             <!-- Polygon (triangle-ish): decor area -->
             <area shape="poly" coords="500,50,600,50,550,200" href="#decor-info" alt="Decor section" title="Decor section" tabindex="0">
-            <!-- Rectangle: phone area (translated from sample) -->
-            <area shape="rect" coords="300,170,340,255" href="#phone-info" alt="Phone section" title="Phone section" tabindex="0">
-            <!-- Circle: coffee mug area (translated from sample) -->
-            <area shape="circle" coords="340,300,44" href="#coffee-info" alt="Coffee mug section" title="Coffee mug section" tabindex="0">
         </map>
     </div>
 
@@ -97,7 +93,7 @@
         <h2>Workplace Gear Image Map</h2>
         <p>Use the hotspots to jump to each gear description. All areas are keyboard accessible; press Tab to move through them.</p>
         <figure>
-            <img src="images/workplace.jpg" alt="Workstation with computer, peripherals and accessories" usemap="#gear-map" width="650" height="400" loading="lazy">
+            <img src="images/workplace.jpg" alt="Workstation with computer, peripherals and accessories" usemap="#gear-map" width="650" height="400">
             <map name="gear-map" id="gear-map">
                 <!-- Laptop / main monitor area -->
                 <area shape="rect" coords="50,60,300,250" href="#laptop" alt="Laptop screen area" aria-label="Laptop">
@@ -120,6 +116,39 @@
             <li><a href="#harddrive">External Hard Drive</a></li>
         </ul>
     </section>
+        <script>
+        // Optional: responsive map helper for narrow screens (simple proportional scaling)
+        (function() {
+            const img = document.querySelector('#gear-map-section img[usemap]');
+            const map = document.getElementById('gear-map');
+            if(!img || !map) return;
+            const origW = 650, origH = 400; // base coordinate space
+            function scaleAreas() {
+                if(img.dataset.origCoordsApplied) return; // keep original in data attributes
+                map.querySelectorAll('area').forEach(a => {
+                    if(!a.dataset.origCoords) a.dataset.origCoords = a.coords;
+                });
+                img.dataset.origCoordsApplied = 'true';
+            }
+            function resize() {
+                const w = img.clientWidth;
+                const hRatio = w / origW;
+                map.querySelectorAll('area').forEach(a => {
+                    const o = (a.dataset.origCoords || a.coords).split(',').map(Number);
+                    let scaled;
+                    if(a.shape.toLowerCase() === 'circle') {
+                        scaled = [o[0]*hRatio, o[1]*hRatio, o[2]*hRatio];
+                    } else { // rect or poly (assumes pairs)
+                        scaled = o.map((val,i) => val * hRatio);
+                    }
+                    a.coords = scaled.map(n => Math.round(n)).join(',');
+                });
+            }
+            function init() { scaleAreas(); resize(); }
+            window.addEventListener('resize', resize);
+            if(document.readyState === 'complete') init(); else window.addEventListener('load', init);
+        })();
+        </script>
 
     <section id="laptop">
         <h2>Laptop</h2>

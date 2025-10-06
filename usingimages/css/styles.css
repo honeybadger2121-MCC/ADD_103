@@ -254,11 +254,19 @@ picture img {
 }
 
 #gear-map-section img {
-    max-width: 750px;
-    width: 100%;
-    height: auto;
-    border: 2px solid #ccc;
-    border-radius: 8px;
+        /* IMPORTANT: Fixed size so <area> coordinates (650x400) match pixel grid */
+        width: 650px;
+        height: 400px;
+        max-width: 650px; /* prevent accidental upscale */
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        display: block;
+        margin: 0 auto 1rem;
+}
+
+/* When viewport is narrower than 700px, we allow scale down and proportionally correct coords with map resize helper (added in HTML) */
+@media (max-width: 700px) {
+    #gear-map-section img { width: 100%; height: auto; }
 }
 
 #gear-map-section ul.fallback-links {
