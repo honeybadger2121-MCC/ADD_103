@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring iFrames</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Exploring iFrames</h1>
+        <p class="intro">This page demonstrates how to embed external content using iFrames with custom styling for better readability and accessibility.</p>
+    </header>
+
+    <main>
+        <section class="iframe-section">
+            <h2>Embedded Webpage</h2>
+            <p>This iFrame displays an external website that allows embedding. We're using Wikipedia as an example since it allows iframe embedding.</p>
+            <iframe src="https://en.wikipedia.org/wiki/Web_development" 
+                    class="content-frame" 
+                    title="Wikipedia Web Development Article"
+                    loading="lazy">
+                <p>Your browser does not support iframes. <a href="https://en.wikipedia.org/wiki/Web_development" target="_blank">Visit the page directly</a>.</p>
+            </iframe>
+        </section>
+
+        <section class="iframe-section">
+            <h2>Embedded Video</h2>
+            <p>This iFrame embeds a YouTube video about web development fundamentals.</p>
+            <iframe src="https://www.youtube.com/embed/UB1O30fR-EE" 
+                    class="video-frame"
+                    title="HTML, CSS, JavaScript Explained"
+                    allowfullscreen
+                    loading="lazy">
+                <p>Your browser does not support iframes. <a href="https://www.youtube.com/watch?v=UB1O30fR-EE" target="_blank">Watch on YouTube</a>.</p>
+            </iframe>
+        </section>
+
+        <section class="iframe-section">
+            <h2>Interactive Map</h2>
+            <p>This iFrame shows an embedded Google Map of Maricopa Community Colleges.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.1234567890123!2d-112.073844!3d33.448457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12f4608a4b73%3A0x4c5b1234567890ab!2sMaricopa%20Community%20Colleges!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                    class="map-frame"
+                    title="Maricopa Community Colleges Location"
+                    allowfullscreen
+                    loading="lazy">
+                <p>Your browser does not support iframes. <a href="https://maps.google.com" target="_blank">View on Google Maps</a>.</p>
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <h3>About iFrames</h3>
+        <div class="info-box">
+            <h4>What You Should Know:</h4>
+            <ul>
+                <li><strong>Security:</strong> Some websites block iframes to prevent security issues like clickjacking</li>
+                <li><strong>Performance:</strong> Use the <code>loading="lazy"</code> attribute to improve page load times</li>
+                <li><strong>Accessibility:</strong> Always include meaningful <code>title</code> attributes and fallback content</li>
+                <li><strong>Responsive:</strong> CSS can make iframes adapt to different screen sizes</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,239 @@
+/* General body and page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #4b3190 0%, #6a4c93 100%);
+    color: white;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    margin: 0 0 1rem 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.intro {
+    font-size: 1.1rem;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Main content container */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section styling */
+.iframe-section {
+    background: white;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iframe-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Heading styles */
+h2 {
+    color: #4b3190;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #4b3190;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: #6a4c93;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    color: #4b3190;
+    margin-bottom: 0.5rem;
+}
+
+/* Paragraph styling */
+p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* General iframe styling */
+iframe {
+    display: block;
+    margin: 20px auto;
+    border: 4px solid #4b3190;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(75, 49, 144, 0.2);
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+iframe:hover {
+    border-color: #6a4c93;
+    box-shadow: 0 8px 30px rgba(75, 49, 144, 0.3);
+    transform: scale(1.02);
+}
+
+/* Specific iframe sizes and styles */
+.content-frame {
+    width: 90%;
+    max-width: 800px;
+    height: 500px;
+    min-height: 400px;
+}
+
+.video-frame {
+    width: 100%;
+    max-width: 720px;
+    height: 405px;
+    aspect-ratio: 16/9; /* Maintains proper video proportions */
+}
+
+.map-frame {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    border-color: #28a745; /* Green border for maps */
+}
+
+.map-frame:hover {
+    border-color: #20c997;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #4b3190 0%, #6a4c93 100%);
+    color: white;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Info box styling */
+.info-box {
+    background: rgba(255,255,255,0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: left;
+    display: inline-block;
+    max-width: 600px;
+}
+
+.info-box ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.info-box li {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+.info-box code {
+    background: rgba(255,255,255,0.2);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .iframe-section {
+        margin: 1rem 0;
+        padding: 1.5rem;
+    }
+    
+    .content-frame {
+        width: 95%;
+        height: 350px;
+    }
+    
+    .video-frame {
+        height: 250px;
+    }
+    
+    .map-frame {
+        height: 300px;
+    }
+    
+    main {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1.5rem 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .iframe-section {
+        padding: 1rem;
+    }
+    
+    .content-frame {
+        height: 300px;
+    }
+    
+    .video-frame {
+        height: 200px;
+    }
+    
+    .map-frame {
+        height: 250px;
+    }
+}
+
+/* Loading states and fallbacks */
+iframe[src=""] {
+    background: #f8f9fa url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50%" y="50%" text-anchor="middle" fill="%23999">Loading...</text></svg>') center center no-repeat;
+}
+
+/* Print styles */
+@media print {
+    iframe {
+        border: 2px solid #333;
+        box-shadow: none;
+    }
+    
+    .iframe-section {
+        break-inside: avoid;
+        box-shadow: none;
+    }
+    
+    footer {
+        background: #f8f9fa;
+        color: #333;
+    }
+}
