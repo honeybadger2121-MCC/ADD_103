@@ -23,12 +23,12 @@
         <p>Click on the LEFT half or RIGHT half of the image below:</p>
         <img src="https://picsum.photos/400/200" alt="Simple placeholder image divided into two sections" usemap="#simplemap" id="simple-img" width="400" height="200">
         <map name="simplemap" id="simplemap" aria-label="Two clickable sections of the image">
-            <!-- Left section (0-180) -->
-            <area shape="rect" coords="0,0,180,200" href="#section-1" alt="Left section" title="Left section" tabindex="0">
-            <!-- Right section (220-400) -->
-            <area shape="rect" coords="220,0,400,200" href="#section-2" alt="Right section" title="Right section" tabindex="0">
+            <!-- True left half (0-199) -->
+            <area shape="rect" coords="0,0,199,200" href="#section-1" alt="Left half" title="Left half" tabindex="0">
+            <!-- True right half (201-400) -->
+            <area shape="rect" coords="201,0,400,200" href="#section-2" alt="Right half" title="Right half" tabindex="0">
         </map>
-        <p><strong>Debug info:</strong> Left: (0,0) to (180,200) | Right: (220,0) to (400,200) | Big gap: 180-220</p>
+        <p><strong>Coverage:</strong> Left half: pixels 0-199 | Right half: pixels 201-400 | 1px gap at x=200</p>
         <p><strong>Test:</strong> <a href="#section-1">Direct link to Section 1</a> | <a href="#section-2">Direct link to Section 2</a></p>
     </div>
 
@@ -72,14 +72,14 @@
     </div>
 
     <section id="simple-demo">
-        <h2>How This Super Simple Image Map Works</h2>
-        <p>The image map uses separated rectangular coordinates with gaps to avoid conflicts:</p>
+        <h2>True Left/Right Half Coverage</h2>
+        <p>Now the image map covers almost the entire image with just a 1-pixel gap:</p>
         <ul>
-            <li><strong>Left section:</strong> coords="0,0,180,200" - covers left side with right edge at x=180</li>
-            <li><strong>Right section:</strong> coords="220,0,400,200" - covers right side starting at x=220</li>
-            <li><strong>Gap:</strong> x=180 to x=220 (40px gap) prevents coordinate overlap</li>
+            <li><strong>Left half:</strong> coords="0,0,199,200" - covers pixels 0-199 (true left half)</li>
+            <li><strong>Right half:</strong> coords="201,0,400,200" - covers pixels 201-400 (true right half)</li>
+            <li><strong>Minimal gap:</strong> Only 1 pixel at x=200 to prevent coordinate conflicts</li>
         </ul>
-        <p>The direct links above will test if the target sections exist and work properly!</p>
+        <p>Click anywhere on the actual left or right side of the image - it should work now!</p>
     </section>
 
 
