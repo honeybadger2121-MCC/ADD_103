@@ -71,6 +71,11 @@ h4 {
     margin-bottom: 0.5rem;
 }
 
+.info-box h4 {
+    color: #2d1b69;
+    font-weight: bold;
+}
+
 /* Paragraph styling */
 p {
     margin-bottom: 1rem;
@@ -125,21 +130,23 @@ iframe:hover {
 footer {
     margin-top: 3rem;
     padding: 2rem;
-    background: linear-gradient(135deg, #4b3190 0%, #6a4c93 100%);
-    color: white;
+    background: linear-gradient(135deg, #2d1b69 0%, #4b3190 100%);
+    color: #ffffff;
     text-align: center;
     border-radius: 12px 12px 0 0;
 }
 
 /* Info box styling */
 .info-box {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.95);
+    color: #333;
     padding: 1.5rem;
     border-radius: 8px;
     margin-top: 1rem;
     text-align: left;
     display: inline-block;
     max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .info-box ul {
@@ -150,14 +157,17 @@ footer {
 .info-box li {
     margin-bottom: 0.8rem;
     font-size: 0.95rem;
+    color: #333;
 }
 
 .info-box code {
-    background: rgba(255,255,255,0.2);
+    background: #e9ecef;
+    color: #495057;
     padding: 2px 6px;
     border-radius: 4px;
     font-family: 'Courier New', monospace;
     font-size: 0.9em;
+    border: 1px solid #ddd;
 }
 
 /* Responsive design */
