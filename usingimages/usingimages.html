@@ -19,43 +19,28 @@
     </section>
 
     <div id="img-map">
-        <h2>Simple Image Map</h2>
-        <p>Click on the four colored sections below (top-left, top-right, bottom-left, bottom-right):</p>
-        <img src="https://picsum.photos/400/300" alt="Simple placeholder image divided into sections" usemap="#simplemap" id="simple-img" width="400" height="300">
-        <map name="simplemap" id="simplemap" aria-label="Four clickable sections of the image">
-            <!-- Top-left quarter -->
-            <area shape="rect" coords="0,0,200,150" href="#section-1" alt="Top-left section" title="Top-left section" tabindex="0">
-            <!-- Top-right quarter -->
-            <area shape="rect" coords="200,0,400,150" href="#section-2" alt="Top-right section" title="Top-right section" tabindex="0">
-            <!-- Bottom-left quarter -->
-            <area shape="rect" coords="0,150,200,300" href="#section-3" alt="Bottom-left section" title="Bottom-left section" tabindex="0">
-            <!-- Bottom-right quarter -->
-            <area shape="rect" coords="200,150,400,300" href="#section-4" alt="Bottom-right section" title="Bottom-right section" tabindex="0">
+        <h2>Super Simple Image Map</h2>
+        <p>Click on the LEFT half or RIGHT half of the image below:</p>
+        <img src="https://picsum.photos/400/200" alt="Simple placeholder image divided into two sections" usemap="#simplemap" id="simple-img" width="400" height="200">
+        <map name="simplemap" id="simplemap" aria-label="Two clickable sections of the image">
+            <!-- Left half -->
+            <area shape="rect" coords="0,0,200,200" href="#section-1" alt="Left section" title="Left section" tabindex="0">
+            <!-- Right half -->
+            <area shape="rect" coords="200,0,400,200" href="#section-2" alt="Right section" title="Right section" tabindex="0">
         </map>
+        <p><strong>Debug info:</strong> Left side: (0,0) to (200,200) | Right side: (200,0) to (400,200)</p>
     </div>
 
     <!-- Target sections for simple image map -->
     <div id="section-1">
-        <h2>Section 1 - Top Left</h2>
-        <p>This is the top-left section of our simple image map. Image maps allow you to create clickable hotspots on any image!</p>
+        <h2>Section 1 - LEFT HALF</h2>
+        <p>🎉 SUCCESS! You clicked the LEFT half of the image! This proves the image map coordinates are working correctly.</p>
         <a href="#img-map">← Back to Image Map</a>
     </div>
 
     <div id="section-2">
-        <h2>Section 2 - Top Right</h2>
-        <p>This is the top-right section. Notice how easy it is to create rectangular coordinates when the image is divided into simple, even sections.</p>
-        <a href="#img-map">← Back to Image Map</a>
-    </div>
-
-    <div id="section-3">
-        <h2>Section 3 - Bottom Left</h2>
-        <p>This is the bottom-left section. Simple rectangular coordinates make image maps much more reliable and easier to maintain.</p>
-        <a href="#img-map">← Back to Image Map</a>
-    </div>
-
-    <div id="section-4">
-        <h2>Section 4 - Bottom Right</h2>
-        <p>This is the bottom-right section. With clear boundaries, users can easily understand where to click on the image.</p>
+        <h2>Section 2 - RIGHT HALF</h2>
+        <p>🎉 SUCCESS! You clicked the RIGHT half of the image! Both sections are now working properly.</p>
         <a href="#img-map">← Back to Image Map</a>
     </div>
 
@@ -86,15 +71,13 @@
     </div>
 
     <section id="simple-demo">
-        <h2>How Simple Image Maps Work</h2>
-        <p>The image map above uses basic rectangular coordinates that divide the image into four equal sections:</p>
+        <h2>How This Super Simple Image Map Works</h2>
+        <p>The image map above uses the most basic possible rectangular coordinates:</p>
         <ul>
-            <li><strong>Top-left:</strong> coords="0,0,200,150" - starts at (0,0) and goes to (200,150)</li>
-            <li><strong>Top-right:</strong> coords="200,0,400,150" - starts at (200,0) and goes to (400,150)</li>
-            <li><strong>Bottom-left:</strong> coords="0,150,200,300" - starts at (0,150) and goes to (200,300)</li>
-            <li><strong>Bottom-right:</strong> coords="200,150,400,300" - starts at (200,150) and goes to (400,300)</li>
+            <li><strong>Left half:</strong> coords="0,0,200,200" - starts at top-left (0,0) and goes to middle-bottom (200,200)</li>
+            <li><strong>Right half:</strong> coords="200,0,400,200" - starts at top-middle (200,0) and goes to bottom-right (400,200)</li>
         </ul>
-        <p>This simple approach eliminates coordinate confusion and makes the image map reliable!</p>
+        <p>With just 2 sections, there's no way to have coordinate confusion. Each half should work perfectly!</p>
     </section>
 
 
