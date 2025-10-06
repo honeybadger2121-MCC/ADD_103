@@ -96,15 +96,15 @@
             <img src="images/workplace.jpg" alt="Workstation with computer, peripherals and accessories" usemap="#gear-map" width="650" height="400">
             <map name="gear-map" id="gear-map">
                 <!-- Laptop / main monitor area -->
-                <area shape="rect" coords="50,60,300,250" href="#laptop" alt="Laptop screen area" aria-label="Laptop">
-                <!-- Headphones (approximate right upper circle) -->
-                <area shape="circle" coords="430,120,55" href="#headphones" alt="Headphones" aria-label="Headphones">
-                <!-- Keyboard (below laptop) -->
-                <area shape="rect" coords="70,255,310,325" href="#keyboard" alt="Keyboard" aria-label="Keyboard">
-                <!-- Mouse (right lower small rectangle) -->
-                <area shape="rect" coords="500,265,560,330" href="#mouse" alt="Mouse" aria-label="Mouse">
-                <!-- External drive (small top right rectangle) -->
-                <area shape="rect" coords="500,60,580,120" href="#harddrive" alt="External hard drive" aria-label="External hard drive">
+                <area shape="rect" coords="50,60,300,250" href="#laptop" alt="Laptop screen area" aria-label="Laptop" tabindex="0">
+                <!-- Headphones (repositioned to actual location) -->
+                <area shape="circle" coords="180,80,40" href="#headphones" alt="Headphones" aria-label="Headphones" tabindex="0">
+                <!-- Keyboard (repositioned below screen) -->
+                <area shape="rect" coords="100,280,280,350" href="#keyboard" alt="Keyboard" aria-label="Keyboard" tabindex="0">
+                <!-- Mouse (repositioned to right side) -->
+                <area shape="rect" coords="320,300,380,360" href="#mouse" alt="Mouse" aria-label="Mouse" tabindex="0">
+                <!-- Journal/notebook (corrected from hard drive) -->
+                <area shape="rect" coords="450,150,580,280" href="#journal" alt="Journal or notebook" aria-label="Journal" tabindex="0">
             </map>
         </figure>
         <h3>Fallback Links</h3>
@@ -113,7 +113,7 @@
             <li><a href="#headphones">Headphones</a></li>
             <li><a href="#keyboard">Keyboard</a></li>
             <li><a href="#mouse">Mouse</a></li>
-            <li><a href="#harddrive">External Hard Drive</a></li>
+            <li><a href="#journal">Journal</a></li>
         </ul>
     </section>
         <script>
@@ -170,9 +170,9 @@
         <p>A precise pointing device allows smoother navigation and reduces strain versus trackpads for design or data work.</p>
         <a href="#gear-map-section">Back to Gear Map</a>
     </section>
-    <section id="harddrive">
-        <h2>External Hard Drive</h2>
-        <p>External storage provides reliable backups and extra capacity for large media, project archives, or version snapshots.</p>
+    <section id="journal">
+        <h2>Journal</h2>
+        <p>A physical notebook or journal provides a tactile way to capture ideas, sketches, and thoughts away from digital screens. Many professionals find handwriting helps with memory retention and creative thinking.</p>
         <a href="#gear-map-section">Back to Gear Map</a>
     </section>
 
