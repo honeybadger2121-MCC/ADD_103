@@ -19,47 +19,43 @@
     </section>
 
     <div id="img-map">
-        <h2>Image Map</h2>
-        <p>Click on different areas of the workplace image below:</p>
-        <img src="images/workplace.jpg" alt="Modern workplace with computer and accessories" usemap="#workplacemap" id="workplace-img" width="650" height="400">
-        <map name="workplacemap" id="workplacemap" aria-label="Clickable regions describing parts of a modern workplace image">
-            <!-- Rectangle: computer area -->
-            <area shape="rect" coords="50,50,300,250" href="#computer-info" alt="Computer section" title="Computer section" tabindex="0">
-            <!-- Circle: accessories area -->
-            <area shape="circle" coords="400,150,80" href="#accessories-info" alt="Accessories section" title="Accessories section" tabindex="0">
-            <!-- Polygon (triangle-ish): decor area -->
-            <area shape="poly" coords="500,50,600,50,550,200" href="#decor-info" alt="Decor section" title="Decor section" tabindex="0">
+        <h2>Simple Image Map</h2>
+        <p>Click on the four colored sections below (top-left, top-right, bottom-left, bottom-right):</p>
+        <img src="https://picsum.photos/400/300" alt="Simple placeholder image divided into sections" usemap="#simplemap" id="simple-img" width="400" height="300">
+        <map name="simplemap" id="simplemap" aria-label="Four clickable sections of the image">
+            <!-- Top-left quarter -->
+            <area shape="rect" coords="0,0,200,150" href="#section-1" alt="Top-left section" title="Top-left section" tabindex="0">
+            <!-- Top-right quarter -->
+            <area shape="rect" coords="200,0,400,150" href="#section-2" alt="Top-right section" title="Top-right section" tabindex="0">
+            <!-- Bottom-left quarter -->
+            <area shape="rect" coords="0,150,200,300" href="#section-3" alt="Bottom-left section" title="Bottom-left section" tabindex="0">
+            <!-- Bottom-right quarter -->
+            <area shape="rect" coords="200,150,400,300" href="#section-4" alt="Bottom-right section" title="Bottom-right section" tabindex="0">
         </map>
     </div>
 
-    <!-- Target sections for image map -->
-    <div id="computer-info">
-        <h2>Computer Section</h2>
-        <p>Modern computers are essential tools for productivity in today's workplace. They enable us to create, communicate, and collaborate effectively.</p>
+    <!-- Target sections for simple image map -->
+    <div id="section-1">
+        <h2>Section 1 - Top Left</h2>
+        <p>This is the top-left section of our simple image map. Image maps allow you to create clickable hotspots on any image!</p>
         <a href="#img-map">← Back to Image Map</a>
     </div>
 
-    <div id="accessories-info">
-        <h2>Accessories Section</h2>
-        <p>Workplace accessories like keyboards, mice, and monitors enhance our computing experience and improve ergonomics.</p>
+    <div id="section-2">
+        <h2>Section 2 - Top Right</h2>
+        <p>This is the top-right section. Notice how easy it is to create rectangular coordinates when the image is divided into simple, even sections.</p>
         <a href="#img-map">← Back to Image Map</a>
     </div>
 
-    <div id="decor-info">
-        <h2>Decor Section</h2>
-        <p>A well-decorated workspace can boost creativity and productivity. Personal touches make the environment more comfortable and inspiring.</p>
+    <div id="section-3">
+        <h2>Section 3 - Bottom Left</h2>
+        <p>This is the bottom-left section. Simple rectangular coordinates make image maps much more reliable and easier to maintain.</p>
         <a href="#img-map">← Back to Image Map</a>
     </div>
 
-    <div id="phone-info">
-        <h2>Phone Section</h2>
-        <p>Office phones and mobile devices are vital for quick communication, conferencing, and daily coordination. A reliable phone setup helps teams stay connected and responsive.</p>
-        <a href="#img-map">← Back to Image Map</a>
-    </div>
-
-    <div id="coffee-info">
-        <h2>Coffee Section</h2>
-        <p>A warm mug of coffee (or tea) fuels focus and creates a welcoming atmosphere. Breaks with a beverage can improve productivity and mental clarity throughout the day.</p>
+    <div id="section-4">
+        <h2>Section 4 - Bottom Right</h2>
+        <p>This is the bottom-right section. With clear boundaries, users can easily understand where to click on the image.</p>
         <a href="#img-map">← Back to Image Map</a>
     </div>
 
@@ -89,92 +85,19 @@
         <p>Nature's beauty changes with the seasons, and trees are perfect examples of this natural transformation.</p>
     </div>
 
-    <section id="gear-map-section">
-        <h2>Workplace Gear Image Map</h2>
-        <p>Use the hotspots to jump to each gear description. All areas are keyboard accessible; press Tab to move through them.</p>
-        <figure>
-            <img src="images/workplace.jpg" alt="Workstation with computer, peripherals and accessories" usemap="#gear-map" width="650" height="400">
-            <map name="gear-map" id="gear-map">
-                <!-- Laptop / main monitor area (top right) -->
-                <area shape="rect" coords="480,120,620,280" href="#laptop" alt="Laptop screen area" aria-label="Laptop" tabindex="0">
-                <!-- Headphones (left side, white headphones) -->
-                <area shape="circle" coords="480,340,60" href="#headphones" alt="Headphones" aria-label="Headphones" tabindex="0">
-                <!-- Keyboard (center area) -->
-                <area shape="rect" coords="420,320,580,380" href="#keyboard" alt="Keyboard" aria-label="Keyboard" tabindex="0">
-                <!-- Mouse (right side, white mouse) -->
-                <area shape="circle" coords="590,340,40" href="#mouse" alt="Mouse" aria-label="Mouse" tabindex="0">
-                <!-- Journal/notebook (top area with pen) -->
-                <area shape="rect" coords="480,200,550,260" href="#journal" alt="Journal or notebook" aria-label="Journal" tabindex="0">
-            </map>
-        </figure>
-        <h3>Fallback Links</h3>
-        <ul class="fallback-links">
-            <li><a href="#laptop">Laptop</a></li>
-            <li><a href="#headphones">Headphones</a></li>
-            <li><a href="#keyboard">Keyboard</a></li>
-            <li><a href="#mouse">Mouse</a></li>
-            <li><a href="#journal">Journal</a></li>
+    <section id="simple-demo">
+        <h2>How Simple Image Maps Work</h2>
+        <p>The image map above uses basic rectangular coordinates that divide the image into four equal sections:</p>
+        <ul>
+            <li><strong>Top-left:</strong> coords="0,0,200,150" - starts at (0,0) and goes to (200,150)</li>
+            <li><strong>Top-right:</strong> coords="200,0,400,150" - starts at (200,0) and goes to (400,150)</li>
+            <li><strong>Bottom-left:</strong> coords="0,150,200,300" - starts at (0,150) and goes to (200,300)</li>
+            <li><strong>Bottom-right:</strong> coords="200,150,400,300" - starts at (200,150) and goes to (400,300)</li>
         </ul>
+        <p>This simple approach eliminates coordinate confusion and makes the image map reliable!</p>
     </section>
-        <script>
-        // Optional: responsive map helper for narrow screens (simple proportional scaling)
-        (function() {
-            const img = document.querySelector('#gear-map-section img[usemap]');
-            const map = document.getElementById('gear-map');
-            if(!img || !map) return;
-            const origW = 650, origH = 400; // base coordinate space
-            function scaleAreas() {
-                if(img.dataset.origCoordsApplied) return; // keep original in data attributes
-                map.querySelectorAll('area').forEach(a => {
-                    if(!a.dataset.origCoords) a.dataset.origCoords = a.coords;
-                });
-                img.dataset.origCoordsApplied = 'true';
-            }
-            function resize() {
-                const w = img.clientWidth;
-                const hRatio = w / origW;
-                map.querySelectorAll('area').forEach(a => {
-                    const o = (a.dataset.origCoords || a.coords).split(',').map(Number);
-                    let scaled;
-                    if(a.shape.toLowerCase() === 'circle') {
-                        scaled = [o[0]*hRatio, o[1]*hRatio, o[2]*hRatio];
-                    } else { // rect or poly (assumes pairs)
-                        scaled = o.map((val,i) => val * hRatio);
-                    }
-                    a.coords = scaled.map(n => Math.round(n)).join(',');
-                });
-            }
-            function init() { scaleAreas(); resize(); }
-            window.addEventListener('resize', resize);
-            if(document.readyState === 'complete') init(); else window.addEventListener('load', init);
-        })();
-        </script>
 
-    <section id="laptop">
-        <h2>Laptop</h2>
-        <p>The central workstation for productivity—managing code, documents, design, and collaboration tools in one portable machine.</p>
-        <a href="#gear-map-section">Back to Gear Map</a>
-    </section>
-    <section id="headphones">
-        <h2>Headphones</h2>
-        <p>Noise-isolating headphones help maintain focus in busy or shared environments while improving audio clarity for calls.</p>
-        <a href="#gear-map-section">Back to Gear Map</a>
-    </section>
-    <section id="keyboard">
-        <h2>Keyboard</h2>
-        <p>A responsive keyboard enables faster typing and ergonomic comfort during long work sessions.</p>
-        <a href="#gear-map-section">Back to Gear Map</a>
-    </section>
-    <section id="mouse">
-        <h2>Mouse</h2>
-        <p>A precise pointing device allows smoother navigation and reduces strain versus trackpads for design or data work.</p>
-        <a href="#gear-map-section">Back to Gear Map</a>
-    </section>
-    <section id="journal">
-        <h2>Journal</h2>
-        <p>A physical notebook or journal provides a tactile way to capture ideas, sketches, and thoughts away from digital screens. Many professionals find handwriting helps with memory retention and creative thinking.</p>
-        <a href="#gear-map-section">Back to Gear Map</a>
-    </section>
+
 
     <div id="linked-image">
         <h2>Linked Image</h2>
