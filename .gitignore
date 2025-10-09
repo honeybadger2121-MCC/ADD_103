@@ -1,0 +1,24 @@
+# Ignore Module 8 CRAP Project folder
+module8-crap-project/
+
+# Common files to ignore
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Node modules (if any)
+node_modules/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Temporary files
+*~
+*.swp
+*.swo
