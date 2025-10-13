@@ -3,65 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hiking - Benjamin Sherman</title>
+    <title>Ben Sherman - Hiking Adventures | Trail Explorer</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <!-- HEADER -->
     <header>
-        <h1>Hiking Adventures</h1>
-        <!-- Navigation -->
-        <nav>
-            <ul>
-                <li><a href="../introduceyourself.html">Home</a></li>
-                <li><a href="gaming.html">Gaming</a></li>
-                <li><a href="hiking.html">Hiking</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <h1>Ben Sherman</h1>
+            <!-- Navigation -->
+            <nav>
+                <ul class="nav-buttons">
+                    <li><a href="../index.html" class="nav-btn">Home</a></li>
+                    <li><a href="hiking.html" class="nav-btn active">Hiking</a></li>
+                    <li><a href="gaming.html" class="nav-btn">Gaming</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- MAIN CONTENT -->
     <main>
-        <!-- Featured Trail -->
-        <section class="featured-trail">
-            <img src="../images/hiking-image.jpg" alt="Beautiful hiking trail" class="featured-img">
-            <h2>Favorite Trail</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </section>
-
-        <!-- Trail Gallery -->
-        <section class="trail-gallery">
-            <h2>Trail Gallery</h2>
-            <div class="trail-grid">
-                <article>
-                    <img src="../images/hiking-image.jpg" alt="Trail view 1" class="trail-img">
-                    <h3>Trail Name 1</h3>
-                    <p>Brief trail description...</p>
-                </article>
-                <article>
-                    <img src="../images/hiking-image.jpg" alt="Trail view 2" class="trail-img">
-                    <h3>Trail Name 2</h3>
-                    <p>Brief trail description...</p>
-                </article>
-                <article>
-                    <img src="../images/hiking-image.jpg" alt="Trail view 3" class="trail-img">
-                    <h3>Trail Name 3</h3>
-                    <p>Brief trail description...</p>
-                </article>
+        <!-- Page Title Section -->
+        <section class="page-header">
+            <div class="page-title-container">
+                <h2>Hiking Adventures</h2>
+                <p class="page-subtitle">Exploring nature's wonders, one trail at a time</p>
             </div>
         </section>
 
-        <!-- Hiking Gear -->
-        <section class="gear">
-            <h2>Essential Gear</h2>
-            <img src="../images/hiking-image.jpg" alt="Hiking gear" class="gear-img">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <!-- Featured Hiking Content -->
+        <section class="content-section">
+            <div class="content-grid">
+                <!-- Main Content Area -->
+                <article class="main-content">
+                    <img src="../images/hiking-image.jpg" alt="Ben hiking on a scenic mountain trail" class="feature-image">
+                    
+                    <h3>My Hiking Journey</h3>
+                    <p>Hiking has become more than just a hobby for me – it's a way to disconnect from the digital world and reconnect with nature. There's something profoundly peaceful about the rhythm of footsteps on a trail, the fresh mountain air, and the stunning vistas that await at every turn.</p>
+                    
+                    <p>I started hiking as a way to stay active and quickly discovered it was the perfect antidote to long days spent troubleshooting IT issues. The physical challenge combined with the mental clarity that comes from being in nature has made hiking an essential part of my life.</p>
+                    
+                    <h3>Favorite Hiking Destinations</h3>
+                    <ul class="hiking-list">
+                        <li><strong>Local Mountain Trails:</strong> My go-to weekend escape with varying difficulty levels</li>
+                        <li><strong>State Park Systems:</strong> Well-maintained trails with incredible biodiversity</li>
+                        <li><strong>Coastal Hiking Routes:</strong> Where mountains meet the ocean - breathtaking views</li>
+                        <li><strong>Forest Loop Trails:</strong> Perfect for peaceful morning hikes and wildlife spotting</li>
+                    </ul>
+                    
+                    <h3>Hiking Philosophy</h3>
+                    <p>I believe in sustainable hiking practices that preserve the natural beauty for future generations. This means following Leave No Trace principles, staying on designated trails, and respecting wildlife habitats. Every hike is an opportunity to practice mindfulness and appreciate the incredible natural world around us.</p>
+                </article>
+
+                <!-- Sidebar Content -->
+                <aside class="sidebar">
+                    <div class="sidebar-section">
+                        <h4>Essential Gear</h4>
+                        <ul class="gear-list">
+                            <li>Sturdy hiking boots</li>
+                            <li>Weather-appropriate layers</li>
+                            <li>Navigation tools & map</li>
+                            <li>First aid kit</li>
+                            <li>Plenty of water</li>
+                            <li>High-energy snacks</li>
+                            <li>Camera for capturing moments</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h4>Trail Stats</h4>
+                        <ul class="stats-list">
+                            <li><strong>Miles Hiked This Year:</strong> 150+</li>
+                            <li><strong>Favorite Distance:</strong> 5-8 miles</li>
+                            <li><strong>Best Hiking Season:</strong> Fall</li>
+                            <li><strong>Preferred Difficulty:</strong> Moderate</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h4>Scenic Views</h4>
+                        <img src="../images/aurora-borealis.jpg" alt="Beautiful natural landscape view from hiking trail" class="sidebar-image">
+                        <p>The breathtaking views from mountain peaks make every challenging climb worthwhile.</p>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h4>Recent Adventures</h4>
+                        <p><em>"Just completed an amazing 7-mile loop trail with incredible fall foliage. The changing leaves create a natural cathedral that never fails to inspire."</em></p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h3>Ready for Adventure?</h3>
+                <p>Hiking is for everyone, regardless of experience level. Start with local trails, invest in good gear, and always let someone know your hiking plans. The trails are waiting!</p>
+            </div>
         </section>
     </main>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2025 Benjamin Sherman</p>
+        <div class="footer-content">
+            <p>© 2025 Ben Sherman | IT Professional | Outdoor Enthusiast | Gamer</p>
+            <p><em>Every trail tells a story - what will yours be?</em></p>
+        </div>
     </footer>
 </body>
 </html>
