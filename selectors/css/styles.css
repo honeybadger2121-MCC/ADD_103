@@ -1,9 +1,10 @@
 body{
-    background-color: ivory;
-    font-family: arial, helvetica, sans-serif;
-    padding: 10px;
-    line-height: 1.5;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Georgia', 'Times New Roman', serif;
+    padding: 20px;
+    line-height: 1.6;
     font-size: 18px;
+    color: #333;
 }
 
 div, header, footer, nav, main, aside{
@@ -13,38 +14,53 @@ div, header, footer, nav, main, aside{
     padding: 10px;
 }
 
-/* Distinctive colors for semantic elements */
+/* Ben's personalized semantic element styling */
 header { 
-    background-color: #e3f2fd; 
+    background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    border-radius: 8px 8px 0 0;
 }
 
 nav { 
-    background-color: #d4edda; 
+    background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+    color: white;
 }
 
 main { 
-    background-color: #fff3cd; 
+    background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 aside { 
-    background-color: #e2e3e5; 
+    background: linear-gradient(45deg, #43e97b 0%, #38f9d7 100%);
+    color: #333;
 }
 
 footer { 
-    background-color: #f8d7da; 
+    background: linear-gradient(45deg, #fa709a 0%, #fee140 100%);
+    color: #333;
+    border-radius: 0 0 8px 8px;
 }
 
-/* New Classes */
+/* Ben's custom classes - reusable design elements */
 .highlight { 
-    color: #4b3190; 
-    font-weight: bold; 
+    color: #2c3e50; 
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    border-bottom: 2px solid #e74c3c;
+    display: inline-block;
 }
 
 .special-text { 
-    background-color: #fefcbf; 
+    background: linear-gradient(45deg, #ffecd2 0%, #fcb69f 100%);
     font-style: italic; 
-    padding: 5px;
-    border-radius: 3px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border-left: 4px solid #e67e22;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 /* New IDs */
@@ -76,14 +92,41 @@ footer {
     border-radius: 20px;
 }
 
+/* Navigation styling */
 nav{
     text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Typography improvements */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.2em;
 }
 
 h2{
     text-align: left;
+    color: #2c3e50;
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .container p{
     margin-left: 15px;
+    margin-bottom: 12px;
 }

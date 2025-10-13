@@ -1,6 +1,10 @@
 # Ignore Module 8 CRAP Project folder
 module8-crap-project/
 
+# Ignore CSS Selectors Project folder
+selectors/
+selectors-start/
+
 # Common files to ignore
 *.log
 *.tmp

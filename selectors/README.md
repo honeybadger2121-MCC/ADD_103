@@ -1,10 +1,16 @@
-# My CSS Selectors Learning Journey
+# Ben's CSS Selectors Learning Journey
 
-Hey there! 👋 This is my completed CSS selectors assignment, and I'm pretty excited about how it turned out. This project really helped me understand how different types of selectors work and why they're so powerful for styling web pages.
+Hey there! 👋 I'm Ben Sherman, and this is my personalized CSS selectors showcase! What started as a basic assignment template has become my own unique web development portfolio piece. This project really helped me understand how different types of selectors work and why they're so powerful for creating engaging, accessible websites.
 
 ## What I Built
 
-I started with some basic HTML structure and transformed it into a colorful, well-organized webpage using CSS selectors. The goal was to learn the difference between classes (which you can reuse) and IDs (which are unique), plus how to style semantic HTML elements.
+I transformed a generic template into my personal web development portfolio showcase! Instead of keeping the placeholder "Meri" content, I made it all about my journey learning CSS and web development. The page now features:
+
+- **My actual name and branding** (Ben Sherman's Web Development Portfolio)
+- **Personal content** about my learning goals and interests
+- **Custom navigation** with meaningful sections (Projects, Skills, Contact)
+- **Unique styling** with gradient backgrounds and modern design elements
+- **My personality** showing through in the writing and visual choices
 
 Here's what's in my project:
 
