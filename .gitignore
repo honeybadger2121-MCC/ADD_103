@@ -1,8 +1,7 @@
 # Ignore Module 8 CRAP Project folder
 module8-crap-project/
 
-# Ignore CSS Selectors Project folder
-selectors/
+# Ignore CSS Selectors Project starter folder (keep the completed version)
 selectors-start/
 
 # Common files to ignore
