@@ -1,0 +1,122 @@
+/* Navigation Button Styles - Shared across all project pages */
+
+.portfolio-nav-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.portfolio-nav-button a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.portfolio-nav-button a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+/* Color variations for different pages */
+.nav-css-template {
+    background: linear-gradient(45deg, #2c5530, #4a7c59);
+}
+
+.nav-css3-demo {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+}
+
+.nav-intro {
+    background: linear-gradient(45deg, #2c5530, #4a7c59);
+}
+
+.nav-project1 {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+}
+
+.nav-chrome-tools {
+    background: linear-gradient(45deg, #3742fa, #2f3542);
+}
+
+.nav-demo-site {
+    background: linear-gradient(45deg, #a29bfe, #6c5ce7);
+}
+
+.nav-review {
+    background: linear-gradient(45deg, #feca57, #ff9ff3);
+}
+
+.nav-lists {
+    background: linear-gradient(45deg, #fd79a8, #fdcb6e);
+}
+
+.nav-tables {
+    background: linear-gradient(45deg, #74b9ff, #0984e3);
+}
+
+.nav-selectors {
+    background: linear-gradient(45deg, #00b894, #00cec9);
+}
+
+.nav-default {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+}
+
+/* Hover effects for different colors */
+.nav-css-template:hover {
+    box-shadow: 0 8px 30px rgba(44, 85, 48, 0.6);
+}
+
+.nav-css3-demo:hover {
+    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
+}
+
+.nav-intro:hover {
+    box-shadow: 0 8px 30px rgba(44, 85, 48, 0.6);
+}
+
+.nav-project1:hover {
+    box-shadow: 0 8px 30px rgba(255, 107, 107, 0.6);
+}
+
+.nav-chrome-tools:hover {
+    box-shadow: 0 8px 30px rgba(55, 66, 250, 0.6);
+}
+
+.nav-demo-site:hover {
+    box-shadow: 0 8px 30px rgba(162, 155, 254, 0.6);
+}
+
+.nav-review:hover {
+    box-shadow: 0 8px 30px rgba(254, 202, 87, 0.6);
+}
+
+.nav-lists:hover {
+    box-shadow: 0 8px 30px rgba(253, 121, 168, 0.6);
+}
+
+.nav-tables:hover {
+    box-shadow: 0 8px 30px rgba(116, 185, 255, 0.6);
+}
+
+.nav-selectors:hover {
+    box-shadow: 0 8px 30px rgba(0, 184, 148, 0.6);
+}
+
+.nav-default:hover {
+    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
+}
