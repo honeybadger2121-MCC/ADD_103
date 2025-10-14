@@ -406,20 +406,21 @@ figure.figure-full {
 
 .btn-primary {
     display: inline-block;
-    background-color: var(--secondary-medium);
+    background-color: var(--white);
     color: var(--black);
     padding: var(--spacing-sm) var(--spacing-md);
     border-radius: var(--radius-md);
     font-weight: 600;
     transition: all 0.3s ease;
-    border: none;
+    border: 2px solid var(--white);
     cursor: pointer;
     text-decoration: none;
 }
 
 .btn-primary:hover {
-    background-color: var(--secondary-dark);
+    background-color: var(--secondary-light);
     color: var(--black);
+    border-color: var(--secondary-light);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
