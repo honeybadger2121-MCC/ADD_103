@@ -7,71 +7,62 @@
     <link rel="stylesheet" href="css/framework.css">
 </head>
 <body>
-    <div class="portfolio-container">
+    <div class="container">
         <!-- Header Section -->
-        <header class="portfolio-header">
+        <header class="header-main">
             <div class="header-content">
-                <h1 class="portfolio-title">
-                    <span class="title-accent">WEB 105</span>
+                <h1 class="title-primary">
+                    <span class="accent-text">WEB 105</span>
                     Course Portfolio
                 </h1>
-                <p class="portfolio-subtitle">Ben Sherman | Web Development Journey | Fall 2025</p>
-                <div class="progress-indicator">
+                <p class="subtitle-text">Ben Sherman | Web Development Journey | Fall 2025</p>
+                <div class="progress-container">
                     <div class="progress-bar">
-                        <div class="progress-fill" style="width: 95%"></div>
+                        <div class="progress-fill" data-progress="95"></div>
                     </div>
-                    <span class="progress-text">Course Progress: 95% Complete</span>
+                    <span class="progress-label">Course Progress: 95% Complete</span>
                 </div>
             </div>
         </header>
 
-        <!-- Navigation Tabs -->
-        <nav class="portfolio-nav">
-            <div class="nav-container">
-                <button class="nav-tab active" data-tab="assignments">📚 Assignments</button>
-                <button class="nav-tab" data-tab="projects">🎨 Projects</button>
-                <button class="nav-tab" data-tab="skills">💡 Skills</button>
-                <button class="nav-tab" data-tab="reflection">🎯 Reflection</button>
-            </div>
-        </nav>
-
         <!-- Main Content -->
-        <main class="portfolio-main">
-            
-            <!-- Assignments Tab -->
-            <section id="assignments" class="tab-content active">
-                <div class="content-header">
-                    <h2>📚 Course Assignments</h2>
-                    <p>Complete collection of all WEB 105 assignments with detailed progress tracking</p>
-                </div>
+        <main class="main-content">
+            <section class="intro-section">
+                <h2 class="section-title">Welcome to My WEB 105 Portfolio</h2>
+                <p class="intro-text">This comprehensive portfolio showcases my journey through web development fundamentals, featuring hands-on projects that demonstrate HTML5, CSS3, and modern web design principles.</p>
+            </section>
 
+            <!-- Assignment Grid -->
+            <section class="assignments-section">
+                <h2 class="section-title">📚 Course Assignments</h2>
+                
                 <div class="assignment-grid">
-                    <!-- Foundation Assignments -->
+
+                    <!-- Foundation Projects -->
                     <div class="assignment-category">
                         <h3 class="category-title">🏗️ Foundation</h3>
-                        <div class="assignment-cards">
-                            <div class="assignment-card completed">
-                                <div class="card-header">
-                                    <h4>Introduce Yourself</h4>
-                                    <span class="status-badge completed">✅ Complete</span>
-                                </div>
-                                <p>Personal introduction page with IT background and interests</p>
-                                <div class="card-footer">
-                                    <a href="../introduceyourself/index.html" class="card-link">View Assignment →</a>
-                                    <span class="completion-date">Sept 15, 2025</span>
-                                </div>
+                        
+                        <div class="card-item completed">
+                            <div class="card-header">
+                                <h4 class="card-title">Introduce Yourself</h4>
+                                <span class="status-badge complete">✅ Complete</span>
                             </div>
+                            <p class="card-description">Personal introduction page with IT background, hobbies, and professional experience</p>
+                            <div class="card-footer">
+                                <a href="../introduceyourself/index.html" class="btn-primary">View Project</a>
+                                <span class="completion-date">Sept 15, 2025</span>
+                            </div>
+                        </div>
 
-                            <div class="assignment-card completed">
-                                <div class="card-header">
-                                    <h4>Project 1 - Introduction</h4>
-                                    <span class="status-badge completed">✅ Complete</span>
-                                </div>
-                                <p>Basic HTML structure and content creation</p>
-                                <div class="card-footer">
-                                    <a href="../project1/intro/index.html" class="card-link">View Assignment →</a>
-                                    <span class="completion-date">Sept 22, 2025</span>
-                                </div>
+                        <div class="card-item completed">
+                            <div class="card-header">
+                                <h4 class="card-title">Project 1 - Introduction</h4>
+                                <span class="status-badge complete">✅ Complete</span>
+                            </div>
+                            <p class="card-description">Basic HTML structure and content creation with semantic markup</p>
+                            <div class="card-footer">
+                                <a href="../project1/intro/index.html" class="btn-primary">View Project</a>
+                                <span class="completion-date">Sept 22, 2025</span>
                             </div>
                         </div>
                     </div>
@@ -79,41 +70,40 @@
                     <!-- HTML Structure -->
                     <div class="assignment-category">
                         <h3 class="category-title">📝 HTML Structure</h3>
-                        <div class="assignment-cards">
-                            <div class="assignment-card completed">
-                                <div class="card-header">
-                                    <h4>Lists Practice</h4>
-                                    <span class="status-badge completed">✅ Complete</span>
-                                </div>
-                                <p>Comprehensive examples of ordered, unordered, and nested lists</p>
-                                <div class="card-footer">
-                                    <a href="../Lists/index.html" class="card-link">View Assignment →</a>
-                                    <span class="completion-date">Sept 29, 2025</span>
-                                </div>
+                        
+                        <div class="card-item completed">
+                            <div class="card-header">
+                                <h4 class="card-title">Lists Practice</h4>
+                                <span class="status-badge complete">✅ Complete</span>
                             </div>
-
-                            <div class="assignment-card completed">
-                                <div class="card-header">
-                                    <h4>Tables Project</h4>
-                                    <span class="status-badge completed">✅ Complete</span>
-                                </div>
-                                <p>HTML table fundamentals with semantic structure</p>
-                                <div class="card-footer">
-                                    <a href="../tables/index.html" class="card-link">View Assignment →</a>
-                                    <span class="completion-date">Oct 6, 2025</span>
-                                </div>
+                            <p class="card-description">Comprehensive examples of ordered, unordered, and nested HTML lists</p>
+                            <div class="card-footer">
+                                <a href="../Lists/index.html" class="btn-primary">View Project</a>
+                                <span class="completion-date">Sept 29, 2025</span>
                             </div>
+                        </div>
 
-                            <div class="assignment-card completed">
-                                <div class="card-header">
-                                    <h4>Chrome DevTools</h4>
-                                    <span class="status-badge completed">✅ Complete</span>
-                                </div>
-                                <p>Practice with browser developer tools and HTML inspection</p>
-                                <div class="card-footer">
-                                    <a href="../chrome-tools/index.html" class="card-link">View Assignment →</a>
-                                    <span class="completion-date">Oct 8, 2025</span>
-                                </div>
+                        <div class="card-item completed">
+                            <div class="card-header">
+                                <h4 class="card-title">Tables Project</h4>
+                                <span class="status-badge complete">✅ Complete</span>
+                            </div>
+                            <p class="card-description">HTML table fundamentals with proper semantic structure and accessibility</p>
+                            <div class="card-footer">
+                                <a href="../tables/index.html" class="btn-primary">View Project</a>
+                                <span class="completion-date">Oct 6, 2025</span>
+                            </div>
+                        </div>
+
+                        <div class="card-item completed">
+                            <div class="card-header">
+                                <h4 class="card-title">Chrome DevTools</h4>
+                                <span class="status-badge complete">✅ Complete</span>
+                            </div>
+                            <p class="card-description">Practice with browser developer tools and HTML element inspection</p>
+                            <div class="card-footer">
+                                <a href="../chrome-tools/index.html" class="btn-primary">View Project</a>
+                                <span class="completion-date">Oct 8, 2025</span>
                             </div>
                         </div>
                     </div>
@@ -121,41 +111,40 @@
                     <!-- CSS Styling -->
                     <div class="assignment-category">
                         <h3 class="category-title">🎨 CSS Styling</h3>
-                        <div class="assignment-cards">
-                            <div class="assignment-card completed">
-                                <div class="card-header">
-                                    <h4>CSS Selectors</h4>
-                                    <span class="status-badge completed">✅ Complete</span>
-                                </div>
-                                <p>Demonstration of various CSS selectors and their applications</p>
-                                <div class="card-footer">
-                                    <a href="../selectors/index.html" class="card-link">View Assignment →</a>
-                                    <span class="completion-date">Oct 10, 2025</span>
-                                </div>
+                        
+                        <div class="card-item completed">
+                            <div class="card-header">
+                                <h4 class="card-title">CSS Selectors</h4>
+                                <span class="status-badge complete">✅ Complete</span>
                             </div>
-
-                            <div class="assignment-card completed">
-                                <div class="card-header">
-                                    <h4>CSS Template</h4>
-                                    <span class="status-badge completed">✅ Complete</span>
-                                </div>
-                                <p>Semantic HTML5 layout with external CSS and modern design</p>
-                                <div class="card-footer">
-                                    <a href="../css-template/index.html" class="card-link">View Assignment →</a>
-                                    <span class="completion-date">Oct 12, 2025</span>
-                                </div>
+                            <p class="card-description">Comprehensive demonstration of CSS selector types and practical applications</p>
+                            <div class="card-footer">
+                                <a href="../selectors/index.html" class="btn-primary">View Project</a>
+                                <span class="completion-date">Oct 10, 2025</span>
                             </div>
+                        </div>
 
-                            <div class="assignment-card completed">
-                                <div class="card-header">
-                                    <h4>CSS3 Advanced Demo</h4>
-                                    <span class="status-badge completed">✅ Complete</span>
-                                </div>
-                                <p>Interactive showcase of 8+ CSS3 techniques and animations</p>
-                                <div class="card-footer">
-                                    <a href="../css3-advanced-demo/index.html" class="card-link">View Assignment →</a>
-                                    <span class="completion-date">Oct 14, 2025</span>
-                                </div>
+                        <div class="card-item completed">
+                            <div class="card-header">
+                                <h4 class="card-title">CSS Template</h4>
+                                <span class="status-badge complete">✅ Complete</span>
+                            </div>
+                            <p class="card-description">Semantic HTML5 layout with external CSS and human personality</p>
+                            <div class="card-footer">
+                                <a href="../css-template/index.html" class="btn-primary">View Project</a>
+                                <span class="completion-date">Oct 12, 2025</span>
+                            </div>
+                        </div>
+
+                        <div class="card-item featured">
+                            <div class="card-header">
+                                <h4 class="card-title">CSS3 Advanced Demo</h4>
+                                <span class="status-badge complete">✅ Complete</span>
+                            </div>
+                            <p class="card-description">Interactive showcase of 8+ CSS3 techniques including animations and effects</p>
+                            <div class="card-footer">
+                                <a href="../css3-advanced-demo/index.html" class="btn-primary">View Project</a>
+                                <span class="completion-date">Oct 14, 2025</span>
                             </div>
                         </div>
                     </div>
@@ -163,128 +152,60 @@
                     <!-- Content & Media -->
                     <div class="assignment-category">
                         <h3 class="category-title">🖼️ Content & Media</h3>
-                        <div class="assignment-cards">
-                            <div class="assignment-card completed">
-                                <div class="card-header">
-                                    <h4>Review Page</h4>
-                                    <span class="status-badge completed">✅ Complete</span>
-                                </div>
-                                <p>Documentary review with HTML formatting and text elements</p>
-                                <div class="card-footer">
-                                    <a href="../review/index.html" class="card-link">View Assignment →</a>
-                                    <span class="completion-date">Oct 1, 2025</span>
-                                </div>
+                        
+                        <div class="card-item completed">
+                            <div class="card-header">
+                                <h4 class="card-title">Review Page</h4>
+                                <span class="status-badge complete">✅ Complete</span>
                             </div>
+                            <p class="card-description">Documentary review with HTML formatting and text elements</p>
+                            <div class="card-footer">
+                                <a href="../review/index.html" class="btn-primary">View Project</a>
+                                <span class="completion-date">Oct 1, 2025</span>
+                            </div>
+                        </div>
 
-                            <div class="assignment-card completed">
-                                <div class="card-header">
-                                    <h4>Demo Site</h4>
-                                    <span class="status-badge completed">✅ Complete</span>
-                                </div>
-                                <p>Course demo website with navigation and structured content</p>
-                                <div class="card-footer">
-                                    <a href="../demo-site/index.html" class="card-link">View Assignment →</a>
-                                    <span class="completion-date">Sept 25, 2025</span>
-                                </div>
+                        <div class="card-item completed">
+                            <div class="card-header">
+                                <h4 class="card-title">Demo Site</h4>
+                                <span class="status-badge complete">✅ Complete</span>
+                            </div>
+                            <p class="card-description">Course demo website with structured navigation and content layout</p>
+                            <div class="card-footer">
+                                <a href="../demo-site/index.html" class="btn-primary">View Project</a>
+                                <span class="completion-date">Sept 25, 2025</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Projects Tab -->
-            <section id="projects" class="tab-content">
-                <div class="content-header">
-                    <h2>🎨 Featured Projects</h2>
-                    <p>Highlight reel of major projects demonstrating advanced skills</p>
-                </div>
-
-                <div class="project-showcase">
-                    <div class="project-hero">
-                        <div class="project-card featured">
-                            <div class="project-image">
-                                <div class="image-placeholder">🎨</div>
-                            </div>
-                            <div class="project-content">
-                                <h3>CSS3 Advanced Demo</h3>
-                                <p>Interactive demonstration of modern CSS3 techniques including gradients, animations, text effects, and interactive JavaScript. Features 8+ advanced techniques with personality and humor.</p>
-                                <div class="project-tags">
-                                    <span class="tag">CSS3</span>
-                                    <span class="tag">Animation</span>
-                                    <span class="tag">JavaScript</span>
-                                    <span class="tag">Interactive</span>
-                                </div>
-                                <a href="../css3-advanced-demo/index.html" class="project-link primary">Explore Demo →</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-grid">
-                        <div class="project-card">
-                            <div class="project-content">
-                                <h4>CSS Template with Personality</h4>
-                                <p>Semantic HTML5 layout featuring human personality, external CSS, and modern design principles.</p>
-                                <div class="project-meta">
-                                    <span class="tech-stack">HTML5 • CSS3 • Semantic Web</span>
-                                </div>
-                                <a href="../css-template/index.html" class="project-link">View Project →</a>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-content">
-                                <h4>Personal Introduction</h4>
-                                <p>Professional introduction page with IT background, hobbies, and business integration.</p>
-                                <div class="project-meta">
-                                    <span class="tech-stack">HTML • CSS • Responsive Design</span>
-                                </div>
-                                <a href="../introduceyourself/index.html" class="project-link">View Project →</a>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-content">
-                                <h4>CSS Selectors Showcase</h4>
-                                <p>Comprehensive demonstration of CSS selector types and their practical applications.</p>
-                                <div class="project-meta">
-                                    <span class="tech-stack">CSS Selectors • Advanced Styling</span>
-                                </div>
-                                <a href="../selectors/index.html" class="project-link">View Project →</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Skills Tab -->
-            <section id="skills" class="tab-content">
-                <div class="content-header">
-                    <h2>💡 Skills Developed</h2>
-                    <p>Technical skills and competencies gained throughout the course</p>
-                </div>
-
-                <div class="skills-container">
+            <!-- Skills Developed -->
+            <section class="skills-section">
+                <h2 class="section-title">💡 Skills Developed</h2>
+                
+                <div class="skills-grid">
                     <div class="skill-category">
-                        <h3>🏗️ HTML Fundamentals</h3>
+                        <h3 class="skill-category-title">🏗️ HTML Fundamentals</h3>
                         <div class="skill-list">
                             <div class="skill-item">
                                 <span class="skill-name">Semantic HTML5</span>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 95%"></div>
+                                    <div class="skill-progress" data-level="95"></div>
                                 </div>
                                 <span class="skill-level">Advanced</span>
                             </div>
                             <div class="skill-item">
                                 <span class="skill-name">Document Structure</span>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 90%"></div>
+                                    <div class="skill-progress" data-level="90"></div>
                                 </div>
                                 <span class="skill-level">Advanced</span>
                             </div>
                             <div class="skill-item">
                                 <span class="skill-name">Forms & Tables</span>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 88%"></div>
+                                    <div class="skill-progress" data-level="88"></div>
                                 </div>
                                 <span class="skill-level">Proficient</span>
                             </div>
@@ -292,26 +213,26 @@
                     </div>
 
                     <div class="skill-category">
-                        <h3>🎨 CSS Styling</h3>
+                        <h3 class="skill-category-title">🎨 CSS Styling</h3>
                         <div class="skill-list">
                             <div class="skill-item">
                                 <span class="skill-name">CSS3 Techniques</span>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 92%"></div>
+                                    <div class="skill-progress" data-level="92"></div>
                                 </div>
                                 <span class="skill-level">Advanced</span>
                             </div>
                             <div class="skill-item">
                                 <span class="skill-name">CSS Variables</span>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 85%"></div>
+                                    <div class="skill-progress" data-level="85"></div>
                                 </div>
                                 <span class="skill-level">Proficient</span>
                             </div>
                             <div class="skill-item">
                                 <span class="skill-name">Responsive Design</span>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 80%"></div>
+                                    <div class="skill-progress" data-level="80"></div>
                                 </div>
                                 <span class="skill-level">Proficient</span>
                             </div>
@@ -319,140 +240,98 @@
                     </div>
 
                     <div class="skill-category">
-                        <h3>🛠️ Development Tools</h3>
+                        <h3 class="skill-category-title">🛠️ Development Tools</h3>
                         <div class="skill-list">
                             <div class="skill-item">
                                 <span class="skill-name">Chrome DevTools</span>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 88%"></div>
+                                    <div class="skill-progress" data-level="88"></div>
                                 </div>
                                 <span class="skill-level">Proficient</span>
                             </div>
                             <div class="skill-item">
                                 <span class="skill-name">Git Version Control</span>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 85%"></div>
+                                    <div class="skill-progress" data-level="85"></div>
                                 </div>
                                 <span class="skill-level">Proficient</span>
                             </div>
-                            <div class="skill-item">
-                                <span class="skill-name">VS Code</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 90%"></div>
-                                </div>
-                                <span class="skill-level">Advanced</span>
-                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Reflection Tab -->
-            <section id="reflection" class="tab-content">
-                <div class="content-header">
-                    <h2>🎯 Course Reflection</h2>
-                    <p>Personal insights and learning journey throughout WEB 105</p>
-                </div>
-
+            <!-- Course Reflection -->
+            <section class="reflection-section">
+                <h2 class="section-title">🎯 Course Reflection</h2>
+                
                 <div class="reflection-content">
-                    <div class="reflection-section">
-                        <h3>🚀 Key Learning Outcomes</h3>
-                        <div class="reflection-text">
-                            <p>Throughout this course, I've developed a solid foundation in web development fundamentals. The progression from basic HTML structure to advanced CSS3 techniques has been both challenging and rewarding.</p>
-                            
-                            <p>The most significant breakthrough was understanding how CSS variables can create maintainable, scalable stylesheets. This knowledge directly applies to real-world development scenarios.</p>
-
-                            <p>Working with semantic HTML5 has improved my understanding of accessibility and SEO best practices, making my web pages more inclusive and discoverable.</p>
-                        </div>
+                    <div class="reflection-card">
+                        <h3 class="reflection-title">🚀 Key Learning Outcomes</h3>
+                        <p class="reflection-text">Throughout this course, I've developed a solid foundation in web development fundamentals. The progression from basic HTML structure to advanced CSS3 techniques has been both challenging and rewarding.</p>
+                        
+                        <p class="reflection-text">The most significant breakthrough was understanding how CSS variables can create maintainable, scalable stylesheets. This knowledge directly applies to real-world development scenarios.</p>
                     </div>
 
-                    <div class="reflection-section">
-                        <h3>💡 Challenges & Solutions</h3>
-                        <div class="challenge-list">
-                            <div class="challenge-item">
-                                <h4>CSS Specificity & Cascading</h4>
-                                <p>Initially struggled with CSS specificity rules. Solved by practicing with different selector combinations and using browser DevTools to understand the cascade.</p>
-                            </div>
-                            <div class="challenge-item">
-                                <h4>Responsive Design Concepts</h4>
-                                <p>Understanding how to create layouts that work across devices. Improved through hands-on practice with viewport units and flexible grid systems.</p>
-                            </div>
-                            <div class="challenge-item">
-                                <h4>Advanced CSS3 Techniques</h4>
-                                <p>Mastering animations and transitions required extensive experimentation. Created multiple demos to understand timing functions and keyframe animations.</p>
-                            </div>
-                        </div>
+                    <div class="reflection-card">
+                        <h3 class="reflection-title">💡 Challenges & Solutions</h3>
+                        <ul class="challenge-list">
+                            <li><strong>CSS Specificity:</strong> Initially struggled with cascade rules. Solved through practice with DevTools.</li>
+                            <li><strong>Responsive Design:</strong> Learned through hands-on experimentation with viewport units.</li>
+                            <li><strong>Advanced CSS3:</strong> Mastered through creating multiple interactive demonstrations.</li>
+                        </ul>
                     </div>
 
-                    <div class="reflection-section">
-                        <h3>🔮 Future Goals</h3>
-                        <div class="goals-grid">
-                            <div class="goal-card">
-                                <h4>JavaScript Integration</h4>
-                                <p>Build on current CSS knowledge by adding interactivity with JavaScript frameworks and libraries.</p>
-                            </div>
-                            <div class="goal-card">
-                                <h4>Advanced CSS Frameworks</h4>
-                                <p>Explore modern CSS frameworks like Tailwind CSS and styled-components for component-based development.</p>
-                            </div>
-                            <div class="goal-card">
-                                <h4>Performance Optimization</h4>
-                                <p>Learn advanced techniques for optimizing web performance, including critical CSS and lazy loading strategies.</p>
-                            </div>
-                        </div>
+                    <div class="reflection-card">
+                        <h3 class="reflection-title">🔮 Future Goals</h3>
+                        <ul class="goals-list">
+                            <li>JavaScript integration and interactivity</li>
+                            <li>Advanced CSS frameworks (Tailwind, styled-components)</li>
+                            <li>Performance optimization techniques</li>
+                            <li>Modern development workflows</li>
+                        </ul>
                     </div>
                 </div>
             </section>
-
         </main>
 
         <!-- Footer -->
-        <footer class="portfolio-footer">
+        <footer class="footer-main">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Course Information</h4>
-                    <p>WEB 105 - Web Development Fundamentals<br>
-                    McHenry County College | Fall 2025</p>
+                    <h4 class="footer-title">Course Information</h4>
+                    <p class="footer-text">WEB 105 - Web Development Fundamentals<br>McHenry County College | Fall 2025</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Technical Stack</h4>
-                    <p>HTML5 • CSS3 • JavaScript<br>
-                    Git • VS Code • Chrome DevTools</p>
+                    <h4 class="footer-title">Technical Stack</h4>
+                    <p class="footer-text">HTML5 • CSS3 • JavaScript<br>Git • VS Code • Chrome DevTools</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Student Information</h4>
-                    <p>Ben Sherman<br>
-                    IT Professional & Student Developer</p>
+                    <h4 class="footer-title">Student Information</h4>
+                    <p class="footer-text">Ben Sherman<br>IT Professional & Student Developer</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Ben Sherman | WEB 105 Portfolio | Built with HTML5, CSS3, and dedication to learning</p>
+                <p class="copyright-text">&copy; 2025 Ben Sherman | WEB 105 Portfolio | Built with HTML5, CSS3, and dedication to learning</p>
             </div>
         </footer>
     </div>
 
-    <!-- Portfolio JavaScript -->
     <script>
-        // Tab Navigation Functionality
+        // Initialize progress bars and skill bars
         document.addEventListener('DOMContentLoaded', function() {
-            const tabs = document.querySelectorAll('.nav-tab');
-            const contents = document.querySelectorAll('.tab-content');
-
-            tabs.forEach(tab => {
-                tab.addEventListener('click', function() {
-                    const targetTab = this.getAttribute('data-tab');
-                    
-                    // Remove active class from all tabs and contents
-                    tabs.forEach(t => t.classList.remove('active'));
-                    contents.forEach(c => c.classList.remove('active'));
-                    
-                    // Add active class to clicked tab and corresponding content
-                    this.classList.add('active');
-                    document.getElementById(targetTab).classList.add('active');
-                });
+            // Animate progress bars
+            const progressBars = document.querySelectorAll('.progress-fill, .skill-progress');
+            progressBars.forEach(bar => {
+                const progress = bar.dataset.progress || bar.dataset.level;
+                if (progress) {
+                    setTimeout(() => {
+                        bar.style.width = progress + '%';
+                    }, 500);
+                }
             });
 
-            // Smooth scrolling for navigation
+            // Add smooth scrolling to internal links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -464,24 +343,6 @@
                         });
                     }
                 });
-            });
-
-            // Add loading animation
-            const cards = document.querySelectorAll('.assignment-card, .project-card');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            });
-
-            cards.forEach(card => {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(20px)';
-                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(card);
             });
         });
     </script>
