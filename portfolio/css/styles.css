@@ -4,18 +4,16 @@
    Course: WEB 105
    
    Image Credits:
-   - All images are placeholder images from https://via.placeholder.com for demonstration purposes
-   - In production, these would be replaced with original photography or licensed stock images
+   - Personal photography: workplace.jpg, profile-photo.jpg, gaming-image.jpeg, hiking-image.jpg
+   - Nature photography: aurora-borealis.jpg, eagle.jpg
+   - Edited animal images from image editing assignment: bailey-after.webp, bee-after.webp, 
+     bird-after.webp, elephant-after.webp, oliver-after.webp, eagle-after.webp
    
    Design References:
    - Color scheme inspired by Material Design: https://material.io/resources/color/
    - Layout concepts referenced from: http://mccdgm.net/
-   - Google Fonts: https://fonts.google.com/
+   - Google Fonts: https://fonts.google.com/ (Poppins and Roboto)
 */
-
-/* ========================================
-   CSS RESET
-   ======================================== */
 
 * {
     margin: 0;
