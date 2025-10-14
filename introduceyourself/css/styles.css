@@ -53,6 +53,7 @@ header h1 {
     border: 2px solid rgba(255,255,255,0.3);
     font-weight: bold;
     transition: all 0.3s ease;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
 
