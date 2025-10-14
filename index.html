@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Sherman's ADD 103 Course Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: white;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+        
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-color: #667eea;
+        }
+        
+        .project-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .project-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .project-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .web105-highlight {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 0 15px 35px rgba(255, 107, 107, 0.3);
+        }
+        
+        .web105-highlight h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .web105-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255,255,255,0.3);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .web105-link:hover {
+            transform: scale(1.05);
+            background: rgba(255,255,255,0.3);
+            border-color: rgba(255,255,255,0.5);
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            opacity: 0.8;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .web105-highlight {
+                padding: 2rem;
+            }
+            
+            .web105-highlight h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 ADD 103 Course Portfolio</h1>
+            <p class="subtitle">Ben Sherman | Web Development Journey | Fall 2025</p>
+        </header>
+
+        <!-- WEB 105 Portfolio Highlight -->
+        <div class="web105-highlight">
+            <h2>🚀 WEB 105 Portfolio</h2>
+            <p>Comprehensive collection of all assignments with CSS variables framework</p>
+            <a href="web105/index.html" class="web105-link">
+                → View Complete Portfolio
+            </a>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="portfolio-grid">
+            <div class="project-card">
+                <h3>🎨 CSS Template</h3>
+                <p>Semantic HTML5 layout with external CSS, human personality, and modern design principles.</p>
+                <a href="css-template/index.html" class="project-link">
+                    View Project →
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>✨ CSS3 Advanced Demo</h3>
+                <p>Interactive showcase of 8+ CSS3 techniques including gradients, animations, and effects.</p>
+                <a href="css3-advanced-demo/index.html" class="project-link">
+                    View Demo →
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>👋 Introduce Yourself</h3>
+                <p>Personal introduction page with IT background, hobbies, and professional information.</p>
+                <a href="introduceyourself/index.html" class="project-link">
+                    Meet Me →
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>📋 Lists Practice</h3>
+                <p>Comprehensive examples of HTML list elements including nested and ordered lists.</p>
+                <a href="Lists/index.html" class="project-link">
+                    View Lists →
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>📊 Tables Project</h3>
+                <p>HTML table fundamentals with proper semantic structure and styling examples.</p>
+                <a href="tables/index.html" class="project-link">
+                    View Tables →
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>🎯 CSS Selectors</h3>
+                <p>Demonstration of various CSS selectors and their practical applications.</p>
+                <a href="selectors/index.html" class="project-link">
+                    View Selectors →
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>🛠️ Chrome DevTools</h3>
+                <p>Practice with Chrome Developer Tools and HTML element inspection.</p>
+                <a href="chrome-tools/index.html" class="project-link">
+                    View Tools →
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>🌐 Demo Site</h3>
+                <p>Course demo website with navigation and structured content layout.</p>
+                <a href="demo-site/index.html" class="project-link">
+                    View Site →
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>🦡 Review Page</h3>
+                <p>Honey badger documentary review with HTML formatting and text elements.</p>
+                <a href="review/index.html" class="project-link">
+                    Read Review →
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Ben Sherman | ADD 103 | McHenry County College</p>
+            <p>Built with HTML5, CSS3, and dedication to learning web development</p>
+        </footer>
+    </div>
+</body>
+</html>
