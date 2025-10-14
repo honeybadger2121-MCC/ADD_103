@@ -620,6 +620,13 @@ button:focus {
     color: var(--primary-dark);
 }
 
+/* Footer navigation section */
+.footer-nav-section {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--secondary-medium);
+}
+
 /* Print styles */
 @media print {
     .main-navigation,
