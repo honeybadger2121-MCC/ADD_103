@@ -427,6 +427,12 @@ figure.figure-full {
     text-align: center;
 }
 
+/* Call to Action sections with white text */
+#contact-info h2,
+#contact-info p {
+    color: var(--white);
+}
+
 .section-title {
     border-bottom: 3px solid var(--secondary-medium);
     padding-bottom: var(--spacing-sm);
