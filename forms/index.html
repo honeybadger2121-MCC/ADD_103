@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Technology Survey</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <a href="../web105/index.html" class="return-button">← Return to Portfolio</a>
+            <h1 class="site-title">Student Technology Survey</h1>
+            <p class="site-tagline">Help us understand your technology preferences and experiences</p>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="content-wrapper">
+        <div class="container">
+            
+            <!-- Survey Form -->
+            <main class="main-content">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>📊 Technology & Learning Survey</h2>
+                        <p class="form-description">This survey helps us understand student technology usage and preferences. Please take a few minutes to share your thoughts. Fields marked with * are required.</p>
+                    </div>
+
+                    <form action="#" method="post" class="survey-form">
+                        
+                        <!-- Personal Information Section -->
+                        <fieldset class="form-section">
+                            <legend>Personal Information</legend>
+                            
+                            <!-- Text Input with Autofocus and Required -->
+                            <div class="form-group">
+                                <label for="fullName">Full Name: <span class="required">*</span></label>
+                                <input 
+                                    type="text" 
+                                    id="fullName" 
+                                    name="fullName" 
+                                    required 
+                                    autofocus
+                                    placeholder="Enter your full name"
+                                    class="form-input">
+                            </div>
+
+                            <!-- Email Input with Required -->
+                            <div class="form-group">
+                                <label for="email">Email Address: <span class="required">*</span></label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required
+                                    value=""
+                                    class="form-input">
+                            </div>
+
+                            <!-- Number Input with Default Value and Size -->
+                            <div class="form-group">
+                                <label for="age">Age:</label>
+                                <input 
+                                    type="number" 
+                                    id="age" 
+                                    name="age" 
+                                    min="16" 
+                                    max="100"
+                                    value="25"
+                                    size="10"
+                                    class="form-input input-small">
+                            </div>
+                        </fieldset>
+
+                        <!-- Technology Usage Section -->
+                        <fieldset class="form-section">
+                            <legend>Technology Usage</legend>
+
+                            <!-- Select Dropdown -->
+                            <div class="form-group">
+                                <label for="device">Primary Device for Coursework:</label>
+                                <select id="device" name="device" class="form-input">
+                                    <option value="">-- Select a Device --</option>
+                                    <option value="laptop">Laptop</option>
+                                    <option value="desktop" selected>Desktop Computer</option>
+                                    <option value="tablet">Tablet</option>
+                                    <option value="smartphone">Smartphone</option>
+                                    <option value="chromebook">Chromebook</option>
+                                </select>
+                            </div>
+
+                            <!-- Radio Buttons -->
+                            <div class="form-group">
+                                <label class="form-label-main">Operating System:</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="os" value="windows" checked>
+                                        <span>Windows</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="os" value="mac">
+                                        <span>macOS</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="os" value="linux">
+                                        <span>Linux</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="os" value="chrome">
+                                        <span>Chrome OS</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="os" value="other">
+                                        <span>Other</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Range Slider -->
+                            <div class="form-group">
+                                <label for="techSkill">Technology Skill Level: <span id="skillValue">5</span>/10</label>
+                                <input 
+                                    type="range" 
+                                    id="techSkill" 
+                                    name="techSkill" 
+                                    min="1" 
+                                    max="10" 
+                                    value="5"
+                                    class="form-range"
+                                    oninput="document.getElementById('skillValue').textContent = this.value">
+                            </div>
+
+                            <!-- Checkboxes -->
+                            <div class="form-group">
+                                <label class="form-label-main">Software/Tools You're Familiar With:</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="tools" value="msoffice" checked>
+                                        <span>Microsoft Office</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="tools" value="googlews">
+                                        <span>Google Workspace</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="tools" value="adobe">
+                                        <span>Adobe Creative Suite</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="tools" value="vscode">
+                                        <span>VS Code</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="tools" value="git">
+                                        <span>Git/GitHub</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="tools" value="slack">
+                                        <span>Slack/Teams</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Date Input with Default Value -->
+                            <div class="form-group">
+                                <label for="startDate">When did you start using computers regularly?</label>
+                                <input 
+                                    type="date" 
+                                    id="startDate" 
+                                    name="startDate" 
+                                    value="2015-01-01"
+                                    class="form-input input-medium">
+                            </div>
+                        </fieldset>
+
+                        <!-- Learning Preferences Section -->
+                        <fieldset class="form-section">
+                            <legend>Learning Preferences</legend>
+
+                            <!-- Color Picker -->
+                            <div class="form-group">
+                                <label for="favoriteColor">Favorite Color for UI Themes:</label>
+                                <input 
+                                    type="color" 
+                                    id="favoriteColor" 
+                                    name="favoriteColor" 
+                                    value="#2d5016"
+                                    class="form-color">
+                            </div>
+
+                            <!-- URL Input -->
+                            <div class="form-group">
+                                <label for="portfolio">Personal Website or Portfolio (if any):</label>
+                                <input 
+                                    type="url" 
+                                    id="portfolio" 
+                                    name="portfolio" 
+                                    placeholder="https://example.com"
+                                    class="form-input">
+                            </div>
+
+                            <!-- Textarea -->
+                            <div class="form-group">
+                                <label for="feedback">What challenges do you face with technology in your coursework?</label>
+                                <textarea 
+                                    id="feedback" 
+                                    name="feedback" 
+                                    rows="5" 
+                                    class="form-textarea"
+                                    placeholder="Share your thoughts here..."></textarea>
+                            </div>
+
+                            <!-- Time Input -->
+                            <div class="form-group">
+                                <label for="studyTime">What time of day do you prefer to study?</label>
+                                <input 
+                                    type="time" 
+                                    id="studyTime" 
+                                    name="studyTime" 
+                                    value="14:00"
+                                    class="form-input input-medium">
+                            </div>
+                        </fieldset>
+
+                        <!-- Submit Section -->
+                        <div class="form-actions">
+                            <button type="submit" class="btn-submit">Submit Survey</button>
+                            <button type="reset" class="btn-reset">Clear Form</button>
+                        </div>
+
+                    </form>
+
+                    <!-- Form Information -->
+                    <div class="form-footer">
+                        <h3>About This Survey</h3>
+                        <p>This form demonstrates various HTML5 input types and CSS styling techniques including:</p>
+                        <ul>
+                            <li>✅ Text, Email, Number, Date, Time, URL, Color, and Range inputs</li>
+                            <li>✅ Radio buttons, Checkboxes, Select dropdown, and Textarea</li>
+                            <li>✅ Required fields with validation</li>
+                            <li>✅ Autofocus on first input field</li>
+                            <li>✅ Placeholder text demonstration</li>
+                            <li>✅ Default values on various inputs</li>
+                            <li>✅ CSS styling for inputs, padding, borders, and focus states</li>
+                            <li>✅ Custom field widths using CSS</li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Forms Assignment - Student Technology Survey</p>
+        </div>
+    </footer>
+
+</body>
+</html>
