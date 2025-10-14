@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout - Image Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <a href="../web105/index.html" class="return-button">← Return to Portfolio</a>
+            <h1 class="site-title">Animal Image Gallery</h1>
+            <p class="site-tagline">Click on thumbnails to view larger images</p>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="content-wrapper">
+        <div class="container">
+            
+            <!-- Main Content Section -->
+            <main class="main-content">
+                <article class="gallery-article">
+                    <h2>Interactive Image Gallery</h2>
+                    <p>Click on any thumbnail below to display it in the large viewer above the gallery.</p>
+
+                    <!-- Large Display Image -->
+                    <div class="large-image-container">
+                        <img id="largeImage" src="images/bailey-after.webp" alt="Large display image">
+                    </div>
+
+                    <!-- Grid of Thumbnail Images -->
+                    <div class="thumbnail-grid">
+                        <div class="thumbnail">
+                            <img src="images/bailey-after.webp" alt="Bailey the dog" onclick="changeImage('images/bailey-after.webp', 'Bailey the dog')">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/bee-after.webp" alt="Bee on flower" onclick="changeImage('images/bee-after.webp', 'Bee on flower')">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/bird-after.webp" alt="Colorful bird" onclick="changeImage('images/bird-after.webp', 'Colorful bird')">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/eagle-after.webp" alt="Majestic eagle" onclick="changeImage('images/eagle-after.webp', 'Majestic eagle')">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/elephant-after.webp" alt="Elephant in nature" onclick="changeImage('images/elephant-after.webp', 'Elephant in nature')">
+                        </div>
+                    </div>
+
+                    <div class="gallery-info">
+                        <h3>About This Gallery</h3>
+                        <p>This interactive gallery demonstrates the use of CSS Grid Layout combined with JavaScript functionality. The grid contains five columns with auto width, creating a responsive and flexible layout. Click any thumbnail to see it displayed in the large viewer above.</p>
+                        
+                        <h3>Technologies Used</h3>
+                        <ul>
+                            <li>CSS Grid Layout with five auto-width columns</li>
+                            <li>JavaScript onclick event handlers</li>
+                            <li>WebP image format for optimized file sizes</li>
+                            <li>Responsive design principles</li>
+                        </ul>
+                    </div>
+                </article>
+            </main>
+
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Grid Layout Assignment. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="js/change.js"></script>
+</body>
+</html>
