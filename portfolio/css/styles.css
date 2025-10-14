@@ -457,8 +457,9 @@ footer h3 {
 }
 
 footer p {
-    color: var(--primary-lighter);
+    color: var(--white);
     margin-bottom: var(--spacing-xs);
+    font-size: 1.1rem;
 }
 
 footer a {
