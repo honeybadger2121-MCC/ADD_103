@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Skip navigation link for accessibility -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    
     <!-- Header with site branding -->
     <header>
         <div class="container">
@@ -18,9 +21,9 @@
             </div>
             
             <!-- Navigation to all pages -->
-            <nav>
+            <nav role="navigation" aria-label="Main navigation">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
                     <li><a href="pages/about.html">About</a></li>
                     <li><a href="pages/projects.html">Projects</a></li>
                     <li><a href="pages/skills.html">Skills</a></li>
@@ -31,7 +34,7 @@
     </header>
 
     <!-- Main content area -->
-    <main>
+    <main id="main-content">
         <!-- Hero Section with ID -->
         <section id="hero-section">
             <h1>Welcome to My Portfolio</h1>

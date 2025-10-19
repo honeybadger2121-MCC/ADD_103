@@ -1,0 +1,42 @@
+Web Accessibility Testing - Assignment Instructions
+
+STEP-BY-STEP COMPLETION GUIDE:
+
+1. INSTALL WAVE EXTENSION:
+   - Open Google Chrome
+   - Visit Chrome Web Store
+   - Search for "WAVE Evaluation Tool"
+   - Click "Add to Chrome" to install
+
+2. START LOCAL SERVER:
+   - Your portfolio website is already running at: http://localhost:8000
+   - If not running, open PowerShell and run:
+     cd "c:\Users\Ben\Desktop\New folder\ADD_103\portfolio"
+     python -m http.server 8000
+
+3. TEST WITH WAVE:
+   - Navigate to: http://localhost:8000
+   - Click the WAVE extension icon (red circle with white "W")
+   - Take SCREENSHOT #1 of the initial results page
+   - Click the "Contrast" tab in WAVE panel
+   - Take SCREENSHOT #2 of the contrast analysis
+
+4. CREATE WORD DOCUMENT:
+   - Copy the template from "Accessibility-Assignment-Template.md"
+   - Paste both screenshots where indicated
+   - Fill in the actual numbers from your WAVE test results
+   - Save as Word document
+
+5. IMPROVEMENTS ALREADY MADE TO YOUR WEBSITE:
+   ✅ Skip navigation link added
+   ✅ ARIA labels and semantic markup
+   ✅ Enhanced focus indicators  
+   ✅ Improved color contrast
+   ✅ Proper alt text for images
+   ✅ WCAG 2.1 Level AA compliance
+
+6. SUBMIT:
+   - Word document with both screenshots
+   - Your testing analysis and findings
+
+The accessibility improvements have already been implemented in your portfolio website files!
