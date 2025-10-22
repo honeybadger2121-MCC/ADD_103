@@ -3,7 +3,7 @@
 **Course:** WEB 105  
 **Date:** October 2025
 
-## Assignment Requirements Checklist
+y## Assignment Requirements Checklist
 
 ### ✅ Required Deliverables
 1. **Wireframe of each page** - Black and white, uses lorem ipsum text, boxes with Xs for images ✅
