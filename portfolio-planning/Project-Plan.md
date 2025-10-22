@@ -3,16 +3,23 @@
 **Course:** WEB 105  
 **Date:** October 2025
 
+## Assignment Requirements Checklist
+
+### ✅ Required Deliverables
+1. **Wireframe of each page** - Black and white, uses lorem ipsum text, boxes with Xs for images ✅
+2. **Word document with color screenshot and font names** ✅
+3. **Word document with page text (250+ words each) and readability statistics** ✅
+
 ## Project Overview
 **Topic:** Professional Portfolio Website  
 **Type:** Resume/Portfolio site showcasing web development skills and projects  
 
 ## Site Structure (5 Pages)
-1. **Home (index.html)** - Introduction and featured work
-2. **About (about.html)** - Personal background and professional journey  
-3. **Projects (projects.html)** - Showcase of web development projects
-4. **Skills (skills.html)** - Technical skills and expertise
-5. **Contact (contact.html)** - Contact information and project inquiry
+1. **Home (index.html)** - Introduction and featured work (365+ words)
+2. **About (about.html)** - Personal background and professional journey (425+ words)
+3. **Projects (projects.html)** - Showcase of web development projects (428+ words)
+4. **Skills (skills.html)** - Technical skills and expertise (456+ words)
+5. **Contact (contact.html)** - Contact information and project inquiry (472+ words)
 
 ## Color Palette
 **Primary Colors - Professional Purple:**

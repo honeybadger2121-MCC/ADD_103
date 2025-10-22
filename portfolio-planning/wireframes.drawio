@@ -1,0 +1,219 @@
+<mxfile host="65bd71144e">
+    <diagram id="home-page" name="Home Page">
+        <mxGraphModel dx="837" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="HEADER" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="740" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Logo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="55" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Navigation Menu" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="55" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="H1: Lorem Ipsum Dolor Sit&lt;br&gt;H2: Consectetur Adipiscing" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="120" width="740" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="220" width="740" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="40" y="300" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="300" width="600" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="660" y="400" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="400" width="600" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="40" y="500" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="200" y="500" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="360" y="500" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="520" y="500" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="FOOTER" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="640" width="740" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Navigation Links | Copyright" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="655" width="200" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="about-page" name="About Page">
+        <mxGraphModel dx="837" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="HEADER" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="740" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="H1: Lorem Ipsum Dolor&lt;br&gt;H2: Consectetur Adipiscing" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="120" width="740" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="40" y="220" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="220" width="600" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="660" y="320" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="320" width="600" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="40" y="420" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="200" y="420" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="360" y="420" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="520" y="420" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="FOOTER" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="540" width="740" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="projects-page" name="Projects Page">
+        <mxGraphModel dx="837" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="HEADER" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="740" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="H1: Lorem Ipsum Project&lt;br&gt;H2: Consectetur Adipiscing" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="120" width="740" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="660" y="220" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="220" width="600" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="40" y="320" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="320" width="600" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="40" y="420" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="200" y="420" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="360" y="420" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="520" y="420" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="FOOTER" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="40" y="540" width="740" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="skills-page" name="Skills Page">
+        <mxGraphModel dx="837" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="HEADER" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="740" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="H1: Lorem Ipsum Skills&lt;br&gt;H2: Consectetur Adipiscing" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="120" width="740" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="40" y="220" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="220" width="600" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="660" y="320" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="320" width="600" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="40" y="420" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="200" y="420" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="360" y="420" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="520" y="420" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="FOOTER" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="40" y="540" width="740" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="contact-page" name="Contact Page">
+        <mxGraphModel dx="837" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="HEADER" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="740" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="H1: Lorem Ipsum Contact&lt;br&gt;H2: Consectetur Adipiscing" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="120" width="740" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="660" y="220" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="220" width="600" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="40" y="320" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=left;verticalAlign=top;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="320" width="600" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="40" y="420" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="200" y="420" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="360" y="420" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="X" style="rounded=0;whiteSpace=wrap;html=1;fontSize=48;fillColor=#ffffff;strokeColor=#000000;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="520" y="420" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="FOOTER" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="40" y="540" width="740" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
