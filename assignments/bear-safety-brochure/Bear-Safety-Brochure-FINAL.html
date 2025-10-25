@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bear Safety - Grand Teton National Park</title>
+    <style>
+        @page {
+            size: 11in 8.5in landscape;
+            margin: 0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: white;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .brochure {
+            width: 11in;
+            height: 8.5in;
+            display: grid;
+            grid-template-columns: repeat(3, 3.667in);
+            grid-template-rows: repeat(2, 4.25in);
+            page-break-after: avoid;
+        }
+        
+        .panel {
+            border: 1px solid #ddd;
+            position: relative;
+            overflow: hidden;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .panel-content {
+            flex-grow: 1;
+        }
+
+        /* Front Cover - Top Right */
+        .front-cover {
+            grid-column: 3;
+            grid-row: 1;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../resources/images/grizzlybear.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 25px;
+        }
+        
+        .nps-badge {
+            width: 55px;
+            height: 55px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            align-self: flex-start;
+        }
+        
+        .front-title {
+            text-align: center;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        }
+        
+        .front-title h1 {
+            font-size: 44px;
+            font-weight: 900;
+            letter-spacing: 1.5px;
+            margin-bottom: 5px;
+        }
+        
+        .front-title h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+        
+        .front-title p {
+            font-size: 14px;
+            font-style: italic;
+            opacity: 0.9;
+        }
+        
+        .front-warning {
+            background: rgba(255, 69, 0, 0.95);
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            border: 2px solid white;
+        }
+        
+        /* Inside Panels */
+        .inside-left {
+            grid-column: 1;
+            grid-row: 1;
+            background: linear-gradient(rgba(248,249,250,0.9), rgba(233,236,239,0.9)), url('../../resources/images/mountainvalley.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .inside-center {
+            grid-column: 2;
+            grid-row: 1;
+            background: linear-gradient(rgba(255,248,220,0.9), rgba(255,239,213,0.9)), url('../../resources/images/mountainvalley.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .inside-right {
+            grid-column: 3;
+            grid-row: 2;
+            background: linear-gradient(rgba(255,228,225,0.9), rgba(255,235,238,0.9)), url('../../resources/images/mountainvalley.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .back-left {
+            grid-column: 1;
+            grid-row: 2;
+            background: linear-gradient(rgba(255,240,240,0.9), rgba(255,228,225,0.9)), url('../../resources/images/mountainvalley.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .back-center {
+            grid-column: 2;
+            grid-row: 2;
+            background: linear-gradient(rgba(232,245,233,0.9), rgba(241,248,233,0.9)), url('../../resources/images/mountainvalley.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .panel-title {
+            font-size: 13px;
+            font-weight: bold;
+            color: #2d5016;
+            margin-bottom: 6px;
+            padding-bottom: 3px;
+            border-bottom: 2px solid #4a7c23;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        
+        .section-box {
+            background: rgba(255,255,255,0.85);
+            padding: 5px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            border-left: 3px solid #4a7c23;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            flex-shrink: 0;
+        }
+        
+        .section-box h3 {
+            font-size: 9px;
+            color: #2d5016;
+            margin-bottom: 3px;
+        }
+        
+        .section-box ul {
+            list-style: none;
+            padding-left: 0;
+            font-size: 8px;
+            line-height: 1.3;
+        }
+        
+        .section-box li::before {
+            content: "✓ ";
+            color: #4a7c23;
+            font-weight: bold;
+        }
+        
+        .warning-box, .danger-box, .info-box {
+            padding: 5px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border-left: 2.5px solid #ffc107;
+        }
+        
+        .danger-box {
+            background: #f8d7da;
+            border-left: 2.5px solid #dc3545;
+        }
+        
+        .info-box {
+            background: #d1ecf1;
+            border-left: 2.5px solid #17a2b8;
+        }
+        
+        .bear-comparison {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 6px;
+            flex-shrink: 0;
+        }
+        
+        .bear-card {
+            flex: 1;
+            background: rgba(255,255,255,0.85);
+            padding: 6px;
+            border-radius: 3px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        
+        .bear-card img {
+            width: 100%;
+            height: 85px;
+            object-fit: cover;
+            border-radius: 2px;
+            margin-bottom: 4px;
+        }
+        
+        .bear-card h4 {
+            font-size: 11px;
+            color: #2d5016;
+            margin-bottom: 3px;
+        }
+        
+        .bear-card ul {
+            list-style: none;
+            font-size: 9px;
+            line-height: 1.3;
+        }
+        
+        .bear-card li {
+            margin-bottom: 1px;
+        }
+        
+        .numbered-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
+            margin-bottom: 4px;
+            background: rgba(255,255,255,0.85);
+            padding: 4px;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+        
+        .step-number {
+            background: #dc3545;
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 11px;
+            flex-shrink: 0;
+        }
+        
+        .step-content h4 {
+            font-size: 9px;
+            color: #2d5016;
+            margin-bottom: 2px;
+        }
+        
+        .step-content p {
+            font-size: 8px;
+            line-height: 1.2;
+        }
+        
+        .contact-box {
+            background: rgba(255,255,255,0.85);
+            padding: 5px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            flex-shrink: 0;
+        }
+        
+        .contact-icon {
+            font-size: 16px;
+            width: 25px;
+            text-align: center;
+        }
+        
+        .contact-info h4 {
+            font-size: 9px;
+            color: #666;
+            margin-bottom: 1px;
+        }
+        
+        .contact-info .phone {
+            font-size: 13px;
+            font-weight: bold;
+            color: #dc3545;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 7px;
+            color: #666;
+            margin-top: auto; /* Pushes footer to the bottom */
+            padding-top: 4px;
+            border-top: 1px solid #ddd;
+            flex-shrink: 0;
+        }
+
+        .nps-logo {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 2px;
+        }
+        
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .brochure {
+                page-break-inside: avoid;
+            }
+            
+            .panel {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="brochure">
+        <!-- INSIDE LEFT: Know Your Bears -->
+        <div class="panel inside-left">
+            <div class="panel-content">
+                <h2 class="panel-title" style="font-size: 15px;">🐻 KNOW YOUR BEARS</h2>
+                
+                <div class="bear-comparison">
+                    <div class="bear-card">
+                        <img src="../../resources/images/blackbear.jpg" alt="Black Bear">
+                        <h4>BLACK BEAR</h4>
+                        <ul>
+                            <li>• 200-400 lbs</li>
+                            <li>• Pointed ears</li>
+                            <li>• Straight profile</li>
+                            <li>• No shoulder hump</li>
+                            <li>• Various colors</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bear-card">
+                        <img src="../../resources/images/grizzlybear.jpg" alt="Grizzly Bear">
+                        <h4>GRIZZLY BEAR</h4>
+                        <ul>
+                            <li>• 300-600 lbs</li>
+                            <li>• Rounded ears</li>
+                            <li>• Dished face</li>
+                            <li>• Large shoulder hump</li>
+                            <li>• Brown/grizzled fur</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="warning-box">
+                    <h3 style="font-size: 10px;">⚠️ Important!</h3>
+                    <p style="font-size: 9px; line-height: 1.2;"><strong>Color is NOT reliable!</strong> Look for shape, size, and shoulder hump to identify bears.</p>
+                </div>
+                
+                <div class="section-box">
+                    <h3 style="font-size: 11px;">Bear Activity Times</h3>
+                    <ul style="font-size: 10px;">
+                        <li>Most active dawn & dusk</li>
+                        <li>Active all seasons except winter</li>
+                        <li>Cubs born in winter dens</li>
+                        <li>Mothers very protective</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- INSIDE CENTER: Prevention -->
+        <div class="panel inside-center">
+            <div class="panel-content">
+                <h2 class="panel-title" style="font-size: 15px;">🛡️ PREVENTION IS KEY</h2>
+                
+                <div class="section-box">
+                    <h3 style="font-size: 10px;">🎒 SECURE YOUR FOOD</h3>
+                    <ul style="font-size: 9px;">
+                        <li>Use bear-proof containers ALWAYS</li>
+                        <li>Store ALL scented items</li>
+                        <li>Never leave food in vehicle</li>
+                        <li>Cook 100+ yards from camp</li>
+                    </ul>
+                </div>
+                
+                <div class="section-box" style="position: relative; overflow: hidden; background: none; border-left: 3px solid #4a7c23;">
+                    <div style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-image: url('../../resources/images/hiker.jpeg');
+                        background-size: cover;
+                        background-position: center;
+                        opacity: 0.35; /* Increased visibility from 0.10 to 0.35 */
+                        z-index: 1;
+                    "></div>
+                    <div style="position: relative; z-index: 2; background-color: rgba(255,255,255,0.5); padding: 5px; border-radius: 4px;">
+                        <h3 style="font-size: 10px; color: #000; text-shadow: 1px 1px 2px #fff;">👥 WHILE HIKING</h3>
+                        <ul style="font-size: 9px; color: #000; text-shadow: 1px 1px 2px #fff; font-weight: 500;">
+                            <li>Travel in groups of 3+ people</li>
+                            <li>Make noise - talk loudly, clap</li>
+                            <li>Carry EPA-approved bear spray</li>
+                            <li>Stay on designated trails</li>
+                            <li>Alert near streams & vegetation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="danger-box">
+                    <h3 style="font-size: 10px;">🔥 BEAR SPRAY FACTS</h3>
+                    <div style="display: flex; gap: 6px; align-items: center; margin-bottom: 3px;">
+                        <img src="../../resources/images/grizzlybear.jpg" 
+                             alt="Grizzly bear" 
+                             style="width: 60px; height: 45px; object-fit: cover; border-radius: 2px;">
+                        <p style="font-size: 9px; line-height: 1.2; flex: 1;">
+                            <strong>Range: 25-30 ft</strong><br>
+                            Keep within reach<br>
+                            Check expiration
+                        </p>
+                    </div>
+                    <p style="font-size: 9px; line-height: 1.2;">
+                        • Practice before trip • Aim downward
+                    </p>
+                </div>
+                
+                <div class="warning-box">
+                    <h3 style="font-size: 10px;">🚫 NEVER APPROACH</h3>
+                    <ul style="font-size: 9px;">
+                        <li>Bears with cubs</li>
+                        <li>Bears feeding</li>
+                        <li>Bears on carcasses</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FRONT COVER -->
+        <div class="panel front-cover">
+            <div class="nps-badge">🏔️</div>
+            
+            <div class="front-title">
+                <h1>GRAND TETON</h1>
+                <p style="font-size: 16px; letter-spacing: 1.5px; margin-bottom: 15px;">NATIONAL PARK</p>
+                <h2>BEAR SAFETY</h2>
+                <p style="font-size: 15px; margin-top: 8px;">Essential Guide</p>
+                <p style="font-size: 13px; margin-top: 12px; border-top: 1px solid rgba(255,255,255,0.5); border-bottom: 1px solid rgba(255,255,255,0.5); padding: 6px 0;">Stay Safe • Stay Wild • Stay Alert</p>
+            </div>
+            
+            <div class="front-warning">
+                <p style="font-size: 15px;">⚠️ CRITICAL</p>
+                <p style="font-size: 11px; margin-top: 3px;">Bears are active in this area.<br>Proper preparation saves lives.</p>
+            </div>
+        </div>
+        
+        <!-- BACK LEFT: Emergency Contacts -->
+        <div class="panel back-left">
+            <div class="panel-content">
+                <h2 class="panel-title" style="font-size: 15px;">🚑 EMERGENCY INFO</h2>
+                
+                <div class="contact-box" style="background: #ffebee; border-left: 4px solid #dc3545;">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-info">
+                        <h4>EMERGENCY</h4>
+                        <div class="phone">911</div>
+                    </div>
+                </div>
+                
+                <div class="contact-box">
+                    <div class="contact-icon">🏔️</div>
+                    <div class="contact-info">
+                        <h4>PARK DISPATCH</h4>
+                        <div class="phone">(307) 739-3300</div>
+                    </div>
+                </div>
+                
+                <div class="contact-box">
+                    <div class="contact-icon">🏥</div>
+                    <div class="contact-info">
+                        <h4>ST. JOHN'S MEDICAL</h4>
+                        <div class="phone">(307) 733-3636</div>
+                    </div>
+                </div>
+                
+                <div class="section-box">
+                    <h3 style="font-size: 10px;">🩹 BEAR ATTACK FIRST AID</h3>
+                    <ul style="font-size: 9px; line-height: 1.3;">
+                        <li><strong>Control bleeding:</strong> direct pressure</li>
+                        <li>Keep victim warm and calm</li>
+                        <li>Don't move if spinal injury</li>
+                        <li>Get medical help IMMEDIATELY</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3 style="font-size: 10px;">📢 REPORT ALL ENCOUNTERS</h3>
+                    <p style="font-size: 9px; line-height: 1.3;">Report even sightings to park rangers - it helps keep everyone safe!</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: auto; padding-top: 5px;">
+                <img src="../../resources/images/mountainvalley.jpeg" 
+                     alt="Mountain valley" 
+                     style="width: 100%; height: 80px; object-fit: cover; border-radius: 3px;">
+            </div>
+        </div>
+        
+        <!-- BACK CENTER: Learn More -->
+        <div class="panel back-center">
+            <div class="panel-content">
+                <h2 class="panel-title" style="font-size: 17px;">📚 LEARN MORE</h2>
+                
+                <div class="section-box">
+                    <h3 style="font-size: 13px;">🌐 Online Resources</h3>
+                    <ul style="font-size: 12px; line-height: 1.3;">
+                        <li>nps.gov/grte/planyourvisit/bears.htm</li>
+                    </ul>
+                </div>
+                
+                <div class="section-box">
+                    <h3 style="font-size: 13px;">📍 Park Resources</h3>
+                    <p style="font-size: 12px; margin-bottom: 3px;"><strong>Visitor Centers:</strong></p>
+                    <ul style="font-size: 11px; line-height: 1.3; padding-left: 8px;">
+                        <li>Craig Thomas Discovery Center</li>
+                        <li>Jenny Lake Visitor Center</li>
+                    </ul>
+                    <p style="font-size: 12px; margin-top: 5px; margin-bottom: 3px;"><strong>Bear Spray (Purchase/Rent):</strong></p>
+                    <ul style="font-size: 11px; line-height: 1.3; padding-left: 8px;">
+                        <li>All visitor centers & park concessions</li>
+                        <li>Local outdoor retailers</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer">
+                <img src="../../resources/images/NPSlogo.svg" alt="NPS Logo" class="nps-logo">
+                <p>NATIONAL PARK SERVICE<br>U.S. Department of the Interior</p>
+            </div>
+        </div>
+        
+        <!-- INSIDE RIGHT: Bear Encounter -->
+        <div class="panel inside-right">
+            <div class="panel-content" style="position: relative; background: none; padding: 0;">
+                <div style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('../../resources/images/grizzlybear.jpg');
+                    background-size: cover;
+                    background-position: center top;
+                    opacity: 0.05; /* 95% transparent */
+                    z-index: 1;
+                    border-radius: 8px;
+                "></div>
+                <div style="position: relative; z-index: 2; padding: 10px;">
+                    <h2 class="panel-title" style="font-size: 14px; color: #000; text-shadow: 1px 1px 3px #fff; border-bottom: 2px solid rgba(0,0,0,0.4);">🐻 BEAR ENCOUNTER</h2>
+                    
+                    <div class="numbered-step" style="background-color: rgba(255,255,255,0.7); margin-bottom: 4px; padding: 4px; border-radius: 4px;">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4 style="font-size: 10px;">STAY CALM</h4>
+                            <p style="font-size: 9px;">Do not run! Bears can run 35+ mph.</p>
+                        </div>
+                    </div>
+                    <div class="numbered-step" style="background-color: rgba(255,255,255,0.7); margin-bottom: 4px; padding: 4px; border-radius: 4px;">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4 style="font-size: 10px;">MAKE YOURSELF LARGE</h4>
+                            <p style="font-size: 9px;">Raise arms, jacket, or backpack overhead.</p>
+                        </div>
+                    </div>
+                    <div class="numbered-step" style="background-color: rgba(255,255,255,0.7); margin-bottom: 4px; padding: 4px; border-radius: 4px;">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4 style="font-size: 10px;">BACK AWAY SLOWLY</h4>
+                            <p style="font-size: 9px;">Face the bear, avoid direct eye contact.</p>
+                        </div>
+                    </div>
+                    <div class="numbered-step" style="background-color: rgba(255,255,255,0.7); margin-bottom: 4px; padding: 4px; border-radius: 4px;">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4 style="font-size: 10px;">SPEAK IN LOW, CALM VOICE</h4>
+                            <p style="font-size: 9px;">"Hey bear, I'm backing away..."</p>
+                        </div>
+                    </div>
+
+                    <div class="danger-box" style="margin-top: 5px; background-color: rgba(255, 223, 223, 0.85);">
+                        <h3 style="font-size: 11px;">🔥 USE BEAR SPRAY IF:</h3>
+                        <ul style="font-size: 9px; line-height: 1.3;">
+                            <li>Bear approaches within 25 feet</li>
+                            <li>Bear shows aggressive behavior</li>
+                            <li>Bear charges</li>
+                        </ul>
+                        <p style="font-size: 9px; line-height: 1.3; margin-top: 3px;"><strong>Aim slightly downward:</strong> spray creates a protective wall.</p>
+                    </div>
+
+                    <div class="warning-box" style="margin-top: 5px; background-color: rgba(255, 250, 225, 0.85);">
+                        <h3 style="font-size: 11px;">⚠️ IF ATTACKED</h3>
+                        <p style="font-size: 10px; line-height: 1.3;"><strong>Grizzly:</strong> Play dead. Lie flat, protect neck.<br><strong>Black Bear:</strong> Fight back. Be aggressive.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
