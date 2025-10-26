@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip & Popover Demo - Elite Gaming Hardware</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding-top: 76px;
+        }
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .nav-link {
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .nav-link:hover {
+            transform: translateY(-2px);
+        }
+        .main-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .demo-box {
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">🎮 Elite Gaming</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Graphics Cards</a></li>
+                            <li><a class="dropdown-item" href="#">Processors</a></li>
+                            <li><a class="dropdown-item" href="#">Motherboards</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">All Components</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            JS Tools
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="carousel-modal.html">Carousel & Modal</a></li>
+                            <li><a class="dropdown-item active" href="tooltip-popover.html">Tooltip & Popover</a></li>
+                            <li><a class="dropdown-item" href="offcanvas-collapse.html">Offcanvas & Collapse</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="main-container p-5">
+            <h1 class="text-center mb-2 text-primary">💬 Tooltip & Popover Demo</h1>
+            <p class="text-center text-muted mb-5">Interactive help text and detailed information boxes</p>
+
+            <!-- TOOLTIP SECTION -->
+            <section class="mb-5">
+                <h2 class="mb-4">Tooltips - Hover for Quick Info</h2>
+                <p class="lead">Hover over the highlighted elements to see helpful tooltips appear!</p>
+
+                <div class="demo-box">
+                    <h5>Gaming PC Components with Tooltips</h5>
+                    <p>
+                        Build your dream gaming PC with our 
+                        <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ultimate 4K gaming performance with 24GB GDDR6X memory">
+                            RTX 4090
+                        </button>
+                        graphics card, paired with an 
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="24 cores, 32 threads - Perfect for gaming and streaming">
+                            Intel i9-14900K
+                        </button>
+                        processor. Don't forget fast 
+                        <button type="button" class="btn btn-sm btn-success" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="6000MHz DDR5 with RGB lighting - 32GB capacity">
+                            DDR5 RAM
+                        </button>
+                        and a reliable 
+                        <button type="button" class="btn btn-sm btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="7,450 MB/s read speed - PCIe 4.0 NVMe technology">
+                            NVMe SSD
+                        </button>
+                        for storage.
+                    </p>
+                </div>
+
+                <div class="demo-box">
+                    <h5>Interactive Product Ratings</h5>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <span class="badge bg-danger fs-6" data-bs-toggle="tooltip" data-bs-title="Flagship GPU - Best in class performance">
+                            RTX 4090 ⭐⭐⭐⭐⭐
+                        </span>
+                        <span class="badge bg-primary fs-6" data-bs-toggle="tooltip" data-bs-title="High-end gaming CPU with excellent single-core performance">
+                            i9-14900K ⭐⭐⭐⭐⭐
+                        </span>
+                        <span class="badge bg-success fs-6" data-bs-toggle="tooltip" data-bs-title="Premium motherboard with WiFi 6E and PCIe 5.0">
+                            Z790 Hero ⭐⭐⭐⭐☆
+                        </span>
+                        <span class="badge bg-info fs-6" data-bs-toggle="tooltip" data-bs-title="Professional 360Hz QHD gaming monitor">
+                            ROG Swift ⭐⭐⭐⭐⭐
+                        </span>
+                    </div>
+                </div>
+
+                <div class="alert alert-info">
+                    <strong>💡 Tooltip Features:</strong> Tooltips appear on hover and can be positioned on any side (top, right, bottom, left).
+                </div>
+            </section>
+
+            <hr class="my-5">
+
+            <!-- POPOVER SECTION -->
+            <section class="mb-5">
+                <h2 class="mb-4">Popovers - Click for Detailed Info</h2>
+                <p class="lead">Click the buttons below to see detailed information in popovers!</p>
+
+                <div class="demo-box">
+                    <h5>Product Information Cards</h5>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">NVIDIA RTX 4090</h6>
+                                    <p class="card-text">The ultimate gaming graphics card</p>
+                                    <button type="button" class="btn btn-danger" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-placement="top"
+                                            data-bs-title="RTX 4090 Full Specs"
+                                            data-bs-content="16,384 CUDA cores | 24GB GDDR6X memory | 2.52 GHz boost | 1,008 GB/s bandwidth | 450W TDP | Best for 4K gaming and ray tracing">
+                                        View Specifications
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">AMD Ryzen 9 7950X3D</h6>
+                                    <p class="card-text">Gaming powerhouse processor</p>
+                                    <button type="button" class="btn btn-primary" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-placement="top"
+                                            data-bs-title="Ryzen 9 7950X3D Details"
+                                            data-bs-content="16 cores / 32 threads | 4.2 GHz base, 5.7 GHz boost | 128MB 3D V-Cache | AM5 socket | 120W TDP | Excellent for gaming with cache benefits">
+                                        View Specifications
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">G.Skill DDR5 RAM</h6>
+                                    <p class="card-text">High-performance memory</p>
+                                    <button type="button" class="btn btn-success" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-placement="bottom"
+                                            data-bs-title="DDR5 Memory Info"
+                                            data-bs-content="32GB capacity (2x16GB) | 6000MHz speed | CL30 latency | 1.35V voltage | RGB lighting | XMP 3.0 support | Perfect for gaming and content creation">
+                                        View Specifications
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">ASUS ROG Monitor</h6>
+                                    <p class="card-text">Esports gaming display</p>
+                                    <button type="button" class="btn btn-warning" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-placement="bottom"
+                                            data-bs-title="Monitor Features"
+                                            data-bs-content="27-inch QHD display | 360Hz refresh rate | 1ms response time | Fast IPS panel | G-SYNC compatible | HDR support | Perfect for competitive gaming">
+                                        View Specifications
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-box mt-4">
+                    <h5>Help & Support Popovers</h5>
+                    <p>Need help? Click the buttons below for assistance:</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <button type="button" class="btn btn-outline-primary" 
+                                data-bs-toggle="popover" 
+                                data-bs-placement="right"
+                                data-bs-title="🚚 Shipping Information"
+                                data-bs-content="Free shipping on orders over $100. Standard delivery: 3-5 business days. Express shipping available for $25. International shipping to select countries.">
+                            Shipping Info
+                        </button>
+
+                        <button type="button" class="btn btn-outline-success" 
+                                data-bs-toggle="popover" 
+                                data-bs-placement="top"
+                                data-bs-title="🛡️ Warranty Coverage"
+                                data-bs-content="All products include manufacturer warranty. Extended warranty available for purchase. 30-day money-back guarantee. Free technical support for all customers.">
+                            Warranty Info
+                        </button>
+
+                        <button type="button" class="btn btn-outline-danger" 
+                                data-bs-toggle="popover" 
+                                data-bs-placement="left"
+                                data-bs-title="↩️ Return Policy"
+                                data-bs-content="30-day return window from delivery. Items must be in original packaging. Free return shipping for defective items. Refund processed within 5-7 business days.">
+                            Return Policy
+                        </button>
+
+                        <button type="button" class="btn btn-outline-info" 
+                                data-bs-toggle="popover" 
+                                data-bs-placement="bottom"
+                                data-bs-title="💳 Payment Methods"
+                                data-bs-content="We accept Visa, Mastercard, Amex, Discover, PayPal, Apple Pay, Google Pay. Financing available through Affirm. Cryptocurrency payments accepted.">
+                            Payment Options
+                        </button>
+                    </div>
+                </div>
+
+                <div class="alert alert-success mt-4">
+                    <strong>✅ Popover Features:</strong> Popovers display on click and include both title and detailed content. They can be positioned on any side and dismissed by clicking anywhere on the page.
+                </div>
+            </section>
+
+            <!-- Comparison -->
+            <section class="mt-5">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h4>Tooltip vs Popover - When to Use?</h4>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <h5>🏷️ Tooltips</h5>
+                                <ul>
+                                    <li>Short, simple text (1-2 lines)</li>
+                                    <li>Triggered by hover</li>
+                                    <li>Quick hints and labels</li>
+                                    <li>No title, just content</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>💬 Popovers</h5>
+                                <ul>
+                                    <li>Longer, detailed content</li>
+                                    <li>Triggered by click</li>
+                                    <li>Complex information</li>
+                                    <li>Includes title and content</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Initialize Tooltips and Popovers -->
+    <script>
+        // Initialize all tooltips
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+        // Initialize all popovers
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+    </script>
+</body>
+</html>

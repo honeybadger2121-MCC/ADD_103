@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offcanvas & Collapse Demo - Elite Gaming Hardware</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding-top: 76px;
+        }
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .nav-link {
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .nav-link:hover {
+            transform: translateY(-2px);
+        }
+        .main-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .demo-box {
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .offcanvas-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .offcanvas-header .btn-close {
+            filter: brightness(0) invert(1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">🎮 Elite Gaming</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Graphics Cards</a></li>
+                            <li><a class="dropdown-item" href="#">Processors</a></li>
+                            <li><a class="dropdown-item" href="#">Motherboards</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">All Components</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            JS Tools
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="carousel-modal.html">Carousel & Modal</a></li>
+                            <li><a class="dropdown-item" href="tooltip-popover.html">Tooltip & Popover</a></li>
+                            <li><a class="dropdown-item active" href="offcanvas-collapse.html">Offcanvas & Collapse</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="main-container p-5">
+            <h1 class="text-center mb-2 text-primary">📱 Offcanvas & Collapse Demo</h1>
+            <p class="text-center text-muted mb-5">Side panels and collapsible content sections</p>
+
+            <!-- OFFCANVAS SECTION -->
+            <section class="mb-5">
+                <h2 class="mb-4">Offcanvas - Sliding Side Panels</h2>
+                <p class="lead">Click the buttons below to open sliding panels from different directions!</p>
+
+                <div class="demo-box">
+                    <h5 class="mb-3">Offcanvas Directions</h5>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft">
+                            🡸 Open Left Panel
+                        </button>
+                        <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                            Open Right Panel 🡺
+                        </button>
+                        <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop">
+                            🡹 Open Top Panel
+                        </button>
+                        <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">
+                            Open Bottom Panel 🡻
+                        </button>
+                    </div>
+                </div>
+
+                <div class="alert alert-info">
+                    <strong>💡 Offcanvas Features:</strong> Sliding panels that can appear from any edge of the screen. Great for navigation menus, shopping carts, and filters.
+                </div>
+            </section>
+
+            <hr class="my-5">
+
+            <!-- COLLAPSE SECTION -->
+            <section class="mb-5">
+                <h2 class="mb-4">Collapse - Expandable Content</h2>
+                <p class="lead">Click to expand and collapse content sections. Perfect for FAQs and detailed information!</p>
+
+                <div class="demo-box">
+                    <h5 class="mb-3">Frequently Asked Questions</h5>
+                    
+                    <!-- Accordion -->
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+                                    What is your return policy?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We offer a 30-day money-back guarantee on all products. Items must be returned in original packaging with all accessories. Free return shipping is provided for defective items. Refunds are processed within 5-7 business days of receiving the returned item.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do you offer warranty on gaming components?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! All products come with the manufacturer's standard warranty. Graphics cards typically have 3-year warranties, processors 3-5 years, and motherboards 3 years. We also offer extended warranty options at checkout for additional peace of mind. Our support team handles all warranty claims directly.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    How long does shipping take?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Standard shipping takes 3-5 business days. Express shipping (1-2 business days) is available for $25. We offer free shipping on all orders over $100. Most orders ship within 24 hours of purchase. You'll receive tracking information via email once your order ships.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Can you help me build a custom PC?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! Our team of PC building experts is here to help. We offer free compatibility checks for all components. You can also purchase our custom PC building service where we assemble, test, and ship your complete system. Contact our support team for personalized recommendations based on your budget and needs.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    What payment methods do you accept?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We accept all major credit cards (Visa, Mastercard, American Express, Discover), PayPal, Apple Pay, Google Pay, and cryptocurrency (Bitcoin, Ethereum). Financing options are available through Affirm with 0% APR for qualified purchases. All transactions are secured with SSL encryption.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-box mt-4">
+                    <h5 class="mb-3">Product Specifications (Individual Collapse)</h5>
+                    <p class="text-muted">These collapse independently - multiple can be open at once!</p>
+                    
+                    <div class="mb-2">
+                        <button class="btn btn-danger w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#specGPU">
+                            🎮 Graphics Card Specs
+                        </button>
+                        <div class="collapse mt-2" id="specGPU">
+                            <div class="card card-body">
+                                <h6>NVIDIA RTX 4090</h6>
+                                <ul class="mb-0">
+                                    <li>CUDA Cores: 16,384</li>
+                                    <li>Memory: 24GB GDDR6X</li>
+                                    <li>Boost Clock: 2.52 GHz</li>
+                                    <li>TDP: 450W</li>
+                                    <li>Price: $1,599</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-2">
+                        <button class="btn btn-primary w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#specCPU">
+                            ⚡ Processor Specs
+                        </button>
+                        <div class="collapse mt-2" id="specCPU">
+                            <div class="card card-body">
+                                <h6>Intel Core i9-14900K</h6>
+                                <ul class="mb-0">
+                                    <li>Cores/Threads: 24/32</li>
+                                    <li>Base Clock: 3.2 GHz</li>
+                                    <li>Turbo Clock: 6.0 GHz</li>
+                                    <li>TDP: 125W (253W Turbo)</li>
+                                    <li>Price: $589</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-2">
+                        <button class="btn btn-success w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#specRAM">
+                            💾 Memory Specs
+                        </button>
+                        <div class="collapse mt-2" id="specRAM">
+                            <div class="card card-body">
+                                <h6>G.Skill Trident Z5 RGB</h6>
+                                <ul class="mb-0">
+                                    <li>Capacity: 32GB (2x16GB)</li>
+                                    <li>Speed: 6000MHz</li>
+                                    <li>Latency: CL30</li>
+                                    <li>RGB Lighting: Yes</li>
+                                    <li>Price: $189</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-success mt-4">
+                    <strong>✅ Collapse Features:</strong> Content can be expanded/collapsed with smooth animations. Use accordion for mutually exclusive sections or independent collapses for multiple open sections.
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Offcanvas Left -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">🛒 Shopping Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h6 class="mb-3">Your Items (3)</h6>
+            
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h6 class="card-title">RTX 4090</h6>
+                    <p class="card-text small">Qty: 1 × $1,599</p>
+                    <button class="btn btn-sm btn-danger">Remove</button>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h6 class="card-title">i9-14900K</h6>
+                    <p class="card-text small">Qty: 1 × $589</p>
+                    <button class="btn btn-sm btn-danger">Remove</button>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h6 class="card-title">DDR5 32GB</h6>
+                    <p class="card-text small">Qty: 1 × $189</p>
+                    <button class="btn btn-sm btn-danger">Remove</button>
+                </div>
+            </div>
+
+            <hr>
+            <div class="d-flex justify-content-between mb-3">
+                <strong>Total:</strong>
+                <strong>$2,377</strong>
+            </div>
+            <button class="btn btn-primary w-100">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Offcanvas Right -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">🔍 Product Filters</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h6>Price Range</h6>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="price1">
+                <label class="form-check-label" for="price1">Under $500</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="price2">
+                <label class="form-check-label" for="price2">$500 - $1,000</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="price3">
+                <label class="form-check-label" for="price3">Over $1,000</label>
+            </div>
+
+            <hr>
+
+            <h6>Brand</h6>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="nvidia">
+                <label class="form-check-label" for="nvidia">NVIDIA</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="amd">
+                <label class="form-check-label" for="amd">AMD</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="intel">
+                <label class="form-check-label" for="intel">Intel</label>
+            </div>
+
+            <hr>
+
+            <h6>In Stock</h6>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="inStock" checked>
+                <label class="form-check-label" for="inStock">Show only in-stock items</label>
+            </div>
+
+            <hr>
+
+            <button class="btn btn-primary w-100">Apply Filters</button>
+            <button class="btn btn-outline-secondary w-100 mt-2">Clear All</button>
+        </div>
+    </div>
+
+    <!-- Offcanvas Top -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" style="height: 300px;">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">🎉 Special Promotion</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="text-center">
+                <h3 class="text-danger">Flash Sale - 24 Hours Only!</h3>
+                <p class="lead">Save up to 30% on select gaming components</p>
+                <ul class="list-unstyled">
+                    <li>✅ RTX 4090 - Save $200</li>
+                    <li>✅ i9-14900K - Save $100</li>
+                    <li>✅ DDR5 RAM - Save $50</li>
+                </ul>
+                <button class="btn btn-danger btn-lg">Shop Sale Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offcanvas Bottom -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" style="height: 350px;">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">📧 Newsletter Signup</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h6>Get 10% off your first order!</h6>
+                    <p>Subscribe to our newsletter for exclusive deals and new product announcements.</p>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="agreeTerms">
+                        <label class="form-check-label" for="agreeTerms">
+                            I agree to receive marketing emails
+                        </label>
+                    </div>
+                    <button class="btn btn-success w-100">Subscribe & Save 10%</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
