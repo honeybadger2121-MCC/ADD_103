@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Elite Gaming Hardware</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding-top: 76px;
+        }
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .nav-link {
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .nav-link:hover {
+            transform: translateY(-2px);
+        }
+        .main-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">🎮 Elite Gaming</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Graphics Cards</a></li>
+                            <li><a class="dropdown-item" href="#">Processors</a></li>
+                            <li><a class="dropdown-item" href="#">Motherboards</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">All Components</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="main-container p-5">
+            <h1 class="text-center mb-5 text-primary">About Elite Gaming Hardware</h1>
+            
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <h2>Our Story</h2>
+                    <p class="lead">Founded in 2015, Elite Gaming Hardware has been serving gamers and PC enthusiasts with premium components and expert advice.</p>
+                    <p>We started as a small online retailer with a passion for gaming and technology. Today, we're proud to be one of the leading suppliers of high-performance gaming hardware, trusted by thousands of customers worldwide.</p>
+                    <p>Our mission is simple: provide gamers with the best hardware at competitive prices, backed by exceptional customer service and technical support.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x400/667eea/ffffff?text=Our+Team" class="img-fluid rounded shadow" alt="Our team">
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <h2 class="mb-4">Why Choose Us?</h2>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card text-center h-100 shadow-sm">
+                                <div class="card-body">
+                                    <div class="display-4 mb-3">🚀</div>
+                                    <h5 class="card-title">Fast Shipping</h5>
+                                    <p class="card-text">Free shipping on orders over $100. Most orders ship within 24 hours.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center h-100 shadow-sm">
+                                <div class="card-body">
+                                    <div class="display-4 mb-3">🛡️</div>
+                                    <h5 class="card-title">Warranty Protection</h5>
+                                    <p class="card-text">All products come with manufacturer warranty and our 30-day return policy.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center h-100 shadow-sm">
+                                <div class="card-body">
+                                    <div class="display-4 mb-3">💡</div>
+                                    <h5 class="card-title">Expert Support</h5>
+                                    <p class="card-text">Our team of PC enthusiasts is here to help with any questions or concerns.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-light p-4 rounded">
+                <h2 class="mb-3">Our Values</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-transparent"><strong>Quality First:</strong> We only stock products from trusted manufacturers</li>
+                    <li class="list-group-item bg-transparent"><strong>Customer Focused:</strong> Your satisfaction is our top priority</li>
+                    <li class="list-group-item bg-transparent"><strong>Competitive Pricing:</strong> Best prices without compromising on service</li>
+                    <li class="list-group-item bg-transparent"><strong>Community Driven:</strong> We support the gaming community through sponsorships and events</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

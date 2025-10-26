@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Elite Gaming Hardware</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding-top: 76px;
+        }
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .nav-link {
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .nav-link:hover {
+            transform: translateY(-2px);
+        }
+        .main-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .product-card {
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">🎮 Elite Gaming</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Graphics Cards</a></li>
+                            <li><a class="dropdown-item" href="#">Processors</a></li>
+                            <li><a class="dropdown-item" href="#">Motherboards</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">All Components</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="main-container p-5">
+            <h1 class="text-center mb-5 text-primary">Our Products</h1>
+            
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-4">
+                    <div class="card product-card shadow">
+                        <img src="https://via.placeholder.com/400x300/dc3545/ffffff?text=RTX+4090" class="card-img-top" alt="RTX 4090">
+                        <div class="card-body">
+                            <h5 class="card-title">NVIDIA RTX 4090</h5>
+                            <p class="card-text">Ultimate gaming performance with 24GB GDDR6X memory.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h4 text-primary mb-0">$1,599</span>
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-4">
+                    <div class="card product-card shadow">
+                        <img src="https://via.placeholder.com/400x300/0d6efd/ffffff?text=Intel+i9" class="card-img-top" alt="Intel i9">
+                        <div class="card-body">
+                            <h5 class="card-title">Intel Core i9-14900K</h5>
+                            <p class="card-text">24-core processor for extreme gaming and content creation.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h4 text-primary mb-0">$589</span>
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-4">
+                    <div class="card product-card shadow">
+                        <img src="https://via.placeholder.com/400x300/198754/ffffff?text=DDR5+RAM" class="card-img-top" alt="DDR5 RAM">
+                        <div class="card-body">
+                            <h5 class="card-title">G.Skill DDR5 32GB</h5>
+                            <p class="card-text">High-speed 6000MHz RGB memory for ultimate performance.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h4 text-primary mb-0">$189</span>
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-md-4">
+                    <div class="card product-card shadow">
+                        <img src="https://via.placeholder.com/400x300/6610f2/ffffff?text=Z790+Board" class="card-img-top" alt="Z790 Motherboard">
+                        <div class="card-body">
+                            <h5 class="card-title">ASUS ROG Z790 Hero</h5>
+                            <p class="card-text">Premium motherboard with PCIe 5.0 and WiFi 6E support.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h4 text-primary mb-0">$629</span>
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-md-4">
+                    <div class="card product-card shadow">
+                        <img src="https://via.placeholder.com/400x300/fd7e14/ffffff?text=NVMe+SSD" class="card-img-top" alt="NVMe SSD">
+                        <div class="card-body">
+                            <h5 class="card-title">Samsung 990 PRO 2TB</h5>
+                            <p class="card-text">Blazing fast PCIe 4.0 NVMe SSD with 7,450 MB/s read speed.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h4 text-primary mb-0">$179</span>
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-md-4">
+                    <div class="card product-card shadow">
+                        <img src="https://via.placeholder.com/400x300/20c997/ffffff?text=Gaming+Monitor" class="card-img-top" alt="Gaming Monitor">
+                        <div class="card-body">
+                            <h5 class="card-title">ASUS ROG Swift 360Hz</h5>
+                            <p class="card-text">27" QHD gaming monitor with 360Hz refresh rate.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h4 text-primary mb-0">$899</span>
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
