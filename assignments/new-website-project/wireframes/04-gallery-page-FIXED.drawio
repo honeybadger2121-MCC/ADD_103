@@ -1,0 +1,140 @@
+<mxfile host="app.diagrams.net" modified="2024-10-26T19:30:00.000Z" agent="5.0" version="22.0.3">
+  <diagram name="Gallery Page Wireframe" id="gallery-page">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Header Navigation -->
+        <mxCell id="header-4" value="HEADER NAVIGATION" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="667" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="logo-4" value="LOGO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="50" width="80" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="nav-4" value="Home | About | Services | Gallery | Contact" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="450" y="50" width="280" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Page Header -->
+        <mxCell id="page-header-4" value="GALLERY PAGE HEADER" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="667" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="page-title-4" value="Our Work Gallery&#10;Subtitle: Showcasing our best projects and achievements" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="130" width="627" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Filter Navigation -->
+        <mxCell id="filter-nav" value="FILTER NAVIGATION" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="667" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="filter-buttons" value="All | Web Development | Mobile Apps | UI/UX Design | Marketing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="230" width="627" height="30" as="geometry"/>
+        </mxCell>
+        
+        <!-- Gallery Grid Row 1 -->
+        <mxCell id="gallery-row-1" value="GALLERY ROW 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="290" width="667" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-1" value="[X]&#10;PROJECT 1&#10;IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="310" width="150" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-1-title" value="E-commerce Website&#10;Client: ABC Company" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="420" width="150" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-2" value="[X]&#10;PROJECT 2&#10;IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="270" y="310" width="150" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-2-title" value="Mobile Banking App&#10;Client: XYZ Bank" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="270" y="420" width="150" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-3" value="[X]&#10;PROJECT 3&#10;IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="440" y="310" width="150" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-3-title" value="Restaurant Website&#10;Client: Gourmet Bistro" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="440" y="420" width="150" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-4" value="[X]&#10;PROJECT 4&#10;IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="610" y="310" width="120" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-4-title" value="Fitness App UI&#10;Client: FitLife" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="610" y="420" width="120" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- Gallery Grid Row 2 -->
+        <mxCell id="gallery-row-2" value="GALLERY ROW 2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="470" width="667" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-5" value="[X]&#10;PROJECT 5&#10;IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="490" width="150" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-5-title" value="Corporate Branding&#10;Client: Tech Solutions" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="600" width="150" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-6" value="[X]&#10;PROJECT 6&#10;IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="270" y="490" width="150" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-6-title" value="Educational Platform&#10;Client: LearnMore" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="270" y="600" width="150" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-7" value="[X]&#10;PROJECT 7&#10;IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="440" y="490" width="150" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-7-title" value="Social Media Campaign&#10;Client: Fashion Brand" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="440" y="600" width="150" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-8" value="[X]&#10;PROJECT 8&#10;IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="610" y="490" width="120" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-8-title" value="Portfolio Website&#10;Client: Artist Studio" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="610" y="600" width="120" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- Gallery Grid Row 3 -->
+        <mxCell id="gallery-row-3" value="GALLERY ROW 3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="650" width="667" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-9" value="[X]&#10;PROJECT 9&#10;IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="670" width="150" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-9-title" value="Healthcare App&#10;Client: MedCare" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="780" width="150" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-10" value="[X]&#10;PROJECT 10&#10;IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="270" y="670" width="150" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-10-title" value="Real Estate Platform&#10;Client: PropertyPro" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="270" y="780" width="150" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-11" value="[X]&#10;PROJECT 11&#10;IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="440" y="670" width="150" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-11-title" value="Gaming Website&#10;Client: GameZone" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="440" y="780" width="150" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-12" value="[X]&#10;PROJECT 12&#10;IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="610" y="670" width="120" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="project-12-title" value="Travel Blog&#10;Client: Wanderlust" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="610" y="780" width="120" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- Pagination -->
+        <mxCell id="pagination" value="PAGINATION" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="830" width="667" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="pagination-buttons" value="&lt; Previous | 1 | 2 | 3 | Next &gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="840" width="627" height="30" as="geometry"/>
+        </mxCell>
+        
+        <!-- Footer -->
+        <mxCell id="footer-section-4" value="FOOTER" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="900" width="667" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="footer-content-4" value="Contact Info | Social Media Links | Copyright | Site Map" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="910" width="627" height="60" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,99 @@
+<mxfile host="app.diagrams.net" modified="2024-10-26T19:30:00.000Z" agent="5.0" version="22.0.3">
+  <diagram name="About Page Wireframe" id="about-page">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Header Navigation -->
+        <mxCell id="header-about" value="HEADER NAVIGATION" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="667" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="logo-about" value="LOGO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="50" width="80" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="nav-about" value="Home | About | Services | Gallery | Contact" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="450" y="50" width="280" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Page Header -->
+        <mxCell id="page-header" value="PAGE HEADER - ABOUT US" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="667" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="page-title" value="About TechSolutions Pro&#10;Lorem ipsum dolor sit amet, consectetur adipiscing elit" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="130" width="627" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Company Story Section -->
+        <mxCell id="story-section" value="COMPANY STORY SECTION" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="667" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="story-image" value="[X]&#10;COMPANY&#10;FOUNDING&#10;IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="240" width="200" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="story-text" value="Our Story&#10;&#10;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&#10;Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&#10;Ut enim ad minim veniam, quis nostrud exercitation ullamco.&#10;&#10;Duis aute irure dolor in reprehenderit in voluptate velit esse." style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="320" y="240" width="400" height="160" as="geometry"/>
+        </mxCell>
+        
+        <!-- Mission Statement -->
+        <mxCell id="mission-section" value="MISSION STATEMENT" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="440" width="667" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="mission-text" value="Our Mission&#10;&#10;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation." style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="100" y="460" width="627" height="80" as="geometry"/>
+        </mxCell>
+        
+        <!-- Team Section -->
+        <mxCell id="team-section" value="TEAM SECTION" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="580" width="667" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="team-title" value="Meet Our Team" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="600" width="627" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="team-member-1" value="[X]&#10;TEAM&#10;MEMBER 1&#10;PHOTO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="120" y="660" width="100" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="team-member-1-info" value="John Smith&#10;CEO &amp; Founder&#10;Lorem ipsum dolor" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="120" y="770" width="100" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="team-member-2" value="[X]&#10;TEAM&#10;MEMBER 2&#10;PHOTO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="250" y="660" width="100" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="team-member-2-info" value="Sarah Johnson&#10;Lead Developer&#10;Consectetur adipiscing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="250" y="770" width="100" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="team-member-3" value="[X]&#10;TEAM&#10;MEMBER 3&#10;PHOTO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="380" y="660" width="100" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="team-member-3-info" value="Mike Davis&#10;Design Director&#10;Elit sed do eiusmod" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="380" y="770" width="100" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="team-member-4" value="[X]&#10;TEAM&#10;MEMBER 4&#10;PHOTO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="510" y="660" width="100" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="team-member-4-info" value="Lisa Brown&#10;Project Manager&#10;Tempor incididunt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="510" y="770" width="100" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Values Section -->
+        <mxCell id="values-section" value="COMPANY VALUES" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="880" width="667" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="values-image" value="[X]&#10;VALUES&#10;ILLUSTRATION" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="900" width="150" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="values-text" value="Our Values&#10;&#10;Innovation • Quality • Integrity • Customer Focus&#10;Lorem ipsum dolor sit amet, consectetur adipiscing elit." style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="270" y="900" width="450" height="100" as="geometry"/>
+        </mxCell>
+        
+        <!-- Footer -->
+        <mxCell id="footer-about" value="FOOTER" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1040" width="667" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="footer-content-about" value="Contact Info | Social Media Links | Copyright | Site Map" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1060" width="627" height="60" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

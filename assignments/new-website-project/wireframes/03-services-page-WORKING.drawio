@@ -1,0 +1,81 @@
+<mxfile host="app.diagrams.net" modified="2024-10-26T19:30:00.000Z" agent="5.0" version="22.0.3">
+  <diagram name="Services Page Wireframe" id="services-page">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <mxCell id="header-3" value="HEADER NAVIGATION" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="667" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="logo-3" value="LOGO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="50" width="80" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="nav-3" value="Home | About | Services | Gallery | Contact" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="450" y="50" width="280" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="page-header-3" value="SERVICES PAGE HEADER" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="667" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="page-title-3" value="Our Services - Comprehensive solutions for your needs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="130" width="627" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="service-detail-1" value="SERVICE 1: WEB DEVELOPMENT" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="667" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="service-1-image-detail" value="WEB DEVELOPMENT IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="240" width="180" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="service-1-description" value="Custom Web Development - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Features: Responsive Design | Modern Framework | SEO Optimized" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="300" y="240" width="420" height="100" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="service-detail-2" value="SERVICE 2: MOBILE APPLICATIONS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="380" width="667" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="service-2-image-detail" value="MOBILE APP IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="540" y="400" width="180" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="service-2-description" value="Mobile Application Development - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Features: iOS and Android | Cross-Platform | Cloud Integration" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="100" y="400" width="420" height="100" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="service-detail-3" value="SERVICE 3: UI/UX DESIGN" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="540" width="667" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="service-3-image-detail" value="UI/UX DESIGN IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="560" width="180" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="service-3-description" value="User Interface and Experience Design - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Features: User Research | Wireframes | Prototypes | Testing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="300" y="560" width="420" height="100" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="service-detail-4" value="SERVICE 4: DIGITAL MARKETING" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="700" width="667" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="service-4-image-detail" value="DIGITAL MARKETING IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="540" y="720" width="180" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="service-4-description" value="Digital Marketing Solutions - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Features: SEO | Social Media | PPC | Content Strategy" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="100" y="720" width="420" height="100" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="cta-section" value="CALL TO ACTION" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="860" width="667" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="cta-content" value="Ready to get started? Contact us today for a free consultation! GET STARTED BUTTON | CONTACT US BUTTON" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="870" width="627" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="footer-section-3" value="FOOTER" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="960" width="667" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="footer-content-3" value="Contact Info | Social Media Links | Copyright | Site Map" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="970" width="627" height="60" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

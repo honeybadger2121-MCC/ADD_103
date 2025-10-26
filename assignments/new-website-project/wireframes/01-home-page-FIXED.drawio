@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net" modified="2024-10-26T19:30:00.000Z" agent="5.0" version="22.0.3">
+  <diagram name="Home Page Wireframe" id="home-page">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Header Navigation -->
+        <mxCell id="header-1" value="HEADER NAVIGATION" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="667" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="logo-1" value="LOGO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="50" width="80" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="nav-1" value="Home | About | Services | Gallery | Contact" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="450" y="50" width="280" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Hero Section -->
+        <mxCell id="hero-section" value="HERO SECTION" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="667" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="hero-image" value="[X]&#10;HERO IMAGE&#10;PLACEHOLDER" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="140" width="200" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="hero-text" value="Main Headline: Lorem ipsum dolor sit amet&#10;&#10;Subheadline: Consectetur adipiscing elit sed do&#10;&#10;[CALL TO ACTION BUTTON]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="320" y="140" width="400" height="160" as="geometry"/>
+        </mxCell>
+        
+        <!-- Services Overview -->
+        <mxCell id="services-section" value="SERVICES OVERVIEW" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="340" width="667" height="240" as="geometry"/>
+        </mxCell>
+        <mxCell id="service-1" value="[X]&#10;SERVICE 1&#10;IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="380" width="120" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="service-1-text" value="Service Title 1&#10;Lorem ipsum dolor" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="470" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="service-2" value="[X]&#10;SERVICE 2&#10;IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="250" y="380" width="120" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="service-2-text" value="Service Title 2&#10;Consectetur adipiscing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="250" y="470" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="service-3" value="[X]&#10;SERVICE 3&#10;IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400" y="380" width="120" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="service-3-text" value="Service Title 3&#10;Elit sed do eiusmod" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400" y="470" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="service-4" value="[X]&#10;SERVICE 4&#10;IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="550" y="380" width="120" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="service-4-text" value="Service Title 4&#10;Tempor incididunt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="550" y="470" width="120" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- About Preview -->
+        <mxCell id="about-section" value="ABOUT PREVIEW" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="600" width="667" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="about-image" value="[X]&#10;COMPANY&#10;IMAGE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="620" width="180" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="about-text" value="About Us Preview&#10;&#10;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&#10;Sed do eiusmod tempor incididunt ut labore.&#10;&#10;[LEARN MORE BUTTON]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="300" y="620" width="420" height="120" as="geometry"/>
+        </mxCell>
+        
+        <!-- Testimonial -->
+        <mxCell id="testimonial-section" value="CUSTOMER TESTIMONIAL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="780" width="667" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="testimonial-image" value="[X]&#10;CUSTOMER&#10;PHOTO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="800" width="80" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="testimonial-text" value="&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&quot;&#10;&#10;- Customer Name, Company" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="200" y="800" width="520" height="80" as="geometry"/>
+        </mxCell>
+        
+        <!-- Footer -->
+        <mxCell id="footer-section" value="FOOTER" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="920" width="667" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="footer-content" value="Contact Info | Social Media Links | Copyright | Site Map" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="940" width="627" height="60" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
