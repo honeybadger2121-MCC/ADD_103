@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Side-by-side product comparisons with detailed feature analysis and recommendations">
-    <title>Comparisons - TechGear Reviews</title>
+    <meta name="description" content="Case studies and client success stories from Badger Technologies IT services">
+    <title>Case Studies - Badger Technologies</title>
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -18,7 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <i class="bi bi-gear-fill me-2"></i>Ben's Tech Takes
+                <i class="fas fa-shield-alt me-2"></i>Badger Technologies
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" title="Toggle Navigation">
@@ -31,13 +33,13 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="products.html">Products</a>
+                        <a class="nav-link" href="products.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="reviews.html">Reviews</a>
+                        <a class="nav-link" href="reviews.html">Solutions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="comparisons.html">Comparisons</a>
+                        <a class="nav-link active" href="comparisons.html">Case Studies</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
@@ -51,7 +53,7 @@
     <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="navbarOffcanvasLabel">
-                <i class="bi bi-gear-fill me-2"></i>Navigation
+                <i class="fas fa-shield-alt me-2"></i>Navigation
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -64,17 +66,17 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="products.html">
-                        <i class="bi bi-box me-2"></i>Products
+                        <i class="fas fa-cogs me-2"></i>Services
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="reviews.html">
-                        <i class="bi bi-star me-2"></i>Reviews
+                        <i class="fas fa-lightbulb me-2"></i>Solutions
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="comparisons.html">
-                        <i class="bi bi-arrow-left-right me-2"></i>Comparisons
+                        <i class="fas fa-briefcase me-2"></i>Case Studies
                     </a>
                 </li>
                 <li class="nav-item">
@@ -91,633 +93,243 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-8">
-                    <h1 class="display-4 fw-bold mb-3">The Ultimate Showdowns</h1>
-                    <p class="lead">I put popular products head-to-head so you don't have to. Someone's gotta lose, and I'm not afraid to pick winners.</p>
-                </div>
-                <div class="col-lg-4">
-                    <div class="text-center">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="h3 fw-bold">23</div>
-                                <small>Comparisons</small>
-                            </div>
-                            <div class="col-6">
-                                <div class="h3 fw-bold">7</div>
-                                <small>Hurt Feelings</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Comparison Categories -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-lg-8">
-                    <h2 class="display-6 fw-bold">Comparison Categories</h2>
-                    <p class="lead text-muted">Choose your category to see detailed side-by-side comparisons</p>
-                </div>
-            </div>
-
-            <div class="row g-4 mb-5">
-                <div class="col-lg-3 col-md-6">
-                    <div class="card category-card h-100 text-center">
-                        <div class="card-body">
-                            <div class="category-icon mb-3">
-                                <i class="bi bi-phone display-4 text-primary"></i>
-                            </div>
-                            <h5>Smartphones</h5>
-                            <p class="small text-muted">Compare latest flagships</p>
-                            <button class="btn btn-outline-primary" data-category="smartphones">View Comparisons</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 col-md-6">
-                    <div class="card category-card h-100 text-center">
-                        <div class="card-body">
-                            <div class="category-icon mb-3">
-                                <i class="bi bi-laptop display-4 text-success"></i>
-                            </div>
-                            <h5>Laptops</h5>
-                            <p class="small text-muted">Performance vs portability</p>
-                            <button class="btn btn-outline-success" data-category="laptops">View Comparisons</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 col-md-6">
-                    <div class="card category-card h-100 text-center">
-                        <div class="card-body">
-                            <div class="category-icon mb-3">
-                                <i class="bi bi-headphones display-4 text-warning"></i>
-                            </div>
-                            <h5>Audio</h5>
-                            <p class="small text-muted">Sound quality analysis</p>
-                            <button class="btn btn-outline-warning" data-category="audio">View Comparisons</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 col-md-6">
-                    <div class="card category-card h-100 text-center">
-                        <div class="card-body">
-                            <div class="category-icon mb-3">
-                                <i class="bi bi-house display-4 text-info"></i>
-                            </div>
-                            <h5>Smart Home</h5>
-                            <p class="small text-muted">Ecosystem compatibility</p>
-                            <button class="btn btn-outline-info" data-category="smart-home">View Comparisons</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Comparison: Smartphones -->
-    <section class="comparison-section">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-lg-8">
-                    <h2 class="display-6 fw-bold">iPhone vs Galaxy: The $1000 Question</h2>
-                    <p class="lead text-muted">I used both for a month. Here's what your wallet needs to know.</p>
+                    <h1 class="display-4 fw-bold mb-3">Case Studies & Client Success</h1>
+                    <p class="lead">Real businesses, real challenges, real solutions. See how Badger Technologies transformed IT operations across industries.</p>
                 </div>
                 <div class="col-lg-4 text-lg-end">
-                    <div class="d-flex gap-2 justify-content-lg-end">
-                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#comparisonModal">
-                            <i class="bi bi-zoom-in me-2"></i>Detailed View
-                        </button>
-                        <button class="btn btn-primary">
-                            <i class="bi bi-share me-2"></i>Share
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Comparison Table -->
-            <div class="table-responsive">
-                <table class="table table-comparison table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="comparison-category">Feature</th>
-                            <th scope="col" class="text-center">
-                                <div class="comparison-product">
-                                    <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=80&h=80&fit=crop" class="rounded mb-2" alt="iPhone 15 Pro">
-                                    <div class="fw-bold">iPhone 15 Pro</div>
-                                    <small class="text-muted">Apple</small>
-                                </div>
-                            </th>
-                            <th scope="col" class="text-center">
-                                <div class="comparison-product">
-                                    <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=80&h=80&fit=crop" class="rounded mb-2" alt="Galaxy S24 Ultra">
-                                    <div class="fw-bold">Galaxy S24 Ultra</div>
-                                    <small class="text-muted">Samsung</small>
-                                </div>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Overall Rating</strong></td>
-                            <td class="text-center">
-                                <div class="star-rating mb-1">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-half"></i>
-                                </div>
-                                <div class="fw-bold">4.5/5</div>
-                            </td>
-                            <td class="text-center winner">
-                                <div class="star-rating mb-1">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-                                <div class="fw-bold">5.0/5</div>
-                                <span class="badge bg-success small">Winner</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Price</strong></td>
-                            <td class="text-center winner">
-                                <div class="fw-bold">$999</div>
-                                <small class="text-muted">Starting price</small>
-                                <span class="badge bg-success small">Better Value</span>
-                            </td>
-                            <td class="text-center">
-                                <div class="fw-bold">$1,199</div>
-                                <small class="text-muted">Starting price</small>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Display</strong></td>
-                            <td class="text-center">
-                                <div class="fw-bold">6.1" OLED</div>
-                                <small class="text-muted">120Hz ProMotion<br>2556 x 1179</small>
-                            </td>
-                            <td class="text-center winner">
-                                <div class="fw-bold">6.8" AMOLED</div>
-                                <small class="text-muted">120Hz LTPO<br>3120 x 1440</small>
-                                <span class="badge bg-success small">Larger</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Processor</strong></td>
-                            <td class="text-center winner">
-                                <div class="fw-bold">A17 Pro</div>
-                                <small class="text-muted">3nm process<br>6-core CPU</small>
-                                <span class="badge bg-success small">Faster</span>
-                            </td>
-                            <td class="text-center">
-                                <div class="fw-bold">Snapdragon 8 Gen 3</div>
-                                <small class="text-muted">4nm process<br>8-core CPU</small>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Camera System</strong></td>
-                            <td class="text-center">
-                                <div class="fw-bold">Triple 48MP</div>
-                                <small class="text-muted">Main + Ultra + Telephoto<br>3x optical zoom</small>
-                            </td>
-                            <td class="text-center winner">
-                                <div class="fw-bold">Quad 200MP</div>
-                                <small class="text-muted">Main + Ultra + 2x Telephoto<br>10x optical zoom</small>
-                                <span class="badge bg-success small">More Versatile</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Battery Life</strong></td>
-                            <td class="text-center">
-                                <div class="fw-bold">23 hours</div>
-                                <small class="text-muted">Video playback<br>15W wireless</small>
-                            </td>
-                            <td class="text-center winner">
-                                <div class="fw-bold">26 hours</div>
-                                <small class="text-muted">Video playback<br>45W fast charging</small>
-                                <span class="badge bg-success small">Longer</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Storage Options</strong></td>
-                            <td class="text-center">
-                                <div class="fw-bold">128GB - 1TB</div>
-                                <small class="text-muted">No expansion</small>
-                            </td>
-                            <td class="text-center winner">
-                                <div class="fw-bold">256GB - 1TB</div>
-                                <small class="text-muted">MicroSD support</small>
-                                <span class="badge bg-success small">Expandable</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Special Features</strong></td>
-                            <td class="text-center">
-                                <ul class="list-unstyled small">
-                                    <li>✓ Action Button</li>
-                                    <li>✓ Titanium design</li>
-                                    <li>✓ iOS ecosystem</li>
-                                </ul>
-                            </td>
-                            <td class="text-center winner">
-                                <ul class="list-unstyled small">
-                                    <li>✓ S Pen included</li>
-                                    <li>✓ DeX desktop mode</li>
-                                    <li>✓ AI features</li>
-                                </ul>
-                                <span class="badge bg-success small">More Features</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <!-- Comparison Summary -->
-            <div class="row mt-4">
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">
-                                <i class="bi bi-apple me-2"></i>iPhone 15 Pro
-                            </h5>
-                            <div class="mb-3">
-                                <span class="badge bg-success me-2">Best Performance</span>
-                                <span class="badge bg-primary me-2">Premium Build</span>
-                                <span class="badge bg-info">iOS Ecosystem</span>
-                            </div>
-                            <p class="card-text">Perfect for users invested in the Apple ecosystem who prioritize performance, build quality, and seamless integration across devices.</p>
-                            <h6>Best For:</h6>
-                            <ul class="feature-list">
-                                <li>Apple ecosystem users</li>
-                                <li>Performance enthusiasts</li>
-                                <li>Photography purists</li>
-                                <li>Premium build quality seekers</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-success">
-                                <i class="bi bi-android2 me-2"></i>Galaxy S24 Ultra
-                            </h5>
-                            <div class="mb-3">
-                                <span class="badge bg-success me-2">Best Value</span>
-                                <span class="badge bg-warning me-2">Most Features</span>
-                                <span class="badge bg-info">S Pen</span>
-                            </div>
-                            <p class="card-text">Ideal for power users who want maximum features, productivity tools, and the flexibility of Android with S Pen functionality.</p>
-                            <h6>Best For:</h6>
-                            <ul class="feature-list">
-                                <li>Power users and professionals</li>
-                                <li>Photography enthusiasts</li>
-                                <li>Note-taking and productivity</li>
-                                <li>Android customization lovers</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <a href="#" class="btn btn-light btn-lg">
+                        <i class="bi bi-download me-2"></i>Download Case Study
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Quick Comparisons -->
-    <section class="py-5 bg-light">
+    <!-- Case Studies Section -->
+    <section class="py-5">
         <div class="container">
-            <div class="row mb-4">
-                <div class="col-lg-8">
-                    <h2 class="display-6 fw-bold">Quick Comparisons</h2>
-                    <p class="lead text-muted">At-a-glance comparisons across different categories</p>
+            <!-- Case Study 1 -->
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1560439514-e1b8d8e4e1f0?w=600&h=400&fit=crop" class="img-fluid rounded" alt="Manufacturing Client">
                 </div>
-            </div>
-
-            <!-- Laptop Comparison -->
-            <div class="row mb-5">
-                <div class="col-12">
-                    <h4 class="mb-3">
-                        <i class="bi bi-laptop me-2 text-success"></i>Laptop Showdown
-                    </h4>
-                    <div class="table-responsive">
-                        <table class="table table-sm table-comparison-mini">
-                            <thead>
-                                <tr>
-                                    <th>Model</th>
-                                    <th>Image</th>
-                                    <th>Processor</th>
-                                    <th>RAM</th>
-                                    <th>Display</th>
-                                    <th>Battery</th>
-                                    <th>Price</th>
-                                    <th>Rating</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="fw-bold">MacBook Pro M3</div>
-                                        <small class="text-muted">Apple</small>
-                                    </td>
-                                    <td>
-                                        <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=60&h=40&fit=crop" class="rounded" alt="MacBook Pro M3">
-                                    </td>
-                                    <td>
-                                        <span class="badge bg-success">M3 Pro</span>
-                                    </td>
-                                    <td>16GB</td>
-                                    <td>14" Liquid Retina XDR</td>
-                                    <td>18 hours</td>
-                                    <td class="fw-bold">$1,599</td>
-                                    <td>
-                                        <div class="star-rating small">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="fw-bold">Dell XPS 13</div>
-                                        <small class="text-muted">Dell</small>
-                                    </td>
-                                    <td>
-                                        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=60&h=40&fit=crop" class="rounded" alt="Dell XPS 13">
-                                    </td>
-                                    <td>
-                                        <span class="badge bg-primary">Intel i7</span>
-                                    </td>
-                                    <td>16GB</td>
-                                    <td>13.4" InfinityEdge</td>
-                                    <td>12 hours</td>
-                                    <td class="fw-bold">$999</td>
-                                    <td>
-                                        <div class="star-rating small">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-empty"></i>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="table-success">
-                                    <td>
-                                        <div class="fw-bold">Surface Laptop 5</div>
-                                        <small class="text-muted">Microsoft</small>
-                                    </td>
-                                    <td>
-                                        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=60&h=40&fit=crop" class="rounded" alt="Surface Laptop 5">
-                                    </td>
-                                    <td>
-                                        <span class="badge bg-warning">AMD Ryzen 7</span>
-                                    </td>
-                                    <td>16GB</td>
-                                    <td>13.5" PixelSense</td>
-                                    <td>17 hours</td>
-                                    <td class="fw-bold">$1,199</td>
-                                    <td>
-                                        <div class="star-rating small">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-half"></i>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Audio Comparison -->
-            <div class="row">
-                <div class="col-12">
-                    <h4 class="mb-3">
-                        <i class="bi bi-headphones me-2 text-warning"></i>Premium Headphones
-                    </h4>
-                    <div class="row g-3">
-                        <div class="col-lg-4">
-                            <div class="card comparison-card">
-                                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop" class="card-img-top" alt="Sony WH-1000XM5">
-                                <div class="card-body">
-                                    <h6 class="card-title">Sony WH-1000XM5</h6>
-                                    <div class="row small">
-                                        <div class="col-6">
-                                            <div class="text-success fw-bold">9.0</div>
-                                            <div class="text-muted">Sound</div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="text-primary fw-bold">9.5</div>
-                                            <div class="text-muted">ANC</div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-2">
-                                        <div class="fw-bold">$399</div>
-                                        <div class="star-rating small">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-half"></i>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-3"><i class="fas fa-industry text-primary me-2"></i>Midwest Manufacturing Firm</h2>
+                    <p class="lead text-muted">40-person manufacturing company, Illinois</p>
+                    
+                    <h5 class="mt-4">The Challenge</h5>
+                    <p>Legacy IT infrastructure with frequent downtime, no cybersecurity measures, and compliance violations impacting operations and revenue.</p>
+                    
+                    <h5>Our Solution</h5>
+                    <p>Complete IT infrastructure overhaul including:</p>
+                    <ul>
+                        <li>Modern server architecture with redundancy</li>
+                        <li>24/7 managed IT support implementation</li>
+                        <li>Advanced cybersecurity and network monitoring</li>
+                        <li>Automated backup and disaster recovery</li>
+                        <li>Employee training and security policies</li>
+                    </ul>
+                    
+                    <h5>Results</h5>
+                    <div class="row mt-3">
+                        <div class="col-sm-6">
+                            <div class="text-center p-3 bg-light rounded">
+                                <h4 class="text-success">85%</h4>
+                                <p class="mb-0 small">Downtime Reduction</p>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="card comparison-card">
-                                <img src="https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?w=300&h=200&fit=crop" class="card-img-top" alt="Bose QuietComfort">
-                                <div class="card-body">
-                                    <h6 class="card-title">Bose QuietComfort</h6>
-                                    <div class="row small">
-                                        <div class="col-6">
-                                            <div class="text-success fw-bold">8.5</div>
-                                            <div class="text-muted">Sound</div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="text-primary fw-bold">9.0</div>
-                                            <div class="text-muted">ANC</div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-2">
-                                        <div class="fw-bold">$329</div>
-                                        <div class="star-rating small">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-empty"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card comparison-card">
-                                <img src="https://images.unsplash.com/photo-1558756520-22cfe5d382ca?w=300&h=200&fit=crop" class="card-img-top" alt="AirPods Max">
-                                <div class="card-body">
-                                    <h6 class="card-title">AirPods Max</h6>
-                                    <div class="row small">
-                                        <div class="col-6">
-                                            <div class="text-success fw-bold">9.2</div>
-                                            <div class="text-muted">Sound</div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="text-primary fw-bold">8.8</div>
-                                            <div class="text-muted">ANC</div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-2">
-                                        <div class="fw-bold">$549</div>
-                                        <div class="star-rating small">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-half"></i>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-sm-6">
+                            <div class="text-center p-3 bg-light rounded">
+                                <h4 class="text-success">$50K+</h4>
+                                <p class="mb-0 small">Annual Savings</p>
                             </div>
                         </div>
                     </div>
+                    
+                    <button class="btn btn-primary btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#caseStudyModal" data-case="manufacturing">
+                        <i class="fas fa-file-pdf me-2"></i>Read Full Case Study
+                    </button>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <!-- Case Study 2 -->
+            <div class="row mb-5 align-items-center flex-row-reverse">
+                <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-5">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop" class="img-fluid rounded" alt="Healthcare Client">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-3"><i class="fas fa-hospital text-danger me-2"></i>Regional Medical Practice</h2>
+                    <p class="lead text-muted">25-person medical office, Illinois</p>
+                    
+                    <h5 class="mt-4">The Challenge</h5>
+                    <p>Patient data security concerns, HIPAA compliance gaps, and legacy systems threatening patient privacy and practice operations.</p>
+                    
+                    <h5>Our Solution</h5>
+                    <p>HIPAA-compliant infrastructure rebuild including:</p>
+                    <ul>
+                        <li>Encrypted medical records system deployment</li>
+                        <li>HIPAA compliance audit and remediation</li>
+                        <li>Advanced network security and access controls</li>
+                        <li>24/7 security monitoring and threat detection</li>
+                        <li>Staff security training and compliance procedures</li>
+                    </ul>
+                    
+                    <h5>Results</h5>
+                    <div class="row mt-3">
+                        <div class="col-sm-6">
+                            <div class="text-center p-3 bg-light rounded">
+                                <h4 class="text-success">100%</h4>
+                                <p class="mb-0 small">Compliance</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-center p-3 bg-light rounded">
+                                <h4 class="text-success">Zero</h4>
+                                <p class="mb-0 small">Security Incidents</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#caseStudyModal" data-case="healthcare">
+                        <i class="fas fa-file-pdf me-2"></i>Read Full Case Study
+                    </button>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <!-- Case Study 3 -->
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop" class="img-fluid rounded" alt="Construction Client">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-3"><i class="fas fa-hard-hat text-warning me-2"></i>Construction Services Company</h2>
+                    <p class="lead text-muted">35-person construction firm, Illinois</p>
+                    
+                    <h5 class="mt-4">The Challenge</h5>
+                    <p>Field crews unable to access project data remotely, office productivity hampered by outdated collaboration tools, no mobile solutions.</p>
+                    
+                    <h5>Our Solution</h5>
+                    <p>Cloud infrastructure and remote access implementation:</p>
+                    <ul>
+                        <li>Microsoft 365 deployment with Teams collaboration</li>
+                        <li>Cloud-based project management system setup</li>
+                        <li>Mobile device management and VPN access</li>
+                        <li>Cloud backup and disaster recovery</li>
+                        <li>Staff training on new productivity tools</li>
+                    </ul>
+                    
+                    <h5>Results</h5>
+                    <div class="row mt-3">
+                        <div class="col-sm-6">
+                            <div class="text-center p-3 bg-light rounded">
+                                <h4 class="text-success">40%</h4>
+                                <p class="mb-0 small">Schedule Improvement</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-center p-3 bg-light rounded">
+                                <h4 class="text-success">$30K</h4>
+                                <p class="mb-0 small">Monthly Savings</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#caseStudyModal" data-case="construction">
+                        <i class="fas fa-file-pdf me-2"></i>Read Full Case Study
+                    </button>
+                </div>
+            </div>
+
+            <!-- Comparison Table Section -->
+            <div class="mt-5 pt-5">
+                <h2 class="mb-4 text-center">Quick Service Comparison</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Service Feature</th>
+                                <th scope="col">Standard Support</th>
+                                <th scope="col">24/7 Premium</th>
+                                <th scope="col">Enterprise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Response Time</td>
+                                <td>Business Hours (24hrs)</td>
+                                <td><span class="badge bg-success">15 Minutes</span></td>
+                                <td><span class="badge bg-danger">5 Minutes</span></td>
+                            </tr>
+                            <tr>
+                                <td>Support Availability</td>
+                                <td>M-F 8am-5pm</td>
+                                <td>24/7/365</td>
+                                <td>24/7/365 + On-Site</td>
+                            </tr>
+                            <tr>
+                                <td>Proactive Monitoring</td>
+                                <td>Monthly</td>
+                                <td><i class="bi bi-check-circle text-success"></i> Continuous</td>
+                                <td><i class="bi bi-check-circle text-success"></i> Continuous</td>
+                            </tr>
+                            <tr>
+                                <td>Dedicated Account Manager</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><i class="bi bi-check-circle text-success"></i> Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Security Monitoring</td>
+                                <td>-</td>
+                                <td><i class="bi bi-check-circle text-success"></i> 24/7</td>
+                                <td><i class="bi bi-check-circle text-success"></i> 24/7 + SOC</td>
+                            </tr>
+                            <tr>
+                                <td>Disaster Recovery</td>
+                                <td>Standard</td>
+                                <td><span class="badge bg-info">4-Hour RTO</span></td>
+                                <td><span class="badge bg-danger">1-Hour RTO</span></td>
+                            </tr>
+                            <tr>
+                                <td>Quarterly Reviews</td>
+                                <td>-</td>
+                                <td><i class="bi bi-check-circle text-success"></i> Yes</td>
+                                <td><i class="bi bi-check-circle text-success"></i> Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Starting Price</td>
+                                <td><strong>$299/mo</strong></td>
+                                <td><strong>$599/mo</strong></td>
+                                <td><strong>Custom</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Comparison Modal -->
-    <div class="modal fade" id="comparisonModal" tabindex="-1" aria-labelledby="comparisonModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
+    <!-- Case Study Modal -->
+    <div class="modal fade" id="caseStudyModal" tabindex="-1" aria-labelledby="caseStudyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="comparisonModalLabel">Detailed Comparison View</h5>
+                    <h5 class="modal-title" id="caseStudyModalLabel">Case Study</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="text-center mb-4">
-                                <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=200&h=200&fit=crop" class="img-fluid rounded" alt="iPhone 15 Pro">
-                                <h5 class="mt-3">iPhone 15 Pro</h5>
-                                <div class="star-rating mb-2">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-half"></i>
-                                </div>
-                                <div class="h4">4.5/5</div>
-                            </div>
-                            
-                            <h6>Detailed Scores</h6>
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span>Performance</span>
-                                    <span class="fw-bold">9.5</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-success" style="width: 95%"></div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span>Camera</span>
-                                    <span class="fw-bold">9.0</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span>Battery</span>
-                                    <span class="fw-bold">8.0</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" style="width: 80%"></div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span>Value</span>
-                                    <span class="fw-bold">7.5</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" style="width: 75%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <div class="text-center mb-4">
-                                <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=200&h=200&fit=crop" class="img-fluid rounded" alt="Galaxy S24 Ultra">
-                                <h5 class="mt-3">Galaxy S24 Ultra</h5>
-                                <div class="star-rating mb-2">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-                                <div class="h4">5.0/5</div>
-                            </div>
-                            
-                            <h6>Detailed Scores</h6>
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span>Performance</span>
-                                    <span class="fw-bold">9.0</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-success" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span>Camera</span>
-                                    <span class="fw-bold">9.5</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" style="width: 95%"></div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span>Battery</span>
-                                    <span class="fw-bold">9.0</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span>Value</span>
-                                    <span class="fw-bold">8.5</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" style="width: 85%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <p>Download the full case study to see detailed metrics, implementation timeline, and specific results.</p>
+                    <p><strong>PDF available for download</strong></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Share Comparison</button>
+                    <button type="button" class="btn btn-primary">
+                        <i class="fas fa-download me-2"></i>Download PDF
+                    </button>
                 </div>
             </div>
         </div>
@@ -728,24 +340,40 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <h5><i class="bi bi-gear-fill me-2"></i>TechGear Reviews</h5>
-                    <p class="text-muted">Your trusted source for honest, in-depth technology product reviews and recommendations.</p>
+                    <h5><i class="fas fa-shield-alt me-2"></i>Badger Technologies</h5>
+                    <p class="text-muted">Professional IT services for small and medium businesses in Illinois. 24/7 support, cybersecurity, and cloud solutions you can trust.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Follow us on LinkedIn">
+                            <i class="bi bi-linkedin fs-5"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Like us on Facebook">
+                            <i class="bi bi-facebook fs-5"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Follow us on Twitter">
+                            <i class="bi bi-twitter fs-5"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Visit our YouTube channel">
+                            <i class="bi bi-youtube fs-5"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
-                    <h6>Categories</h6>
+                    <h6>Services</h6>
                     <ul class="list-unstyled">
-                        <li><a href="products.html">Smartphones</a></li>
-                        <li><a href="products.html">Laptops</a></li>
-                        <li><a href="products.html">Audio</a></li>
-                        <li><a href="products.html">Smart Home</a></li>
+                        <li><a href="products.html">Managed IT Support</a></li>
+                        <li><a href="products.html">Cybersecurity</a></li>
+                        <li><a href="products.html">Cloud Services</a></li>
+                        <li><a href="products.html">IT Consulting</a></li>
+                        <li><a href="products.html">24/7 Help Desk</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
-                    <h6>Resources</h6>
+                    <h6>Solutions</h6>
                     <ul class="list-unstyled">
-                        <li><a href="comparisons.html">Comparisons</a></li>
-                        <li><a href="#">Buying Guides</a></li>
-                        <li><a href="#">Best Lists</a></li>
+                        <li><a href="reviews.html">Remote Work Setup</a></li>
+                        <li><a href="reviews.html">Compliance</a></li>
+                        <li><a href="reviews.html">Disaster Recovery</a></li>
+                        <li><a href="reviews.html">Cloud Migration</a></li>
                         <li><a href="about.html">About Us</a></li>
                     </ul>
                 </div>
@@ -754,22 +382,28 @@
                     <ul class="list-unstyled">
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <h6>Newsletter</h6>
-                    <p class="text-muted small">Get weekly tech reviews</p>
+                    <h6>Get IT Updates</h6>
+                    <p class="text-muted small">Receive cybersecurity alerts and IT tips for your business</p>
                     <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Email">
+                        <input type="email" class="form-control" placeholder="Business Email">
                         <button class="btn btn-outline-light" type="button">Subscribe</button>
                     </div>
                 </div>
             </div>
             <hr>
-            <div class="text-center">
-                <p class="mb-0 text-muted">&copy; 2025 TechGear Reviews. All rights reserved.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2025 Badger Technologies LLC. Securing your business, one byte at a time.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted">Made with Bootstrap 5 | Professional IT Services</small>
+                </div>
             </div>
         </div>
     </footer>
@@ -785,20 +419,14 @@
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
 
-        // Initialize popovers  
-        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl)
+        // Case Study modal handler
+        const caseStudyModal = document.getElementById('caseStudyModal')
+        caseStudyModal.addEventListener('show.bs.modal', event => {
+            const button = event.relatedTarget
+            const caseStudy = button.getAttribute('data-case')
+            const modalTitle = caseStudyModal.querySelector('.modal-title')
+            modalTitle.textContent = caseStudy.charAt(0).toUpperCase() + caseStudy.slice(1) + ' - Case Study'
         })
-
-        // Category filter buttons
-        document.querySelectorAll('[data-category]').forEach(function(button) {
-            button.addEventListener('click', function() {
-                const category = this.getAttribute('data-category');
-                console.log('Filtering by category:', category);
-                // Add filtering logic here
-            });
-        });
     </script>
 </body>
 </html>

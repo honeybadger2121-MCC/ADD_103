@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Detailed product reviews with ratings, pros, cons, and recommendations">
-    <title>Reviews - TechGear Reviews</title>
+    <meta name="description" content="IT Solutions for businesses - implementation guides, best practices, and industry-specific solutions">
+    <title>Solutions - Badger Technologies</title>
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -18,7 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <i class="bi bi-gear-fill me-2"></i>Ben's Tech Takes
+                <i class="fas fa-shield-alt me-2"></i>Badger Technologies
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" title="Toggle Navigation">
@@ -31,13 +33,13 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="products.html">Products</a>
+                        <a class="nav-link" href="products.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="reviews.html">Reviews</a>
+                        <a class="nav-link active" href="reviews.html">Solutions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="comparisons.html">Comparisons</a>
+                        <a class="nav-link" href="comparisons.html">Case Studies</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
@@ -51,7 +53,7 @@
     <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="navbarOffcanvasLabel">
-                <i class="bi bi-gear-fill me-2"></i>Navigation
+                <i class="fas fa-shield-alt me-2"></i>Navigation
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -64,17 +66,17 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="products.html">
-                        <i class="bi bi-box me-2"></i>Products
+                        <i class="fas fa-cogs me-2"></i>Services
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="reviews.html">
-                        <i class="bi bi-star me-2"></i>Reviews
+                        <i class="fas fa-lightbulb me-2"></i>Solutions
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="comparisons.html">
-                        <i class="bi bi-arrow-left-right me-2"></i>Comparisons
+                        <i class="fas fa-briefcase me-2"></i>Case Studies
                     </a>
                 </li>
                 <li class="nav-item">
@@ -91,656 +93,315 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-8">
-                    <h1 class="display-4 fw-bold mb-3">My Honest Reviews</h1>
-                    <p class="lead">Real talk about tech from someone who actually uses this stuff. No marketing fluff, just the truth (even when it hurts).</p>
-                </div>
-                <div class="col-lg-4">
-                    <div class="text-center">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="h3 fw-bold">127</div>
-                                <small>Reviews So Far</small>
-                            </div>
-                            <div class="col-6">
-                                <div class="h3 fw-bold">43%</div>
-                                <small>Actually Worth It</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Review Summary Table Section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-lg-8">
-                    <h2 class="display-6 fw-bold">What I've Been Testing</h2>
-                    <p class="lead text-muted">The good, the bad, and the "seriously, who approved this?"</p>
+                    <h1 class="display-4 fw-bold mb-3">IT Solutions & Best Practices</h1>
+                    <p class="lead">Industry-specific solutions, implementation guides, and proven strategies to optimize your IT infrastructure.</p>
                 </div>
                 <div class="col-lg-4 text-lg-end">
-                    <div class="btn-group" role="group">
-                        <input type="radio" class="btn-check" name="sortOptions" id="sortLatest" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary" for="sortLatest">Latest</label>
-                        
-                        <input type="radio" class="btn-check" name="sortOptions" id="sortRating" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="sortRating">Rating</label>
-                        
-                        <input type="radio" class="btn-check" name="sortOptions" id="sortPrice" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="sortPrice">Price</label>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Responsive Table -->
-            <div class="table-responsive">
-                <table class="table table-custom table-striped table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">Product</th>
-                            <th scope="col">Category</th>
-                            <th scope="col">Overall Score</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Pros</th>
-                            <th scope="col">Cons</th>
-                            <th scope="col">Review Date</th>
-                            <th scope="col">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=50&h=50&fit=crop" class="rounded me-3" alt="iPhone 15 Pro">
-                                    <div>
-                                        <div class="fw-bold">iPhone 15 Pro</div>
-                                        <small class="text-muted">Apple</small>
-                                    </div>
-                                </div>
-                            </td>
-                            <td><span class="badge bg-primary">Smartphone</span></td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <div class="star-rating me-2">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
-                                    </div>
-                                    <strong>4.5/5</strong>
-                                </div>
-                            </td>
-                            <td><strong>$999</strong></td>
-                            <td>
-                                <ul class="small mb-0 list-unstyled">
-                                    <li>✓ Excellent camera</li>
-                                    <li>✓ A17 Pro performance</li>
-                                    <li>✓ Premium build</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <ul class="small mb-0 list-unstyled">
-                                    <li>✗ Expensive</li>
-                                    <li>✗ Battery life</li>
-                                </ul>
-                            </td>
-                            <td><small>Nov 1, 2025</small></td>
-                            <td>
-                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#reviewModal" data-product="iPhone 15 Pro">
-                                    View
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=50&h=50&fit=crop" class="rounded me-3" alt="MacBook Pro M3">
-                                    <div>
-                                        <div class="fw-bold">MacBook Pro M3</div>
-                                        <small class="text-muted">Apple</small>
-                                    </div>
-                                </div>
-                            </td>
-                            <td><span class="badge bg-success">Laptop</span></td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <div class="star-rating me-2">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <strong>5.0/5</strong>
-                                </div>
-                            </td>
-                            <td><strong>$1,599</strong></td>
-                            <td>
-                                <ul class="small mb-0 list-unstyled">
-                                    <li>✓ M3 chip power</li>
-                                    <li>✓ Amazing display</li>
-                                    <li>✓ All-day battery</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <ul class="small mb-0 list-unstyled">
-                                    <li>✗ Very expensive</li>
-                                    <li>✗ Limited ports</li>
-                                </ul>
-                            </td>
-                            <td><small>Oct 28, 2025</small></td>
-                            <td>
-                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#reviewModal" data-product="MacBook Pro M3">
-                                    View
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=50&h=50&fit=crop" class="rounded me-3" alt="Sony WH-1000XM5">
-                                    <div>
-                                        <div class="fw-bold">Sony WH-1000XM5</div>
-                                        <small class="text-muted">Sony</small>
-                                    </div>
-                                </div>
-                            </td>
-                            <td><span class="badge bg-warning">Audio</span></td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <div class="star-rating me-2">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
-                                    </div>
-                                    <strong>4.5/5</strong>
-                                </div>
-                            </td>
-                            <td><strong>$399</strong></td>
-                            <td>
-                                <ul class="small mb-0 list-unstyled">
-                                    <li>✓ Best noise cancellation</li>
-                                    <li>✓ 30-hour battery</li>
-                                    <li>✓ Comfortable fit</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <ul class="small mb-0 list-unstyled">
-                                    <li>✗ Premium price</li>
-                                    <li>✗ Touch controls</li>
-                                </ul>
-                            </td>
-                            <td><small>Oct 25, 2025</small></td>
-                            <td>
-                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#reviewModal" data-product="Sony WH-1000XM5">
-                                    View
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=50&h=50&fit=crop" class="rounded me-3" alt="Samsung Galaxy S24">
-                                    <div>
-                                        <div class="fw-bold">Samsung Galaxy S24</div>
-                                        <small class="text-muted">Samsung</small>
-                                    </div>
-                                </div>
-                            </td>
-                            <td><span class="badge bg-primary">Smartphone</span></td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <div class="star-rating me-2">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <strong>5.0/5</strong>
-                                </div>
-                            </td>
-                            <td><strong>$799</strong></td>
-                            <td>
-                                <ul class="small mb-0 list-unstyled">
-                                    <li>✓ AI features</li>
-                                    <li>✓ Great cameras</li>
-                                    <li>✓ Better value</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <ul class="small mb-0 list-unstyled">
-                                    <li>✗ Software bloat</li>
-                                    <li>✗ Plastic back</li>
-                                </ul>
-                            </td>
-                            <td><small>Oct 22, 2025</small></td>
-                            <td>
-                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#reviewModal" data-product="Samsung Galaxy S24">
-                                    View
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=50&h=50&fit=crop" class="rounded me-3" alt="Dell XPS 13">
-                                    <div>
-                                        <div class="fw-bold">Dell XPS 13</div>
-                                        <small class="text-muted">Dell</small>
-                                    </div>
-                                </div>
-                            </td>
-                            <td><span class="badge bg-success">Laptop</span></td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <div class="star-rating me-2">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-empty"></i>
-                                    </div>
-                                    <strong>4.0/5</strong>
-                                </div>
-                            </td>
-                            <td><strong>$999</strong></td>
-                            <td>
-                                <ul class="small mb-0 list-unstyled">
-                                    <li>✓ Premium design</li>
-                                    <li>✓ Great display</li>
-                                    <li>✓ Compact size</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <ul class="small mb-0 list-unstyled">
-                                    <li>✗ Limited ports</li>
-                                    <li>✗ Webcam placement</li>
-                                </ul>
-                            </td>
-                            <td><small>Oct 20, 2025</small></td>
-                            <td>
-                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#reviewModal" data-product="Dell XPS 13">
-                                    View
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Reviews Section -->
-    <section class="review-section">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-lg-8">
-                    <h2 class="display-6 fw-bold">Featured Reviews</h2>
-                    <p class="lead text-muted">Our most comprehensive and detailed product reviews</p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <!-- Featured Review 1 -->
-                <div class="col-lg-6">
-                    <article class="card review-card h-100">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=300&h=250&fit=crop" class="img-fluid rounded-start gallery-image" alt="iPhone 15 Pro Review">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between align-items-start mb-2">
-                                        <span class="badge bg-primary">Editor's Choice</span>
-                                        <div class="star-rating">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-half"></i>
-                                        </div>
-                                    </div>
-                                    <h5 class="card-title">iPhone 15 Pro: Complete Review</h5>
-                                    <p class="card-text small">After two weeks of intensive testing, we dive deep into Apple's latest flagship smartphone...</p>
-                                    <div class="row text-center mb-3">
-                                        <div class="col-4">
-                                            <div class="small fw-bold text-success">9.0</div>
-                                            <div class="small text-muted">Performance</div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="small fw-bold text-warning">8.5</div>
-                                            <div class="small text-muted">Camera</div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="small fw-bold text-info">8.0</div>
-                                            <div class="small text-muted">Battery</div>
-                                        </div>
-                                    </div>
-                                    <button class="btn btn-outline-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#review1Details" aria-expanded="false">
-                                        Read Summary
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapse" id="review1Details">
-                            <div class="card-body border-top">
-                                <h6>Our Verdict</h6>
-                                <p class="small">The iPhone 15 Pro represents a significant step forward with its titanium design, A17 Pro chip, and improved camera system. While expensive, it delivers on Apple's premium promise.</p>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h6 class="small">Pros</h6>
-                                        <ul class="small list-unstyled">
-                                            <li>✓ Excellent build quality</li>
-                                            <li>✓ Outstanding performance</li>
-                                            <li>✓ Great camera system</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-6">
-                                        <h6 class="small">Cons</h6>
-                                        <ul class="small list-unstyled">
-                                            <li>✗ High price point</li>
-                                            <li>✗ Battery could be better</li>
-                                            <li>✗ Limited customization</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Featured Review 2 -->
-                <div class="col-lg-6">
-                    <article class="card review-card h-100">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=300&h=250&fit=crop" class="img-fluid rounded-start gallery-image" alt="MacBook Pro M3 Review">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between align-items-start mb-2">
-                                        <span class="badge bg-success">Best in Class</span>
-                                        <div class="star-rating">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </div>
-                                    </div>
-                                    <h5 class="card-title">MacBook Pro M3: Performance Beast</h5>
-                                    <p class="card-text small">Apple's M3 chip delivers unprecedented performance in a laptop form factor. Our comprehensive testing reveals...</p>
-                                    <div class="row text-center mb-3">
-                                        <div class="col-4">
-                                            <div class="small fw-bold text-success">9.8</div>
-                                            <div class="small text-muted">Performance</div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="small fw-bold text-success">9.5</div>
-                                            <div class="small text-muted">Display</div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="small fw-bold text-success">9.2</div>
-                                            <div class="small text-muted">Battery</div>
-                                        </div>
-                                    </div>
-                                    <button class="btn btn-outline-success btn-sm" data-bs-toggle="collapse" data-bs-target="#review2Details" aria-expanded="false">
-                                        Read Summary
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapse" id="review2Details">
-                            <div class="card-body border-top">
-                                <h6>Our Verdict</h6>
-                                <p class="small">The MacBook Pro M3 sets a new standard for professional laptops. Its combination of power, efficiency, and display quality is unmatched in the market.</p>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h6 class="small">Pros</h6>
-                                        <ul class="small list-unstyled">
-                                            <li>✓ Incredible M3 performance</li>
-                                            <li>✓ Stunning Liquid Retina XDR</li>
-                                            <li>✓ All-day battery life</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-6">
-                                        <h6 class="small">Cons</h6>
-                                        <ul class="small list-unstyled">
-                                            <li>✗ Very expensive</li>
-                                            <li>✗ Limited port selection</li>
-                                            <li>✗ No touch screen</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                    <a href="#" class="btn btn-light btn-lg">
+                        <i class="bi bi-download me-2"></i>Download Guides
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Review Process Accordion -->
+    <!-- Solutions Grid -->
     <section class="py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="display-6 fw-bold text-center mb-5">Our Review Process</h2>
-                    
-                    <div class="accordion accordion-custom" id="reviewProcessAccordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="testingHeading">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#testingCollapse" aria-expanded="true" aria-controls="testingCollapse">
-                                    <i class="bi bi-gear me-3 text-primary"></i>
-                                    Testing Methodology
-                                </button>
-                            </h2>
-                            <div id="testingCollapse" class="accordion-collapse collapse show" aria-labelledby="testingHeading" data-bs-parent="#reviewProcessAccordion">
-                                <div class="accordion-body">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h6>Performance Testing</h6>
-                                            <ul class="feature-list">
-                                                <li>Benchmark suite testing</li>
-                                                <li>Real-world usage scenarios</li>
-                                                <li>Stress testing under load</li>
-                                                <li>Battery life evaluation</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h6>Quality Assessment</h6>
-                                            <ul class="feature-list">
-                                                <li>Build quality inspection</li>
-                                                <li>Display calibration testing</li>
-                                                <li>Audio quality measurement</li>
-                                                <li>Camera performance analysis</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="scoringHeading">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#scoringCollapse" aria-expanded="false" aria-controls="scoringCollapse">
-                                    <i class="bi bi-star me-3 text-warning"></i>
-                                    Scoring System
-                                </button>
-                            </h2>
-                            <div id="scoringCollapse" class="accordion-collapse collapse" aria-labelledby="scoringHeading" data-bs-parent="#reviewProcessAccordion">
-                                <div class="accordion-body">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="text-center mb-3">
-                                                <div class="display-6 text-success">35%</div>
-                                                <h6>Performance</h6>
-                                                <small class="text-muted">Speed, efficiency, and capability</small>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="text-center mb-3">
-                                                <div class="display-6 text-primary">25%</div>
-                                                <h6>Design & Build</h6>
-                                                <small class="text-muted">Quality, materials, and aesthetics</small>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="text-center mb-3">
-                                                <div class="display-6 text-warning">25%</div>
-                                                <h6>Value</h6>
-                                                <small class="text-muted">Price vs features and performance</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="display-6 text-info">15%</div>
-                                        <h6>Features</h6>
-                                        <small class="text-muted">Unique capabilities and innovation</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="timelineHeading">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#timelineCollapse" aria-expanded="false" aria-controls="timelineCollapse">
-                                    <i class="bi bi-clock me-3 text-info"></i>
-                                    Review Timeline
-                                </button>
-                            </h2>
-                            <div id="timelineCollapse" class="accordion-collapse collapse" aria-labelledby="timelineHeading" data-bs-parent="#reviewProcessAccordion">
-                                <div class="accordion-body">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h6>Testing Period</h6>
-                                            <ul class="feature-list">
-                                                <li>Minimum 2 weeks daily usage</li>
-                                                <li>Multiple reviewer perspectives</li>
-                                                <li>Long-term reliability testing</li>
-                                                <li>Comparison with competitors</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h6>Review Stages</h6>
-                                            <ol class="list-numbered">
-                                                <li>Initial impressions and setup</li>
-                                                <li>Daily usage and performance testing</li>
-                                                <li>Detailed feature analysis</li>
-                                                <li>Final scoring and recommendation</li>
-                                            </ol>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <!-- Remote Work Solutions -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-laptop-home text-primary fs-3 me-3"></i>
+                        <div>
+                            <h2 class="mb-0">Remote Work Infrastructure</h2>
+                            <p class="text-muted mb-0">Secure VPN, collaboration tools, and productivity solutions for distributed teams</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Review Modal -->
-    <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="reviewModalLabel">Product Review Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400&h=300&fit=crop" class="img-fluid rounded" alt="Product" id="modalReviewImage">
-                            <div class="mt-3 text-center">
-                                <div class="star-rating mb-2" id="modalReviewRating">
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <article class="card review-card h-100">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop" class="card-img-top" alt="VPN Setup">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-primary">Implementation</span>
+                                <div class="star-rating">
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-half"></i>
                                 </div>
-                                <div class="h4" id="modalReviewScore">4.5/5</div>
-                                <div class="text-muted">Overall Score</div>
+                            </div>
+                            <h5 class="card-title">Secure VPN Gateway Setup</h5>
+                            <p class="card-text">Establish enterprise-grade VPN infrastructure with multi-factor authentication, encrypted tunnels, and geo-redundancy.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Est. 2-3 weeks</small>
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#solutionModal" data-solution="VPN Gateway">
+                                    Learn More
+                                </button>
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <h4 id="modalReviewTitle">Product Name</h4>
-                            <p id="modalReviewDescription">Detailed review content will appear here...</p>
-                            
-                            <div class="row mb-4">
-                                <div class="col-md-6">
-                                    <h6 class="text-success">
-                                        <i class="bi bi-check-circle me-2"></i>Pros
-                                    </h6>
-                                    <ul class="feature-list" id="modalReviewPros">
-                                        <li>Excellent performance</li>
-                                        <li>Premium build quality</li>
-                                        <li>Great camera system</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <h6 class="text-danger">
-                                        <i class="bi bi-x-circle me-2"></i>Cons
-                                    </h6>
-                                    <ul class="list-unstyled" id="modalReviewCons">
-                                        <li>✗ Expensive price point</li>
-                                        <li>✗ Limited customization</li>
-                                        <li>✗ Battery life could be better</li>
-                                    </ul>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <article class="card review-card h-100">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop" class="card-img-top" alt="M365">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-primary">Collaboration</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
                                 </div>
                             </div>
-                            
-                            <div class="row">
-                                <div class="col-3">
-                                    <div class="text-center">
-                                        <div class="h5 text-success">9.0</div>
-                                        <div class="small">Performance</div>
-                                        <div class="progress progress-custom">
-                                            <div class="progress-bar bg-success progress-bar-striped" style="width: 90%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="text-center">
-                                        <div class="h5 text-primary">8.5</div>
-                                        <div class="small">Design</div>
-                                        <div class="progress progress-custom">
-                                            <div class="progress-bar bg-primary progress-bar-striped" style="width: 85%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="text-center">
-                                        <div class="h5 text-warning">8.0</div>
-                                        <div class="small">Value</div>
-                                        <div class="progress progress-custom">
-                                            <div class="progress-bar bg-warning progress-bar-striped" style="width: 80%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="text-center">
-                                        <div class="h5 text-info">8.8</div>
-                                        <div class="small">Features</div>
-                                        <div class="progress progress-custom">
-                                            <div class="progress-bar bg-info progress-bar-striped" style="width: 88%"></div>
-                                        </div>
-                                    </div>
+                            <h5 class="card-title">Microsoft 365 Deployment</h5>
+                            <p class="card-text">Full Microsoft 365 stack implementation including Teams, SharePoint, OneDrive, and Exchange security configuration.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Est. 1-2 weeks</small>
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#solutionModal" data-solution="M365">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <article class="card review-card h-100">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f70504eee?w=400&h=250&fit=crop" class="card-img-top" alt="Endpoint Security">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-primary">Security</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
                                 </div>
                             </div>
+                            <h5 class="card-title">Endpoint Protection Rollout</h5>
+                            <p class="card-text">Deploy enterprise antivirus, EDR solutions, and device management across all endpoints with zero-downtime.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Est. 1-3 weeks</small>
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#solutionModal" data-solution="Endpoint">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Industry-Specific Solutions -->
+            <div class="row mb-5 mt-5">
+                <div class="col-12">
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-industry text-success fs-3 me-3"></i>
+                        <div>
+                            <h2 class="mb-0">Industry-Specific Solutions</h2>
+                            <p class="text-muted mb-0">Healthcare, Finance, and Manufacturing compliance and security frameworks</p>
                         </div>
                     </div>
                 </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <article class="card review-card h-100">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=250&fit=crop" class="card-img-top" alt="HIPAA">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-success">Healthcare</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">HIPAA Compliance Framework</h5>
+                            <p class="card-text">Complete HIPAA-compliant infrastructure implementation including patient data encryption, access controls, and audit logging.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Custom Timeline</small>
+                                <button class="btn btn-sm btn-outline-success" data-bs-toggle="modal" data-bs-target="#solutionModal" data-solution="HIPAA">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <article class="card review-card h-100">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=250&fit=crop" class="card-img-top" alt="PCI Compliance">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-success">Finance</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">PCI DSS Compliance</h5>
+                            <p class="card-text">Payment card data security implementation, tokenization, network segmentation, and ongoing compliance monitoring.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Custom Timeline</small>
+                                <button class="btn btn-sm btn-outline-success" data-bs-toggle="modal" data-bs-target="#solutionModal" data-solution="PCI">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <article class="card review-card h-100">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=250&fit=crop" class="card-img-top" alt="Manufacturing">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-success">Manufacturing</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">IoT & OT Security</h5>
+                            <p class="card-text">Industrial IoT device management, operational technology network segmentation, and real-time production monitoring.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Custom Timeline</small>
+                                <button class="btn btn-sm btn-outline-success" data-bs-toggle="modal" data-bs-target="#solutionModal" data-solution="IoT">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Disaster Recovery & Business Continuity -->
+            <div class="row mb-5 mt-5">
+                <div class="col-12">
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-life-ring text-warning fs-3 me-3"></i>
+                        <div>
+                            <h2 class="mb-0">Disaster Recovery & Continuity</h2>
+                            <p class="text-muted mb-0">Business continuity planning, failover systems, and rapid recovery procedures</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <article class="card review-card h-100">
+                        <img src="https://images.unsplash.com/photo-1518611505867-48a8d5e23e39?w=400&h=250&fit=crop" class="card-img-top" alt="DRP">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-warning text-dark">Planning</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Disaster Recovery Planning</h5>
+                            <p class="card-text">Comprehensive DRP assessment, BCP documentation, recovery time objectives, and annual testing protocols.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Est. 4-6 weeks</small>
+                                <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#solutionModal" data-solution="DRP">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <article class="card review-card h-100">
+                        <img src="https://images.unsplash.com/photo-1560439514-e1b8d8e4e1f0?w=400&h=250&fit=crop" class="card-img-top" alt="Failover">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-warning text-dark">Infrastructure</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Active-Active Failover</h5>
+                            <p class="card-text">Geo-redundant infrastructure setup with automatic failover, load balancing, and zero data loss guarantees.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Est. 6-8 weeks</small>
+                                <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#solutionModal" data-solution="Failover">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <article class="card review-card h-100">
+                        <img src="https://images.unsplash.com/photo-1578070494967-3247e38cf27c?w=400&h=250&fit=crop" class="card-img-top" alt="Testing">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-warning text-dark">Testing</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Disaster Recovery Testing</h5>
+                            <p class="card-text">Quarterly DRP exercises, failover simulations, tabletop exercises, and post-recovery documentation reviews.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Quarterly</small>
+                                <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#solutionModal" data-solution="Testing">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Modal -->
+    <div class="modal fade" id="solutionModal" tabindex="-1" aria-labelledby="solutionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="solutionModalLabel">Solution Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Contact our solutions team for a detailed implementation proposal and timeline specific to your business needs.</p>
+                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-custom-primary">Read Full Review</button>
+                    <button type="button" class="btn btn-primary">Request Consultation</button>
                 </div>
             </div>
         </div>
@@ -751,24 +412,40 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <h5><i class="bi bi-gear-fill me-2"></i>TechGear Reviews</h5>
-                    <p class="text-muted">Your trusted source for honest, in-depth technology product reviews and recommendations.</p>
+                    <h5><i class="fas fa-shield-alt me-2"></i>Badger Technologies</h5>
+                    <p class="text-muted">Professional IT services for small and medium businesses in Illinois. 24/7 support, cybersecurity, and cloud solutions you can trust.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Follow us on LinkedIn">
+                            <i class="bi bi-linkedin fs-5"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Like us on Facebook">
+                            <i class="bi bi-facebook fs-5"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Follow us on Twitter">
+                            <i class="bi bi-twitter fs-5"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Visit our YouTube channel">
+                            <i class="bi bi-youtube fs-5"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
-                    <h6>Categories</h6>
+                    <h6>Services</h6>
                     <ul class="list-unstyled">
-                        <li><a href="products.html">Smartphones</a></li>
-                        <li><a href="products.html">Laptops</a></li>
-                        <li><a href="products.html">Audio</a></li>
-                        <li><a href="products.html">Smart Home</a></li>
+                        <li><a href="products.html">Managed IT Support</a></li>
+                        <li><a href="products.html">Cybersecurity</a></li>
+                        <li><a href="products.html">Cloud Services</a></li>
+                        <li><a href="products.html">IT Consulting</a></li>
+                        <li><a href="products.html">24/7 Help Desk</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
-                    <h6>Resources</h6>
+                    <h6>Solutions</h6>
                     <ul class="list-unstyled">
-                        <li><a href="comparisons.html">Comparisons</a></li>
-                        <li><a href="#">Buying Guides</a></li>
-                        <li><a href="#">Best Lists</a></li>
+                        <li><a href="reviews.html">Remote Work Setup</a></li>
+                        <li><a href="reviews.html">Compliance</a></li>
+                        <li><a href="reviews.html">Disaster Recovery</a></li>
+                        <li><a href="reviews.html">Cloud Migration</a></li>
                         <li><a href="about.html">About Us</a></li>
                     </ul>
                 </div>
@@ -777,22 +454,28 @@
                     <ul class="list-unstyled">
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <h6>Newsletter</h6>
-                    <p class="text-muted small">Get weekly tech reviews</p>
+                    <h6>Get IT Updates</h6>
+                    <p class="text-muted small">Receive cybersecurity alerts and IT tips for your business</p>
                     <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Email">
+                        <input type="email" class="form-control" placeholder="Business Email">
                         <button class="btn btn-outline-light" type="button">Subscribe</button>
                     </div>
                 </div>
             </div>
             <hr>
-            <div class="text-center">
-                <p class="mb-0 text-muted">&copy; 2025 TechGear Reviews. All rights reserved.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2025 Badger Technologies LLC. Securing your business, one byte at a time.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted">Made with Bootstrap 5 | Professional IT Services</small>
+                </div>
             </div>
         </div>
     </footer>
@@ -808,32 +491,14 @@
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
 
-        // Initialize popovers
-        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl)
+        // Solution modal handler
+        const solutionModal = document.getElementById('solutionModal')
+        solutionModal.addEventListener('show.bs.modal', event => {
+            const button = event.relatedTarget
+            const solution = button.getAttribute('data-solution')
+            const modalTitle = solutionModal.querySelector('.modal-title')
+            modalTitle.textContent = solution + ' - Details'
         })
-
-        // Review modal handler
-        const reviewModal = document.getElementById('reviewModal');
-        if (reviewModal) {
-            reviewModal.addEventListener('show.bs.modal', function (event) {
-                const button = event.relatedTarget;
-                const productName = button.getAttribute('data-product');
-                
-                // Update modal content based on product
-                const modalTitle = reviewModal.querySelector('#modalReviewTitle');
-                modalTitle.textContent = productName + ' - Detailed Review';
-            });
-        }
-
-        // Table sorting functionality
-        document.querySelectorAll('input[name="sortOptions"]').forEach(function(radio) {
-            radio.addEventListener('change', function() {
-                // Add sorting logic here
-                console.log('Sorting by:', this.id);
-            });
-        });
     </script>
 </body>
 </html>

@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional IT services including managed support, cybersecurity, cloud solutions, and IT consulting for businesses">
+    <title>Services - Badger Technologies</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-shield-alt me-2"></i>Badger Technologies
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" title="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparisons.html">Case Studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Our Professional Services</h1>
+                    <p class="lead">Comprehensive IT solutions designed to protect, optimize, and grow your business. From managed support to advanced cybersecurity.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <button class="btn btn-light btn-lg" data-bs-toggle="offcanvas" data-bs-target="#filterOffcanvas" aria-controls="filterOffcanvas">
+                        <i class="bi bi-funnel me-2"></i>Filter Services
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="filterOffcanvas" aria-labelledby="filterOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="filterOffcanvasLabel">
+                <i class="bi bi-funnel me-2"></i>Filter Services
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form>
+                <div class="mb-4">
+                    <label class="form-label fw-bold">Service Type</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="managed-it" checked>
+                        <label class="form-check-label" for="managed-it">Managed IT Support</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cybersecurity" checked>
+                        <label class="form-check-label" for="cybersecurity">Cybersecurity</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cloud-services" checked>
+                        <label class="form-check-label" for="cloud-services">Cloud Services</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="consulting">
+                        <label class="form-check-label" for="consulting">IT Consulting</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="backup">
+                        <label class="form-check-label" for="backup">Data Backup & Recovery</label>
+                    </div>
+                </div>
+                
+                <div class="mb-4">
+                    <label class="form-label fw-bold">Business Size</label>
+                    <select class="form-select">
+                        <option>All Sizes</option>
+                        <option>Small Business (1-20)</option>
+                        <option>Medium Business (21-100)</option>
+                        <option>Large Business (100+)</option>
+                    </select>
+                </div>
+                
+                <div class="mb-4">
+                    <label class="form-label fw-bold">Response Time</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="15min">
+                        <label class="form-check-label" for="15min">15-Minute Response</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="1hour">
+                        <label class="form-check-label" for="1hour">1-Hour Response</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="business-hours">
+                        <label class="form-check-label" for="business-hours">Business Hours</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="24-7">
+                        <label class="form-check-label" for="24-7">24/7 Support</label>
+                    </div>
+                </div>
+                
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary">Apply Filters</button>
+                    <button type="reset" class="btn btn-outline-secondary">Clear All</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="navbarOffcanvasLabel">
+                <i class="fas fa-shield-alt me-2"></i>Navigation
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="bi bi-house me-2"></i>Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="products.html">
+                        <i class="fas fa-cogs me-2"></i>Services
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reviews.html">
+                        <i class="fas fa-lightbulb me-2"></i>Solutions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparisons.html">
+                        <i class="fas fa-briefcase me-2"></i>Case Studies
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        <i class="bi bi-info-circle me-2"></i>About
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Products Grid -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Smartphones Section -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-headset text-primary fs-3 me-3"></i>
+                        <div>
+                            <h2 class="mb-0">Managed IT Support</h2>
+                            <p class="text-muted mb-0">24/7 Help Desk, proactive monitoring, and rapid response times for your peace of mind</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" class="card-img-top product-image" alt="IT Support">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-primary">Popular</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Standard Support Plan</h5>
+                            <p class="card-text small">Business hours support (M-F 8am-5pm), ticket-based system, and proactive monthly maintenance.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$299/month</div>
+                                <small class="text-muted">Per 5 users</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Standard Support Plan">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop" class="card-img-top product-image" alt="Premium Support">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-primary">Flagship</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">24/7 Premium Support</h5>
+                            <p class="card-text small">Round-the-clock support, 15-minute response guarantee, priority ticket escalation, and quarterly business reviews.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$599/month</div>
+                                <small class="text-muted">Per 5 users</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal" data-product="24/7 Premium Support">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=300&fit=crop" class="card-img-top product-image" alt="Google Pixel 8">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-success">Great Value</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Google Pixel 8</h5>
+                            <p class="card-text small">Google's computational photography leader with Tensor G3 and pure Android experience.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$699 - $999</div>
+                                <small class="text-muted">Starting price</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Google Pixel 8">
+                                View Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=400&h=300&fit=crop" class="card-img-top product-image" alt="OnePlus 12">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-warning">Performance</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-empty"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">OnePlus 12</h5>
+                            <p class="card-text small">Flagship killer with Snapdragon 8 Gen 3, ultra-fast charging, and premium build.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$799 - $899</div>
+                                <small class="text-muted">Starting price</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal" data-product="OnePlus 12">
+                                View Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Laptops Section -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bi bi-laptop text-success fs-3 me-3"></i>
+                        <div>
+                            <h2 class="mb-0">Laptops</h2>
+                            <p class="text-muted mb-0">Professional workstations and everyday computing solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=400&h=300&fit=crop" class="card-img-top product-image" alt="MacBook Pro M3">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-primary">Professional</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">MacBook Pro M3</h5>
+                            <p class="card-text small">Apple's most powerful laptop with M3 chip, Liquid Retina XDR display, and all-day battery.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$1,599 - $3,999</div>
+                                <small class="text-muted">Starting price</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal" data-product="MacBook Pro M3">
+                                View Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400&h=300&fit=crop" class="card-img-top product-image" alt="Dell XPS 13">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-info">Ultrabook</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Dell XPS 13</h5>
+                            <p class="card-text small">Premium ultrabook with Intel 13th Gen processors, stunning display, and compact design.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$999 - $1,699</div>
+                                <small class="text-muted">Starting price</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Dell XPS 13">
+                                View Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=400&h=300&fit=crop" class="card-img-top product-image" alt="ThinkPad X1 Carbon">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-dark">Business</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">ThinkPad X1 Carbon</h5>
+                            <p class="card-text small">Business laptop with legendary keyboard, security features, and durable construction.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$1,299 - $2,499</div>
+                                <small class="text-muted">Starting price</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal" data-product="ThinkPad X1 Carbon">
+                                View Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=400&h=300&fit=crop" class="card-img-top product-image" alt="ASUS ROG Zephyrus G14">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-danger">Gaming</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-empty"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">ASUS ROG Zephyrus G14</h5>
+                            <p class="card-text small">Compact gaming laptop with AMD Ryzen 9, RTX 4060, and excellent battery life.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$1,399 - $1,899</div>
+                                <small class="text-muted">Starting price</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal" data-product="ASUS ROG Zephyrus G14">
+                                View Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audio Equipment Section -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bi bi-headphones text-warning fs-3 me-3"></i>
+                        <div>
+                            <h2 class="mb-0">Audio Equipment</h2>
+                            <p class="text-muted mb-0">Headphones, earbuds, and speakers for audiophiles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop" class="card-img-top product-image" alt="Sony WH-1000XM5">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-primary">Premium</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Sony WH-1000XM5</h5>
+                            <p class="card-text small">Industry-leading noise cancellation with exceptional audio quality and 30-hour battery.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$399</div>
+                                <small class="text-muted">MSRP</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Sony WH-1000XM5">
+                                View Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=400&h=300&fit=crop" class="card-img-top product-image" alt="AirPods Pro 2">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-primary">Premium</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">AirPods Pro 2</h5>
+                            <p class="card-text small">Apple's flagship earbuds with adaptive transparency, spatial audio, and seamless integration.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$249</div>
+                                <small class="text-muted">MSRP</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal" data-product="AirPods Pro 2">
+                                View Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1558756520-22cfe5d382ca?w=400&h=300&fit=crop" class="card-img-top product-image" alt="Bose QuietComfort 45">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-info">Comfort</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-empty"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Bose QuietComfort 45</h5>
+                            <p class="card-text small">Legendary comfort meets excellent noise cancellation for all-day listening comfort.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$329</div>
+                                <small class="text-muted">MSRP</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Bose QuietComfort 45">
+                                View Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1589492477829-5e65395b66cc?w=400&h=300&fit=crop" class="card-img-top product-image" alt="JBL Flip 6">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-success">Portable</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-empty"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">JBL Flip 6</h5>
+                            <p class="card-text small">Portable Bluetooth speaker with bold sound, waterproof design, and 12-hour playtime.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$129</div>
+                                <small class="text-muted">MSRP</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal" data-product="JBL Flip 6">
+                                View Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smart Home Section -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bi bi-house-gear text-info fs-3 me-3"></i>
+                        <div>
+                            <h2 class="mb-0">Smart Home</h2>
+                            <p class="text-muted mb-0">Connected devices for modern intelligent homes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=400&h=300&fit=crop" class="card-img-top product-image" alt="Amazon Echo Studio">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-primary">Smart Speaker</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-empty"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Amazon Echo Studio</h5>
+                            <p class="card-text small">High-fidelity smart speaker with 3D audio, Dolby Atmos, and Alexa built-in.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$199</div>
+                                <small class="text-muted">MSRP</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Amazon Echo Studio">
+                                View Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" class="card-img-top product-image" alt="Nest Thermostat">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-success">Energy Saving</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Google Nest Thermostat</h5>
+                            <p class="card-text small">Smart thermostat with learning capabilities, energy-saving features, and remote control.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$249</div>
+                                <small class="text-muted">MSRP</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Google Nest Thermostat">
+                                View Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=400&h=300&fit=crop" class="card-img-top product-image" alt="Ring Video Doorbell">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-warning">Security</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-empty"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Ring Video Doorbell Pro 2</h5>
+                            <p class="card-text small">Advanced video doorbell with 1536p HD video, 3D motion detection, and two-way talk.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$249</div>
+                                <small class="text-muted">MSRP</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Ring Video Doorbell Pro 2">
+                                View Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1604709177225-055f99402ea3?w=400&h=300&fit=crop" class="card-img-top product-image" alt="Philips Hue Starter Kit">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-info">Lighting</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Philips Hue Starter Kit</h5>
+                            <p class="card-text small">Smart lighting system with 16 million colors, voice control, and app-based scheduling.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$199</div>
+                                <small class="text-muted">MSRP</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Philips Hue Starter Kit">
+                                View Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Detail Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=500&h=400&fit=crop" class="img-fluid rounded" alt="Product Image" id="modalProductImage">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 id="modalProductTitle">Product Title</h4>
+                            <div class="star-rating mb-3" id="modalProductRating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <div class="mb-3">
+                                <span class="h4 text-success" id="modalProductPrice">$999</span>
+                                <small class="text-muted">Starting price</small>
+                            </div>
+                            <p id="modalProductDescription">Detailed product description will appear here...</p>
+                            <div class="mb-3">
+                                <h6>Key Features:</h6>
+                                <ul class="feature-list" id="modalProductFeatures">
+                                    <li>Feature 1</li>
+                                    <li>Feature 2</li>
+                                    <li>Feature 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="reviews.html" class="btn btn-custom-primary">Read Full Review</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5><i class="bi bi-gear-fill me-2"></i>TechGear Reviews</h5>
+                    <p class="text-muted">Your trusted source for honest, in-depth technology product reviews and recommendations.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Categories</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Audio</a></li>
+                        <li><a href="#">Smart Home</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="comparisons.html">Comparisons</a></li>
+                        <li><a href="#">Buying Guides</a></li>
+                        <li><a href="#">Best Lists</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6>Newsletter</h6>
+                    <p class="text-muted small">Get weekly tech reviews</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                        <button class="btn btn-outline-light" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0 text-muted">&copy; 2025 TechGear Reviews. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        // Initialize popovers
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+
+        // Price range slider
+        const priceRange = document.getElementById('priceRange');
+        const priceValue = document.getElementById('priceValue');
+        
+        if (priceRange && priceValue) {
+            priceRange.addEventListener('input', function() {
+                priceValue.textContent = '$' + this.value.toLocaleString();
+            });
+        }
+
+        // Product modal handler
+        const productModal = document.getElementById('productModal');
+        if (productModal) {
+            productModal.addEventListener('show.bs.modal', function (event) {
+                const button = event.relatedTarget;
+                const productName = button.getAttribute('data-product');
+                
+                // Update modal content based on product
+                const modalTitle = productModal.querySelector('#modalProductTitle');
+                const modalImage = productModal.querySelector('#modalProductImage');
+                const modalDescription = productModal.querySelector('#modalProductDescription');
+                
+                modalTitle.textContent = productName;
+                modalDescription.textContent = `Detailed review and analysis of the ${productName}. This comprehensive review covers performance, design, features, value, and our final recommendation.`;
+            });
+        }
+    </script>
+</body>
+</html>
