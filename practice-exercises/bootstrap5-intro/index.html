@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Introduction Assignment</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .demo-section {
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            border-bottom: 2px solid #dee2e6;
+        }
+        .demo-box {
+            background-color: #f8f9fa;
+            border: 2px dashed #6c757d;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- CONTAINER EXAMPLES (2 Required) -->
+    <section class="demo-section">
+        <div class="container">
+            <h1 class="display-4 text-primary text-center mb-4">Bootstrap 5 Framework Demonstration</h1>
+            <p class="lead text-center">This page demonstrates the core components of Bootstrap 5 framework</p>
+        </div>
+
+        <!-- Container Example 1: Regular Container -->
+        <div class="container mt-5">
+            <h2 class="text-success mb-3">Container Example 1: Standard Container</h2>
+            <div class="demo-box">
+                <p class="mb-0">This is a <strong>standard container</strong> that provides a responsive fixed-width container. 
+                It has max-widths at different breakpoints and centers content horizontally.</p>
+            </div>
+        </div>
+
+        <!-- Container Example 2: Fluid Container -->
+        <div class="container-fluid mt-4 bg-light py-3">
+            <h2 class="text-info mb-3">Container Example 2: Fluid Container</h2>
+            <div class="demo-box">
+                <p class="mb-0">This is a <strong>fluid container</strong> that spans the full width of the viewport 
+                at all breakpoints. Notice how it extends to the edges of the browser window.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GRID EXAMPLES (2 Required) -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="text-warning mb-4">Grid System Examples</h2>
+            
+            <!-- Grid Example 1: Basic Column Layout -->
+            <h3 class="text-secondary mb-3">Grid Example 1: Equal Width Columns</h3>
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="demo-box bg-primary text-white">
+                        <h5>Column 1</h5>
+                        <p class="mb-0">Equal width column using Bootstrap's flexbox grid system</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="demo-box bg-success text-white">
+                        <h5>Column 2</h5>
+                        <p class="mb-0">Automatically sized to fill available space</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="demo-box bg-danger text-white">
+                        <h5>Column 3</h5>
+                        <p class="mb-0">Responsive and mobile-first design approach</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid Example 2: Specific Column Sizes -->
+            <h3 class="text-secondary mb-3">Grid Example 2: Specific Column Sizes</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="demo-box bg-warning">
+                        <h5>4/12 Width</h5>
+                        <p class="mb-0">This column takes up 4 out of 12 grid units on medium screens and larger</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="demo-box bg-info text-white">
+                        <h5>8/12 Width</h5>
+                        <p class="mb-0">This column takes up 8 out of 12 grid units, creating an asymmetric layout. 
+                        On smaller screens, both columns stack vertically.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TYPOGRAPHY EXAMPLES (2 Required) -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="text-dark mb-4">Typography Examples</h2>
+            
+            <!-- Typography Example 1: Display Headings and Text Classes -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h3 class="text-primary mb-3">Typography Example 1: Display Headings</h3>
+                    <h1 class="display-1">Display 1</h1>
+                    <h2 class="display-4">Display 4</h2>
+                    <p class="lead">This is a lead paragraph that stands out from regular text.</p>
+                    <p class="fs-6">This is regular body text with fs-6 class for font sizing.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-success mb-3">Typography Example 2: Text Utilities</h3>
+                    <p class="text-uppercase fw-bold">Bold uppercase text</p>
+                    <p class="text-lowercase fst-italic">Italic lowercase text</p>
+                    <p class="text-capitalize text-decoration-underline">Capitalized underlined text</p>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"Bootstrap makes front-end web development faster and easier."</p>
+                        <footer class="blockquote-footer">Bootstrap Team</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COLOR EXAMPLES (2 Required) -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="text-muted mb-4">Color System Examples</h2>
+            
+            <!-- Color Example 1: Background Colors -->
+            <h3 class="text-secondary mb-3">Color Example 1: Background Color Classes</h3>
+            <div class="row mb-4">
+                <div class="col-md-2 col-6 mb-2">
+                    <div class="bg-primary text-white p-3 text-center">Primary</div>
+                </div>
+                <div class="col-md-2 col-6 mb-2">
+                    <div class="bg-secondary text-white p-3 text-center">Secondary</div>
+                </div>
+                <div class="col-md-2 col-6 mb-2">
+                    <div class="bg-success text-white p-3 text-center">Success</div>
+                </div>
+                <div class="col-md-2 col-6 mb-2">
+                    <div class="bg-danger text-white p-3 text-center">Danger</div>
+                </div>
+                <div class="col-md-2 col-6 mb-2">
+                    <div class="bg-warning text-dark p-3 text-center">Warning</div>
+                </div>
+                <div class="col-md-2 col-6 mb-2">
+                    <div class="bg-info text-white p-3 text-center">Info</div>
+                </div>
+            </div>
+
+            <!-- Color Example 2: Text Colors and Buttons -->
+            <h3 class="text-secondary mb-3">Color Example 2: Text Colors and Button Colors</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Text Color Classes:</h5>
+                    <p class="text-primary">Primary text color</p>
+                    <p class="text-secondary">Secondary text color</p>
+                    <p class="text-success">Success text color</p>
+                    <p class="text-danger">Danger text color</p>
+                    <p class="text-warning">Warning text color</p>
+                    <p class="text-info">Info text color</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Button Color Classes:</h5>
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-primary">Primary Button</button>
+                        <button type="button" class="btn btn-success">Success Button</button>
+                        <button type="button" class="btn btn-outline-danger">Outline Danger</button>
+                        <button type="button" class="btn btn-outline-warning">Outline Warning</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MOBILE-FIRST DESIGN DEMONSTRATION -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="text-info mb-4">Mobile-First Design Approach</h2>
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-9">
+                    <div class="demo-box bg-light">
+                        <h4>Responsive Content Area</h4>
+                        <p>This layout demonstrates mobile-first design principles:</p>
+                        <ul>
+                            <li><strong>Mobile (xs):</strong> Full width (12/12 columns)</li>
+                            <li><strong>Tablet (md):</strong> 8/12 columns</li>
+                            <li><strong>Desktop (lg):</strong> 9/12 columns</li>
+                        </ul>
+                        <p class="mb-0">The layout progressively enhances as screen size increases, 
+                        following Bootstrap's mobile-first philosophy.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="demo-box bg-secondary text-white">
+                        <h5>Sidebar</h5>
+                        <p class="mb-0">Responsive sidebar that stacks on mobile and sits beside content on larger screens.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="text-primary">Assignment Summary</h5>
+                    <p class="mb-0">This page demonstrates Bootstrap 5 framework components including 
+                    containers, grid system, typography, and color utilities.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5 class="text-success">References Used</h5>
+                    <p class="mb-0">
+                        <a href="https://www.invisionapp.com/inside-design/mobile-first-design/" class="text-info text-decoration-none">Mobile First Design</a><br>
+                        <a href="https://www.w3schools.com/bootstrap5/" class="text-info text-decoration-none">W3Schools Bootstrap 5</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
