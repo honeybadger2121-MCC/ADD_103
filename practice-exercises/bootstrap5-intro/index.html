@@ -46,6 +46,24 @@
                 at all breakpoints. Notice how it extends to the edges of the browser window.</p>
             </div>
         </div>
+
+        <!-- Container Example 3: Breakpoint-specific Container -->
+        <div class="container-lg mt-4">
+            <h2 class="text-warning mb-3">Container Example 3: Breakpoint-specific Container (container-lg)</h2>
+            <div class="demo-box">
+                <p class="mb-0">This is a <strong>container-lg</strong> that behaves like container-fluid until 
+                the large (lg) breakpoint, then becomes a fixed-width container. Resize your browser to see the effect.</p>
+            </div>
+        </div>
+
+        <!-- Container Example 4: Small Breakpoint Container -->
+        <div class="container-sm mt-4 bg-info text-white py-3">
+            <h2 class="text-light mb-3">Container Example 4: Small Breakpoint Container (container-sm)</h2>
+            <div class="demo-box bg-white text-dark">
+                <p class="mb-0">This is a <strong>container-sm</strong> that is fluid until the small (sm) breakpoint, 
+                providing more control over responsive behavior at different screen sizes.</p>
+            </div>
+        </div>
     </section>
 
     <!-- GRID EXAMPLES (2 Required) -->
@@ -78,7 +96,7 @@
 
             <!-- Grid Example 2: Specific Column Sizes -->
             <h3 class="text-secondary mb-3">Grid Example 2: Specific Column Sizes</h3>
-            <div class="row">
+            <div class="row mb-4">
                 <div class="col-md-4">
                     <div class="demo-box bg-warning">
                         <h5>4/12 Width</h5>
@@ -90,6 +108,53 @@
                         <h5>8/12 Width</h5>
                         <p class="mb-0">This column takes up 8 out of 12 grid units, creating an asymmetric layout. 
                         On smaller screens, both columns stack vertically.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid Example 3: Multiple Breakpoint Columns -->
+            <h3 class="text-secondary mb-3">Grid Example 3: Multiple Breakpoint Responsive Columns</h3>
+            <div class="row mb-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="demo-box bg-primary text-white">
+                        <h6>Responsive</h6>
+                        <p class="mb-0 small">xs:12, sm:6, md:4, lg:3</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="demo-box bg-success text-white">
+                        <h6>Multi-breakpoint</h6>
+                        <p class="mb-0 small">Changes at each screen size</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-6">
+                    <div class="demo-box bg-danger text-white">
+                        <h6>Complex Layout</h6>
+                        <p class="mb-0 small">xs:12, sm:12, md:4, lg:6</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid Example 4: Offset and Nesting -->
+            <h3 class="text-secondary mb-3">Grid Example 4: Column Offset and Nesting</h3>
+            <div class="row mb-4">
+                <div class="col-md-6 offset-md-3">
+                    <div class="demo-box bg-secondary text-white">
+                        <h5>Centered with Offset</h5>
+                        <p class="mb-2">This column uses offset-md-3 to center a 6-column width</p>
+                        <!-- Nested Grid -->
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="demo-box bg-light text-dark">
+                                    <small>Nested Col 1</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="demo-box bg-light text-dark">
+                                    <small>Nested Col 2</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,6 +184,59 @@
                         <p class="mb-0">"Bootstrap makes front-end web development faster and easier."</p>
                         <footer class="blockquote-footer">Bootstrap Team</footer>
                     </blockquote>
+                </div>
+            </div>
+
+            <!-- Typography Example 3: Font Sizes and Weights -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h3 class="text-warning mb-3">Typography Example 3: Font Sizes</h3>
+                    <p class="fs-1">Font size 1 - Largest</p>
+                    <p class="fs-2">Font size 2 - Large</p>
+                    <p class="fs-3">Font size 3 - Medium</p>
+                    <p class="fs-4">Font size 4 - Regular</p>
+                    <p class="fs-5">Font size 5 - Small</p>
+                    <p class="fs-6">Font size 6 - Smallest</p>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-danger mb-3">Typography Example 4: Font Weights & Styles</h3>
+                    <p class="fw-bold">Bold weight text</p>
+                    <p class="fw-bolder">Bolder weight text</p>
+                    <p class="fw-semibold">Semibold weight text</p>
+                    <p class="fw-medium">Medium weight text</p>
+                    <p class="fw-normal">Normal weight text</p>
+                    <p class="fw-light">Light weight text</p>
+                    <p class="fw-lighter">Lighter weight text</p>
+                    <p class="fst-italic">Italic style text</p>
+                    <p class="fst-normal">Normal style text</p>
+                </div>
+            </div>
+
+            <!-- Typography Example 5: Lists and Inline Text -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h4 class="text-info mb-3">List Styling</h4>
+                    <ul class="list-unstyled">
+                        <li>Unstyled list item 1</li>
+                        <li>Unstyled list item 2</li>
+                        <li>Unstyled list item 3</li>
+                    </ul>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">Numbered list item 1</li>
+                        <li class="list-group-item">Numbered list item 2</li>
+                        <li class="list-group-item">Numbered list item 3</li>
+                    </ol>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-secondary mb-3">Inline Text Elements</h4>
+                    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                    <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                    <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                    <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                    <p><u>This line of text will render as underlined.</u></p>
+                    <p><small>This line of text is meant to be treated as fine print.</small></p>
+                    <p><strong>This line rendered as bold text.</strong></p>
+                    <p><em>This line rendered as italicized text.</em></p>
                 </div>
             </div>
         </div>
@@ -154,7 +272,7 @@
 
             <!-- Color Example 2: Text Colors and Buttons -->
             <h3 class="text-secondary mb-3">Color Example 2: Text Colors and Button Colors</h3>
-            <div class="row">
+            <div class="row mb-4">
                 <div class="col-md-6">
                     <h5>Text Color Classes:</h5>
                     <p class="text-primary">Primary text color</p>
@@ -172,6 +290,78 @@
                         <button type="button" class="btn btn-outline-danger">Outline Danger</button>
                         <button type="button" class="btn btn-outline-warning">Outline Warning</button>
                     </div>
+                </div>
+            </div>
+
+            <!-- Color Example 3: Border Colors -->
+            <h3 class="text-secondary mb-3">Color Example 3: Border Colors and Utilities</h3>
+            <div class="row mb-4">
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="p-3 border border-primary border-3">
+                        <strong>Primary Border</strong><br>
+                        <small>border-primary border-3</small>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="p-3 border border-success border-2">
+                        <strong>Success Border</strong><br>
+                        <small>border-success border-2</small>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="p-3 border border-warning border-4">
+                        <strong>Warning Border</strong><br>
+                        <small>border-warning border-4</small>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="p-3 border border-danger border-5">
+                        <strong>Danger Border</strong><br>
+                        <small>border-danger border-5</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Color Example 4: Alert Colors and Badge Colors -->
+            <h3 class="text-secondary mb-3">Color Example 4: Alert and Badge Colors</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Alert Color Variations:</h5>
+                    <div class="alert alert-primary" role="alert">
+                        Primary alert with <strong>important</strong> information.
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                        Success alert indicating a successful action.
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                        Warning alert that needs attention.
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        Danger alert indicating an error or problem.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>Badge Color Variations:</h5>
+                    <p>
+                        <span class="badge bg-primary me-2">Primary</span>
+                        <span class="badge bg-secondary me-2">Secondary</span>
+                        <span class="badge bg-success me-2">Success</span>
+                    </p>
+                    <p>
+                        <span class="badge bg-danger me-2">Danger</span>
+                        <span class="badge bg-warning text-dark me-2">Warning</span>
+                        <span class="badge bg-info me-2">Info</span>
+                    </p>
+                    <p>
+                        <span class="badge bg-light text-dark me-2">Light</span>
+                        <span class="badge bg-dark me-2">Dark</span>
+                    </p>
+                    <h6 class="mt-3">Pill Badges:</h6>
+                    <p>
+                        <span class="badge rounded-pill bg-primary me-2">Primary Pill</span>
+                        <span class="badge rounded-pill bg-success me-2">Success Pill</span>
+                        <span class="badge rounded-pill bg-warning text-dark">Warning Pill</span>
+                    </p>
                 </div>
             </div>
         </div>
