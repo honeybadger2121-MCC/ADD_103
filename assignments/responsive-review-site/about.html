@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+    This project is based on the information and content of Badger Technologies (badgertechnologies.us)
+    Professional IT Services & Managed Support for Illinois businesses
+    Created as a Bootstrap responsive design project
+-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about TechGear Reviews - our team, mission, and commitment to honest technology reviews">
-    <title>About Us - TechGear Reviews</title>
+    <meta name="description" content="About Badger Technologies - Professional IT services for Illinois businesses">
+    <title>About Us - Badger Technologies</title>
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -18,7 +25,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <i class="bi bi-gear-fill me-2"></i>Ben's Tech Takes
+                <i class="fas fa-shield-alt me-2"></i>Badger Technologies
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" title="Toggle Navigation">
@@ -31,13 +38,13 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="products.html">Products</a>
+                        <a class="nav-link" href="products.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="reviews.html">Reviews</a>
+                        <a class="nav-link" href="reviews.html">Solutions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="comparisons.html">Comparisons</a>
+                        <a class="nav-link" href="comparisons.html">Case Studies</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="about.html">About</a>
@@ -51,7 +58,7 @@
     <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="navbarOffcanvasLabel">
-                <i class="bi bi-gear-fill me-2"></i>Navigation
+                <i class="fas fa-shield-alt me-2"></i>Navigation
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -64,17 +71,17 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="products.html">
-                        <i class="bi bi-box me-2"></i>Products
+                        <i class="fas fa-cogs me-2"></i>Services
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="reviews.html">
-                        <i class="bi bi-star me-2"></i>Reviews
+                        <i class="fas fa-lightbulb me-2"></i>Solutions
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="comparisons.html">
-                        <i class="bi bi-arrow-left-right me-2"></i>Comparisons
+                        <i class="fas fa-briefcase me-2"></i>Case Studies
                     </a>
                 </li>
                 <li class="nav-item">
@@ -91,476 +98,224 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-8">
-                    <h1 class="display-4 fw-bold mb-3">Hi! I'm Ben Sherman</h1>
-                    <p class="lead">Just a guy who loves tech and has strong opinions about it. Started this blog because I got tired of reading reviews that felt like corporate brochures.</p>
+                    <h1 class="display-4 fw-bold mb-3">About Badger Technologies</h1>
+                    <p class="lead">We're a dedicated team of IT professionals committed to securing, optimizing, and growing businesses across Illinois.</p>
                 </div>
-                <div class="col-lg-4">
-                    <div class="text-center">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="h3 fw-bold">2</div>
-                                <small>Years Blogging</small>
-                            </div>
-                            <div class="col-6">
-                                <div class="h3 fw-bold">300+</div>
-                                <small>Gadgets Owned</small>
-                            </div>
-                        </div>
+                <div class="col-lg-4 text-lg-end">
+                    <div class="display-1 text-primary opacity-25">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mission Section -->
+    <!-- Main Content -->
     <section class="py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="display-6 fw-bold mb-4">Our Mission</h2>
-                    <p class="lead">To tell you the truth about tech - the good, the bad, and the "why did they think this was a good idea?" No sugar-coating, no sponsored fluff, just real opinions from someone who actually uses this stuff.</p>
-                    <div class="row mt-5">
-                        <div class="col-md-4">
-                            <div class="text-center mb-4">
-                                <div class="icon-circle bg-primary text-white mb-3">
-                                    <i class="bi bi-shield-check display-6"></i>
-                                </div>
-                                <h5>No BS Policy</h5>
-                                <p class="text-muted">I buy my own stuff, test it myself, and tell you exactly what I think. No company tells me what to say.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="text-center mb-4">
-                                <div class="icon-circle bg-success text-white mb-3">
-                                    <i class="bi bi-graph-up display-6"></i>
-                                </div>
-                                <h5>Real World Testing</h5>
-                                <p class="text-muted">I don't just run benchmarks - I live with these devices. Drop tests happen in my kitchen, not a lab.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="text-center mb-4">
-                                <div class="icon-circle bg-info text-white mb-3">
-                                    <i class="bi bi-people display-6"></i>
-                                </div>
-                                <h5>Your Money Matters</h5>
-                                <p class="text-muted">I remember what it's like to save up for tech. Every review asks: "Is this worth your hard-earned cash?"</p>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Our Story Section -->
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop" class="img-fluid rounded shadow" alt="Badger Technologies Team">
+                </div>
+                <div class="col-lg-6 ps-lg-4">
+                    <h2 class="mb-3"><i class="fas fa-history me-2 text-primary"></i>Our Story</h2>
+                    <p>Founded in 2019, Badger Technologies emerged from a simple observation: small and medium-sized businesses in Illinois weren't getting the IT support they deserved. Too many companies struggled with outdated systems, security vulnerabilities, and IT teams who didn't understand their unique challenges.</p>
+                    
+                    <p>We decided to change that. Starting with a dedicated team of five IT professionals, we've grown to help over 100+ businesses across Illinois transform their IT infrastructure, enhance security, and achieve their digital goals.</p>
+                    
+                    <p>Today, we're proud to be the trusted IT partner for businesses in manufacturing, healthcare, finance, and construction sectors—helping them focus on what they do best while we handle the technology.</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Team Section -->
-    <section class="team-section">
-        <div class="container">
+            <hr class="my-5">
+
+            <!-- Our Values Section -->
             <div class="row mb-5">
-                <div class="col-lg-8">
-                    <h2 class="display-6 fw-bold">Meet Our Team</h2>
-                    <p class="lead text-muted">The technology experts behind our comprehensive reviews</p>
+                <div class="col-12">
+                    <h2 class="text-center mb-5"><i class="fas fa-compass me-2 text-primary"></i>Our Core Values</h2>
                 </div>
             </div>
 
-            <div class="row g-4">
-                <!-- Team Member 1 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card team-card h-100">
-                        <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" class="card-img-top team-image" alt="Alex Chen">
-                            <div class="team-overlay">
-                                <div class="social-links">
-                                    <a href="#" class="text-white me-3" data-bs-toggle="tooltip" title="LinkedIn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                    <a href="#" class="text-white me-3" data-bs-toggle="tooltip" title="Twitter">
-                                        <i class="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="#" class="text-white" data-bs-toggle="tooltip" title="Email">
-                                        <i class="bi bi-envelope"></i>
-                                    </a>
-                                </div>
-                            </div>
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm">
+                        <div class="display-4 text-primary mb-3">
+                            <i class="fas fa-trust"></i>
                         </div>
-                        <div class="card-body">
+                        <h5>Trust & Reliability</h5>
+                        <p class="text-muted">Your IT infrastructure is critical. We deliver reliable solutions and 99.9% uptime guarantees.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm">
+                        <div class="display-4 text-success mb-3">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h5>Security First</h5>
+                        <p class="text-muted">Cybersecurity is our priority. We protect your data and systems from evolving threats.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm">
+                        <div class="display-4 text-info mb-3">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h5>Customer-Centric</h5>
+                        <p class="text-muted">Your success is our success. We listen, understand, and deliver solutions tailored to your needs.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm">
+                        <div class="display-4 text-warning mb-3">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h5>Continuous Learning</h5>
+                        <p class="text-muted">Technology evolves. Our team stays current with latest certifications and best practices.</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <!-- Our Team Section -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="text-center mb-2"><i class="fas fa-team me-2 text-primary"></i>Our Leadership Team</h2>
+                    <p class="text-center text-muted mb-5">Experienced professionals with 50+ combined years of IT service delivery</p>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop" class="card-img-top" alt="Ben Sherman">
+                        <div class="card-body text-center">
                             <h5 class="card-title">Ben Sherman</h5>
-                            <p class="text-primary fw-bold">The Guy Behind This Whole Thing</p>
-                            <p class="card-text">Former IT support tech who got tired of helping people buy terrible gadgets. Now I test everything first so you don't have to suffer through my mistakes.</p>
-                            <div class="row text-center">
-                                <div class="col-4">
-                                    <div class="small fw-bold">100+</div>
-                                    <div class="small text-muted">Reviews</div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="small fw-bold">2 years</div>
-                                    <div class="small text-muted">Blogging</div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="small fw-bold">Everything</div>
-                                    <div class="small text-muted">I Test</div>
-                                </div>
+                            <p class="text-muted">Founder & Chief Technology Officer</p>
+                            <p class="small">15+ years IT management, CompTIA Security+, ITIL Certified</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary">LinkedIn</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Team Member 2 -->
+                
                 <div class="col-lg-4 col-md-6">
-                    <div class="card team-card h-100">
-                        <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face" class="card-img-top team-image" alt="Sarah Martinez">
-                            <div class="team-overlay">
-                                <div class="social-links">
-                                    <a href="#" class="text-white me-3" data-bs-toggle="tooltip" title="LinkedIn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                    <a href="#" class="text-white me-3" data-bs-toggle="tooltip" title="Twitter">
-                                        <i class="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="#" class="text-white" data-bs-toggle="tooltip" title="Email">
-                                        <i class="bi bi-envelope"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Sarah Martinez</h5>
-                            <p class="text-success fw-bold">My Audiophile Friend</p>
-                            <p class="card-text">Can tell the difference between a $50 and $500 headphone in 0.3 seconds. Former music producer who now helps me figure out why my audio sounds terrible.</p>
-                            <div class="row text-center">
-                                <div class="col-4">
-                                    <div class="small fw-bold">Golden</div>
-                                    <div class="small text-muted">Ears</div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="small fw-bold">Too Many</div>
-                                    <div class="small text-muted">Headphones</div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="small fw-bold">Audio</div>
-                                    <div class="small text-muted">Guru</div>
-                                </div>
+                    <div class="card border-0 shadow-sm overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=300&fit=crop" class="card-img-top" alt="Support Lead">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Support Operations</h5>
+                            <p class="text-muted">24/7 Help Desk & Support Team</p>
+                            <p class="small">Average response time: 15 minutes. Always ready to help.</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <span class="badge bg-success">Always Available</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Team Member 3 -->
+                
                 <div class="col-lg-4 col-md-6">
-                    <div class="card team-card h-100">
-                        <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face" class="card-img-top team-image" alt="Michael Roberts">
-                            <div class="team-overlay">
-                                <div class="social-links">
-                                    <a href="#" class="text-white me-3" data-bs-toggle="tooltip" title="LinkedIn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                    <a href="#" class="text-white me-3" data-bs-toggle="tooltip" title="Twitter">
-                                        <i class="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="#" class="text-white" data-bs-toggle="tooltip" title="Email">
-                                        <i class="bi bi-envelope"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Mike Roberts</h5>
-                            <p class="text-warning fw-bold">Smart Home Obsessive</p>
-                            <p class="card-text">His house talks to him. Literally. Has automated everything including his coffee maker, which he programmed to judge his life choices.</p>
-                            <div class="row text-center">
-                                <div class="col-4">
-                                    <div class="small fw-bold">47</div>
-                                    <div class="small text-muted">Smart Bulbs</div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="small fw-bold">Questionable</div>
-                                    <div class="small text-muted">Decisions</div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="small fw-bold">IoT</div>
-                                    <div class="small text-muted">Addiction</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member 4 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card team-card h-100">
-                        <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face" class="card-img-top team-image" alt="Emily Wong">
-                            <div class="team-overlay">
-                                <div class="social-links">
-                                    <a href="#" class="text-white me-3" data-bs-toggle="tooltip" title="LinkedIn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                    <a href="#" class="text-white me-3" data-bs-toggle="tooltip" title="Twitter">
-                                        <i class="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="#" class="text-white" data-bs-toggle="tooltip" title="Email">
-                                        <i class="bi bi-envelope"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Emily Wong</h5>
-                            <p class="text-info fw-bold">Computing & Productivity</p>
-                            <p class="card-text">Computer science background with focus on laptops, workstations, and productivity software. Specializes in performance benchmarking.</p>
-                            <div class="row text-center">
-                                <div class="col-4">
-                                    <div class="small fw-bold">130+</div>
-                                    <div class="small text-muted">Reviews</div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="small fw-bold">6 years</div>
-                                    <div class="small text-muted">Experience</div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="small fw-bold">Computing</div>
-                                    <div class="small text-muted">Specialty</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member 5 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card team-card h-100">
-                        <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face" class="card-img-top team-image" alt="David Kim">
-                            <div class="team-overlay">
-                                <div class="social-links">
-                                    <a href="#" class="text-white me-3" data-bs-toggle="tooltip" title="LinkedIn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                    <a href="#" class="text-white me-3" data-bs-toggle="tooltip" title="Twitter">
-                                        <i class="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="#" class="text-white" data-bs-toggle="tooltip" title="Email">
-                                        <i class="bi bi-envelope"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">David Kim</h5>
-                            <p class="text-danger fw-bold">Photography & Video</p>
-                            <p class="card-text">Professional photographer and videographer. Reviews cameras, lenses, and mobile photography with artistic and technical expertise.</p>
-                            <div class="row text-center">
-                                <div class="col-4">
-                                    <div class="small fw-bold">90+</div>
-                                    <div class="small text-muted">Reviews</div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="small fw-bold">8 years</div>
-                                    <div class="small text-muted">Experience</div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="small fw-bold">Camera</div>
-                                    <div class="small text-muted">Specialty</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member 6 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card team-card h-100">
-                        <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face" class="card-img-top team-image" alt="Jessica Taylor">
-                            <div class="team-overlay">
-                                <div class="social-links">
-                                    <a href="#" class="text-white me-3" data-bs-toggle="tooltip" title="LinkedIn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                    <a href="#" class="text-white me-3" data-bs-toggle="tooltip" title="Twitter">
-                                        <i class="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="#" class="text-white" data-bs-toggle="tooltip" title="Email">
-                                        <i class="bi bi-envelope"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Jessica Taylor</h5>
-                            <p class="text-secondary fw-bold">Wearables & Health Tech</p>
-                            <p class="card-text">Fitness enthusiast and health tech specialist. Reviews smartwatches, fitness trackers, and health monitoring devices with personal insights.</p>
-                            <div class="row text-center">
-                                <div class="col-4">
-                                    <div class="small fw-bold">80+</div>
-                                    <div class="small text-muted">Reviews</div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="small fw-bold">3 years</div>
-                                    <div class="small text-muted">Experience</div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="small fw-bold">Wearables</div>
-                                    <div class="small text-muted">Specialty</div>
-                                </div>
+                    <div class="card border-0 shadow-sm overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=300&fit=crop" class="card-img-top" alt="Solutions">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Solutions Team</h5>
+                            <p class="text-muted">Implementation & Architecture</p>
+                            <p class="small">Specializing in cloud migration, cybersecurity, and infrastructure design</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <span class="badge bg-info">Expert Team</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Company Stats -->
-    <section class="py-5 bg-light">
-        <div class="container">
+            <hr class="my-5">
+
+            <!-- By The Numbers -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="text-center mb-5"><i class="fas fa-chart-bar me-2 text-primary"></i>By The Numbers</h2>
+                </div>
+            </div>
+
+            <div class="row g-4 text-center mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="p-4">
+                        <h1 class="display-4 text-primary fw-bold">100+</h1>
+                        <p class="text-muted mb-0">Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="p-4">
+                        <h1 class="display-4 text-success fw-bold">99.9%</h1>
+                        <p class="text-muted mb-0">Uptime Guarantee</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="p-4">
+                        <h1 class="display-4 text-info fw-bold">15 min</h1>
+                        <p class="text-muted mb-0">Average Response Time</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="p-4">
+                        <h1 class="display-4 text-warning fw-bold">5yr+</h1>
+                        <p class="text-muted mb-0">Average Client Relationship</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications and Partnerships -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="text-center mb-5"><i class="fas fa-certificate me-2 text-primary"></i>Certifications & Partnerships</h2>
+                </div>
+            </div>
+
+            <div class="row g-4 text-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="p-4 border rounded">
+                        <h5>Microsoft Gold Partner</h5>
+                        <p class="text-muted small">Cloud Platform & DevOps Solutions</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="p-4 border rounded">
+                        <h5>Cisco Learning Network</h5>
+                        <p class="text-muted small">Certified Network Associate</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="p-4 border rounded">
+                        <h5>CompTIA Security+</h5>
+                        <p class="text-muted small">IT Security Professionals</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="p-4 border rounded">
+                        <h5>ISO 27001 Compliant</h5>
+                        <p class="text-muted small">Information Security Management</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <!-- Contact CTA -->
             <div class="row text-center">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="stat-item">
-                        <div class="display-4 fw-bold text-primary">300+</div>
-                        <h5>Gadgets Tested</h5>
-                        <p class="text-muted">And yes, I've kept most of them (my apartment is basically a tech museum)</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="stat-item">
-                        <div class="display-4 fw-bold text-success">15K</div>
-                        <h5>Monthly Readers</h5>
-                        <p class="text-muted">People who apparently trust my opinion (still not sure why)</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="stat-item">
-                        <div class="display-4 fw-bold text-warning">$3,247</div>
-                        <h5>Credit Card Debt</h5>
-                        <p class="text-muted">From buying all this tech to test (my wife is not amused)</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="stat-item">
-                        <div class="display-4 fw-bold text-info">∞</div>
-                        <h5>Cups of Coffee</h5>
-                        <p class="text-muted">Consumed during late-night review writing sessions</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact & Location -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h2 class="display-6 fw-bold mb-4">Get in Touch</h2>
-                    <div class="row">
-                        <div class="col-md-6 mb-4">
-                            <div class="contact-info">
-                                <div class="d-flex align-items-center mb-3">
-                                    <div class="icon-circle bg-primary text-white me-3">
-                                        <i class="bi bi-envelope"></i>
-                                    </div>
-                                    <div>
-                                        <h6 class="mb-0">Email Us</h6>
-                                        <a href="mailto:reviews@techgear.com">reviews@techgear.com</a>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <div class="icon-circle bg-success text-white me-3">
-                                        <i class="bi bi-telephone"></i>
-                                    </div>
-                                    <div>
-                                        <h6 class="mb-0">Call Us</h6>
-                                        <a href="tel:+1-555-REVIEWS">+1 (555) REVIEWS</a>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <div class="icon-circle bg-info text-white me-3">
-                                        <i class="bi bi-geo-alt"></i>
-                                    </div>
-                                    <div>
-                                        <h6 class="mb-0">Visit Us</h6>
-                                        <address class="mb-0">
-                                            123 Tech Street<br>
-                                            Silicon Valley, CA 94105
-                                        </address>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h6 class="card-title">Send us a message</h6>
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="contactName" class="form-label">Name</label>
-                                            <input type="text" class="form-control" id="contactName" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="contactEmail" class="form-label">Email</label>
-                                            <input type="email" class="form-control" id="contactEmail" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="contactSubject" class="form-label">Subject</label>
-                                            <select class="form-select" id="contactSubject">
-                                                <option>General Inquiry</option>
-                                                <option>Review Request</option>
-                                                <option>Partnership</option>
-                                                <option>Press Inquiry</option>
-                                                <option>Technical Support</option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="contactMessage" class="form-label">Message</label>
-                                            <textarea class="form-control" id="contactMessage" rows="4" required></textarea>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Send Message</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <h5 class="mb-4">Follow Our Work</h5>
-                    <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
-                            <i class="bi bi-twitter text-primary me-3"></i>
-                            <div>
-                                <div class="fw-bold">Twitter</div>
-                                <small class="text-muted">Latest tech news and quick reviews</small>
-                            </div>
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="mb-4">Ready to Transform Your IT Infrastructure?</h2>
+                    <p class="lead text-muted mb-4">Whether you're looking to improve security, migrate to the cloud, or just need reliable IT support, we're here to help.</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="#" class="btn btn-primary btn-lg">
+                            <i class="fas fa-phone me-2"></i>Call Us: (217) 555-0100
                         </a>
-                        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
-                            <i class="bi bi-youtube text-danger me-3"></i>
-                            <div>
-                                <div class="fw-bold">YouTube</div>
-                                <small class="text-muted">Video reviews and unboxings</small>
-                            </div>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
-                            <i class="bi bi-instagram text-warning me-3"></i>
-                            <div>
-                                <div class="fw-bold">Instagram</div>
-                                <small class="text-muted">Behind-the-scenes and product photos</small>
-                            </div>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
-                            <i class="bi bi-linkedin text-info me-3"></i>
-                            <div>
-                                <div class="fw-bold">LinkedIn</div>
-                                <small class="text-muted">Industry insights and company updates</small>
-                            </div>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
-                            <i class="bi bi-podcast text-success me-3"></i>
-                            <div>
-                                <div class="fw-bold">Podcast</div>
-                                <small class="text-muted">Weekly tech discussions and interviews</small>
-                            </div>
+                        <a href="#" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-envelope me-2"></i>Email: info@badgertech.com
                         </a>
                     </div>
                 </div>
@@ -573,24 +328,40 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <h5><i class="bi bi-gear-fill me-2"></i>Ben's Tech Takes</h5>
-<parameter name="text-muted">One guy's honest opinions about tech stuff. No corporate sponsors, just real talk from someone who uses this stuff daily.</p>
+                    <h5><i class="fas fa-shield-alt me-2"></i>Badger Technologies</h5>
+                    <p class="text-muted">Professional IT services for small and medium businesses in Illinois. 24/7 support, cybersecurity, and cloud solutions you can trust.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Follow us on LinkedIn">
+                            <i class="bi bi-linkedin fs-5"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Like us on Facebook">
+                            <i class="bi bi-facebook fs-5"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Follow us on Twitter">
+                            <i class="bi bi-twitter fs-5"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Visit our YouTube channel">
+                            <i class="bi bi-youtube fs-5"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
-                    <h6>Categories</h6>
+                    <h6>Services</h6>
                     <ul class="list-unstyled">
-                        <li><a href="products.html">Smartphones</a></li>
-                        <li><a href="products.html">Laptops</a></li>
-                        <li><a href="products.html">Audio</a></li>
-                        <li><a href="products.html">Smart Home</a></li>
+                        <li><a href="products.html">Managed IT Support</a></li>
+                        <li><a href="products.html">Cybersecurity</a></li>
+                        <li><a href="products.html">Cloud Services</a></li>
+                        <li><a href="products.html">IT Consulting</a></li>
+                        <li><a href="products.html">24/7 Help Desk</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
-                    <h6>Resources</h6>
+                    <h6>Solutions</h6>
                     <ul class="list-unstyled">
-                        <li><a href="comparisons.html">Comparisons</a></li>
-                        <li><a href="#">Buying Guides</a></li>
-                        <li><a href="#">Best Lists</a></li>
+                        <li><a href="reviews.html">Remote Work Setup</a></li>
+                        <li><a href="reviews.html">Compliance</a></li>
+                        <li><a href="reviews.html">Disaster Recovery</a></li>
+                        <li><a href="reviews.html">Cloud Migration</a></li>
                         <li><a href="about.html">About Us</a></li>
                     </ul>
                 </div>
@@ -599,22 +370,28 @@
                     <ul class="list-unstyled">
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <h6>Newsletter</h6>
-                    <p class="text-muted small">Get weekly tech reviews</p>
+                    <h6>Get IT Updates</h6>
+                    <p class="text-muted small">Receive cybersecurity alerts and IT tips for your business</p>
                     <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Email">
+                        <input type="email" class="form-control" placeholder="Business Email">
                         <button class="btn btn-outline-light" type="button">Subscribe</button>
                     </div>
                 </div>
             </div>
             <hr>
-            <div class="text-center">
-                <p class="mb-0 text-muted">&copy; 2025 Ben Sherman. Made with ☕ and strong opinions.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2025 Badger Technologies LLC. Securing your business, one byte at a time.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted">Made with Bootstrap 5 | Professional IT Services</small>
+                </div>
             </div>
         </div>
     </footer>
@@ -629,29 +406,6 @@
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
-
-        // Initialize popovers
-        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl)
-        })
-
-        // Contact form handler
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! We\'ll get back to you soon.');
-        });
-
-        // Team card hover effects
-        document.querySelectorAll('.team-card').forEach(function(card) {
-            card.addEventListener('mouseenter', function() {
-                this.querySelector('.team-overlay').style.opacity = '1';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.querySelector('.team-overlay').style.opacity = '0';
-            });
-        });
     </script>
 </body>
 </html>
