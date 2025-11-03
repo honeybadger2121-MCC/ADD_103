@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Display - Bootstrap JS Tools</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .demo-section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .feature-demo {
+            background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1rem 0;
+        }
+        .code-example {
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        .collapse-example {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        .tab-content-demo {
+            min-height: 200px;
+            border: 1px solid #dee2e6;
+            border-top: none;
+            border-radius: 0 0 0.375rem 0.375rem;
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Bootstrap JS Tools</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" title="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="interactive-components.html">Interactive Components</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="navigation-tools.html">Navigation Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="content-display.html">Content Display</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Navigation -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">🏠 Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="interactive-components.html">🎯 Interactive Components</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="navigation-tools.html">🧭 Navigation Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="content-display.html">📋 Content Display</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <div class="bg-warning text-dark py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">Content Display</h1>
+                    <p class="lead">Learn about Collapse components, Accordions, and Tabs for advanced content organization.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Collapse Section -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="h3 fw-bold text-primary mb-4">1. Collapse Components</h2>
+            <p>Collapse components allow you to toggle the visibility of content, perfect for FAQs, expandable sections, and space-saving designs.</p>
+            
+            <div class="feature-demo">
+                <h5>Basic Collapse Examples</h5>
+                
+                <!-- Simple Collapse -->
+                <div class="mb-4">
+                    <h6>Simple Toggle</h6>
+                    <button class="btn btn-primary mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Toggle Content
+                    </button>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            This is collapsible content! It can contain any HTML elements like text, images, forms, or other components.
+                            Collapse is perfect for showing/hiding additional information without navigating to another page.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Multiple Collapse Buttons -->
+                <div class="mb-4">
+                    <h6>Multiple Triggers</h6>
+                    <p class="small text-muted">Multiple buttons can control the same collapse element:</p>
+                    <button class="btn btn-success me-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample" aria-expanded="false">
+                        Button 1
+                    </button>
+                    <button class="btn btn-info me-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample" aria-expanded="false">
+                        Button 2
+                    </button>
+                    <a class="btn btn-warning mb-2" data-bs-toggle="collapse" href="#multiCollapseExample" role="button" aria-expanded="false">
+                        Link Toggle
+                    </a>
+                    <div class="collapse mt-2" id="multiCollapseExample">
+                        <div class="alert alert-info">
+                            <strong>Multiple Controls:</strong> This content can be toggled by any of the three controls above.
+                            This is useful for creating flexible user interfaces.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Horizontal Collapse -->
+                <div class="mb-4">
+                    <h6>Horizontal Collapse</h6>
+                    <button class="btn btn-secondary mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                        Toggle Width
+                    </button>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                            <div class="card card-body" style="width: 300px;">
+                                This is a horizontal collapse example. Instead of collapsing vertically (height), 
+                                this element collapses horizontally (width). Useful for sidebars and panels.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-example">
+                    <strong>Basic Usage:</strong><br>
+                    &lt;button data-bs-toggle="collapse" data-bs-target="#myCollapse"&gt;Toggle&lt;/button&gt;<br>
+                    &lt;div class="collapse" id="myCollapse"&gt;Content here&lt;/div&gt;
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accordion Section -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="h3 fw-bold text-success mb-4">2. Accordion</h2>
+            <p>Accordions are a collection of collapsible items, perfect for FAQs, documentation, and organizing related content sections.</p>
+            
+            <div class="feature-demo">
+                <h5>Bootstrap FAQ Accordion</h5>
+                
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is Bootstrap?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <strong>Bootstrap is a powerful front-end framework</strong> that provides a collection of CSS and JavaScript components for building responsive websites and web applications. It includes a responsive grid system, pre-built components, and utilities for rapid development.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How do JavaScript components work?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Bootstrap's JavaScript components use <strong>data attributes</strong> to initialize functionality without writing custom JavaScript. Components like modals, tooltips, carousels, and accordions can be activated using simple HTML attributes like <code>data-bs-toggle</code> and <code>data-bs-target</code>.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What's new in Bootstrap 5?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Bootstrap 5 introduced several major improvements including <strong>removal of jQuery dependency</strong>, new utility classes, improved grid system with CSS Grid support, new components like Offcanvas, updated color palette, and enhanced customization options with CSS custom properties.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                How to customize Bootstrap components?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Bootstrap can be customized through <strong>CSS custom properties (variables)</strong>, Sass variables, utility classes, or by overriding default styles. You can also use online tools like Bootstrap Build or customize and download your own version from the official Bootstrap website.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alternative Accordion Style -->
+                <div class="mt-5">
+                    <h5>Product Features Accordion</h5>
+                    <div class="accordion accordion-flush" id="productAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    🚀 Performance Features
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#productAccordion">
+                                <div class="accordion-body">
+                                    <ul class="list-unstyled">
+                                        <li>✅ Lightning-fast load times</li>
+                                        <li>✅ Optimized for mobile devices</li>
+                                        <li>✅ CDN-ready distribution</li>
+                                        <li>✅ Minimal bundle size</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    🎨 Design Features
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#productAccordion">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>Visual Elements</h6>
+                                            <ul class="small">
+                                                <li>Modern color palette</li>
+                                                <li>Consistent typography</li>
+                                                <li>Flexible grid system</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6>Customization</h6>
+                                            <ul class="small">
+                                                <li>CSS custom properties</li>
+                                                <li>Sass variable support</li>
+                                                <li>Utility-first approach</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    🛠️ Developer Tools
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#productAccordion">
+                                <div class="accordion-body">
+                                    <div class="alert alert-info">
+                                        <strong>Development Benefits:</strong> Bootstrap provides extensive documentation, 
+                                        component examples, and debugging tools to streamline your development workflow.
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <span class="badge bg-primary">Documentation</span>
+                                        <span class="badge bg-success">Examples</span>
+                                        <span class="badge bg-warning">Templates</span>
+                                        <span class="badge bg-info">Community</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabs Section -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="h3 fw-bold text-info mb-4">3. Navigation Tabs</h2>
+            <p>Tabs organize content into separate sections, allowing users to switch between different views without page navigation.</p>
+            
+            <div class="feature-demo">
+                <h5>Basic Tab Navigation</h5>
+                
+                <!-- Basic Tabs -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                            Home
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                            Profile
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+                            Contact
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings-tab-pane" type="button" role="tab" aria-controls="settings-tab-pane" aria-selected="false">
+                            Settings
+                        </button>
+                    </li>
+                </ul>
+                
+                <div class="tab-content tab-content-demo" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <h6>🏠 Home Content</h6>
+                        <p>Welcome to the home tab! This is the default active tab that users see when the page loads.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="bg-light p-3 rounded">
+                                    <h6>Quick Stats</h6>
+                                    <ul class="list-unstyled mb-0">
+                                        <li>👥 Users: 1,234</li>
+                                        <li>📊 Projects: 56</li>
+                                        <li>🎯 Goals: 12</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-primary text-white p-3 rounded">
+                                    <h6>Recent Activity</h6>
+                                    <p class="mb-0 small">Last login: 2 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <h6>👤 Profile Information</h6>
+                        <p>Manage your personal information and account settings here.</p>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" value="John">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" value="Doe">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" value="john@example.com">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Update Profile</button>
+                        </form>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                        <h6>📞 Contact Information</h6>
+                        <p>Get in touch with us through any of these channels:</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="text-center p-3 border rounded">
+                                    <div class="text-primary fs-3">📧</div>
+                                    <h6>Email</h6>
+                                    <p class="small text-muted mb-0">support@example.com</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center p-3 border rounded">
+                                    <div class="text-success fs-3">📱</div>
+                                    <h6>Phone</h6>
+                                    <p class="small text-muted mb-0">(555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center p-3 border rounded">
+                                    <div class="text-info fs-3">💬</div>
+                                    <h6>Chat</h6>
+                                    <p class="small text-muted mb-0">Live chat available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="settings-tab-pane" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">
+                        <h6>⚙️ Application Settings</h6>
+                        <p>Customize your experience with these preferences:</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Appearance</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="theme" id="lightTheme" checked>
+                                    <label class="form-check-label" for="lightTheme">Light Theme</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="theme" id="darkTheme">
+                                    <label class="form-check-label" for="darkTheme">Dark Theme</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="theme" id="autoTheme">
+                                    <label class="form-check-label" for="autoTheme">Auto (System)</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Notifications</h6>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="emailNotifs" checked>
+                                    <label class="form-check-label" for="emailNotifs">Email Notifications</label>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="pushNotifs">
+                                    <label class="form-check-label" for="pushNotifs">Push Notifications</label>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="smsNotifs">
+                                    <label class="form-check-label" for="smsNotifs">SMS Notifications</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pills Style Tabs -->
+                <div class="mt-5">
+                    <h5>Pill-Style Navigation</h5>
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-overview-tab" data-bs-toggle="pill" data-bs-target="#pills-overview" type="button" role="tab" aria-controls="pills-overview" aria-selected="true">
+                                Overview
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-features-tab" data-bs-toggle="pill" data-bs-target="#pills-features" type="button" role="tab" aria-controls="pills-features" aria-selected="false">
+                                Features
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-pricing-tab" data-bs-toggle="pill" data-bs-target="#pills-pricing" type="button" role="tab" aria-controls="pills-pricing" aria-selected="false">
+                                Pricing
+                            </button>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-overview" role="tabpanel" aria-labelledby="pills-overview-tab" tabindex="0">
+                            <div class="collapse-example">
+                                <h6>📊 Product Overview</h6>
+                                <p>Our comprehensive solution provides everything you need to build modern web applications with Bootstrap 5.</p>
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <div class="fw-bold fs-4">50+</div>
+                                        <small>Components</small>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="fw-bold fs-4">12</div>
+                                        <small>Grid Columns</small>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="fw-bold fs-4">100%</div>
+                                        <small>Responsive</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="pills-features" role="tabpanel" aria-labelledby="pills-features-tab" tabindex="0">
+                            <h6>🎯 Key Features</h6>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Responsive Grid System
+                                            <span class="badge bg-primary rounded-pill">New</span>
+                                        </li>
+                                        <li class="list-group-item">Pre-built Components</li>
+                                        <li class="list-group-item">JavaScript Plugins</li>
+                                        <li class="list-group-item">Utility Classes</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="alert alert-success">
+                                        <strong>Performance:</strong> Optimized for speed and mobile-first design.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="pills-pricing" role="tabpanel" aria-labelledby="pills-pricing-tab" tabindex="0">
+                            <h6>💰 Pricing Plans</h6>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <h6 class="card-title">Free</h6>
+                                            <div class="display-6 fw-bold">$0</div>
+                                            <small class="text-muted">per month</small>
+                                            <hr>
+                                            <ul class="list-unstyled">
+                                                <li>✅ Basic Components</li>
+                                                <li>✅ Grid System</li>
+                                                <li>❌ Premium Themes</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card border-primary">
+                                        <div class="card-body text-center">
+                                            <h6 class="card-title">Pro <span class="badge bg-primary">Popular</span></h6>
+                                            <div class="display-6 fw-bold text-primary">$19</div>
+                                            <small class="text-muted">per month</small>
+                                            <hr>
+                                            <ul class="list-unstyled">
+                                                <li>✅ All Components</li>
+                                                <li>✅ Premium Themes</li>
+                                                <li>✅ Priority Support</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <h6 class="card-title">Enterprise</h6>
+                                            <div class="display-6 fw-bold">$99</div>
+                                            <small class="text-muted">per month</small>
+                                            <hr>
+                                            <ul class="list-unstyled">
+                                                <li>✅ Everything in Pro</li>
+                                                <li>✅ Custom Development</li>
+                                                <li>✅ Dedicated Manager</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combined Features Demo -->
+    <section class="demo-section bg-light">
+        <div class="container">
+            <h2 class="h3 fw-bold text-danger mb-4">4. Combined Components Example</h2>
+            <p>See how Collapse, Accordion, and Tabs work together in a real-world dashboard interface.</p>
+            
+            <div class="feature-demo bg-white">
+                <h5>Dashboard Interface</h5>
+                
+                <!-- Dashboard Tabs -->
+                <ul class="nav nav-tabs" id="dashboardTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="analytics-tab" data-bs-toggle="tab" data-bs-target="#analytics" type="button" role="tab">
+                            📊 Analytics
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reports-tab" data-bs-toggle="tab" data-bs-target="#reports" type="button" role="tab">
+                            📋 Reports
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="help-tab" data-bs-toggle="tab" data-bs-target="#help" type="button" role="tab">
+                            ❓ Help
+                        </button>
+                    </li>
+                </ul>
+                
+                <div class="tab-content border border-top-0 p-3" id="dashboardTabContent">
+                    <!-- Analytics Tab -->
+                    <div class="tab-pane fade show active" id="analytics" role="tabpanel">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h6>Analytics Overview</h6>
+                            <button class="btn btn-sm btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#analyticsDetails">
+                                Toggle Details
+                            </button>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="collapse show" id="analyticsDetails">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="card text-center">
+                                                <div class="card-body">
+                                                    <h2 class="text-primary">1,234</h2>
+                                                    <p class="mb-0">Total Visitors</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card text-center">
+                                                <div class="card-body">
+                                                    <h2 class="text-success">567</h2>
+                                                    <p class="mb-0">Conversions</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="bg-light p-3 rounded">
+                                    <h6>Quick Actions</h6>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-primary btn-sm">Export Data</button>
+                                        <button class="btn btn-outline-secondary btn-sm">Schedule Report</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Reports Tab -->
+                    <div class="tab-pane fade" id="reports" role="tabpanel">
+                        <h6>Available Reports</h6>
+                        <div class="accordion" id="reportsAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#monthlyReport">
+                                        Monthly Sales Report
+                                    </button>
+                                </h2>
+                                <div id="monthlyReport" class="accordion-collapse collapse" data-bs-parent="#reportsAccordion">
+                                    <div class="accordion-body">
+                                        <p>Comprehensive monthly sales analysis including trends, top products, and customer insights.</p>
+                                        <button class="btn btn-primary btn-sm">Download PDF</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#userReport">
+                                        User Activity Report
+                                    </button>
+                                </h2>
+                                <div id="userReport" class="accordion-collapse collapse" data-bs-parent="#reportsAccordion">
+                                    <div class="accordion-body">
+                                        <p>Detailed user engagement metrics, session duration, and feature usage statistics.</p>
+                                        <button class="btn btn-success btn-sm">View Online</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Help Tab -->
+                    <div class="tab-pane fade" id="help" role="tabpanel">
+                        <h6>Frequently Asked Questions</h6>
+                        <div class="accordion accordion-flush" id="helpAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#helpOne">
+                                        How do I export my data?
+                                    </button>
+                                </h2>
+                                <div id="helpOne" class="accordion-collapse collapse" data-bs-parent="#helpAccordion">
+                                    <div class="accordion-body">
+                                        Click the "Export Data" button in the Analytics tab to download your data in CSV or PDF format.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#helpTwo">
+                                        Can I schedule automated reports?
+                                    </button>
+                                </h2>
+                                <div id="helpTwo" class="accordion-collapse collapse" data-bs-parent="#helpAccordion">
+                                    <div class="accordion-body">
+                                        Yes! Use the "Schedule Report" feature to set up daily, weekly, or monthly automated reports delivered to your email.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h6>Bootstrap JavaScript Tools - Content Display</h6>
+                    <p class="mb-0 small">Demonstrating Collapse, Accordion, and Tab components for organized content presentation.</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <p class="mb-0 small">
+                        <a href="index.html" class="text-info text-decoration-none">← Back to Home</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
