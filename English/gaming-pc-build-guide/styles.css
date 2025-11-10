@@ -1,0 +1,555 @@
+/* Gaming PC Build Guide Styles */
+/* Following CRAP Design Principles: Contrast, Repetition, Alignment, Proximity */
+
+/* ========== BASE STYLES ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.35;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* ========== PAGE LAYOUT ========== */
+.page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 20px auto;
+    padding: 0.45in 0.55in;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    page-break-after: always;
+    position: relative;
+}
+
+@media print {
+    .page {
+        margin: 0;
+        box-shadow: none;
+        page-break-after: always;
+    }
+    
+    body {
+        background: white;
+    }
+}
+
+/* ========== COVER PAGE (CONTRAST) ========== */
+.cover-page {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cover-content {
+    width: 100%;
+}
+
+.cover-header {
+    margin-bottom: 12px;
+}
+
+.main-title {
+    font-size: 34px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.title-highlight {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.title-gaming {
+    font-size: 46px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    background: linear-gradient(to right, #fff, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.cover-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.cover-image-placeholder {
+    margin: 20px 0;
+}
+
+.cover-footer {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.cover-footer p {
+    margin: 5px 0;
+}
+
+.author {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.date, .edition {
+    font-weight: 300;
+}
+
+/* ========== PAGE HEADERS (REPETITION) ========== */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 3px solid #667eea;
+}
+
+.page-header h2 {
+    font-size: 24px;
+    color: #667eea;
+    font-weight: 700;
+}
+
+.page-number {
+    font-size: 12px;
+    color: #999;
+    font-weight: 600;
+}
+
+/* ========== STEP BADGES (CONTRAST & REPETITION) ========== */
+.step-badge {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 5px 16px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+/* ========== CONTENT SECTIONS (PROXIMITY) ========== */
+.content {
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+.content h3 {
+    font-size: 19px;
+    color: #333;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.content h4 {
+    font-size: 14px;
+    color: #667eea;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.content p {
+    margin-bottom: 7px;
+    text-align: justify;
+}
+
+.content ul, .content ol {
+    margin-left: 22px;
+    margin-bottom: 8px;
+}
+
+.content li {
+    margin-bottom: 3px;
+}
+
+.content li ul,
+.content li ol {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.step-intro {
+    font-size: 12px;
+    font-style: italic;
+    background: #f0f4ff;
+    padding: 9px 12px;
+    border-left: 4px solid #667eea;
+    margin-bottom: 10px;
+}
+
+/* ========== SUBSTEPS (ALIGNMENT & PROXIMITY) ========== */
+.substep {
+    margin: 11px 0;
+    padding: 10px 12px;
+    background: #fafbfc;
+    border-radius: 6px;
+    border-left: 4px solid #764ba2;
+}
+
+.substep h4 {
+    color: #764ba2;
+    margin-top: 0;
+}
+
+/* ========== INFO BOXES (CONTRAST) ========== */
+.tip-box {
+    background: #e8f5e9;
+    border-left: 5px solid #4caf50;
+    padding: 9px 12px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.tip-box strong {
+    color: #2e7d32;
+}
+
+.warning-box {
+    background: #fff3e0;
+    border-left: 5px solid #ff9800;
+    padding: 9px 12px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.warning-box strong {
+    color: #e65100;
+}
+
+.completion-check {
+    font-weight: 700;
+    color: #667eea;
+    margin-top: 11px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+/* ========== COMPONENT BOXES (PROXIMITY & REPETITION) ========== */
+.component-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin: 11px 0;
+}
+
+.component-box {
+    background: #f8f9fa;
+    padding: 9px 11px;
+    border-radius: 6px;
+    border: 2px solid #e0e0e0;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.component-box:hover {
+    transform: translateY(-2px);
+    border-color: #667eea;
+}
+
+.component-box h4 {
+    color: #764ba2;
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+
+.component-box p {
+    font-size: 10px;
+    margin-bottom: 0;
+    line-height: 1.35;
+}
+
+/* ========== TOOLS LIST ========== */
+.tools-list h4 {
+    color: #333;
+    margin-top: 10px;
+}
+
+/* ========== TABLES (ALIGNMENT & CONTRAST) ========== */
+.comparison-table {
+    margin: 10px 0;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10px;
+}
+
+table th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 7px;
+    text-align: left;
+    font-weight: 600;
+}
+
+table td {
+    padding: 5px 7px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+table tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+table tr:hover {
+    background: #f0f4ff;
+}
+
+/* ========== TABLE OF CONTENTS (ALIGNMENT) ========== */
+.toc {
+    font-size: 11px;
+}
+
+.toc-section {
+    margin-bottom: 12px;
+}
+
+.toc-section h4 {
+    color: #764ba2;
+    font-size: 15px;
+    margin-bottom: 6px;
+    margin-top: 10px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 4px;
+}
+
+.toc-item {
+    display: flex;
+    align-items: baseline;
+    margin: 4px 0;
+    padding: 2px 0;
+}
+
+.toc-item:hover {
+    background: #f0f4ff;
+}
+
+.toc-sub {
+    margin-left: 20px;
+    font-size: 10px;
+}
+
+.toc-title {
+    flex-shrink: 0;
+    padding-right: 10px;
+}
+
+.toc-dots {
+    flex-grow: 1;
+    border-bottom: 2px dotted #ccc;
+    margin: 0 10px;
+    height: 1em;
+}
+
+.toc-page {
+    flex-shrink: 0;
+    font-weight: 600;
+    color: #667eea;
+    padding-left: 10px;
+}
+
+/* ========== PLACEHOLDER GRAPHICS (CONTRAST) ========== */
+.placeholder-box {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border: 3px dashed #667eea;
+    padding: 30px 18px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    font-size: 10px;
+    line-height: 1.4;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.diagram-placeholder {
+    margin: 8px 0;
+}
+
+.diagram-placeholder img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.diagram-placeholder p {
+    font-size: 10px;
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* ========== REFERENCE SECTIONS ========== */
+.reference-item {
+    margin: 8px 0;
+    padding-left: 18px;
+    text-indent: -18px;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.reference-item a {
+    color: #667eea;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.reference-item a:hover {
+    border-bottom-color: #667eea;
+}
+
+/* ========== GLOSSARY ========== */
+.glossary-term {
+    margin: 8px 0;
+    padding: 7px 9px;
+    background: #fafbfc;
+    border-radius: 5px;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.glossary-term strong {
+    color: #764ba2;
+    font-size: 12px;
+}
+
+/* ========== TROUBLESHOOTING ========== */
+.troubleshooting-item {
+    margin: 10px 0;
+    padding: 9px 11px;
+    background: #fff9e6;
+    border-left: 4px solid #ffc107;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.troubleshooting-item h4 {
+    color: #f57c00;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.troubleshooting-item p {
+    margin-bottom: 5px;
+}
+
+.troubleshooting-item ul {
+    margin-bottom: 0;
+}
+
+/* ========== PRINT OPTIMIZATION ========== */
+@media print {
+    .page {
+        box-shadow: none;
+    }
+    
+    .component-box:hover,
+    .toc-item:hover {
+        transform: none;
+        background: transparent;
+    }
+    
+    a {
+        color: #667eea;
+        text-decoration: none;
+    }
+}
+
+/* ========== ACCESSIBILITY ========== */
+:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+/* Ensure sufficient contrast for all text */
+.content {
+    color: #333;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .page {
+        border: 2px solid #000;
+    }
+    
+    .page-header {
+        border-bottom-color: #000;
+    }
+}
+
+/* ========== UTILITY CLASSES FOR SPACE OPTIMIZATION ========== */
+.compact-spacing ul,
+.compact-spacing ol {
+    margin-bottom: 8px;
+}
+
+.compact-spacing li {
+    margin-bottom: 3px;
+}
+
+/* Reduce space for nested lists */
+ul ul, ol ul, ul ol, ol ol {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+/* Optimize paragraph spacing in lists */
+li p {
+    margin-bottom: 3px;
+}
+
+/* Better spacing for consecutive headings */
+h3 + h4 {
+    margin-top: 8px;
+}
+
+h4 + p,
+h4 + ul,
+h4 + ol {
+    margin-top: 6px;
+}
+
+/* Optimize strong elements within paragraphs */
+p strong {
+    font-weight: 600;
+}
+
+/* Reduce vertical rhythm where appropriate */
+.content > *:first-child {
+    margin-top: 0;
+}
+
+.content > *:last-child {
+    margin-bottom: 0;
+}

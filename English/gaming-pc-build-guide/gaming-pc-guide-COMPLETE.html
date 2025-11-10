@@ -1,0 +1,2061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Complete Guide to Building Your First Gaming PC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- COVER PAGE -->
+    <div class="page cover-page">
+        <div class="cover-content">
+            <div class="cover-header">
+                <h1 class="main-title">THE COMPLETE GUIDE TO</h1>
+                <h1 class="title-highlight">BUILDING YOUR FIRST</h1>
+                <h1 class="title-gaming">GAMING PC</h1>
+            </div>
+            
+            <div class="cover-subtitle">
+                <p>A Step-by-Step Technical Manual for First-Time Builders</p>
+            </div>
+            
+            <div class="cover-image-placeholder">
+                <img src="images/cover-gaming-pc.jpg" alt="White gaming PC case with blue RGB lighting showing internal components including GPU, CPU cooler, and liquid cooling system" style="max-width: 400px; width: 100%; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.3); margin: 15px 0;">
+            </div>
+            
+            <div class="cover-footer">
+                <p class="author">By: Benjamin Sherman</p>
+                <p class="date">November 2025</p>
+                <p class="edition">First Edition</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- PAGE 2: PREFACE/INTRODUCTION -->
+    <div class="page">
+        <div class="page-header">
+            <h2>Preface</h2>
+            <div class="page-number">Page 2</div>
+        </div>
+        
+        <div class="content">
+            <h3>Welcome to PC Building!</h3>
+            
+            <p>Building your first gaming PC is an exciting and rewarding experience. This comprehensive guide will walk you through every step of the process, from selecting compatible components to powering on your completed system for the first time.</p>
+            
+            <h4>Purpose of This Guide</h4>
+            <p>This manual provides clear, detailed instructions to help you understand PC components, select compatible parts, safely assemble your system, configure BIOS settings, and troubleshoot common issues.</p>
+            
+            <h4>Who This Guide Is For</h4>
+            <p>This guide is written for gaming enthusiasts and beginners with basic computer literacy who want to build a custom gaming PC. No prior assembly experience is required, though attention to detail and patience are essential.</p>
+            
+            <h4>How to Navigate This Guide</h4>
+            <p>This manual is organized into sequential steps that build upon each other. Use the table of contents to quickly locate specific sections. Warning boxes highlight critical safety information, and tip boxes provide helpful suggestions and best practices.</p>
+            
+            <h4>Related Resources</h4>
+            <p>For additional information, consider: <strong>PCPartPicker.com</strong> (compatibility verification), <strong>Component Manuals</strong> (manufacturer guides), <strong>Online Communities</strong> (r/buildapc, Tom's Hardware forums), and <strong>Video Tutorials</strong> (visual demonstrations).</p>
+            
+            <h4>Safety and Warranty Considerations</h4>
+            <div class="warning-box">
+                <p><strong>⚠️ IMPORTANT SAFETY INFORMATION:</strong> Always work on a non-conductive surface. Use an anti-static wrist strap. Never force components into place. Keep liquids away from all components. Ensure power supply is OFF and unplugged before working inside the case.</p>
+            </div>
+            
+            <div class="tip-box">
+                <p><strong>💡 Warranty Note:</strong> Improper installation can void component warranties. Follow manufacturer instructions carefully and keep all original packaging until your build is complete and functional.</p>
+            </div>
+            
+            <h4>Time Requirements</h4>
+            <p>Plan to dedicate 3-5 hours for your first build: Component preparation (30 min), Physical assembly (2-3 hours), Cable management (30-45 min), BIOS setup and OS installation (1-2 hours). Take breaks as needed and never rush the process.</p>
+        </div>
+    </div>
+    
+    <!-- PAGE 3: TABLE OF CONTENTS -->
+    <div class="page">
+        <div class="page-header">
+            <h2>Table of Contents</h2>
+            <div class="page-number">Page 3</div>
+        </div>
+        
+        <div class="content toc">
+            <div class="toc-section">
+                <div class="toc-item">
+                    <span class="toc-title">Cover Page</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">1</span>
+                </div>
+                <div class="toc-item">
+                    <span class="toc-title">Preface & Introduction</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">2</span>
+                </div>
+                <div class="toc-item">
+                    <span class="toc-title">Table of Contents</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">3</span>
+                </div>
+            </div>
+            
+            <div class="toc-section">
+                <h4>Preparation</h4>
+                <div class="toc-item">
+                    <span class="toc-title">Before You Begin</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">4-5</span>
+                </div>
+                <div class="toc-item toc-sub">
+                    <span class="toc-title">Understanding PC Components</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">4</span>
+                </div>
+                <div class="toc-item toc-sub">
+                    <span class="toc-title">Tools & Workspace Setup</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">5</span>
+                </div>
+            </div>
+            
+            <div class="toc-section">
+                <h4>Assembly Steps</h4>
+                <div class="toc-item">
+                    <span class="toc-title"><strong>Step 1:</strong> Choosing Your Components</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">6-7</span>
+                </div>
+                <div class="toc-item">
+                    <span class="toc-title"><strong>Step 2:</strong> Preparing Your Workspace</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">8</span>
+                </div>
+                <div class="toc-item">
+                    <span class="toc-title"><strong>Step 3:</strong> Installing CPU and RAM</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">9-10</span>
+                </div>
+                <div class="toc-item">
+                    <span class="toc-title"><strong>Step 4:</strong> Installing Motherboard & PSU</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">11-12</span>
+                </div>
+                <div class="toc-item">
+                    <span class="toc-title"><strong>Step 5:</strong> Installing Storage & GPU</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">13-14</span>
+                </div>
+                <div class="toc-item">
+                    <span class="toc-title"><strong>Step 6:</strong> Connecting All Cables</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">15-16</span>
+                </div>
+                <div class="toc-item">
+                    <span class="toc-title"><strong>Step 7:</strong> First Boot & BIOS Setup</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">17-18</span>
+                </div>
+                <div class="toc-item">
+                    <span class="toc-title"><strong>Step 8:</strong> Installing OS & Drivers</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">19</span>
+                </div>
+            </div>
+            
+            <div class="toc-section">
+                <h4>Additional Information</h4>
+                <div class="toc-item">
+                    <span class="toc-title">Troubleshooting Common Issues</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">20</span>
+                </div>
+                <div class="toc-item">
+                    <span class="toc-title">Maintenance & Future Upgrades</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">21</span>
+                </div>
+                <div class="toc-item">
+                    <span class="toc-title">References & Citations</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">22</span>
+                </div>
+                <div class="toc-item">
+                    <span class="toc-title">Glossary of Terms</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">23</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- PAGE 4-5: BEFORE YOU BEGIN -->
+    <div class="page">
+        <div class="page-header">
+            <h2>Before You Begin</h2>
+            <div class="page-number">Page 4</div>
+        </div>
+        
+        <div class="content">
+            <h3>Understanding PC Components</h3>
+            
+            <p>Before diving into assembly, familiarize yourself with the essential components of a gaming PC:</p>
+            
+            <div class="component-grid">
+                <div class="component-box">
+                    <h4>🖥️ CPU (Processor)</h4>
+                    <p>The "brain" of your computer that executes instructions and processes data. Popular choices include Intel Core i5/i7/i9 or AMD Ryzen 5/7/9 series.</p>
+                </div>
+                
+                <div class="component-box">
+                    <h4>🔧 Motherboard</h4>
+                    <p>The main circuit board that connects all components. Must be compatible with your CPU socket type (e.g., LGA 1700, AM5).</p>
+                </div>
+                
+                <div class="component-box">
+                    <h4>🎮 GPU (Graphics Card)</h4>
+                    <p>Renders images and video for gaming. NVIDIA GeForce RTX or AMD Radeon RX series are common choices for gaming builds.</p>
+                </div>
+                
+                <div class="component-box">
+                    <h4>💾 RAM (Memory)</h4>
+                    <p>Temporary storage for active programs and data. Gaming PCs typically use 16GB-32GB of DDR4 or DDR5 RAM.</p>
+                </div>
+                
+                <div class="component-box">
+                    <h4>💿 Storage (SSD/HDD)</h4>
+                    <p>Permanent data storage. Modern builds use NVMe M.2 SSDs for fast boot times and game loading.</p>
+                </div>
+                
+                <div class="component-box">
+                    <h4>⚡ PSU (Power Supply)</h4>
+                    <p>Converts wall power to usable DC power for components. Choose 80+ Bronze or better efficiency rating.</p>
+                </div>
+                
+                <div class="component-box">
+                    <h4>📦 PC Case</h4>
+                    <p>Houses all components. Consider airflow, size (ATX, Micro-ATX, Mini-ITX), and aesthetics.</p>
+                </div>
+                
+                <div class="component-box">
+                    <h4>❄️ CPU Cooler</h4>
+                    <p>Dissipates heat from the CPU. Options include stock coolers, tower air coolers, or liquid AIO coolers.</p>
+                </div>
+            </div>
+            
+            <div class="diagram-placeholder">
+                <img src="images/cpu-motherboard.jpg" alt="Intel Core i5 CPU installed in LGA 1700 socket on motherboard with visible RAM slots and components" style="max-width: 85%; border-radius: 6px; box-shadow: 0 3px 5px rgba(0,0,0,0.1);">
+                <p style="text-align: center; font-size: 10px; color: #666; font-style: italic; margin-top: 5px;">Figure 1: CPU installed in motherboard socket showing key components and layout</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page">
+        <div class="page-header">
+            <h2>Before You Begin (continued)</h2>
+            <div class="page-number">Page 5</div>
+        </div>
+        
+        <div class="content">
+            <h3>Tools You'll Need</h3>
+            
+            <div class="tools-list">
+                <h4>Essential Tools:</h4>
+                <ul>
+                    <li><strong>Phillips head screwdriver (#2):</strong> For securing components and standoffs</li>
+                    <li><strong>Anti-static wrist strap:</strong> Prevents electrostatic discharge damage</li>
+                    <li><strong>Thermal paste:</strong> Often included with CPU cooler; improves heat transfer</li>
+                </ul>
+                
+                <h4>Helpful (But Optional) Tools:</h4>
+                <ul>
+                    <li>Flashlight or headlamp for visibility inside the case</li>
+                    <li>Zip ties or velcro straps for cable management</li>
+                    <li>Magnetic parts tray to keep screws organized</li>
+                    <li>Needle-nose pliers for tight spaces</li>
+                    <li>USB drive (8GB+) for OS installation</li>
+                </ul>
+            </div>
+            
+            <div class="diagram-placeholder">
+                <img src="images/rgb-keyboard.jpg" alt="Gaming setup with RGB mechanical keyboard showing pink and blue lighting" style="max-width: 85%; border-radius: 6px; box-shadow: 0 3px 5px rgba(0,0,0,0.1);">
+                <p style="text-align: center; font-size: 10px; color: #666; font-style: italic; margin-top: 5px;">Figure 2: Example of gaming peripheral setup - maintain a clean, organized workspace for PC building</p>
+            </div>
+            
+            <h3>Workspace Preparation</h3>
+            
+            <div class="tip-box">
+                <p><strong>💡 Workspace Checklist:</strong></p>
+                <ul>
+                    <li>✓ Large, flat, non-conductive surface (wooden table is ideal)</li>
+                    <li>✓ Good lighting to see small components clearly</li>
+                    <li>✓ Grounded outlet for anti-static strap</li>
+                    <li>✓ Clear of carpets and static-generating materials</li>
+                    <li>✓ Room temperature environment (not too hot or humid)</li>
+                    <li>✓ Enough space to lay out all components and packaging</li>
+                </ul>
+            </div>
+            
+            <h3>Anti-Static Precautions</h3>
+            
+            <div class="warning-box">
+                <p><strong>⚠️ CRITICAL:</strong> Static electricity can permanently damage sensitive components!</p>
+            </div>
+            
+            <p><strong>How to prevent static discharge:</strong></p>
+            <ol>
+                <li>Attach anti-static wrist strap to your wrist and clip to grounded metal surface</li>
+                <li>Work on non-carpeted floors (tile, hardwood, or concrete)</li>
+                <li>Avoid wearing synthetic fabrics that generate static</li>
+                <li>Touch the metal case frame frequently to discharge built-up static</li>
+                <li>Keep components in anti-static bags until ready to install</li>
+            </ol>
+            
+            <div class="diagram-placeholder">
+                <img src="images/pc-case-green-rgb.jpg" alt="Gaming PC case with green RGB lighting and tempered glass side panel" style="max-width: 85%; border-radius: 6px; box-shadow: 0 3px 5px rgba(0,0,0,0.1);">
+                <p style="text-align: center; font-size: 10px; color: #666; font-style: italic; margin-top: 5px;">Figure 3: Modern gaming PC case - ensure proper grounding and anti-static precautions when building</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- PAGES 7-8: STEP 1 - CHOOSING COMPONENTS -->
+    <div class="page">
+        <div class="page-header">
+            <div class="step-badge">STEP 1</div>
+            <h2>Choosing Your Components</h2>
+            <div class="page-number">Page 6</div>
+        </div>
+        
+        <div class="content">
+            <p class="step-intro">Selecting compatible components is the foundation of a successful build. This step guides you through choosing parts that work together seamlessly while meeting your performance and budget requirements.</p>
+            
+            <h3>Component Selection Strategy</h3>
+            
+            <div class="substep">
+                <h4>Substep 1.1: Determine Your Budget and Goals</h4>
+                <p>Before selecting components, establish clear parameters:</p>
+                <ul>
+                    <li><strong>Total Budget:</strong> Entry-level ($800-1200), Mid-range ($1200-2000), High-end ($2000+)</li>
+                    <li><strong>Target Resolution:</strong> 1080p, 1440p, or 4K gaming</li>
+                    <li><strong>Target Frame Rate:</strong> 60 FPS, 144 FPS, or 240+ FPS</li>
+                    <li><strong>Use Cases:</strong> Gaming only, streaming, content creation, or multi-purpose</li>
+                </ul>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 1.2: Select Your CPU</h4>
+                <p>The processor choice influences motherboard and RAM compatibility:</p>
+                
+                <div class="comparison-table">
+                    <table>
+                        <tr>
+                            <th>Budget Range</th>
+                            <th>Intel Options</th>
+                            <th>AMD Options</th>
+                        </tr>
+                        <tr>
+                            <td>Entry ($150-250)</td>
+                            <td>Core i5-13400F<br>Core i5-14400F</td>
+                            <td>Ryzen 5 7600<br>Ryzen 5 7600X</td>
+                        </tr>
+                        <tr>
+                            <td>Mid ($250-400)</td>
+                            <td>Core i5-14600K<br>Core i7-13700K</td>
+                            <td>Ryzen 7 7700X<br>Ryzen 7 7800X3D</td>
+                        </tr>
+                        <tr>
+                            <td>High ($400+)</td>
+                            <td>Core i7-14700K<br>Core i9-14900K</td>
+                            <td>Ryzen 9 7900X<br>Ryzen 9 7950X3D</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <p class="tip-box"><strong>💡 Tip:</strong> CPUs with "K" or "X" designations are unlocked for overclocking. "F" models lack integrated graphics (requires dedicated GPU).</p>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 1.3: Choose a Compatible Motherboard</h4>
+                <p>Your motherboard must match your CPU's socket type:</p>
+                <ul>
+                    <li><strong>Intel 13th/14th Gen:</strong> LGA 1700 socket (Z790, B760, H770 chipsets)</li>
+                    <li><strong>AMD Ryzen 7000:</strong> AM5 socket (X670E, X670, B650E, B650 chipsets)</li>
+                </ul>
+                
+                <p><strong>Key Features to Consider:</strong></p>
+                <ul>
+                    <li>Form factor: ATX (full-size), Micro-ATX (compact), or Mini-ITX (smallest)</li>
+                    <li>RAM slots: 4 slots recommended for future upgrades</li>
+                    <li>M.2 slots: At least 2 for NVMe SSD storage</li>
+                    <li>PCIe slots: Ensure adequate slots for GPU and expansion cards</li>
+                    <li>Connectivity: USB ports, audio jacks, networking (Wi-Fi or Ethernet)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page">
+        <div class="page-header">
+            <div class="step-badge">STEP 1</div>
+            <h2>Choosing Your Components (continued)</h2>
+            <div class="page-number">Page 7</div>
+        </div>
+        
+        <div class="content">
+            <div class="substep">
+                <h4>Substep 1.4: Select RAM (Memory)</h4>
+                <p>Choose memory based on your motherboard's specifications:</p>
+                <ul>
+                    <li><strong>Capacity:</strong> 16GB minimum for gaming, 32GB for streaming/multitasking</li>
+                    <li><strong>Speed:</strong> DDR4-3200MHz+ or DDR5-5200MHz+ (check motherboard support)</li>
+                    <li><strong>Configuration:</strong> 2x8GB or 2x16GB (dual-channel provides better performance)</li>
+                </ul>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 1.5: Choose Your Graphics Card (GPU)</h4>
+                <p>The GPU has the largest impact on gaming performance:</p>
+                
+                <div class="comparison-table">
+                    <table>
+                        <tr>
+                            <th>Resolution/FPS</th>
+                            <th>NVIDIA</th>
+                            <th>AMD</th>
+                        </tr>
+                        <tr>
+                            <td>1080p/60-144 FPS</td>
+                            <td>RTX 4060<br>RTX 4060 Ti</td>
+                            <td>RX 7600<br>RX 7600 XT</td>
+                        </tr>
+                        <tr>
+                            <td>1440p/60-144 FPS</td>
+                            <td>RTX 4070<br>RTX 4070 Super</td>
+                            <td>RX 7700 XT<br>RX 7800 XT</td>
+                        </tr>
+                        <tr>
+                            <td>4K/60+ FPS</td>
+                            <td>RTX 4080<br>RTX 4090</td>
+                            <td>RX 7900 XT<br>RX 7900 XTX</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 1.6: Select Storage</h4>
+                <p>Modern gaming PCs should use SSD storage for optimal performance:</p>
+                <ul>
+                    <li><strong>Boot Drive:</strong> 500GB-1TB NVMe M.2 SSD (PCIe 4.0 recommended)</li>
+                    <li><strong>Game Library:</strong> Additional 1-2TB NVMe SSD or SATA SSD</li>
+                    <li><strong>Mass Storage:</strong> Optional 2-4TB HDD for files/media (budget-friendly)</li>
+                </ul>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 1.7: Choose Power Supply (PSU)</h4>
+                <p>Calculate total system power draw and add 20-30% headroom:</p>
+                <ul>
+                    <li><strong>Entry Builds:</strong> 550-650W (80+ Bronze or better)</li>
+                    <li><strong>Mid-Range:</strong> 750-850W (80+ Gold recommended)</li>
+                    <li><strong>High-End:</strong> 1000W+ (80+ Platinum for efficiency)</li>
+                    <li><strong>Modularity:</strong> Fully modular PSUs improve cable management</li>
+                </ul>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 1.8: Select PC Case and Cooling</h4>
+                <p><strong>Case Considerations:</strong></p>
+                <ul>
+                    <li>Must accommodate motherboard size and GPU length</li>
+                    <li>Good airflow with mesh front panels preferred</li>
+                    <li>Tool-less design for easier assembly</li>
+                    <li>Cable management space behind motherboard tray</li>
+                </ul>
+                
+                <p><strong>Cooling:</strong> Stock CPU cooler is adequate for non-overclocked builds; tower air coolers or 240mm+ AIO liquid coolers for high-performance CPUs.</p>
+            </div>
+            
+            <div class="diagram-placeholder">
+                <img src="images/gpu-components.jpg" alt="High-performance graphics card showing PCIe connector, cooling fans, and power connectors" style="max-width: 85%; border-radius: 6px; box-shadow: 0 3px 5px rgba(0,0,0,0.1);">
+                <p style="text-align: center; font-size: 10px; color: #666; font-style: italic; margin-top: 5px;">Figure 4: Graphics card components - verify GPU compatibility with your case size and PSU wattage</p>
+            </div>
+            
+            <div class="tip-box">
+                <p><strong>💡 Pro Tip:</strong> Use PCPartPicker.com to verify all components are compatible before purchasing. The site automatically filters compatible parts and flags potential issues.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page 8: STEP 2 - PREPARING WORKSPACE -->
+    <div class="page">
+        <div class="page-header">
+            <div class="step-badge">STEP 2</div>
+            <h2>Preparing Your Workspace</h2>
+            <div class="page-number">Page 8</div>
+        </div>
+        
+        <div class="content">
+            <p class="step-intro">Proper workspace preparation ensures a smooth assembly process and minimizes the risk of component damage from static electricity or physical mishandling.</p>
+            
+            <div class="substep">
+                <h4>Substep 2.1: Set Up Your Assembly Area</h4>
+                <ol>
+                    <li><strong>Clear your workspace:</strong> Remove all unnecessary items from your work surface. Ensure you have at least 4-6 feet of clear space.</li>
+                    <li><strong>Verify lighting:</strong> Position a bright lamp or work light to illuminate the inside of your case during assembly.</li>
+                    <li><strong>Prepare anti-static measures:</strong> Attach your anti-static wrist strap to your wrist and clip the alligator end to a grounded metal surface or unpainted portion of your case.</li>
+                    <li><strong>Organize tools:</strong> Place all tools within easy reach in a magnetic parts tray or small container.</li>
+                </ol>
+            </div>
+            
+            <div class="diagram-placeholder">
+                <img src="images/image_4f6bcfc2-a580-4c9f-91d7-1236974fad91.jpg" alt="Gaming controller with RGB keyboard showing workspace lighting and organization" style="max-width: 85%; border-radius: 6px; box-shadow: 0 3px 5px rgba(0,0,0,0.1);">
+                <p style="text-align: center; font-size: 10px; color: #666; font-style: italic; margin-top: 5px;">Figure 5: Well-organized workspace with proper lighting - essential for successful PC building</p>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 2.2: Unbox and Inventory Components</h4>
+                <ol>
+                    <li><strong>Inspect packaging:</strong> Check all boxes for shipping damage before opening. Document any damage for warranty purposes.</li>
+                    <li><strong>Carefully unbox each component:</strong> Keep components in anti-static bags until you're ready to install them.</li>
+                    <li><strong>Verify contents:</strong> Check each box against the packing list. Ensure all cables, screws, and accessories are present.</li>
+                    <li><strong>Organize by installation order:</strong> Arrange components in the sequence you'll install them (motherboard prep, then case assembly).</li>
+                    <li><strong>Save packaging:</strong> Keep all boxes and materials until your build is complete and tested.</li>
+                </ol>
+            </div>
+            
+            <div class="warning-box">
+                <p><strong>⚠️ WARNING:</strong> Never place components directly on anti-static bags. The outside of these bags can conduct electricity. Instead, place components on the cardboard box they came in or directly on a non-conductive surface.</p>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 2.3: Read Component Manuals</h4>
+                <p>Before beginning assembly, briefly review:</p>
+                <ul>
+                    <li><strong>Motherboard manual:</strong> Identify RAM slots, M.2 locations, fan headers, and front panel connectors</li>
+                    <li><strong>Case manual:</strong> Understand standoff locations, cable routing paths, and fan mounting points</li>
+                    <li><strong>PSU manual:</strong> Review cable types and their purposes (24-pin, 8-pin CPU, PCIe GPU)</li>
+                </ul>
+            </div>
+            
+            <div class="tip-box">
+                <p><strong>💡 Organization Tip:</strong> Take photos of component layouts and cable connections as you go. These photos are invaluable references if you need to troubleshoot or reassemble later.</p>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 2.4: Prepare the Motherboard Box</h4>
+                <p>Your motherboard box will serve as a temporary assembly surface:</p>
+                <ol>
+                    <li>Clear a flat area on your workspace</li>
+                    <li>Place the motherboard's cardboard box down with the foam insert facing up</li>
+                    <li>Carefully remove the motherboard from its anti-static bag</li>
+                    <li>Place the motherboard on the foam insert - this provides a safe, non-conductive surface for installing the CPU and RAM</li>
+                </ol>
+            </div>
+            
+            <p class="completion-check"><strong>✓ Workspace Ready Checklist:</strong></p>
+            <ul>
+                <li>☐ Anti-static wrist strap attached and grounded</li>
+                <li>☐ All components unboxed and inventoried</li>
+                <li>☐ Tools organized and accessible</li>
+                <li>☐ Motherboard on box ready for CPU/RAM installation</li>
+                <li>☐ Component manuals reviewed</li>
+                <li>☐ Adequate lighting in place</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- PAGES 10-11: STEP 3 - INSTALLING CPU AND RAM -->
+    <div class="page">
+        <div class="page-header">
+            <div class="step-badge">STEP 3</div>
+            <h2>Installing the CPU and RAM</h2>
+            <div class="page-number">Page 9</div>
+        </div>
+        
+        <div class="content">
+            <p class="step-intro">The CPU and RAM are installed on the motherboard before placing it in the case. This critical step requires precision and care—the CPU is one of your most expensive and fragile components.</p>
+            
+            <div class="substep">
+                <h4>Substep 3.1: Install the CPU</h4>
+                
+                <div class="warning-box">
+                    <p><strong>⚠️ HANDLE WITH EXTREME CARE:</strong> Never touch the CPU pins (AMD) or contact pads (Intel). Do not force the CPU into the socket—it should drop in with only gravity.</p>
+                </div>
+                
+                <p><strong>For Intel CPUs (LGA 1700):</strong></p>
+                <ol>
+                    <li><strong>Open the CPU socket:</strong>
+                        <ul>
+                            <li>Locate the CPU socket on the motherboard (large square with metal lever)</li>
+                            <li>Push down on the metal retention arm and slide it out from under the hook</li>
+                            <li>Lift the arm to a vertical position (90 degrees)</li>
+                            <li>Lift the metal CPU cover plate upward</li>
+                        </ul>
+                    </li>
+                    <li><strong>Prepare the CPU:</strong>
+                        <ul>
+                            <li>Remove CPU from protective case by holding only the edges</li>
+                            <li>Identify the alignment notches on two sides of the CPU</li>
+                        </ul>
+                    </li>
+                    <li><strong>Install the CPU:</strong>
+                        <ul>
+                            <li>Align the notches on the CPU with the notches in the socket</li>
+                            <li>Gently lower the CPU straight down into the socket—it should drop in effortlessly</li>
+                            <li>Do NOT press down or apply any pressure</li>
+                        </ul>
+                    </li>
+                    <li><strong>Secure the CPU:</strong>
+                        <ul>
+                            <li>Lower the metal cover plate back down over the CPU</li>
+                            <li>Lower the retention arm back down and slide it under the hook</li>
+                            <li>You'll feel significant resistance—this is normal. Firm pressure is required to latch it</li>
+                            <li>The cover plate may pop off—this is expected and normal</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <div class="diagram-placeholder">
+                    <img src="images/amd-ryzen-cpu.jpg" alt="AMD Ryzen CPU installation showing processor alignment with AM5 socket" style="max-width: 85%; border-radius: 6px; box-shadow: 0 3px 5px rgba(0,0,0,0.1);">
+                    <p style="text-align: center; font-size: 10px; color: #666; font-style: italic; margin-top: 5px;">Figure 6: CPU installation - align triangle markers and never force the processor into the socket</p>
+                </div>
+                
+                <p><strong>For AMD CPUs (AM5):</strong></p>
+                <ol>
+                    <li><strong>Open the CPU socket:</strong>
+                        <ul>
+                            <li>Lift the metal retention arm to vertical position</li>
+                        </ul>
+                    </li>
+                    <li><strong>Install the CPU:</strong>
+                        <ul>
+                            <li>Hold CPU by edges only—DO NOT touch the gold pins on the underside</li>
+                            <li>Locate the gold triangle marking on one corner of the CPU</li>
+                            <li>Match this triangle with the triangle marking on the motherboard socket corner</li>
+                            <li>Carefully lower the CPU straight down into the socket</li>
+                        </ul>
+                    </li>
+                    <li><strong>Secure the CPU:</strong>
+                        <ul>
+                            <li>Lower the retention arm back down and latch it under the hook</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page">
+        <div class="page-header">
+            <div class="step-badge">STEP 3</div>
+            <h2>Installing CPU and RAM (continued)</h2>
+            <div class="page-number">Page 10</div>
+        </div>
+        
+        <div class="content">
+            <div class="substep">
+                <h4>Substep 3.2: Apply Thermal Paste (if needed)</h4>
+                
+                <p class="tip-box"><strong>💡 Note:</strong> Many CPU coolers come with pre-applied thermal paste. If yours does, skip this substep. If not, or if you're using custom cooling:</p>
+                
+                <ol>
+                    <li><strong>Clean the CPU surface:</strong> Use isopropyl alcohol (90%+ concentration) and a lint-free cloth to remove any protective film from the CPU heat spreader</li>
+                    <li><strong>Apply thermal paste:</strong>
+                        <ul>
+                            <li>Place a small amount (rice grain or pea-sized) in the center of the CPU</li>
+                            <li>Do NOT spread it—the cooler mounting pressure will spread it evenly</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <div class="diagram-placeholder">
+                    <img src="images/motherboard-ram-slots.jpg" alt="Motherboard showing RAM slots, CPU socket, and various headers for optimal component placement" style="max-width: 85%; border-radius: 6px; box-shadow: 0 3px 5px rgba(0,0,0,0.1);">
+                    <p style="text-align: center; font-size: 10px; color: #666; font-style: italic; margin-top: 5px;">Figure 7: Motherboard layout showing CPU socket and RAM slots - consult your manual for proper dual-channel configuration</p>
+                </div>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 3.3: Install RAM Modules</h4>
+                
+                <p>RAM installation is straightforward but requires following the correct slot configuration.</p>
+                
+                <ol>
+                    <li><strong>Identify the correct slots:</strong>
+                        <ul>
+                            <li>Consult your motherboard manual for optimal slot configuration</li>
+                            <li>For 2 RAM sticks on a 4-slot board, typically use slots 2 and 4 (counting from CPU)</li>
+                            <li>This enables dual-channel mode for better performance</li>
+                        </ul>
+                    </li>
+                    <li><strong>Open the retention clips:</strong>
+                        <ul>
+                            <li>Push down on the clips at each end of the RAM slots</li>
+                            <li>The clips will spring outward to the open position</li>
+                        </ul>
+                    </li>
+                    <li><strong>Align the RAM:</strong>
+                        <ul>
+                            <li>Remove RAM from anti-static packaging, holding by the edges only</li>
+                            <li>Locate the notch in the bottom edge of the RAM stick</li>
+                            <li>Align this notch with the raised key in the RAM slot (it's off-center, ensuring correct orientation)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Install the RAM:</strong>
+                        <ul>
+                            <li>Hold the RAM stick by the top edges above the slot</li>
+                            <li>Lower it straight down into the slot, ensuring the notch aligns</li>
+                            <li>Apply firm, even pressure on both ends of the RAM stick</li>
+                            <li>Press down until the retention clips automatically snap into the locked position</li>
+                            <li>You'll hear distinct clicks when properly seated</li>
+                        </ul>
+                    </li>
+                    <li><strong>Verify installation:</strong>
+                        <ul>
+                            <li>The RAM should be completely flush with the slot</li>
+                            <li>Both retention clips should be locked</li>
+                            <li>The top edge of all RAM sticks should be level</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <div class="diagram-placeholder">
+                    <img src="images/motherboard-ram-slots.jpg" alt="AMD AM4 motherboard showing CPU socket and gold RAM slots with dual-channel configuration" style="max-width: 85%; border-radius: 6px; box-shadow: 0 3px 5px rgba(0,0,0,0.1);">
+                    <p style="text-align: center; font-size: 10px; color: #666; font-style: italic; margin-top: 5px;">Figure 5: Motherboard showing RAM slots (gold) - install in slots 2 and 4 for dual-channel mode</p>
+                </div>
+                
+                <div class="tip-box">
+                    <p><strong>💡 Troubleshooting:</strong> If RAM won't seat fully, do NOT force it. Check that:</p>
+                    <ul>
+                        <li>The notch is aligned correctly (it only fits one way)</li>
+                        <li>The retention clips are fully open</li>
+                        <li>You're using the correct type of RAM for your motherboard (DDR4 vs DDR5)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p class="completion-check"><strong>✓ CPU and RAM Installation Complete:</strong></p>
+            <ul>
+                <li>☐ CPU installed in correct orientation and secured</li>
+                <li>☐ Thermal paste applied (if required)</li>
+                <li>☐ RAM installed in correct slots for dual-channel operation</li>
+                <li>☐ RAM retention clips locked on both sides</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- PAGES 12-13: STEP 4 - MOTHERBOARD AND PSU -->
+    <div class="page">
+        <div class="page-header">
+            <div class="step-badge">STEP 4</div>
+            <h2>Installing Motherboard and Power Supply</h2>
+            <div class="page-number">Page 11</div>
+        </div>
+        
+        <div class="content">
+            <p class="step-intro">With CPU and RAM installed, we'll now move the motherboard into the case and install the power supply. This step establishes the foundation of your build.</p>
+            
+            <div class="substep">
+                <h4>Substep 4.1: Prepare the Case</h4>
+                <ol>
+                    <li><strong>Remove case panels:</strong>
+                        <ul>
+                            <li>Remove both side panels (usually secured with thumbscrews on the rear)</li>
+                            <li>Set panels aside in a safe location</li>
+                        </ul>
+                    </li>
+                    <li><strong>Remove unnecessary drive cages:</strong>
+                        <ul>
+                            <li>If your case has removable drive bays, consider removing them for better airflow and GPU clearance</li>
+                        </ul>
+                    </li>
+                    <li><strong>Identify cable routing holes:</strong>
+                        <ul>
+                            <li>Note the rubber-grommeted holes around the motherboard tray</li>
+                            <li>These allow cables to pass from the back compartment to components</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 4.2: Install the I/O Shield</h4>
+                <ol>
+                    <li><strong>Locate the I/O shield:</strong> This metal plate came with your motherboard and matches the rear port layout</li>
+                    <li><strong>Orient correctly:</strong> The shield has a specific top/bottom orientation—ports should match your motherboard</li>
+                    <li><strong>Install from inside the case:</strong>
+                        <ul>
+                            <li>Position the I/O shield in the rectangular cutout on the rear of the case</li>
+                            <li>Firmly press all four corners until you hear/feel clicks</li>
+                            <li>Ensure all edges are flush with the case—tabs should point inward</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <div class="tip-box">
+                    <p><strong>💡 Tip:</strong> I/O shields can have sharp edges. Press carefully to avoid cuts. Some modern motherboards have integrated I/O shields that don't require separate installation.</p>
+                </div>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 4.3: Install Motherboard Standoffs</h4>
+                
+                <div class="warning-box">
+                    <p><strong>⚠️ CRITICAL:</strong> Standoffs prevent the motherboard from shorting out on the metal case. Using the wrong number or position of standoffs can damage your motherboard!</p>
+                </div>
+                
+                <ol>
+                    <li><strong>Identify standoff holes:</strong>
+                        <ul>
+                            <li>Look for threaded holes in the motherboard tray</li>
+                            <li>Your case may have holes for multiple form factors (ATX, Micro-ATX, Mini-ITX)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Determine correct positions:</strong>
+                        <ul>
+                            <li>Place your motherboard over the tray (without securing it)</li>
+                            <li>Note which holes on the case align with mounting holes on the motherboard</li>
+                            <li>Remove the motherboard</li>
+                        </ul>
+                    </li>
+                    <li><strong>Install standoffs:</strong>
+                        <ul>
+                            <li>Hand-tighten brass standoffs into the identified holes</li>
+                            <li>Typical ATX boards use 9 standoffs</li>
+                            <li>Do NOT overtighten—hand-tight is sufficient</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <div class="diagram-placeholder">
+                    <img src="images/image_9985ec13-92b9-4c47-83d1-287eb75a2e82.jpg" alt="PC case interior showing motherboard mounting area and cable management" style="max-width: 85%; border-radius: 6px; box-shadow: 0 3px 5px rgba(0,0,0,0.1);">
+                    <p style="text-align: center; font-size: 10px; color: #666; font-style: italic; margin-top: 5px;">Figure 8: PC case showing motherboard mounting area - ensure all standoffs align with motherboard holes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page">
+        <div class="page-header">
+            <div class="step-badge">STEP 4</div>
+            <h2>Installing Motherboard and PSU (continued)</h2>
+            <div class="page-number">Page 12</div>
+        </div>
+        
+        <div class="content">
+            <div class="substep">
+                <h4>Substep 4.4: Mount the Motherboard</h4>
+                <ol>
+                    <li><strong>Position the motherboard:</strong>
+                        <ul>
+                            <li>Carefully lift the motherboard with both hands</li>
+                            <li>Tilt it at an angle to clear the I/O shield</li>
+                            <li>Slide the rear ports through the I/O shield openings</li>
+                            <li>Lower the motherboard onto the standoffs</li>
+                        </ul>
+                    </li>
+                    <li><strong>Align mounting holes:</strong>
+                        <ul>
+                            <li>Ensure all motherboard mounting holes align with standoffs</li>
+                            <li>The I/O ports should fit snugly against the I/O shield</li>
+                        </ul>
+                    </li>
+                    <li><strong>Secure the motherboard:</strong>
+                        <ul>
+                            <li>Insert screws through motherboard holes into standoffs</li>
+                            <li>Start all screws loosely before tightening any</li>
+                            <li>Tighten in a star pattern (alternating corners) to ensure even pressure</li>
+                            <li>Snug, but do NOT overtighten—you can crack the motherboard</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 4.5: Install the Power Supply</h4>
+                
+                <p><strong>Determine PSU orientation:</strong></p>
+                <ul>
+                    <li>If case has bottom ventilation: Install fan-side DOWN (intake from bottom)</li>
+                    <li>If case sits on carpet or lacks bottom vents: Install fan-side UP (intake from inside case)</li>
+                    <li>Most modern cases support bottom-mounted PSU with fan facing down</li>
+                </ul>
+                
+                <ol>
+                    <li><strong>Position the PSU:</strong>
+                        <ul>
+                            <li>Slide PSU into the PSU compartment (usually bottom-rear of case)</li>
+                            <li>Align the fan with ventilation and screw holes with case mounting points</li>
+                            <li>Power cable socket should be accessible from outside the case</li>
+                        </ul>
+                    </li>
+                    <li><strong>Secure the PSU:</strong>
+                        <ul>
+                            <li>Insert four screws through the rear of the case into the PSU</li>
+                            <li>Tighten evenly—the PSU should be firmly mounted</li>
+                        </ul>
+                    </li>
+                    <li><strong>Route PSU cables:</strong>
+                        <ul>
+                            <li>If modular PSU: Attach only the cables you need (24-pin ATX, 8-pin CPU, PCIe for GPU)</li>
+                            <li>Route cables through the cable management compartment behind the motherboard tray</li>
+                            <li>Bring cables through grommeted holes closest to where they'll connect</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <div class="diagram-placeholder">
+                    <img src="images/psu-cable-management.jpg" alt="Power supply unit showing modular cables and proper cable routing" style="max-width: 85%; border-radius: 6px; box-shadow: 0 3px 5px rgba(0,0,0,0.1);">
+                    <p style="text-align: center; font-size: 10px; color: #666; font-style: italic; margin-top: 5px;">Figure 9: PSU and cable management - route cables through the back of the case for clean airflow</p>
+                </div>
+                
+                <div class="warning-box">
+                    <p><strong>⚠️ REMEMBER:</strong> Keep the PSU power switch in the OFF (O) position and leave it unplugged until all components are installed and connections verified.</p>
+                </div>
+            </div>
+            
+            <p class="completion-check"><strong>✓ Motherboard and PSU Installation Complete:</strong></p>
+            <ul>
+                <li>☐ I/O shield installed and flush</li>
+                <li>☐ All standoffs properly positioned</li>
+                <li>☐ Motherboard securely mounted (all screws tight but not over-tightened)</li>
+                <li>☐ PSU installed with correct fan orientation</li>
+                <li>☐ PSU cables routed through cable management compartment</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- PAGES 14-15: STEP 5 - STORAGE AND GPU -->
+    <div class="page">
+        <div class="page-header">
+            <div class="step-badge">STEP 5</div>
+            <h2>Installing Storage and Graphics Card</h2>
+            <div class="page-number">Page 13</div>
+        </div>
+        
+        <div class="content">
+            <p class="step-intro">Now we'll install your storage drives and graphics card—the component responsible for rendering your gaming experience.</p>
+            
+            <div class="substep">
+                <h4>Substep 5.1: Install M.2 NVMe SSD</h4>
+                
+                <p>M.2 drives install directly onto the motherboard, providing the fastest storage speeds.</p>
+                
+                <ol>
+                    <li><strong>Locate M.2 slot:</strong>
+                        <ul>
+                            <li>Consult your motherboard manual to identify M.2 slots</li>
+                            <li>Primary slot is usually directly below the CPU area</li>
+                            <li>Some slots may be covered by heatsinks—remove these first</li>
+                        </ul>
+                    </li>
+                    <li><strong>Remove the mounting screw:</strong>
+                        <ul>
+                            <li>Locate the small standoff screw at the end of the M.2 slot</li>
+                            <li>Unscrew and set aside (you'll use this to secure the drive)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Install the M.2 drive:</strong>
+                        <ul>
+                            <li>Hold the M.2 SSD by its edges (avoid touching the gold connectors)</li>
+                            <li>Insert the drive at a 30-degree angle into the M.2 slot</li>
+                            <li>The notches should align—it only fits one way</li>
+                            <li>Press firmly until the drive is fully seated in the slot</li>
+                        </ul>
+                    </li>
+                    <li><strong>Secure the drive:</strong>
+                        <ul>
+                            <li>Gently press down on the free end of the M.2 drive</li>
+                            <li>Replace the mounting screw through the hole at the end of the drive</li>
+                            <li>Tighten gently—just enough to hold the drive flat</li>
+                            <li>Replace any heatsink covers</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <div class="diagram-placeholder">
+                    <img src="images/storage-installation.jpg" alt="M.2 NVMe SSD and storage drive installation on motherboard" style="max-width: 85%; border-radius: 6px; box-shadow: 0 3px 5px rgba(0,0,0,0.1);">
+                    <p style="text-align: center; font-size: 10px; color: #666; font-style: italic; margin-top: 5px;">Figure 10: M.2 SSD installation - insert at 30-degree angle then press down and secure with screw</p>
+                </div>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 5.2: Install SATA SSD/HDD (if applicable)</h4>
+                
+                <p>If you have additional SATA drives for extra storage:</p>
+                
+                <ol>
+                    <li><strong>Mount the drive:</strong>
+                        <ul>
+                            <li>Locate drive bays in your case (usually front or bottom)</li>
+                            <li>Slide the drive into a 2.5" bay (SSD) or 3.5" bay (HDD)</li>
+                            <li>Secure with screws on both sides</li>
+                        </ul>
+                    </li>
+                    <li><strong>Connect SATA data cable:</strong>
+                        <ul>
+                            <li>SATA cables have an L-shaped connector (only fits one way)</li>
+                            <li>Connect one end to the drive, the other to a SATA port on the motherboard</li>
+                        </ul>
+                    </li>
+                    <li><strong>Connect SATA power:</strong>
+                        <ul>
+                            <li>Connect a SATA power cable from the PSU to the drive</li>
+                            <li>The connector is wider than the data cable and only fits one orientation</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <div class="tip-box">
+                    <p><strong>💡 Note:</strong> Most modern gaming builds use only M.2 NVMe drives, eliminating the need for SATA connections and cables.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page">
+        <div class="page-header">
+            <div class="step-badge">STEP 5</div>
+            <h2>Installing Storage and GPU (continued)</h2>
+            <div class="page-number">Page 14</div>
+        </div>
+        
+        <div class="content">
+            <div class="substep">
+                <h4>Substep 5.3: Install the Graphics Card (GPU)</h4>
+                
+                <p>The GPU is typically the largest component in your build and requires careful installation.</p>
+                
+                <div class="warning-box">
+                    <p><strong>⚠️ IMPORTANT:</strong> GPUs are heavy and expensive. Support the card while securing it to prevent damage to the PCIe slot.</p>
+                </div>
+                
+                <ol>
+                    <li><strong>Prepare the PCIe slot:</strong>
+                        <ul>
+                            <li>Identify the top PCIe x16 slot (closest to CPU—usually the first long slot)</li>
+                            <li>Push down on the retention clip at the end of the slot to unlock it</li>
+                        </ul>
+                    </li>
+                    <li><strong>Remove slot covers:</strong>
+                        <ul>
+                            <li>Count how many expansion slots your GPU occupies (usually 2-3 slots)</li>
+                            <li>Remove corresponding slot covers from the rear of the case</li>
+                            <li>Unscrew and remove the metal brackets</li>
+                        </ul>
+                    </li>
+                    <li><strong>Install the GPU:</strong>
+                        <ul>
+                            <li>Remove GPU from anti-static bag, holding it by the edges or cooler shroud</li>
+                            <li>Align the GPU's PCIe connector (gold contacts) with the motherboard's PCIe slot</li>
+                            <li>Ensure the GPU's I/O bracket aligns with the case opening</li>
+                            <li>Apply firm, even pressure on both ends of the card</li>
+                            <li>Press straight down until the card is fully seated and the retention clip clicks</li>
+                        </ul>
+                    </li>
+                    <li><strong>Secure the GPU:</strong>
+                        <ul>
+                            <li>Align the GPU's rear bracket with the screw holes on the case</li>
+                            <li>Insert and tighten screws through the bracket into the case</li>
+                            <li>The GPU should be level and firmly secured</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <div class="diagram-placeholder">
+                    <img src="images/gpu-installation.jpg" alt="Graphics card being installed into PCIe x16 slot showing proper alignment" style="max-width: 85%; border-radius: 6px; box-shadow: 0 3px 5px rgba(0,0,0,0.1);">
+                    <p style="text-align: center; font-size: 10px; color: #666; font-style: italic; margin-top: 5px;">Figure 11: GPU installation - ensure card is fully seated until retention clip clicks into place</p>
+                </div>
+                
+                <div class="tip-box">
+                    <p><strong>💡 GPU Sag Prevention:</strong> Large, heavy GPUs can sag over time. Consider using a GPU support bracket or running a support cable from the top of the case to prevent PCIe slot stress.</p>
+                </div>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 5.4: Install CPU Cooler (if not already installed)</h4>
+                
+                <p class="tip-box"><strong>💡 Note:</strong> Some builders install the CPU cooler before mounting the motherboard. If you haven't installed it yet, do so now following your cooler's specific installation manual.</p>
+                
+                <p><strong>General CPU cooler installation steps:</strong></p>
+                <ol>
+                    <li>Install the cooler's mounting bracket or backplate (if required)</li>
+                    <li>Apply thermal paste to CPU (if not pre-applied on cooler)</li>
+                    <li>Carefully mount the cooler onto the CPU, aligning mounting screws/clips</li>
+                    <li>Tighten screws in an X-pattern for even pressure</li>
+                    <li>Connect the cooler's fan cable to the CPU_FAN header on the motherboard</li>
+                </ol>
+            </div>
+            
+            <p class="completion-check"><strong>✓ Storage and GPU Installation Complete:</strong></p>
+            <ul>
+                <li>☐ M.2 SSD installed and secured</li>
+                <li>☐ SATA drives installed and connected (if applicable)</li>
+                <li>☐ GPU fully seated in PCIe slot with retention clip engaged</li>
+                <li>☐ GPU secured to case with screws</li>
+                <li>☐ CPU cooler installed and fan connected to CPU_FAN header</li>
+            </ul>
+        </div>
+    </div>
+    
+<!-- PAGES 16-17: STEP 6 - CONNECTING CABLES -->
+    <div class="page">
+        <div class="page-header">
+            <div class="step-badge">STEP 6</div>
+            <h2>Connecting All Cables</h2>
+            <div class="page-number">Page 15</div>
+        </div>
+        
+        <div class="content">
+            <p class="step-intro">Cable management is both functional and aesthetic. Proper connections ensure reliable power delivery and system communication, while organized routing improves airflow and makes future upgrades easier.</p>
+            
+            <div class="substep">
+                <h4>Substep 6.1: Connect Power Supply Cables</h4>
+                
+                <p><strong>24-Pin ATX Power (Main Motherboard Power):</strong></p>
+                <ol>
+                    <li>Locate the largest cable from your PSU—this is the 24-pin (or 20+4 pin) connector</li>
+                    <li>Find the corresponding 24-pin socket on the motherboard (usually right edge, mid-board)</li>
+                    <li>Align the clip on the connector with the socket tab</li>
+                    <li>Press firmly until you hear/feel a click—ensure the clip latches</li>
+                </ol>
+                
+                <p><strong>8-Pin CPU Power (4+4 or 8-Pin):</strong></p>
+                <ol>
+                    <li>Locate the 8-pin (or 4+4 split) CPU power cable from PSU</li>
+                    <li>Find the CPU power socket on the motherboard (usually top-left corner, near CPU)</li>
+                    <li>If using 4+4 cable, connect both halves together to form 8-pin</li>
+                    <li>Plug into motherboard socket until it clicks</li>
+                    <li>Route this cable along the top edge for cleanest appearance</li>
+                </ol>
+                
+                <div class="warning-box">
+                    <p><strong>⚠️ CRITICAL:</strong> Do NOT confuse PCIe GPU power cables with CPU power cables! While they may look similar, they are NOT interchangeable. Check cable labels carefully.</p>
+                </div>
+                
+                <p><strong>PCIe Power for GPU (6+2 Pin or 8-Pin):</strong></p>
+                <ol>
+                    <li>Check your GPU's power requirements (printed on card or in manual)</li>
+                    <li>Most modern GPUs require one, two, or three 8-pin (6+2) PCIe power connectors</li>
+                    <li>Connect the required number of PCIe power cables from PSU to GPU</li>
+                    <li>Ensure all connectors are fully seated and clips engaged</li>
+                    <li>Some high-end GPUs use a new 12VHPWR (16-pin) connector—follow manufacturer instructions</li>
+                </ol>
+                
+                <div class="diagram-placeholder">
+                    <div class="placeholder-box">
+                        [GRAPHIC 13: Power Cable Connection Diagram]
+                        <br>Overhead motherboard view with labeled arrows showing:
+                        <br>24-pin ATX, 8-pin CPU, PCIe GPU power connection locations
+                    </div>
+                </div>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 6.2: Connect Front Panel Connectors</h4>
+                
+                <p>These tiny connectors link your case's power button, LED lights, and USB ports to the motherboard.</p>
+                
+                <p><strong>Front Panel Header Connections:</strong></p>
+                <ol>
+                    <li><strong>Locate the front panel header:</strong> Usually bottom-right of motherboard (consult manual for exact location)</li>
+                    <li><strong>Identify each connector from case:</strong>
+                        <ul>
+                            <li>POWER SW (Power Switch) - 2 pins</li>
+                            <li>RESET SW (Reset Switch) - 2 pins</li>
+                            <li>POWER LED+ and POWER LED- - 2 pins each</li>
+                            <li>HDD LED+ and HDD LED- - 2 pins each</li>
+                        </ul>
+                    </li>
+                    <li><strong>Reference motherboard manual:</strong> Front panel pinout diagram shows exact pin locations</li>
+                    <li><strong>Connect each cable:</strong> Match labels on connectors to pins on motherboard</li>
+                </ol>
+                
+                <div class="tip-box">
+                    <p><strong>💡 Tip:</strong> Power and reset switches are not polarized—they work regardless of orientation. LED connectors ARE polarized—+ and - must match correctly or LEDs won't light.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page">
+        <div class="page-header">
+            <div class="step-badge">STEP 6</div>
+            <h2>Connecting All Cables (continued)</h2>
+            <div class="page-number">Page 16</div>
+        </div>
+        
+        <div class="content">
+            <div class="substep">
+                <h4>Substep 6.3: Connect USB and Audio Headers</h4>
+                
+                <p><strong>USB 3.0/3.1 Header:</strong></p>
+                <ol>
+                    <li>Locate USB 3.0 cable from case front panel (blue connector, usually labeled USB 3.0)</li>
+                    <li>Find USB 3.0 header on motherboard (blue 19-pin header, often mid-right edge)</li>
+                    <li>Align the connector—it's keyed and only fits one way</li>
+                    <li>Press firmly until fully seated</li>
+                </ol>
+                
+                <p><strong>USB 2.0 Header:</strong></p>
+                <ol>
+                    <li>Locate USB 2.0 cable from case (black 9-pin connector)</li>
+                    <li>Find USB 2.0 header on motherboard (9-pin black header, often multiple available)</li>
+                    <li>Align and connect—note that one pin position is blocked for correct orientation</li>
+                </ol>
+                
+                <p><strong>HD Audio Header:</strong></p>
+                <ol>
+                    <li>Locate HD AUDIO cable from case front panel</li>
+                    <li>Find HD AUDIO header on motherboard (usually bottom-left)</li>
+                    <li>Connect the keyed connector—it only fits one way</li>
+                </ol>
+            </div>
+            
+            <div class="diagram-placeholder">
+                <div class="placeholder-box">
+                    [GRAPHIC 14: Front Panel Connector Guide]
+                    <br>Close-up diagram of front panel header showing pin layout
+                    <br>with color-coded cables for Power SW, Reset SW, LEDs, USB, Audio
+                </div>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 6.4: Connect Case Fans and RGB</h4>
+                
+                <p><strong>Case Fan Connections:</strong></p>
+                <ol>
+                    <li>Identify fan connectors (3-pin or 4-pin, usually labeled SYS_FAN or CHA_FAN on motherboard)</li>
+                    <li>Connect case fans to available fan headers</li>
+                    <li>4-pin PWM fans allow motherboard to control fan speed</li>
+                    <li>Prioritize connecting: rear exhaust fan, top exhaust fans, front intake fans</li>
+                </ol>
+                
+                <p><strong>RGB/ARGB Connections (if applicable):</strong></p>
+                <ul>
+                    <li><strong>RGB (12V, 4-pin):</strong> Standard RGB, all LEDs display same color</li>
+                    <li><strong>ARGB (5V, 3-pin):</strong> Addressable RGB, individual LED control</li>
+                    <li>Connect to corresponding headers on motherboard (check manual—connecting wrong type can damage components)</li>
+                </ul>
+                
+                <div class="warning-box">
+                    <p><strong>⚠️ WARNING:</strong> RGB (12V) and ARGB (5V) headers are NOT compatible! Connecting to wrong header will damage RGB components. Verify voltage before connecting.</p>
+                </div>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 6.5: Cable Management</h4>
+                
+                <p>Organized cables improve airflow, aesthetics, and future maintenance:</p>
+                <ol>
+                    <li><strong>Route cables behind motherboard tray:</strong> Use cable routing channels and grommeted holes</li>
+                    <li><strong>Secure with zip ties or velcro straps:</strong> Bundle similar cables together</li>
+                    <li><strong>Keep cables away from fans:</strong> Ensure no cables obstruct fan blades</li>
+                    <li><strong>Manage excess cable length:</strong> Coil and secure unused portions in PSU compartment</li>
+                    <li><strong>Final check:</strong> Ensure no cables are under tension or putting stress on connectors</li>
+                </ol>
+                
+                <div class="diagram-placeholder">
+                    <div class="placeholder-box" style="text-align: center; padding: 25px;">
+                        <p style="font-weight: bold; color: #667eea; margin-bottom: 15px; font-size: 14px;">Cable Management: Before vs. After</p>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 15px;">
+                            <div>
+                                <p style="font-weight: bold; color: #e65100; margin-bottom: 8px;">❌ BEFORE: Poor Cable Management</p>
+                                <ul style="text-align: left; font-size: 12px; line-height: 1.6; margin-left: 20px;">
+                                    <li>Tangled, messy cables everywhere</li>
+                                    <li>Blocks airflow and cooling</li>
+                                    <li>Difficult to troubleshoot or upgrade</li>
+                                    <li>Unprofessional appearance</li>
+                                    <li>Risk of cables touching fans</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p style="font-weight: bold; color: #2e7d32; margin-bottom: 8px;">✅ AFTER: Professional Cable Management</p>
+                                <ul style="text-align: left; font-size: 12px; line-height: 1.6; margin-left: 20px;">
+                                    <li>Organized, bundled cables</li>
+                                    <li>Optimal airflow for cooling</li>
+                                    <li>Easy component access</li>
+                                    <li>Clean, professional look</li>
+                                    <li>Secured away from moving parts</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <p style="font-style: italic; font-size: 11px; color: #666; margin-top: 10px;">
+                            Good cable management is the difference between a professional build and an amateur one. Take the extra 30 minutes to organize your cables properly—your future self will thank you!
+                        </p>
+                        
+                        <p style="font-size: 10px; color: #999; margin-top: 12px;">
+                            Image concept: Before/after comparison showing transformation from chaotic cable mess to organized, professional routing
+                            <br>Source: BWC Facilities (2025). <em>IT Room Cable Management Transformations</em>. Retrieved from bwcfla.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="completion-check"><strong>✓ Cable Connection Complete:</strong></p>
+            <ul>
+                <li>☐ 24-pin ATX power connected to motherboard</li>
+                <li>☐ 8-pin CPU power connected</li>
+                <li>☐ PCIe power connected to GPU (all required connectors)</li>
+                <li>☐ Front panel connectors attached (power, reset, LEDs)</li>
+                <li>☐ USB headers connected (USB 3.0 and 2.0)</li>
+                <li>☐ HD Audio header connected</li>
+                <li>☐ All case fans connected to motherboard</li>
+                <li>☐ Cables organized and secured</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- PAGES 18-19: STEP 7 - FIRST BOOT AND BIOS -->
+    <div class="page">
+        <div class="page-header">
+            <div class="step-badge">STEP 7</div>
+            <h2>First Boot and BIOS Setup</h2>
+            <div class="page-number">Page 17</div>
+        </div>
+        
+        <div class="content">
+            <p class="step-intro">This is the moment of truth—powering on your build for the first time. We'll verify all components are recognized and configure basic BIOS settings for optimal performance.</p>
+            
+            <div class="substep">
+                <h4>Substep 7.1: Pre-Boot Checklist</h4>
+                
+                <p>Before pressing the power button, verify:</p>
+                <ul>
+                    <li>☐ PSU power switch is ON (I position)</li>
+                    <li>☐ PSU is plugged into wall outlet</li>
+                    <li>☐ Monitor is connected to GPU (NOT motherboard) via HDMI/DisplayPort</li>
+                    <li>☐ Monitor is powered on and set to correct input</li>
+                    <li>☐ Keyboard connected to USB port</li>
+                    <li>☐ All power cables fully seated and clipped</li>
+                    <li>☐ RAM clicked into slots with retention clips engaged</li>
+                    <li>☐ GPU fully seated in PCIe slot</li>
+                    <li>☐ CPU cooler fan cable connected to CPU_FAN header</li>
+                    <li>☐ No loose screws or metal objects inside case</li>
+                </ul>
+                
+                <div class="warning-box">
+                    <p><strong>⚠️ IMPORTANT:</strong> Connect your monitor to the GPU ports, NOT the motherboard ports. If your CPU has no integrated graphics (Intel F-series, most AMD Ryzen), the motherboard video outputs won't work.</p>
+                </div>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 7.2: First Power-On</h4>
+                
+                <ol>
+                    <li><strong>Double-check all connections</strong> using the pre-boot checklist above</li>
+                    <li><strong>Press the case power button</strong></li>
+                    <li><strong>Observe the startup sequence:</strong>
+                        <ul>
+                            <li>PSU fan should spin (if not always-on model)</li>
+                            <li>Case fans should start spinning</li>
+                            <li>CPU cooler fan should spin</li>
+                            <li>GPU fans may spin or remain idle until under load (normal behavior)</li>
+                            <li>Motherboard LED indicators should light up</li>
+                            <li>RGB lighting should activate (if installed)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Watch your monitor for display output</strong>
+                        <ul>
+                            <li>You should see the motherboard manufacturer logo or BIOS screen</li>
+                            <li>This may take 15-30 seconds on first boot</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <div class="tip-box">
+                    <p><strong>💡 First Boot Behavior:</strong> The system may restart 1-2 times during first boot—this is normal as the motherboard trains memory and initializes settings.</p>
+                </div>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 7.3: Entering BIOS/UEFI</h4>
+                
+                <ol>
+                    <li><strong>Watch for BIOS entry prompt:</strong> Screen usually displays "Press DEL to enter BIOS" or similar</li>
+                    <li><strong>Press the designated key repeatedly:</strong>
+                        <ul>
+                            <li>Most common: DELETE or DEL key</li>
+                            <li>Alternatives: F2, F10, F12 (depends on motherboard manufacturer)</li>
+                        </ul>
+                    </li>
+                    <li><strong>BIOS interface loads:</strong> You'll see either:
+                        <ul>
+                            <li>Simple mode: Basic information display</li>
+                            <li>Advanced mode: Detailed settings (press F7 to toggle)</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <div class="diagram-placeholder">
+                    <div class="placeholder-box" style="text-align: left; padding: 20px 30px;">
+                        <p style="text-align: center; font-weight: bold; color: #667eea; margin-bottom: 15px;">Example: Modern UEFI BIOS Main Screen</p>
+                        <p style="margin-bottom: 8px;"><strong>BIOS Information:</strong></p>
+                        <ul style="margin-left: 20px; margin-bottom: 12px;">
+                            <li>BIOS Version: 1720 x64</li>
+                            <li>Build Date: 08/12/2022</li>
+                        </ul>
+                        <p style="margin-bottom: 8px;"><strong>Processor Information:</strong></p>
+                        <ul style="margin-left: 20px; margin-bottom: 12px;">
+                            <li>Brand String: 12th Gen Intel® Core™ i7-12700K</li>
+                            <li>Processor Base Frequency: 3600 MHz</li>
+                            <li>Current Frequency: 4700 MHz (boosted)</li>
+                        </ul>
+                        <p style="margin-bottom: 8px;"><strong>Memory Information:</strong></p>
+                        <ul style="margin-left: 20px; margin-bottom: 12px;">
+                            <li>Total Memory: 32768 MB (32GB)</li>
+                            <li>Memory Frequency: 6000 MHz (XMP enabled)</li>
+                        </ul>
+                        <p style="margin-top: 12px; font-style: italic; font-size: 11px; color: #666;">
+                            Your BIOS screen will show similar information specific to your CPU, RAM, and motherboard. Look for these key details to verify all components are detected correctly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page">
+        <div class="page-header">
+            <div class="step-badge">STEP 7</div>
+            <h2>First Boot and BIOS Setup (continued)</h2>
+            <div class="page-number">Page 18</div>
+        </div>
+        
+        <div class="content">
+            <div class="substep">
+                <h4>Substep 7.4: Verify Component Recognition</h4>
+                
+                <p>In BIOS, verify all components are detected:</p>
+                
+                <ul>
+                    <li><strong>CPU:</strong> Correct model name and core count displayed</li>
+                    <li><strong>RAM:</strong> Total capacity shown (e.g., 16GB, 32GB)</li>
+                    <li><strong>RAM Speed:</strong> Should show rated speed (may default to lower JEDEC speed initially)</li>
+                    <li><strong>Storage:</strong> All M.2 and SATA drives listed</li>
+                    <li><strong>Boot Options:</strong> Storage devices appear in boot priority list</li>
+                </ul>
+                
+                <div class="warning-box">
+                    <p><strong>⚠️ If components are missing:</strong> Power off, unplug PSU, and reseat the component. Common issues: RAM not fully clicked in, M.2 screw loose, SATA cable disconnected.</p>
+                </div>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 7.5: Configure Essential BIOS Settings</h4>
+                
+                <p><strong>Enable XMP/EXPO for RAM (Recommended):</strong></p>
+                <ol>
+                    <li>Navigate to AI Tweaker, Overclocking, or similar section</li>
+                    <li>Find XMP (Intel) or EXPO (AMD) setting</li>
+                    <li>Enable and select Profile 1 (this runs RAM at rated speed, not default slower speed)</li>
+                    <li>This single change can improve gaming performance by 10-15%</li>
+                </ol>
+                
+                <p><strong>Set Boot Priority:</strong></p>
+                <ol>
+                    <li>Navigate to Boot section</li>
+                    <li>Set your primary SSD as first boot device</li>
+                    <li>This ensures faster boot times</li>
+                </ol>
+                
+                <p><strong>Enable Resizable BAR (Optional but recommended):</strong></p>
+                <ol>
+                    <li>Navigate to Advanced or PCIe settings</li>
+                    <li>Enable "Resizable BAR" or "Smart Access Memory"</li>
+                    <li>Improves GPU performance in some games</li>
+                    <li>Requires compatible GPU and CPU</li>
+                </ol>
+                
+                <p><strong>Check Fan Curves (Optional):</strong></p>
+                <ol>
+                    <li>Navigate to Fan Control or Hardware Monitor section</li>
+                    <li>Verify all fans are detected and spinning</li>
+                    <li>Adjust fan curves for desired noise/cooling balance</li>
+                </ol>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 7.6: Save and Exit</h4>
+                
+                <ol>
+                    <li>Press F10 (or use on-screen "Save & Exit" option)</li>
+                    <li>Confirm you want to save changes</li>
+                    <li>System will restart with new settings applied</li>
+                </ol>
+                
+                <div class="tip-box">
+                    <p><strong>💡 Note:</strong> After enabling XMP/EXPO, your system may take slightly longer to boot as memory is trained at higher speeds. This is normal.</p>
+                </div>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 7.7: Monitor Temperatures</h4>
+                
+                <p>After a successful boot, return to BIOS and check temperatures:</p>
+                <ul>
+                    <li><strong>CPU Temperature:</strong> Should be 30-45°C at idle</li>
+                    <li><strong>Motherboard Temperature:</strong> Should be 25-40°C</li>
+                    <li>If temperatures are excessively high (60°C+ at idle), check CPU cooler mounting</li>
+                </ul>
+            </div>
+            
+            <p class="completion-check"><strong>✓ First Boot and BIOS Complete:</strong></p>
+            <ul>
+                <li>☐ System powers on successfully</li>
+                <li>☐ All fans spinning</li>
+                <li>☐ Display output to monitor working</li>
+                <li>☐ All components recognized in BIOS</li>
+                <li>☐ XMP/EXPO enabled for RAM</li>
+                <li>☐ Boot priority configured</li>
+                <li>☐ Temperatures within normal range</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Page 19: STEP 8 - OS AND DRIVERS -->
+    <div class="page">
+        <div class="page-header">
+            <div class="step-badge">STEP 8</div>
+            <h2>Installing Operating System and Drivers</h2>
+            <div class="page-number">Page 19</div>
+        </div>
+        
+        <div class="content">
+            <p class="step-intro">With hardware assembly complete and BIOS configured, we'll install Windows and essential drivers to make your gaming PC fully functional.</p>
+            
+            <div class="substep">
+                <h4>Substep 8.1: Create Windows Installation Media</h4>
+                
+                <p>You'll need a USB drive (8GB or larger) and access to another computer:</p>
+                <ol>
+                    <li>Visit Microsoft's website: <strong>microsoft.com/software-download/windows11</strong></li>
+                    <li>Download the "Media Creation Tool"</li>
+                    <li>Run the tool and select "Create installation media for another PC"</li>
+                    <li>Choose language, edition (Windows 11 Home/Pro), and architecture (64-bit)</li>
+                    <li>Select "USB flash drive" and choose your USB drive</li>
+                    <li>Wait for the tool to download Windows and create bootable USB (15-30 minutes)</li>
+                </ol>
+                
+                <div class="tip-box">
+                    <p><strong>💡 Alternative:</strong> You can purchase Windows on a pre-made USB drive from retailers, or use the free Windows installation with limited personalization until you purchase a license key.</p>
+                </div>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 8.2: Install Windows</h4>
+                
+                <ol>
+                    <li><strong>Insert USB drive</strong> into your new PC</li>
+                    <li><strong>Power on and enter BIOS</strong> (press DEL during boot)</li>
+                    <li><strong>Set USB as first boot device:</strong> Go to Boot section, move USB drive to top of priority</li>
+                    <li><strong>Save and exit:</strong> Press F10, system restarts</li>
+                    <li><strong>Windows Setup loads:</strong> You'll see "Windows Setup" screen</li>
+                    <li><strong>Follow installation prompts:</strong>
+                        <ul>
+                            <li>Select language and region</li>
+                            <li>Click "Install Now"</li>
+                            <li>Enter product key (or select "I don't have a product key" to activate later)</li>
+                            <li>Choose Windows edition (Home or Pro)</li>
+                            <li>Accept license terms</li>
+                            <li>Select "Custom: Install Windows only (advanced)"</li>
+                            <li>Select your primary SSD and click "Next"</li>
+                        </ul>
+                    </li>
+                    <li><strong>Wait for installation:</strong> 10-20 minutes depending on SSD speed</li>
+                    <li><strong>Complete setup:</strong> Create user account, set privacy settings, etc.</li>
+                </ol>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 8.3: Install Essential Drivers</h4>
+                
+                <p>Windows will install generic drivers, but manufacturer drivers provide better performance:</p>
+                
+                <p><strong>GPU Drivers (Most Important):</strong></p>
+                <ul>
+                    <li><strong>NVIDIA:</strong> Download GeForce Experience or drivers from nvidia.com/drivers</li>
+                    <li><strong>AMD:</strong> Download Adrenalin software from amd.com/support</li>
+                    <li>Run installer and restart when prompted</li>
+                </ul>
+                
+                <p><strong>Motherboard Drivers:</strong></p>
+                <ul>
+                    <li>Visit your motherboard manufacturer's website</li>
+                    <li>Find your exact model and download drivers:
+                        <ul>
+                            <li>Chipset drivers</li>
+                            <li>Audio drivers</li>
+                            <li>Network drivers (LAN/WiFi)</li>
+                        </ul>
+                    </li>
+                    <li>Install in order: chipset first, then others</li>
+                </ul>
+                
+                <p><strong>Windows Updates:</strong></p>
+                <ol>
+                    <li>Open Settings → Windows Update</li>
+                    <li>Click "Check for updates"</li>
+                    <li>Install all available updates</li>
+                    <li>Restart as needed</li>
+                </ol>
+            </div>
+            
+            <div class="substep">
+                <h4>Substep 8.4: Install Essential Software</h4>
+                
+                <p>Recommended tools for gaming PC:</p>
+                <ul>
+                    <li><strong>Steam, Epic Games, GOG:</strong> Game platforms</li>
+                    <li><strong>Discord:</strong> Gaming communication</li>
+                    <li><strong>MSI Afterburner:</strong> GPU monitoring and overclocking</li>
+                    <li><strong>HWiNFO64:</strong> System monitoring</li>
+                    <li><strong>7-Zip:</strong> File compression</li>
+                </ul>
+            </div>
+            
+            <p class="completion-check"><strong>✓ OS Installation Complete:</strong></p>
+            <ul>
+                <li>☐ Windows installed and activated</li>
+                <li>☐ GPU drivers installed</li>
+                <li>☐ Motherboard drivers installed</li>
+                <li>☐ All Windows updates applied</li>
+                <li>☐ Essential software installed</li>
+            </ul>
+            
+            <div class="tip-box">
+                <p><strong>🎮 Congratulations!</strong> Your gaming PC is now complete and ready for gaming. Download your favorite games and enjoy the performance of your custom-built system!</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page 20: TROUBLESHOOTING -->
+    <div class="page">
+        <div class="page-header">
+            <h2>Troubleshooting Common Issues</h2>
+            <div class="page-number">Page 20</div>
+        </div>
+        
+        <div class="content">
+            <p>Even experienced builders encounter issues. Here are solutions to the most common problems:</p>
+            
+            <div class="troubleshooting-item">
+                <h4>🔧 PC Won't Turn On (No Power)</h4>
+                <p><strong>Symptoms:</strong> No fans spin, no lights, completely dead</p>
+                <p><strong>Solutions:</strong></p>
+                <ul>
+                    <li>Verify PSU switch is set to ON (I position, not O)</li>
+                    <li>Check wall outlet has power (test with phone charger)</li>
+                    <li>Ensure PSU power cable fully connected to PSU and wall</li>
+                    <li>Verify 24-pin ATX power cable fully seated in motherboard</li>
+                    <li>Check front panel power switch connector is properly attached</li>
+                    <li>Try shorting power switch pins on motherboard with screwdriver (tests if button is faulty)</li>
+                </ul>
+            </div>
+            
+            <div class="troubleshooting-item">
+                <h4>🔧 PC Powers On But No Display</h4>
+                <p><strong>Symptoms:</strong> Fans spin, lights on, but monitor shows "No Signal"</p>
+                <p><strong>Solutions:</strong></p>
+                <ul>
+                    <li>Verify monitor connected to GPU ports, NOT motherboard</li>
+                    <li>Check monitor is on correct input (HDMI/DisplayPort)</li>
+                    <li>Ensure GPU power cables connected (all required 8-pin connectors)</li>
+                    <li>Reseat GPU—remove and reinstall in PCIe slot</li>
+                    <li>Reseat RAM—remove and reinstall until clicks</li>
+                    <li>Try one RAM stick at a time in different slots</li>
+                    <li>Check CPU power cable (8-pin) is fully connected</li>
+                    <li>Clear CMOS: remove motherboard battery for 30 seconds, reinsert, boot</li>
+                </ul>
+            </div>
+            
+            <div class="troubleshooting-item">
+                <h4>🔧 RAM Not Detected or Running at Wrong Speed</h4>
+                <p><strong>Symptoms:</strong> BIOS shows less RAM than installed, or RAM at 2133MHz instead of 3200MHz+</p>
+                <p><strong>Solutions:</strong></p>
+                <ul>
+                    <li>Reseat RAM sticks—remove and reinstall firmly until both clips lock</li>
+                    <li>Verify RAM in correct slots (usually slots 2 and 4 for dual-channel)</li>
+                    <li>Enable XMP/EXPO in BIOS to run at rated speed</li>
+                    <li>Update motherboard BIOS to latest version for better RAM compatibility</li>
+                    <li>Try RAM sticks individually to identify faulty module</li>
+                </ul>
+            </div>
+            
+            <div class="troubleshooting-item">
+                <h4>🔧 High Temperatures</h4>
+                <p><strong>Symptoms:</strong> CPU temps over 80°C at idle, or immediate thermal throttling</p>
+                <p><strong>Solutions:</strong></p>
+                <ul>
+                    <li>Check CPU cooler fan is spinning</li>
+                    <li>Verify cooler fan cable connected to CPU_FAN header</li>
+                    <li>Ensure plastic cover removed from cooler base (common mistake!)</li>
+                    <li>Check CPU cooler mounting—should be firmly attached</li>
+                    <li>Reapply thermal paste if temps remain high</li>
+                    <li>Verify case fans installed and spinning (intake and exhaust)</li>
+                </ul>
+            </div>
+            
+            <div class="troubleshooting-item">
+                <h4>🔧 Storage Drive Not Detected</h4>
+                <p><strong>Symptoms:</strong> SSD/HDD doesn't appear in BIOS or Windows</p>
+                <p><strong>Solutions:</strong></p>
+                <ul>
+                    <li><strong>M.2 drives:</strong> Reseat drive and ensure mounting screw is tight</li>
+                    <li><strong>SATA drives:</strong> Check both SATA data and power cables fully connected</li>
+                    <li>Some M.2 slots share bandwidth with SATA ports—consult manual</li>
+                    <li>In Windows, open Disk Management and initialize drive if it appears as "unallocated"</li>
+                </ul>
+            </div>
+            
+            <div class="troubleshooting-item">
+                <h4>🔧 System Restarts or Blue Screens</h4>
+                <p><strong>Symptoms:</strong> Random crashes, restarts, or Windows BSOD errors</p>
+                <p><strong>Solutions:</strong></p>
+                <ul>
+                    <li>Run Windows Memory Diagnostic to test RAM stability</li>
+                    <li>Disable XMP and test—RAM may not be stable at rated speed</li>
+                    <li>Update all drivers, especially chipset and GPU</li>
+                    <li>Check PSU wattage is sufficient for all components</li>
+                    <li>Monitor temperatures—overheating can cause instability</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page 21: MAINTENANCE AND UPGRADES -->
+    <div class="page">
+        <div class="page-header">
+            <h2>Maintenance and Future Upgrades</h2>
+            <div class="page-number">Page 21</div>
+        </div>
+        
+        <div class="content">
+            <div style="text-align: center; margin-bottom: 15px;">
+                <img src="images/gaming-setup.jpg" alt="Complete RGB gaming setup with dual monitors, keyboard, mouse, speakers and ambient lighting" style="max-width: 80%; border-radius: 6px; box-shadow: 0 3px 5px rgba(0,0,0,0.1);">
+                <p style="text-align: center; font-size: 10px; color: #666; font-style: italic; margin-top: 5px;">Figure 4: A completed gaming setup - the result of your build with proper maintenance</p>
+            </div>
+            
+            <h3>Regular Maintenance</h3>
+            
+            <p>Keep your gaming PC running optimally with routine maintenance:</p>
+            
+            <div class="substep">
+                <h4>Physical Cleaning (Every 3-6 Months)</h4>
+                <ul>
+                    <li>Power off PC and unplug from wall</li>
+                    <li>Use compressed air to blow dust from:
+                        <ul>
+                            <li>Case fans and filters</li>
+                            <li>GPU heatsink and fans</li>
+                            <li>CPU cooler fins and fan</li>
+                            <li>PSU intake (blow from outside, never disassemble PSU)</li>
+                        </ul>
+                    </li>
+                    <li>Wipe exterior with microfiber cloth</li>
+                    <li>Clean case dust filters with water, let dry completely before reinstalling</li>
+                </ul>
+            </div>
+            
+            <div class="substep">
+                <h4>Software Maintenance (Monthly)</h4>
+                <ul>
+                    <li>Install Windows updates</li>
+                    <li>Update GPU drivers (NVIDIA GeForce Experience or AMD Adrenalin)</li>
+                    <li>Run disk cleanup to free storage space</li>
+                    <li>Check for motherboard BIOS updates (only if needed for fixes/features)</li>
+                    <li>Defragment HDD (if using traditional hard drive; SSDs don't need defragmentation)</li>
+                </ul>
+            </div>
+            
+            <h3>When to Upgrade</h3>
+            
+            <p>Gaming PCs can last 5-7 years with strategic upgrades:</p>
+            
+            <div class="component-box">
+                <h4>GPU Upgrade (Every 3-4 Years)</h4>
+                <p>The GPU has the biggest impact on gaming performance. Upgrade when you can't achieve desired frame rates at your target resolution.</p>
+                <p><strong>Easy upgrade:</strong> Simply remove old card, install new one, update drivers.</p>
+            </div>
+            
+            <div class="component-box">
+                <h4>RAM Upgrade (As Needed)</h4>
+                <p>Add more RAM if you experience slowdowns with many programs open. Modern gaming benefits from 32GB, especially if streaming.</p>
+                <p><strong>Easy upgrade:</strong> Install matching RAM sticks in empty slots.</p>
+            </div>
+            
+            <div class="component-box">
+                <h4>Storage Expansion (As Needed)</h4>
+                <p>Add storage when running low on space. Games are increasingly large (100GB+ each).</p>
+                <p><strong>Easy upgrade:</strong> Install additional M.2 or SATA SSD in available slots.</p>
+            </div>
+            
+            <div class="component-box">
+                <h4>CPU Upgrade (Every 4-6 Years)</h4>
+                <p>Upgrade when CPU bottlenecks GPU performance or struggles with new games. Check if new CPU uses same socket as your motherboard.</p>
+                <p><strong>Moderate difficulty:</strong> Remove cooler, swap CPU, reapply thermal paste.</p>
+            </div>
+            
+            <h3>Future-Proofing Tips</h3>
+            
+            <ul>
+                <li><strong>Buy quality PSU:</strong> Good PSU lasts through multiple upgrades</li>
+                <li><strong>Choose reputable motherboard:</strong> Better VRMs support future CPU upgrades</li>
+                <li><strong>Get adequate cooling:</strong> Allows for overclocking and longevity</li>
+                <li><strong>Plan for PCIe 4.0/5.0:</strong> Newer motherboards support faster storage and GPUs</li>
+                <li><strong>Consider case expandability:</strong> Ensure room for additional fans, radiators, drives</li>
+            </ul>
+            
+            <div class="tip-box">
+                <p><strong>💡 Upgrade Strategy:</strong> Don't upgrade everything at once. Replace components strategically based on performance bottlenecks. Use tools like MSI Afterburner to monitor GPU and CPU usage during gaming—whichever is at 100% is your bottleneck.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page 22: REFERENCES AND CITATIONS -->
+    <div class="page">
+        <div class="page-header">
+            <h2>References and Citations</h2>
+            <div class="page-number">Page 22</div>
+        </div>
+        
+        <div class="content">
+            <h3>Technical Resources</h3>
+            
+            <div class="reference-item">
+                <p>Intel Corporation. (2025). <em>Intel Core Processor Installation Guide</em>. Retrieved from <a href="https://www.intel.com/content/www/us/en/support/articles/000005852/processors.html">https://www.intel.com/support</a></p>
+            </div>
+            
+            <div class="reference-item">
+                <p>AMD. (2025). <em>AMD Ryzen Processor Installation Guide</em>. Retrieved from <a href="https://www.amd.com/support">https://www.amd.com/support</a></p>
+            </div>
+            
+            <div class="reference-item">
+                <p>Microsoft Corporation. (2025). <em>Windows 11 Installation Media</em>. Retrieved from <a href="https://www.microsoft.com/software-download/windows11">https://www.microsoft.com/software-download/windows11</a></p>
+            </div>
+            
+            <div class="reference-item">
+                <p>PCPartPicker LLC. (2025). <em>PC Component Compatibility Tool</em>. Retrieved from <a href="https://pcpartpicker.com">https://pcpartpicker.com</a></p>
+            </div>
+            
+            <h3>Image Sources and Credits</h3>
+            
+            <p><em>Specific image attributions:</em></p>
+            
+            <div class="reference-item">
+                <p><strong>Figure 1 (Cover Page):</strong> Photo by Christian Wiediger. Gaming PC with RGB lighting. Retrieved from Unsplash.com. <a href="https://unsplash.com/photos/a-close-up-of-a-computer-Dd1CTUlzyXA">https://unsplash.com/photos/a-close-up-of-a-computer-Dd1CTUlzyXA</a></p>
+            </div>
+            
+            <div class="reference-item">
+                <p><strong>Figure 2 (Component Layout - Page 5):</strong> Photo by Christian Wiediger. CPU and motherboard close-up. Retrieved from Unsplash.com. <a href="https://unsplash.com/photos/a-close-up-of-a-computer-motherboard-n3_qgrKPz9o">https://unsplash.com/photos/a-close-up-of-a-computer-motherboard-n3_qgrKPz9o</a></p>
+            </div>
+            
+            <div class="reference-item">
+                <p><strong>Figure 3 (Workspace Setup - Page 6):</strong> Photo by Mateo. RGB gaming keyboard. Retrieved from Unsplash.com. <a href="https://unsplash.com/photos/a-close-up-of-a-computer-keyboard-with-glowing-keys-Mc-h87fpwMc">https://unsplash.com/photos/a-close-up-of-a-computer-keyboard-with-glowing-keys-Mc-h87fpwMc</a></p>
+            </div>
+            
+            <div class="reference-item">
+                <p><strong>Figure 4 (Complete Setup - Page 21):</strong> Photo by Florian Olivo. Complete gaming setup with dual monitors. Retrieved from Unsplash.com. <a href="https://unsplash.com/photos/a-computer-monitor-sitting-on-top-of-a-desk-Z7XGOlZQjaE">https://unsplash.com/photos/a-computer-monitor-sitting-on-top-of-a-desk-Z7XGOlZQjaE</a></p>
+            </div>
+            
+            <div class="reference-item">
+                <p><strong>Figure 5 (RAM Slots - Page 10):</strong> Photo by Alexandre Debiève. AMD motherboard with RAM slots. Retrieved from Unsplash.com. <a href="https://unsplash.com/photos/a-close-up-of-a-computer-motherboard-rSqkY6iKu6I">https://unsplash.com/photos/a-close-up-of-a-computer-motherboard-rSqkY6iKu6I</a></p>
+            </div>
+            
+            <p><em>Note: Additional images and diagrams in this guide are either:</em></p>
+            <ul>
+                <li>Original illustrations created for this manual</li>
+                <li>Stock photos licensed from Unsplash.com (free for commercial use)</li>
+                <li>Product photographs from manufacturer websites (used for educational purposes)</li>
+                <li>Placeholder graphics to be replaced with actual photos during implementation</li>
+            </ul>
+            
+            <div class="reference-item">
+                <p>Unsplash. (2025). <em>Free Stock Photography</em>. Retrieved from <a href="https://unsplash.com">https://unsplash.com</a></p>
+            </div>
+            
+            <h3>Additional Learning Resources</h3>
+            
+            <div class="reference-item">
+                <p>Tom's Hardware. (2025). <em>How To Build A PC: The Ultimate Beginner's Guide</em>. Retrieved from <a href="https://www.tomshardware.com/reviews/how-to-build-a-pc">https://www.tomshardware.com</a></p>
+            </div>
+            
+            <div class="reference-item">
+                <p>Reddit r/buildapc Community. (2025). <em>PC Building Resources and Community Support</em>. Retrieved from <a href="https://www.reddit.com/r/buildapc/">https://www.reddit.com/r/buildapc/</a></p>
+            </div>
+            
+            <div class="reference-item">
+                <p>Linus Tech Tips. (2025). <em>PC Building Tutorials and Reviews</em>. Retrieved from <a href="https://www.youtube.com/linustechtips">https://www.youtube.com/linustechtips</a></p>
+            </div>
+            
+            <div class="reference-item">
+                <p>BWC Facilities Maintenance. (2025). <em>Cable Management Best Practices</em>. Retrieved from <a href="https://www.bwcfla.com/cable-management/">https://www.bwcfla.com/cable-management/</a></p>
+            </div>
+            
+            <div class="reference-item">
+                <p>Corsair. (2025). <em>How to Identify Your CPU</em>. DIY PC Builder. Retrieved from <a href="https://www.corsair.com/us/en/diy-pc-builder/how-to-identify-your-cpu/">https://www.corsair.com/us/en/diy-pc-builder/how-to-identify-your-cpu/</a></p>
+            </div>
+            
+            <div class="reference-item">
+                <p>JayzTwoCents. (2025). <em>PC Building Guides and Troubleshooting</em>. Retrieved from <a href="https://www.youtube.com/jayztwocents">https://www.youtube.com/jayztwocents</a></p>
+            </div>
+            
+            <h3>Component Manufacturer Resources</h3>
+            
+            <div class="reference-item">
+                <p>ASUS. (2025). <em>Motherboard Support and Manuals</em>. Retrieved from <a href="https://www.asus.com/support/">https://www.asus.com/support/</a></p>
+            </div>
+            
+            <div class="reference-item">
+                <p>MSI. (2025). <em>Gaming Hardware Support</em>. Retrieved from <a href="https://www.msi.com/support">https://www.msi.com/support</a></p>
+            </div>
+            
+            <div class="reference-item">
+                <p>Gigabyte. (2025). <em>Motherboard Documentation</em>. Retrieved from <a href="https://www.gigabyte.com/Support">https://www.gigabyte.com/Support</a></p>
+            </div>
+            
+            <div class="reference-item">
+                <p>NVIDIA. (2025). <em>GeForce Graphics Drivers</em>. Retrieved from <a href="https://www.nvidia.com/Download/index.aspx">https://www.nvidia.com/drivers</a></p>
+            </div>
+            
+            <div class="reference-item">
+                <p>Corsair. (2025). <em>PSU Installation Guides</em>. Retrieved from <a href="https://www.corsair.com/support">https://www.corsair.com/support</a></p>
+            </div>
+            
+            <div class="reference-item">
+                <p>Corsair. (2025). <em>How to Find Out Which CPU You Have</em>. DIY Builder How-Tos. Retrieved from <a href="https://www.corsair.com/us/en/explorer/diy-builder/how-tos/how-to-find-out-which-cpu-you-have/">https://www.corsair.com/us/en/explorer/diy-builder/how-tos/</a></p>
+            </div>
+            
+            <h3>Safety and Standards</h3>
+            
+            <div class="reference-item">
+                <p>Electrostatic Discharge Association. (2025). <em>ESD Protection Guidelines</em>. Retrieved from <a href="https://www.esda.org">https://www.esda.org</a></p>
+            </div>
+            
+            <h3>Acknowledgments</h3>
+            
+            <p>This guide was created as a technical writing project for ENG-105, incorporating best practices in instructional design, CRAP design principles, and accessibility standards.</p>
+            
+            <p><strong>Author:</strong> Benjamin Sherman<br>
+            <strong>Institution:</strong> McHenry County College<br>
+            <strong>Course:</strong> ENG-105 (Fall 2025)<br>
+            <strong>Publication Date:</strong> November 2025</p>
+        </div>
+    </div>
+    
+    <!-- Page 23: GLOSSARY -->
+    <div class="page">
+        <div class="page-header">
+            <h2>Glossary of Terms</h2>
+            <div class="page-number">Page 23</div>
+        </div>
+        
+        <div class="content">
+            <div class="glossary-term">
+                <p><strong>BIOS/UEFI:</strong> Basic Input/Output System or Unified Extensible Firmware Interface. Firmware that initializes hardware during boot and provides runtime services for operating systems.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>CPU (Central Processing Unit):</strong> The primary component that executes instructions and performs calculations in a computer.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>DDR4/DDR5:</strong> Double Data Rate generation 4/5. Types of RAM with different speeds, power requirements, and physical pin layouts.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>GPU (Graphics Processing Unit):</strong> Specialized processor designed to accelerate graphics rendering and parallel computing tasks.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>M.2 NVMe SSD:</strong> Solid State Drive using Non-Volatile Memory Express protocol, connected directly to motherboard via M.2 slot for high-speed storage.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>Motherboard:</strong> Main circuit board containing CPU socket, RAM slots, expansion slots, and connectors for all PC components.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>PCIe (Peripheral Component Interconnect Express):</strong> High-speed interface standard for connecting expansion cards like GPUs and M.2 SSDs.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>PSU (Power Supply Unit):</strong> Component that converts AC power from wall outlet to DC power used by PC components.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>RAM (Random Access Memory):</strong> Volatile memory that temporarily stores data for quick access by the CPU.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>Thermal Paste:</strong> Thermally conductive compound applied between CPU and cooler to improve heat transfer.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>XMP (Extreme Memory Profile):</strong> Intel technology allowing RAM to run at advertised speeds higher than default JEDEC specifications.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>EXPO (Extended Profiles for Overclocking):</strong> AMD equivalent of XMP for enabling higher RAM speeds.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>Dual-Channel:</strong> Memory configuration using two matched RAM sticks for increased bandwidth and performance.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>Form Factor:</strong> Physical size and layout specification (e.g., ATX, Micro-ATX, Mini-ITX) determining component compatibility.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>Socket:</strong> CPU mounting interface on motherboard (e.g., LGA 1700 for Intel, AM5 for AMD Ryzen).</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>Standoff:</strong> Brass spacer that elevates motherboard above case to prevent electrical shorts.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>I/O Shield:</strong> Metal plate that fits in case rear to match motherboard port layout and prevent dust ingress.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>PWM (Pulse Width Modulation):</strong> Fan control method allowing motherboard to dynamically adjust fan speeds based on temperature.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>RGB/ARGB:</strong> Red-Green-Blue lighting. RGB uses 12V with all LEDs same color; ARGB uses 5V with individually addressable LEDs.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>Bottleneck:</strong> Component that limits overall system performance (e.g., weak CPU limiting powerful GPU).</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>SATA (Serial ATA):</strong> Interface standard for connecting storage drives and optical drives to motherboard.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>Modular PSU:</strong> Power supply with detachable cables, allowing connection of only needed cables for better cable management.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>80 Plus Certification:</strong> Efficiency rating for PSUs (Bronze, Silver, Gold, Platinum, Titanium) indicating power conversion efficiency.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>AIO (All-In-One) Cooler:</strong> Self-contained liquid cooling system with pump, radiator, and fans.</p>
+            </div>
+            
+            <div class="glossary-term">
+                <p><strong>VRM (Voltage Regulator Module):</strong> Motherboard circuitry that provides stable power to CPU.</p>
+            </div>
+            
+            <div class="tip-box">
+                <p><strong>📚 Need More Help?</strong> Visit the resources listed on Page 22 or join online communities like r/buildapc for expert advice and troubleshooting assistance!</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
