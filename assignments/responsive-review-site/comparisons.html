@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    This project is based on the information and content of Badger Technologies (badgertechnologies.us)
+    Professional IT Services & Managed Support for Illinois businesses
+    Created as a Bootstrap responsive design project
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Case studies and client success stories from Badger Technologies IT services">
+    <title>Case Studies - Badger Technologies</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-shield-alt me-2"></i>Badger Technologies
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" title="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="comparisons.html">Case Studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="navbarOffcanvasLabel">
+                <i class="fas fa-shield-alt me-2"></i>Navigation
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="bi bi-house me-2"></i>Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">
+                        <i class="fas fa-cogs me-2"></i>Services
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reviews.html">
+                        <i class="fas fa-lightbulb me-2"></i>Solutions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="comparisons.html">
+                        <i class="fas fa-briefcase me-2"></i>Case Studies
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        <i class="bi bi-info-circle me-2"></i>About
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Case Studies & Client Success</h1>
+                    <p class="lead">Real businesses, real challenges, real solutions. See how Badger Technologies transformed IT operations across industries.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#" class="btn btn-light btn-lg">
+                        <i class="bi bi-download me-2"></i>Download Case Study
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Case Study 1 -->
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1560439514-e1b8d8e4e1f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded" alt="Manufacturing Client">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-3"><i class="fas fa-industry text-primary me-2"></i>Midwest Manufacturing Firm</h2>
+                    <p class="lead text-muted">40-person manufacturing company, Illinois</p>
+                    
+                    <h5 class="mt-4">The Challenge</h5>
+                    <p>Legacy IT infrastructure with frequent downtime, no cybersecurity measures, and compliance violations impacting operations and revenue.</p>
+                    
+                    <h5>Our Solution</h5>
+                    <p>Complete IT infrastructure overhaul including:</p>
+                    <ul>
+                        <li>Modern server architecture with redundancy</li>
+                        <li>24/7 managed IT support implementation</li>
+                        <li>Advanced cybersecurity and network monitoring</li>
+                        <li>Automated backup and disaster recovery</li>
+                        <li>Employee training and security policies</li>
+                    </ul>
+                    
+                    <h5>Results</h5>
+                    <div class="row mt-3">
+                        <div class="col-sm-6">
+                            <div class="text-center p-3 bg-light rounded">
+                                <h4 class="text-success">85%</h4>
+                                <p class="mb-0 small">Downtime Reduction</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-center p-3 bg-light rounded">
+                                <h4 class="text-success">$50K+</h4>
+                                <p class="mb-0 small">Annual Savings</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#caseStudyModal" data-case="manufacturing">
+                        <i class="fas fa-file-pdf me-2"></i>Read Full Case Study
+                    </button>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <!-- Case Study 2 -->
+            <div class="row mb-5 align-items-center flex-row-reverse">
+                <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-5">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded" alt="Healthcare Client">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-3"><i class="fas fa-hospital text-danger me-2"></i>Regional Medical Practice</h2>
+                    <p class="lead text-muted">25-person medical office, Illinois</p>
+                    
+                    <h5 class="mt-4">The Challenge</h5>
+                    <p>Patient data security concerns, HIPAA compliance gaps, and legacy systems threatening patient privacy and practice operations.</p>
+                    
+                    <h5>Our Solution</h5>
+                    <p>HIPAA-compliant infrastructure rebuild including:</p>
+                    <ul>
+                        <li>Encrypted medical records system deployment</li>
+                        <li>HIPAA compliance audit and remediation</li>
+                        <li>Advanced network security and access controls</li>
+                        <li>24/7 security monitoring and threat detection</li>
+                        <li>Staff security training and compliance procedures</li>
+                    </ul>
+                    
+                    <h5>Results</h5>
+                    <div class="row mt-3">
+                        <div class="col-sm-6">
+                            <div class="text-center p-3 bg-light rounded">
+                                <h4 class="text-success">100%</h4>
+                                <p class="mb-0 small">Compliance</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-center p-3 bg-light rounded">
+                                <h4 class="text-success">Zero</h4>
+                                <p class="mb-0 small">Security Incidents</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#caseStudyModal" data-case="healthcare">
+                        <i class="fas fa-file-pdf me-2"></i>Read Full Case Study
+                    </button>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <!-- Case Study 3 -->
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded" alt="Construction Client">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-3"><i class="fas fa-hard-hat text-warning me-2"></i>Construction Services Company</h2>
+                    <p class="lead text-muted">35-person construction firm, Illinois</p>
+                    
+                    <h5 class="mt-4">The Challenge</h5>
+                    <p>Field crews unable to access project data remotely, office productivity hampered by outdated collaboration tools, no mobile solutions.</p>
+                    
+                    <h5>Our Solution</h5>
+                    <p>Cloud infrastructure and remote access implementation:</p>
+                    <ul>
+                        <li>Microsoft 365 deployment with Teams collaboration</li>
+                        <li>Cloud-based project management system setup</li>
+                        <li>Mobile device management and VPN access</li>
+                        <li>Cloud backup and disaster recovery</li>
+                        <li>Staff training on new productivity tools</li>
+                    </ul>
+                    
+                    <h5>Results</h5>
+                    <div class="row mt-3">
+                        <div class="col-sm-6">
+                            <div class="text-center p-3 bg-light rounded">
+                                <h4 class="text-success">40%</h4>
+                                <p class="mb-0 small">Schedule Improvement</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-center p-3 bg-light rounded">
+                                <h4 class="text-success">$30K</h4>
+                                <p class="mb-0 small">Monthly Savings</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#caseStudyModal" data-case="construction">
+                        <i class="fas fa-file-pdf me-2"></i>Read Full Case Study
+                    </button>
+                </div>
+            </div>
+
+            <!-- Comparison Table Section -->
+            <div class="mt-5 pt-5">
+                <h2 class="mb-4 text-center">Quick Service Comparison</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Service Feature</th>
+                                <th scope="col">Standard Support</th>
+                                <th scope="col">24/7 Premium</th>
+                                <th scope="col">Enterprise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Response Time</td>
+                                <td>Business Hours (24hrs)</td>
+                                <td><span class="badge bg-success">15 Minutes</span></td>
+                                <td><span class="badge bg-danger">5 Minutes</span></td>
+                            </tr>
+                            <tr>
+                                <td>Support Availability</td>
+                                <td>M-F 8am-5pm</td>
+                                <td>24/7/365</td>
+                                <td>24/7/365 + On-Site</td>
+                            </tr>
+                            <tr>
+                                <td>Proactive Monitoring</td>
+                                <td>Monthly</td>
+                                <td><i class="bi bi-check-circle text-success"></i> Continuous</td>
+                                <td><i class="bi bi-check-circle text-success"></i> Continuous</td>
+                            </tr>
+                            <tr>
+                                <td>Dedicated Account Manager</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><i class="bi bi-check-circle text-success"></i> Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Security Monitoring</td>
+                                <td>-</td>
+                                <td><i class="bi bi-check-circle text-success"></i> 24/7</td>
+                                <td><i class="bi bi-check-circle text-success"></i> 24/7 + SOC</td>
+                            </tr>
+                            <tr>
+                                <td>Disaster Recovery</td>
+                                <td>Standard</td>
+                                <td><span class="badge bg-info">4-Hour RTO</span></td>
+                                <td><span class="badge bg-danger">1-Hour RTO</span></td>
+                            </tr>
+                            <tr>
+                                <td>Quarterly Reviews</td>
+                                <td>-</td>
+                                <td><i class="bi bi-check-circle text-success"></i> Yes</td>
+                                <td><i class="bi bi-check-circle text-success"></i> Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Starting Price</td>
+                                <td><strong>$299/mo</strong></td>
+                                <td><strong>$599/mo</strong></td>
+                                <td><strong>Custom</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Modal -->
+    <div class="modal fade" id="caseStudyModal" tabindex="-1" aria-labelledby="caseStudyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="caseStudyModalLabel">Case Study</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Download the full case study to see detailed metrics, implementation timeline, and specific results.</p>
+                    <p><strong>PDF available for download</strong></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">
+                        <i class="fas fa-download me-2"></i>Download PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5><i class="fas fa-shield-alt me-2"></i>Badger Technologies</h5>
+                    <p class="text-muted">Professional IT services for small and medium businesses in Illinois. 24/7 support, cybersecurity, and cloud solutions you can trust.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Follow us on LinkedIn">
+                            <i class="bi bi-linkedin fs-5"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Like us on Facebook">
+                            <i class="bi bi-facebook fs-5"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Follow us on Twitter">
+                            <i class="bi bi-twitter fs-5"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Visit our YouTube channel">
+                            <i class="bi bi-youtube fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html">Managed IT Support</a></li>
+                        <li><a href="products.html">Cybersecurity</a></li>
+                        <li><a href="products.html">Cloud Services</a></li>
+                        <li><a href="products.html">IT Consulting</a></li>
+                        <li><a href="products.html">24/7 Help Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Solutions</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="reviews.html">Remote Work Setup</a></li>
+                        <li><a href="reviews.html">Compliance</a></li>
+                        <li><a href="reviews.html">Disaster Recovery</a></li>
+                        <li><a href="reviews.html">Cloud Migration</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6>Get IT Updates</h6>
+                    <p class="text-muted small">Receive cybersecurity alerts and IT tips for your business</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Business Email">
+                        <button class="btn btn-outline-light" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2025 Badger Technologies LLC. Securing your business, one byte at a time.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted">Made with Bootstrap 5 | Professional IT Services</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        // Case Study modal handler
+        const caseStudyModal = document.getElementById('caseStudyModal')
+        caseStudyModal.addEventListener('show.bs.modal', event => {
+            const button = event.relatedTarget
+            const caseStudy = button.getAttribute('data-case')
+            const modalTitle = caseStudyModal.querySelector('.modal-title')
+            modalTitle.textContent = caseStudy.charAt(0).toUpperCase() + caseStudy.slice(1) + ' - Case Study'
+        })
+    </script>
+</body>
+</html>
+

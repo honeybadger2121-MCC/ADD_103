@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap JavaScript Tools - Home</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 0;
+        }
+        .feature-card {
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar with Offcanvas -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-bootstrap"></i> Bootstrap JS Tools
+            </a>
+            
+            <!-- Offcanvas Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="interactive-components.html">Interactive Components</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="navigation-tools.html">Navigation Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="content-display.html">Content Display</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Navigation -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">🏠 Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="interactive-components.html">🎯 Interactive Components</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="navigation-tools.html">🧭 Navigation Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="content-display.html">📋 Content Display</a>
+                </li>
+            </ul>
+            <hr>
+            <div class="mt-3">
+                <h6>Quick Actions</h6>
+                <button class="btn btn-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#infoModal">Quick Info</button>
+                <button class="btn btn-outline-success btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="This is a tooltip in the offcanvas!">Hover Me</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Bootstrap JavaScript Tools</h1>
+                    <p class="lead mb-4">Explore the interactive features of Bootstrap 5 including Collapse, Carousel, Modal, Tooltip, Popover, Scrollspy, and Offcanvas components.</p>
+                    <button class="btn btn-light btn-lg me-3" data-bs-toggle="modal" data-bs-target="#welcomeModal">Get Started</button>
+                    <button class="btn btn-outline-light btn-lg" data-bs-toggle="tooltip" data-bs-placement="top" title="Learn about Bootstrap's interactive components!">Learn More</button>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="p-4">
+                        <!-- Simple feature showcase -->
+                        <div class="bg-white bg-opacity-10 p-4 rounded">
+                            <h5>Interactive Demo</h5>
+                            <button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#heroDemo" aria-expanded="false">
+                                Toggle Demo
+                            </button>
+                            <div class="collapse mt-3" id="heroDemo">
+                                <div class="card card-body bg-light text-dark">
+                                    This is a collapsible element demonstrating Bootstrap's interactive capabilities!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold">Explore JavaScript Components</h2>
+                    <p class="lead text-muted">Navigate through our three demonstration pages to see Bootstrap's JavaScript tools in action.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Page 1: Interactive Components -->
+                <div class="col-md-4">
+                    <div class="card feature-card shadow">
+                        <div class="card-body p-4">
+                            <div class="bg-primary bg-opacity-10 rounded p-3 mb-3">
+                                <i class="bi bi-cursor-fill text-primary fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Interactive Components</h5>
+                            <p class="card-text text-muted">Explore Modal dialogs, Tooltips, and Popovers for enhanced user interaction.</p>
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="badge bg-primary">Modal</span>
+                                <span class="badge bg-info">Tooltip</span>
+                                <span class="badge bg-warning">Popover</span>
+                            </div>
+                            <a href="interactive-components.html" class="btn btn-primary">Explore →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page 2: Navigation Tools -->
+                <div class="col-md-4">
+                    <div class="card feature-card shadow">
+                        <div class="card-body p-4">
+                            <div class="bg-success bg-opacity-10 rounded p-3 mb-3">
+                                <i class="bi bi-compass text-success fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Navigation Tools</h5>
+                            <p class="card-text text-muted">Discover Scrollspy, Carousel, and Offcanvas for seamless navigation experiences.</p>
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="badge bg-success">Scrollspy</span>
+                                <span class="badge bg-secondary">Carousel</span>
+                                <span class="badge bg-dark">Offcanvas</span>
+                            </div>
+                            <a href="navigation-tools.html" class="btn btn-success">Explore →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page 3: Content Display -->
+                <div class="col-md-4">
+                    <div class="card feature-card shadow">
+                        <div class="card-body p-4">
+                            <div class="bg-warning bg-opacity-10 rounded p-3 mb-3">
+                                <i class="bi bi-layout-text-window text-warning fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Content Display</h5>
+                            <p class="card-text text-muted">Learn about Collapse components and advanced content organization techniques.</p>
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="badge bg-warning">Collapse</span>
+                                <span class="badge bg-danger">Accordion</span>
+                                <span class="badge bg-info">Tabs</span>
+                            </div>
+                            <a href="content-display.html" class="btn btn-warning">Explore →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Modal -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="welcomeModalLabel">Welcome to Bootstrap JavaScript Tools</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>What You'll Learn:</h6>
+                            <ul class="list-unstyled">
+                                <li>✅ Modal dialogs for user interactions</li>
+                                <li>✅ Tooltips and Popovers for helpful hints</li>
+                                <li>✅ Collapse components for space-saving content</li>
+                                <li>✅ Carousel for image/content sliding</li>
+                                <li>✅ Scrollspy for navigation tracking</li>
+                                <li>✅ Offcanvas for mobile-friendly menus</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Navigation Guide:</h6>
+                            <p class="small text-muted">Use the navigation bar to explore three different pages, each focusing on specific Bootstrap JavaScript components. Each page contains working examples and code demonstrations.</p>
+                            <div class="alert alert-info">
+                                <strong>Tip:</strong> Try the mobile menu by resizing your browser window!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="interactive-components.html" class="btn btn-primary">Start Exploring</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Modal (for Offcanvas) -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel">Quick Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>This modal was triggered from the offcanvas navigation menu, demonstrating how Bootstrap components can work together seamlessly!</p>
+                    <div class="alert alert-success">
+                        <strong>Bootstrap 5</strong> makes it easy to combine multiple JavaScript components for rich user experiences.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Bootstrap JavaScript Tools Practice</h6>
+                    <p class="mb-0 small">Demonstrating interactive Bootstrap 5 components for web development education.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0 small">
+                        <a href="https://www.w3schools.com/bootstrap5/" class="text-info text-decoration-none">W3Schools Bootstrap 5 Reference</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Initialize Tooltips -->
+    <script>
+        // Initialize all tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+</html>

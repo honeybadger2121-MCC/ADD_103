@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    This project is based on the information and content of Badger Technologies (badgertechnologies.us)
+    Professional IT Services & Managed Support for Illinois businesses
+    Created as a Bootstrap responsive design project
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IT Solutions for businesses - implementation guides, best practices, and industry-specific solutions">
+    <title>Solutions - Badger Technologies</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-shield-alt me-2"></i>Badger Technologies
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" title="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="reviews.html">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparisons.html">Case Studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="navbarOffcanvasLabel">
+                <i class="fas fa-shield-alt me-2"></i>Navigation
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="bi bi-house me-2"></i>Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">
+                        <i class="fas fa-cogs me-2"></i>Services
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="reviews.html">
+                        <i class="fas fa-lightbulb me-2"></i>Solutions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparisons.html">
+                        <i class="fas fa-briefcase me-2"></i>Case Studies
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        <i class="bi bi-info-circle me-2"></i>About
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">IT Solutions & Best Practices</h1>
+                    <p class="lead">Industry-specific solutions, implementation guides, and proven strategies to optimize your IT infrastructure.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#" class="btn btn-light btn-lg">
+                        <i class="bi bi-download me-2"></i>Download Guides
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Grid -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Remote Work Solutions -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-laptop-home text-primary fs-3 me-3"></i>
+                        <div>
+                            <h2 class="mb-0">Remote Work Infrastructure</h2>
+                            <p class="text-muted mb-0">Secure VPN, collaboration tools, and productivity solutions for distributed teams</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <article class="card review-card h-100">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="VPN Setup">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-primary">Implementation</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Secure VPN Gateway Setup</h5>
+                            <p class="card-text">Establish enterprise-grade VPN infrastructure with multi-factor authentication, encrypted tunnels, and geo-redundancy.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Est. 2-3 weeks</small>
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#solutionModal" data-solution="VPN Gateway">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <article class="card review-card h-100">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="M365">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-primary">Collaboration</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Microsoft 365 Deployment</h5>
+                            <p class="card-text">Full Microsoft 365 stack implementation including Teams, SharePoint, OneDrive, and Exchange security configuration.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Est. 1-2 weeks</small>
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#solutionModal" data-solution="M365">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <article class="card review-card h-100">
+                        <img src="https://www.secureworld.io/hs-fs/hubfs/AWS-endpoint-EDR-killchain.png?width=1199&name=AWS-endpoint-EDR-killchain.png" class="card-img-top" alt="Endpoint Detection and Response">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-primary">Security</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Endpoint Protection Rollout</h5>
+                            <p class="card-text">Deploy enterprise antivirus, EDR solutions, and device management across all endpoints with zero-downtime.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Est. 1-3 weeks</small>
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#solutionModal" data-solution="Endpoint">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Industry-Specific Solutions -->
+            <div class="row mb-5 mt-5">
+                <div class="col-12">
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-industry text-success fs-3 me-3"></i>
+                        <div>
+                            <h2 class="mb-0">Industry-Specific Solutions</h2>
+                            <p class="text-muted mb-0">Healthcare, Finance, and Manufacturing compliance and security frameworks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <article class="card review-card h-100">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="HIPAA">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-success">Healthcare</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">HIPAA Compliance Framework</h5>
+                            <p class="card-text">Complete HIPAA-compliant infrastructure implementation including patient data encryption, access controls, and audit logging.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Custom Timeline</small>
+                                <button class="btn btn-sm btn-outline-success" data-bs-toggle="modal" data-bs-target="#solutionModal" data-solution="HIPAA">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <article class="card review-card h-100">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="PCI Compliance">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-success">Finance</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">PCI DSS Compliance</h5>
+                            <p class="card-text">Payment card data security implementation, tokenization, network segmentation, and ongoing compliance monitoring.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Custom Timeline</small>
+                                <button class="btn btn-sm btn-outline-success" data-bs-toggle="modal" data-bs-target="#solutionModal" data-solution="PCI">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <article class="card review-card h-100">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Manufacturing">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-success">Manufacturing</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">IoT & OT Security</h5>
+                            <p class="card-text">Industrial IoT device management, operational technology network segmentation, and real-time production monitoring.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Custom Timeline</small>
+                                <button class="btn btn-sm btn-outline-success" data-bs-toggle="modal" data-bs-target="#solutionModal" data-solution="IoT">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Disaster Recovery & Business Continuity -->
+            <div class="row mb-5 mt-5">
+                <div class="col-12">
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-life-ring text-warning fs-3 me-3"></i>
+                        <div>
+                            <h2 class="mb-0">Disaster Recovery & Continuity</h2>
+                            <p class="text-muted mb-0">Business continuity planning, failover systems, and rapid recovery procedures</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <article class="card review-card h-100">
+                        <img src="https://sprinto.com/wp-content/uploads/2022/12/Blog_105_ISO_27001_Disaster_Recovery_Plan-05-1024x806.jpg" class="card-img-top" alt="Disaster Recovery Planning">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-warning text-dark">Planning</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Disaster Recovery Planning</h5>
+                            <p class="card-text">Comprehensive DRP assessment, BCP documentation, recovery time objectives, and annual testing protocols.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Est. 4-6 weeks</small>
+                                <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#solutionModal" data-solution="DRP">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <article class="card review-card h-100">
+                        <img src="https://image3.slideserve.com/5649511/active-active-failover-l.jpg" class="card-img-top" alt="Active-Active Failover">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-warning text-dark">Infrastructure</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Active-Active Failover</h5>
+                            <p class="card-text">Geo-redundant infrastructure setup with automatic failover, load balancing, and zero data loss guarantees.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Est. 6-8 weeks</small>
+                                <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#solutionModal" data-solution="Failover">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <article class="card review-card h-100">
+                        <img src="https://cdn1-public.infotech.com/blueprints/take-a-realistic-approach-to-disaster-recovery-testing/disasterRecoveryTesting.png" class="card-img-top" alt="Disaster Recovery Testing">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-warning text-dark">Testing</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Disaster Recovery Testing</h5>
+                            <p class="card-text">Quarterly DRP exercises, failover simulations, tabletop exercises, and post-recovery documentation reviews.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Quarterly</small>
+                                <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#solutionModal" data-solution="Testing">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Modal -->
+    <div class="modal fade" id="solutionModal" tabindex="-1" aria-labelledby="solutionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="solutionModalLabel">Solution Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Contact our solutions team for a detailed implementation proposal and timeline specific to your business needs.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Request Consultation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5><i class="fas fa-shield-alt me-2"></i>Badger Technologies</h5>
+                    <p class="text-muted">Professional IT services for small and medium businesses in Illinois. 24/7 support, cybersecurity, and cloud solutions you can trust.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Follow us on LinkedIn">
+                            <i class="bi bi-linkedin fs-5"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Like us on Facebook">
+                            <i class="bi bi-facebook fs-5"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Follow us on Twitter">
+                            <i class="bi bi-twitter fs-5"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Visit our YouTube channel">
+                            <i class="bi bi-youtube fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html">Managed IT Support</a></li>
+                        <li><a href="products.html">Cybersecurity</a></li>
+                        <li><a href="products.html">Cloud Services</a></li>
+                        <li><a href="products.html">IT Consulting</a></li>
+                        <li><a href="products.html">24/7 Help Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Solutions</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="reviews.html">Remote Work Setup</a></li>
+                        <li><a href="reviews.html">Compliance</a></li>
+                        <li><a href="reviews.html">Disaster Recovery</a></li>
+                        <li><a href="reviews.html">Cloud Migration</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6>Get IT Updates</h6>
+                    <p class="text-muted small">Receive cybersecurity alerts and IT tips for your business</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Business Email">
+                        <button class="btn btn-outline-light" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2025 Badger Technologies LLC. Securing your business, one byte at a time.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted">Made with Bootstrap 5 | Professional IT Services</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        // Solution modal handler
+        const solutionModal = document.getElementById('solutionModal')
+        solutionModal.addEventListener('show.bs.modal', event => {
+            const button = event.relatedTarget
+            const solution = button.getAttribute('data-solution')
+            const modalTitle = solutionModal.querySelector('.modal-title')
+            modalTitle.textContent = solution + ' - Details'
+        })
+    </script>
+</body>
+</html>
+

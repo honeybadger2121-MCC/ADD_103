@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    This project is based on the information and content of Badger Technologies (badgertechnologies.us)
+    Professional IT Services & Managed Support for Illinois businesses
+    Created as a Bootstrap responsive design project
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional IT services including managed support, cybersecurity, cloud solutions, and IT consulting for businesses">
+    <title>Services - Badger Technologies</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-shield-alt me-2"></i>Badger Technologies
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" title="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparisons.html">Case Studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Professional IT Services</h1>
+                    <p class="lead">Comprehensive solutions designed to protect, optimize, and grow your business. From managed support to advanced cybersecurity.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#" class="btn btn-light btn-lg">
+                        <i class="fas fa-calendar me-2"></i>Schedule Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Navigation Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="navbarOffcanvasLabel">
+                <i class="fas fa-shield-alt me-2"></i>Navigation
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="bi bi-house me-2"></i>Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="products.html">
+                        <i class="fas fa-cogs me-2"></i>Services
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reviews.html">
+                        <i class="fas fa-lightbulb me-2"></i>Solutions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparisons.html">
+                        <i class="fas fa-briefcase me-2"></i>Case Studies
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        <i class="bi bi-info-circle me-2"></i>About
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Services Grid -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Managed IT Support Section -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-headset text-primary fs-3 me-3"></i>
+                        <div>
+                            <h2 class="mb-0">Managed IT Support</h2>
+                            <p class="text-muted mb-0">24/7 Help Desk, proactive monitoring, and rapid response times for your peace of mind</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="card-img-top product-image" alt="Standard Support">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-primary">Popular</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Standard Support</h5>
+                            <p class="card-text small">Business hours support (M-F 8am-5pm), ticket-based system, and proactive monthly maintenance.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$299/month</div>
+                                <small class="text-muted">Per 5 users</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service="Standard Support">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="card-img-top product-image" alt="Premium Support">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-warning text-dark">Premium</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">24/7 Premium Support</h5>
+                            <p class="card-text small">Round-the-clock support, 15-minute response guarantee, priority ticket escalation, and quarterly business reviews.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$599/month</div>
+                                <small class="text-muted">Per 5 users</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service="24/7 Premium Support">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="card-img-top product-image" alt="Enterprise Support">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-danger">Enterprise</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Enterprise Suite</h5>
+                            <p class="card-text small">Dedicated account manager, custom SLA, on-site support available, strategic IT planning, and priority resource allocation.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">Custom Pricing</div>
+                                <small class="text-muted">Contact for quote</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service="Enterprise Suite">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="card-img-top product-image" alt="Remote Support">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-info">Essential</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Remote Dispatch</h5>
+                            <p class="card-text small">Incident-based support with remote diagnostics, remote assistance portal, and per-ticket pricing for small businesses.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$99/incident</div>
+                                <small class="text-muted">Or $499/month</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service="Remote Dispatch">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cybersecurity Section -->
+            <div class="row mb-5 mt-5">
+                <div class="col-12">
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-lock text-danger fs-3 me-3"></i>
+                        <div>
+                            <h2 class="mb-0">Cybersecurity Solutions</h2>
+                            <p class="text-muted mb-0">Threat detection, compliance, and security awareness training to protect your assets</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Assessment Infographic -->
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card border-0 shadow-sm p-4 text-center">
+                        <img src="https://www.collidu.com/media/catalog/product/img1/d/5/d5ccff99fb19449e206eb06d5572536576956f84b0e9bf6364129d5a0a0ad17d/security-assessment-slide1.png" alt="4 Components of Security Assessment" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+                        <p class="text-muted mt-3 small">Our comprehensive security assessment covers threat identification, vulnerability analysis, impact estimation, and risk evaluation.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1526374965328-7f5ae4e8a3ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="card-img-top product-image" alt="Security Assessment">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-danger">Assessment</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Security Audit</h5>
+                            <p class="card-text small">Comprehensive vulnerability assessment, penetration testing, and detailed remediation roadmap for your organization.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$1,500</div>
+                                <small class="text-muted">One-time</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service="Security Audit">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://as2.ftcdn.net/v2/jpg/07/14/84/03/1000_F_714840364_8acbYb4J1XRBdLdQSuY8NJIdpju0J9y1.jpg" class="card-img-top product-image" alt="Threat Monitoring">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-danger">Monitoring</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Threat Monitoring</h5>
+                            <p class="card-text small">24/7 threat detection, automated response, security incident investigation, and monthly threat reports.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$399/month</div>
+                                <small class="text-muted">Proactive protection</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service="Threat Monitoring">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://xgenious.com/wp-content/uploads/2025/01/GDPR-and-HIPAA-Compliance.webp" class="card-img-top product-image" alt="HIPAA/GDPR Compliance">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-danger">Compliance</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">HIPAA/GDPR Compliance</h5>
+                            <p class="card-text small">Regulatory compliance consulting, implementation support, documentation, and ongoing compliance management.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$799/month</div>
+                                <small class="text-muted">Peace of mind</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service="Compliance">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://cdn.prod.website-files.com/64945c3b6498f55f8967ddbd/66cc4fa3236d6014094cfd10_cyber-security-awareness.webp" class="card-img-top product-image" alt="Security Awareness Training">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-danger">Training</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Security Awareness</h5>
+                            <p class="card-text small">Employee training programs, phishing simulation, security best practices, and quarterly refresher courses.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$199/month</div>
+                                <small class="text-muted">Per 50 users</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service="Security Awareness">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cloud Services Section -->
+            <div class="row mb-5 mt-5">
+                <div class="col-12">
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-cloud text-info fs-3 me-3"></i>
+                        <div>
+                            <h2 class="mb-0">Cloud Services</h2>
+                            <p class="text-muted mb-0">Scalable infrastructure, migration, and cloud optimization for modern businesses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="card-img-top product-image" alt="Migration">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-info">Migration</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Cloud Migration</h5>
+                            <p class="card-text small">On-premises to cloud transition, data migration, application optimization, and zero-downtime cutover planning.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">Custom Quote</div>
+                                <small class="text-muted">Based on scope</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service="Cloud Migration">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://micronova.in/wp-content/uploads/2021/02/cloudbackup.png" class="card-img-top product-image" alt="Cloud Backup & Recovery">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-info">Backup</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Cloud Backup & Recovery</h5>
+                            <p class="card-text small">Automated daily backups, encrypted cloud storage, instant recovery, and disaster recovery planning.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$299/month</div>
+                                <small class="text-muted">Per 500GB storage</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service="Cloud Backup">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://www.techdoc.net/images/Microsoft-365-management_1.webp" class="card-img-top product-image" alt="Microsoft 365 Management">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-info">Collaboration</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Microsoft 365 Management</h5>
+                            <p class="card-text small">Setup, user management, security configuration, compliance, and optimization for business productivity.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$79/month</div>
+                                <small class="text-muted">Per user</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service="M365 Management">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="img-hover">
+                            <img src="https://successive.tech/wp-content/uploads/2024/03/Artboard-1-copy-16.png" class="card-img-top product-image" alt="Cloud Cost Optimization">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-info">Optimization</span>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Cloud Cost Optimization</h5>
+                            <p class="card-text small">Right-sizing analysis, licensing review, waste reduction, and monthly optimization reports.</p>
+                            <div class="mb-3">
+                                <div class="fw-bold text-success">$399/month</div>
+                                <small class="text-muted">Ongoing optimization</small>
+                            </div>
+                            <button class="btn btn-custom-primary w-100" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service="Cloud Optimization">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Modal -->
+    <div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel">Service Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Get more information about our services. Contact our team to discuss which solution is right for your business.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Request Quote</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5><i class="fas fa-shield-alt me-2"></i>Badger Technologies</h5>
+                    <p class="text-muted">Professional IT services for small and medium businesses in Illinois. 24/7 support, cybersecurity, and cloud solutions you can trust.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Follow us on LinkedIn">
+                            <i class="bi bi-linkedin fs-5"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Like us on Facebook">
+                            <i class="bi bi-facebook fs-5"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Follow us on Twitter">
+                            <i class="bi bi-twitter fs-5"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Visit our YouTube channel">
+                            <i class="bi bi-youtube fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html">Managed IT Support</a></li>
+                        <li><a href="products.html">Cybersecurity</a></li>
+                        <li><a href="products.html">Cloud Services</a></li>
+                        <li><a href="products.html">IT Consulting</a></li>
+                        <li><a href="products.html">24/7 Help Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Solutions</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="comparisons.html">Data Backup</a></li>
+                        <li><a href="#">Network Setup</a></li>
+                        <li><a href="#">Security Audits</a></li>
+                        <li><a href="#">Cloud Migration</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6>Get IT Updates</h6>
+                    <p class="text-muted small">Receive cybersecurity alerts and IT tips for your business</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Business Email">
+                        <button class="btn btn-outline-light" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2025 Badger Technologies LLC. Securing your business, one byte at a time.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted">Made with Bootstrap 5 | Professional IT Services</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        // Service modal handler
+        const serviceModal = document.getElementById('serviceModal')
+        serviceModal.addEventListener('show.bs.modal', event => {
+            const button = event.relatedTarget
+            const service = button.getAttribute('data-service')
+            const modalTitle = serviceModal.querySelector('.modal-title')
+            modalTitle.textContent = service + ' - Details'
+        })
+    </script>
+</body>
+</html>
+
+
