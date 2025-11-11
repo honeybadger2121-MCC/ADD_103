@@ -17,9 +17,9 @@ body {
 
 /* ========== RESUME CONTAINER ========== */
 .resume-container {
-    max-width: 7.5in;
-    width: 7.5in;
-    min-height: 10in;
+    max-width: 8.5in;
+    width: 8.5in;
+    min-height: 11in;
     margin: 20px auto;
     background: white;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -89,7 +89,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 0;
-    min-height: calc(10in - 140px);
+    min-height: calc(11in - 140px);
 }
 
 /* ========== LEFT COLUMN (PROXIMITY & REPETITION) ========== */
@@ -393,7 +393,7 @@ section:last-child {
 @media print {
     @page {
         size: letter;
-        margin: 0.5in 0.5in 0.5in 0.5in;
+        margin: 0.5in;
     }
     
     body {
@@ -408,6 +408,7 @@ section:last-child {
         margin: 0;
         max-width: none;
         width: 100%;
+        min-height: auto;
         page-break-inside: avoid;
     }
     
