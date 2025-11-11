@@ -18,11 +18,13 @@ body {
 /* ========== RESUME CONTAINER ========== */
 .resume-container {
     max-width: 8.5in;
+    width: 8.5in;
     min-height: 11in;
     margin: 20px auto;
     background: white;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
     overflow: hidden;
+    page-break-inside: avoid;
 }
 
 /* ========== HEADER SECTION (CONTRAST) ========== */
@@ -389,21 +391,30 @@ section:last-child {
 
 /* ========== PRINT STYLES ========== */
 @media print {
+    @page {
+        size: letter;
+        margin: 0.5in;
+    }
+    
     body {
         background: white;
         font-size: 11px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
     
     .resume-container {
         box-shadow: none;
         margin: 0;
         max-width: none;
+        width: 100%;
+        page-break-inside: avoid;
     }
     
     .resume-header {
         background: #2c3e50 !important;
         -webkit-print-color-adjust: exact;
-        color-adjust: exact;
+        print-color-adjust: exact;
     }
     
     .skill-tag,
@@ -414,17 +425,21 @@ section:last-child {
     .left-column {
         background: #f8f9fa !important;
         -webkit-print-color-adjust: exact;
-        color-adjust: exact;
+        print-color-adjust: exact;
     }
     
     .project-item {
         background: #f8f9fa !important;
         -webkit-print-color-adjust: exact;
-        color-adjust: exact;
+        print-color-adjust: exact;
         page-break-inside: avoid;
     }
     
     section {
+        page-break-inside: avoid;
+    }
+    
+    .resume-main {
         page-break-inside: avoid;
     }
 }
