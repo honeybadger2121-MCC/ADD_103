@@ -20,41 +20,15 @@ CompTIA A+ certified IT professional with 5+ years in network administration and
 
 ## TECHNICAL SKILLS
 
-### IT Support & Administration
-- Help Desk Support
-- Network Administration
-- System Administration
-- Server Maintenance
-- User Account Management
-- Security Systems
+**IT Support & Systems:** Help Desk Support, Network Administration, Server Maintenance, User Account Management, Security Systems, Cloud Migration
 
-### Networking & Infrastructure
-- Network Switches
-- TCP/IP
-- Wireless Networks
-- Cable Routing
-- Fiber Optics
-- Coaxial Systems
+**Networking:** Network Switches, TCP/IP, Wireless Networks, Fiber Optics, Cable Installation
 
-### Operating Systems & Software
-- Windows Client/Server
-- Microsoft Excel
-- CareLogic System
-- Office 365
-- Cloud Migration
+**Software & Platforms:** Windows Client/Server, Office 365, Microsoft Excel, CareLogic System
 
-### Hardware & Installation
-- PC Building
-- Hardware Troubleshooting
-- Cable Installation
-- Equipment Configuration
-- Ladder Safety
+**Hardware:** PC Building, Hardware Troubleshooting, Equipment Configuration
 
-### Programming & Development
-- HTML/CSS
-- Technical Writing
-- Documentation
-- Content Creation
+**Development:** HTML/CSS, Technical Writing, Documentation
 
 ---
 
