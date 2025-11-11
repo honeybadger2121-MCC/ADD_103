@@ -151,7 +151,7 @@ Authored comprehensive 23-page technical manual for PC builders with detailed as
 - Made trips to satellite locations for technology support
 
 ### Network Administrator/Help Desk Specialist
-**Rogue Technologies LLC**  
+**Pique Technologies LLC**  
 *Full-time • September 2020 - February 2023*
 
 - Deployed and maintained networks, servers, and workstations
@@ -159,22 +159,17 @@ Authored comprehensive 23-page technical manual for PC builders with detailed as
 - Responded to helpdesk requests via email, phone, and chat
 - Set up user accounts, permissions, and passwords
 
-### Premise Technician
-**AT&T**  
+### Telecommunications Technician
+**AT&T / CAVO Broadband Communications**  
 *Full-time • October 2018 - August 2022*
 
-- Performed fiber and copper technology installations
-- Completed aerial and underground repairs
-- Communicated with customers about installation processes
-- Averaged 45 jobs per work week
-
-### Cable Technician
-**CAVO Broadband Communications, LLC**  
-*Full-time • 1 year 1 month*
-
-- Completed commercial and residential cable work for Comcast
+- Performed fiber and copper technology installations for AT&T
+- Completed commercial and residential cable work for Comcast (via CAVO)
 - Installed coaxial cable systems and interior wiring
+- Completed aerial and underground repairs and installations
+- Communicated with customers about installation processes
 - Resolved customer concerns efficiently
+- Averaged 45 jobs per work week
 
 ---
 
