@@ -398,13 +398,13 @@ I am proud to present this work as evidence of my learning, growth, and readines
 
 **Project Links:**
 - **Live Website:** https://bsherman170.mccwebstudent.com/portfolio/
-- **GitHub Repository:** https://github.com/honeybadger2121-home/ADD_103-1
-- **Course Portfolio Hub:** https://bsherman170.mccwebstudent.com/web105/
+- **GitHub Repository:** https://github.com/honeybadger2121-MCC/ADD_103
+- **Course Portfolio Hub:** https://bsherman170.mccwebstudent.com/practice-exercises/web105/
 
 **Contact Information:**
 - **Student:** Ben Sherman
-- **Email:** [Your MCC Email]
-- **LinkedIn:** [Your LinkedIn Profile]
+- **Email:** bsherman170@students.mchenry.edu
+- **LinkedIn:** linkedin.com/in/benjaminrsherman
 - **Completion Date:** December 2025
 
 ---
