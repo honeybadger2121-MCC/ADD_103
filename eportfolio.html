@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ben Sherman's ePortfolio demonstrating general education competencies through web development coursework">
+    <title>ePortfolio - Ben Sherman | McHenry County College</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2C3E50;
+            --secondary-color: #3498DB;
+            --accent-color: #E74C3C;
+            --light-bg: #ECF0F1;
+            --dark-bg: #1A252F;
+            --text-dark: #2C3E50;
+            --text-light: #7F8C8D;
+            --heading-font: 'Poppins', sans-serif;
+            --body-font: 'Roboto', sans-serif;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 3rem;
+            --spacing-xl: 4rem;
+        }
+
+        body {
+            font-family: var(--body-font);
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: var(--heading-font);
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        header .course-info {
+            margin-top: var(--spacing-sm);
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--dark-bg);
+            padding: var(--spacing-sm) 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: var(--spacing-md);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+            background-color: rgba(52, 152, 219, 0.1);
+        }
+
+        /* Main Content */
+        main {
+            padding: var(--spacing-xl) 0;
+        }
+
+        .intro-section {
+            background-color: var(--light-bg);
+            padding: var(--spacing-lg);
+            border-radius: 8px;
+            margin-bottom: var(--spacing-xl);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .intro-section h2 {
+            font-family: var(--heading-font);
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-sm);
+            font-size: 2rem;
+        }
+
+        .intro-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+        }
+
+        /* Competency Sections */
+        .competency-section {
+            margin-bottom: var(--spacing-xl);
+            padding: var(--spacing-lg);
+            background-color: white;
+            border-left: 5px solid var(--secondary-color);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-radius: 4px;
+        }
+
+        .competency-section:nth-child(even) {
+            border-left-color: var(--accent-color);
+        }
+
+        .competency-section h2 {
+            font-family: var(--heading-font);
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: var(--spacing-sm);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .competency-section h3 {
+            font-family: var(--heading-font);
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .competency-section p {
+            margin-bottom: var(--spacing-sm);
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        .competency-section ul {
+            margin-left: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .competency-section li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .evidence-box {
+            background-color: var(--light-bg);
+            padding: var(--spacing-md);
+            border-radius: 6px;
+            margin: var(--spacing-md) 0;
+        }
+
+        .evidence-box h4 {
+            color: var(--accent-color);
+            margin-bottom: var(--spacing-sm);
+            font-family: var(--heading-font);
+        }
+
+        .project-link {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: var(--spacing-sm);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .project-link:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-bg);
+            color: white;
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+            margin-top: var(--spacing-xl);
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            .competency-section h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>ePortfolio</h1>
+            <p class="subtitle">Ben Sherman</p>
+            <p class="course-info">ADD 103 - Web Development Fundamentals | McHenry County College | December 2025</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#critical-thinking">Critical Thinking</a></li>
+            <li><a href="#communication">Communication</a></li>
+            <li><a href="#information-literacy">Information Literacy</a></li>
+            <li><a href="#quantitative">Quantitative Reasoning</a></li>
+            <li><a href="#social">Social Responsibility</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Introduction -->
+        <section id="intro" class="intro-section">
+            <h2>Welcome to My ePortfolio</h2>
+            <p>This ePortfolio demonstrates my achievement of general education competencies through my work in ADD 103 - Web Development Fundamentals. Throughout this course, I developed a comprehensive professional portfolio website that showcases not only technical web development skills, but also critical thinking, effective communication, information literacy, quantitative reasoning, and social responsibility.</p>
+            <p>The featured project is a 5-page Professional Portfolio Website built with semantic HTML5, advanced CSS3, and responsive design principles. This project required extensive planning, research, problem-solving, and attention to accessibility and user experience—skills that align directly with McHenry County College's general education competencies.</p>
+        </section>
+
+        <!-- Critical Thinking -->
+        <section id="critical-thinking" class="competency-section">
+            <h2>🧠 Critical Thinking</h2>
+            <p><strong>Competency Definition:</strong> The ability to analyze information objectively, evaluate different perspectives, and make reasoned judgments through logical reasoning and problem-solving.</p>
+
+            <h3>How This Course Developed Critical Thinking</h3>
+            <p>Web development requires constant critical thinking and problem-solving. Throughout ADD 103, I faced numerous technical challenges that required analyzing problems, evaluating multiple solutions, and implementing the most effective approach.</p>
+
+            <div class="evidence-box">
+                <h4>Evidence: CSS Float and Clearfix Problem-Solving</h4>
+                <p><strong>Challenge:</strong> When implementing floated images in my portfolio website, images were breaking out of their containers, causing layout collapse and misalignment.</p>
+                <p><strong>Analysis Process:</strong></p>
+                <ul>
+                    <li>Used Chrome Developer Tools to inspect element behavior and identify the root cause</li>
+                    <li>Researched CSS float behavior and container collapse in documentation</li>
+                    <li>Evaluated multiple solutions: overflow hidden, clearfix classes, and modern flexbox alternatives</li>
+                    <li>Tested each approach to determine trade-offs and browser compatibility</li>
+                </ul>
+                <p><strong>Solution Implemented:</strong> After critical evaluation, I chose the clearfix pseudo-element technique because it provided the most robust, accessible solution without side effects. I created a reusable clearfix class that could be applied consistently across the site.</p>
+                <p><strong>Reasoning:</strong> This solution demonstrated critical thinking by weighing multiple factors: browser compatibility, code maintainability, performance implications, and scalability for future development.</p>
+            </div>
+
+            <div class="evidence-box">
+                <h4>Evidence: Responsive Design Decision-Making</h4>
+                <p>When designing the portfolio layout, I had to critically evaluate whether to use CSS Grid, Flexbox, or traditional floats for different components. This required:</p>
+                <ul>
+                    <li>Analyzing the specific layout requirements for each page section</li>
+                    <li>Evaluating browser support and accessibility implications</li>
+                    <li>Considering maintenance and scalability of different approaches</li>
+                    <li>Making informed decisions based on technical constraints and user needs</li>
+                </ul>
+                <p>I ultimately used a combination of techniques, applying critical thinking to select the right tool for each specific context rather than using a one-size-fits-all approach.</p>
+            </div>
+
+            <a href="https://bsherman170.mccweb.net/ADD103/portfolio/" class="project-link" target="_blank">View Portfolio Project</a>
+        </section>
+
+        <!-- Effective Communication -->
+        <section id="communication" class="competency-section">
+            <h2>💬 Effective Communication</h2>
+            <p><strong>Competency Definition:</strong> The ability to convey information clearly and effectively through various media and formats, adapting communication style to different audiences and contexts.</p>
+
+            <h3>How This Course Developed Communication Skills</h3>
+            <p>Web development is fundamentally about communication—communicating ideas visually, structuring information logically, and writing code that other developers can understand. My portfolio project demonstrates multiple forms of effective communication.</p>
+
+            <div class="evidence-box">
+                <h4>Evidence: Content Writing for Web Audiences</h4>
+                <p>I wrote over 2,000 words of original content for my 5-page portfolio website, targeting a general audience reading level (8th-9th grade). This required:</p>
+                <ul>
+                    <li><strong>Audience Analysis:</strong> Understanding that web content needs to be scannable, concise, and accessible</li>
+                    <li><strong>Clear Structure:</strong> Using headings, paragraphs, and lists to organize information hierarchically</li>
+                    <li><strong>Professional Tone:</strong> Maintaining a professional yet approachable voice throughout</li>
+                    <li><strong>Purpose-Driven Writing:</strong> Each page had specific communication goals (inform, persuade, engage)</li>
+                </ul>
+                <p>I used readability statistics to ensure content was accessible, revised for clarity, and eliminated jargon where possible.</p>
+            </div>
+
+            <div class="evidence-box">
+                <h4>Evidence: Visual Communication Through Design</h4>
+                <p>The portfolio website communicates through visual design elements:</p>
+                <ul>
+                    <li><strong>Color Psychology:</strong> Used a cohesive Material Design-inspired palette to convey professionalism and trust</li>
+                    <li><strong>Typography Hierarchy:</strong> Implemented Google Fonts (Poppins for headings, Roboto for body) to guide readers through content</li>
+                    <li><strong>White Space:</strong> Strategically used spacing to improve readability and reduce cognitive load</li>
+                    <li><strong>Visual Hierarchy:</strong> Sized and styled elements to communicate importance and relationships</li>
+                </ul>
+            </div>
+
+            <div class="evidence-box">
+                <h4>Evidence: Code Documentation and Comments</h4>
+                <p>Effective communication extends to writing code that other developers can understand. I documented my CSS and HTML with:</p>
+                <ul>
+                    <li>Clear, descriptive comments explaining complex logic</li>
+                    <li>Semantic HTML element names that communicate purpose</li>
+                    <li>Organized CSS structure with section headers</li>
+                    <li>Meaningful class and ID names using clear naming conventions</li>
+                </ul>
+            </div>
+
+            <a href="https://bsherman170.mccweb.net/ADD103/portfolio/pages/about.html" class="project-link" target="_blank">View About Page (Communication Example)</a>
+        </section>
+
+        <!-- Information Literacy -->
+        <section id="information-literacy" class="competency-section">
+            <h2>📚 Information Literacy</h2>
+            <p><strong>Competency Definition:</strong> The ability to identify information needs, locate and evaluate sources, and ethically use information to accomplish specific purposes.</p>
+
+            <h3>How This Course Developed Information Literacy</h3>
+            <p>Web development requires constant research, evaluation of technical resources, and ethical use of information. Throughout this course, I demonstrated information literacy by effectively finding, evaluating, and applying technical knowledge.</p>
+
+            <div class="evidence-box">
+                <h4>Evidence: Research and Resource Evaluation</h4>
+                <p>When encountering technical challenges, I demonstrated information literacy by:</p>
+                <ul>
+                    <li><strong>Identifying Information Needs:</strong> Recognizing when I needed additional knowledge (e.g., CSS clearfix techniques, accessibility best practices)</li>
+                    <li><strong>Locating Credible Sources:</strong> Using authoritative resources like MDN Web Docs, W3C specifications, and Material Design guidelines rather than unreliable sources</li>
+                    <li><strong>Evaluating Source Quality:</strong> Distinguishing between official documentation, peer-reviewed resources, and anecdotal forum posts</li>
+                    <li><strong>Synthesizing Information:</strong> Combining knowledge from multiple sources to solve complex problems</li>
+                </ul>
+            </div>
+
+            <div class="evidence-box">
+                <h4>Evidence: Proper Attribution and Ethical Use</h4>
+                <p>My portfolio project demonstrates ethical information use through:</p>
+                <ul>
+                    <li><strong>Design Attribution:</strong> Cited Material Design as inspiration for color palette and referenced layout concepts from mccdgm.net</li>
+                    <li><strong>Google Fonts Licensing:</strong> Properly implemented Google Fonts following their usage guidelines and attribution requirements</li>
+                    <li><strong>Original Content:</strong> Wrote 100% original content rather than copying from other sources</li>
+                    <li><strong>Image Sources:</strong> Used only images I created or had rights to use, documenting sources in code comments</li>
+                </ul>
+                <p>All external resources are properly documented in my CSS file comments, demonstrating academic integrity and professional ethics.</p>
+            </div>
+
+            <div class="evidence-box">
+                <h4>Evidence: Technical Documentation Skills</h4>
+                <p>I created comprehensive project documentation including:</p>
+                <ul>
+                    <li>Wireframes showing planning and design process</li>
+                    <li>Color palette document with research citations</li>
+                    <li>Content planning document with readability statistics</li>
+                    <li>Project plan outlining requirements and technical specifications</li>
+                </ul>
+                <p>This documentation demonstrates the ability to organize, present, and preserve information for future reference.</p>
+            </div>
+
+            <a href="https://github.com/honeybadger2121-MCC/ADD_103" class="project-link" target="_blank">View GitHub Repository (Documentation)</a>
+        </section>
+
+        <!-- Quantitative Reasoning -->
+        <section id="quantitative" class="competency-section">
+            <h2>📊 Quantitative Reasoning</h2>
+            <p><strong>Competency Definition:</strong> The ability to use numerical data, mathematical concepts, and logical reasoning to analyze problems and make informed decisions.</p>
+
+            <h3>How This Course Developed Quantitative Reasoning</h3>
+            <p>Web development involves extensive quantitative reasoning—from calculating dimensions and proportions to analyzing performance metrics and optimizing code efficiency. My portfolio project demonstrates multiple applications of quantitative thinking.</p>
+
+            <div class="evidence-box">
+                <h4>Evidence: CSS Box Model Calculations</h4>
+                <p>Implementing proper spacing and layout required mathematical precision:</p>
+                <ul>
+                    <li><strong>Box Model Math:</strong> Calculating total element width = content width + padding + border + margin</li>
+                    <li><strong>Responsive Sizing:</strong> Using percentage-based widths and max-width constraints to create fluid layouts</li>
+                    <li><strong>rem vs px Conversions:</strong> Converting between absolute and relative units for consistent spacing (1rem = 16px base)</li>
+                    <li><strong>CSS Variables:</strong> Creating a mathematical spacing scale (0.5rem, 1rem, 2rem, 3rem, 4rem) based on consistent ratios</li>
+                </ul>
+            </div>
+
+            <div class="evidence-box">
+                <h4>Evidence: Color Theory and Hexadecimal Values</h4>
+                <p>Designing the color palette required understanding numerical color systems:</p>
+                <ul>
+                    <li><strong>Hexadecimal Notation:</strong> Working with hex color values (#2C3E50) representing RGB components</li>
+                    <li><strong>Color Contrast Ratios:</strong> Calculating and verifying WCAG AA compliance (minimum 4.5:1 ratio for normal text)</li>
+                    <li><strong>Opacity Values:</strong> Using decimal values (0-1) and percentages for transparency effects</li>
+                    <li><strong>Color Relationships:</strong> Selecting colors based on color wheel relationships and harmony principles</li>
+                </ul>
+            </div>
+
+            <div class="evidence-box">
+                <h4>Evidence: Performance Analysis and Optimization</h4>
+                <p>I analyzed quantitative metrics to optimize website performance:</p>
+                <ul>
+                    <li><strong>File Size Analysis:</strong> Compressed images, reducing total payload from 10MB+ to under 2MB</li>
+                    <li><strong>Code Statistics:</strong> Tracked lines of code (800 HTML, 500 CSS) to monitor complexity</li>
+                    <li><strong>Word Count Goals:</strong> Achieved 250+ words per page (total 2,000+ words) meeting project requirements</li>
+                    <li><strong>Readability Scores:</strong> Used Flesch-Kincaid grade level statistics to target 8th-9th grade reading level</li>
+                </ul>
+            </div>
+
+            <div class="evidence-box">
+                <h4>Evidence: Media Query Breakpoints</h4>
+                <p>Implementing responsive design required calculating optimal breakpoints:</p>
+                <ul>
+                    <li>Analyzed common device widths (320px mobile, 768px tablet, 1024px desktop)</li>
+                    <li>Calculated percentage-based column widths for fluid grids</li>
+                    <li>Determined appropriate font size scaling based on viewport width</li>
+                    <li>Optimized image dimensions for different screen densities</li>
+                </ul>
+            </div>
+
+            <a href="https://bsherman170.mccweb.net/ADD103/portfolio/pages/skills.html" class="project-link" target="_blank">View Skills Page (Technical Analysis)</a>
+        </section>
+
+        <!-- Social Responsibility -->
+        <section id="social" class="competency-section">
+            <h2>🤝 Social Responsibility</h2>
+            <p><strong>Competency Definition:</strong> The ability to understand diverse perspectives, engage ethically with communities, and contribute positively to society while recognizing interconnectedness and global citizenship.</p>
+
+            <h3>How This Course Developed Social Responsibility</h3>
+            <p>Web development carries significant social responsibility—websites must be accessible to all users, respect privacy, and contribute positively to the digital ecosystem. My portfolio project demonstrates commitment to inclusive, ethical web development practices.</p>
+
+            <div class="evidence-box">
+                <h4>Evidence: Web Accessibility and Inclusion</h4>
+                <p>I prioritized accessibility to ensure my website serves all users, including those with disabilities:</p>
+                <ul>
+                    <li><strong>Screen Reader Support:</strong> Used semantic HTML5 elements (header, nav, main, footer) that screen readers can interpret correctly</li>
+                    <li><strong>Alternative Text:</strong> Provided descriptive alt text for all 15+ images, enabling visually impaired users to understand visual content</li>
+                    <li><strong>Keyboard Navigation:</strong> Ensured all interactive elements are accessible without a mouse, supporting users with motor disabilities</li>
+                    <li><strong>Color Contrast:</strong> Achieved WCAG AA compliance for color contrast ratios, helping users with visual impairments read content</li>
+                    <li><strong>ARIA Labels:</strong> Implemented ARIA attributes to enhance accessibility for assistive technologies</li>
+                    <li><strong>Responsive Design:</strong> Created mobile-friendly layouts that work across all devices, supporting users in different economic situations who may only have mobile access</li>
+                </ul>
+                <p>This demonstrates social responsibility by recognizing that the web should be accessible to everyone, regardless of ability or circumstances.</p>
+            </div>
+
+            <div class="evidence-box">
+                <h4>Evidence: Ethical Design and User Respect</h4>
+                <p>The portfolio website demonstrates ethical design principles:</p>
+                <ul>
+                    <li><strong>No Dark Patterns:</strong> Clear, honest navigation and content without manipulative design tricks</li>
+                    <li><strong>Privacy Respect:</strong> No tracking scripts, cookies, or data collection without user knowledge</li>
+                    <li><strong>Performance Consideration:</strong> Optimized images and code to minimize data usage for users with limited bandwidth</li>
+                    <li><strong>Honest Representation:</strong> All content is truthful and authentic, without misleading claims or false information</li>
+                </ul>
+            </div>
+
+            <div class="evidence-box">
+                <h4>Evidence: Professional Ethics and Attribution</h4>
+                <p>I demonstrated professional responsibility through proper attribution and ethical practices:</p>
+                <ul>
+                    <li>Cited all design inspiration sources (Material Design, layout references)</li>
+                    <li>Used only images I created or had rights to use</li>
+                    <li>Properly attributed Google Fonts and external resources</li>
+                    <li>Wrote 100% original content, avoiding plagiarism</li>
+                    <li>Documented image sources in code comments for transparency</li>
+                </ul>
+            </div>
+
+            <div class="evidence-box">
+                <h4>Evidence: Digital Citizenship and Community Contribution</h4>
+                <p>My approach to this project demonstrates positive digital citizenship:</p>
+                <ul>
+                    <li><strong>Code Quality:</strong> Wrote clean, well-documented code that could benefit other learners</li>
+                    <li><strong>Best Practices:</strong> Followed web standards and accessibility guidelines that contribute to a better web ecosystem</li>
+                    <li><strong>Knowledge Sharing:</strong> Created a portfolio that could serve as an example for other students</li>
+                    <li><strong>Sustainable Development:</strong> Used efficient code and optimized resources to reduce environmental impact of web hosting</li>
+                </ul>
+            </div>
+
+            <div class="evidence-box">
+                <h4>Evidence: Understanding Diverse Perspectives</h4>
+                <p>Throughout development, I considered diverse user needs:</p>
+                <ul>
+                    <li>Designed for users of different ages, technical abilities, and cultural backgrounds</li>
+                    <li>Ensured content was readable at an 8th-9th grade level to be inclusive of various education levels</li>
+                    <li>Created responsive layouts that work across different devices and economic contexts</li>
+                    <li>Implemented accessibility features recognizing that users interact with technology in many different ways</li>
+                </ul>
+            </div>
+
+            <a href="https://bsherman170.mccweb.net/ADD103/portfolio/pages/contact.html" class="project-link" target="_blank">View Contact Page (Accessibility Features)</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p><strong>Ben Sherman</strong></p>
+            <p>ADD 103 - Web Development Fundamentals</p>
+            <p>McHenry County College | Fall 2025</p>
+            <p><a href="mailto:bsherman170@students.mchenry.edu">bsherman170@students.mchenry.edu</a></p>
+            <p><a href="https://linkedin.com/in/benjaminrsherman" target="_blank">LinkedIn: benjaminrsherman</a></p>
+            <p style="margin-top: 1rem;">
+                <a href="https://bsherman170.mccweb.net/ADD103/portfolio/" target="_blank">View Portfolio Project</a> | 
+                <a href="https://bsherman170.mccweb.net/ADD103/practice-exercises/web105/" target="_blank">View Course Portfolio</a> | 
+                <a href="https://github.com/honeybadger2121-MCC/ADD_103" target="_blank">GitHub Repository</a>
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">&copy; 2025 Ben Sherman. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
